@@ -19,13 +19,15 @@ namespace Berverage_Manager.GUI
         public static ucStaff uc_NhanVien;
         public Guna2DataGridView dgv_NhanVien;
         public int indexRowSelected;
-        public NhanVien_BUS nv_BUS;
+        public NhanVien_BUS nhanVien_BUS;
+        public TaiKhoan_BUS taiKhoan_BUS;
         public ucStaff()
         {
             InitializeComponent();
             uc_NhanVien = this;
             dgv_NhanVien = dgvNhanVien;
-            nv_BUS = new NhanVien_BUS();
+            nhanVien_BUS = new NhanVien_BUS();
+            taiKhoan_BUS = new TaiKhoan_BUS();
         }
 
         private void btnAddStaff_Click(object sender, EventArgs e)
@@ -42,7 +44,7 @@ namespace Berverage_Manager.GUI
 
         private void ucStaff_Load(object sender, EventArgs e)
         {
-            FillDataDGV(nv_BUS.LayTatCaNhanVien());
+            FillDataDGV(nhanVien_BUS.LayTatCaNhanVien());
         }
 
         public void FillDataDGV(List<NHANVIEN> listNhanVien)
@@ -67,7 +69,49 @@ namespace Berverage_Manager.GUI
 
         private void dgvNhanVien_CellClick(object sender, DataGridViewCellEventArgs e)
         {
+            indexRowSelected = e.RowIndex;
+        }
 
+        private void btnDeleteStaff_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("Bạn có muốn xóa không?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (DialogResult.Yes == result)
+            {
+                DataGridViewRow row = dgvNhanVien.Rows[indexRowSelected];
+                int maNV = int.Parse(row.Cells[0].Value.ToString());
+                string maTK = row.Cells[5].Value.ToString();
+
+                nhanVien_BUS.XoaNhanVien(maNV);
+                taiKhoan_BUS.XoaTaiKhoan(maTK);
+               
+
+                FillDataDGV(nhanVien_BUS.LayTatCaNhanVien());
+
+                //ucBanHang.bh.LoadNV();
+
+                //List<NHAPKHO> listtnk = dBQuanLyBanNGK.NHAPKHOes.ToList();
+                //ucNhapKho.nk.FillDataDGV(listtnk);
+
+                //List<DONHANG> listdh = dBQuanLyBanNGK.DONHANGs.ToList();
+                //ucDonHang.dh.FillDataDGV(listdh);
+            }
+            
+        }
+
+        private void btnTimNV_Click(object sender, EventArgs e)
+        {
+            String tenNV = txtTimNV.Text;
+            List<NHANVIEN> listNV = nhanVien_BUS.LayTatCaNhanVien();
+            List<NHANVIEN> listTimNV = nhanVien_BUS.TimKiemNhanVien(listNV, tenNV);
+
+            if (listTimNV.Count > 0)
+            {
+                FillDataDGV(listTimNV);
+            }
+            else
+            {
+                MessageBox.Show("Không Tìm Thấy Sản Phẩm Nào!", "THÔNG BÁO", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
         }
     }
 }

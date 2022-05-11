@@ -34,6 +34,12 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.btnTimNV = new Guna.UI2.WinForms.Guna2CircleButton();
             this.dgvNhanVien = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.clMaNhanVien = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clTenNhanVien = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clSoDienThoai = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clDiaChi = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clEmail = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clMaTK = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label1 = new System.Windows.Forms.Label();
             this.txtTimNV = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
@@ -45,12 +51,6 @@
             this.btnEditStaff = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
-            this.clMaNhanVien = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.clTenNhanVien = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.clSoDienThoai = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.clDiaChi = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.clEmail = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.clMaTK = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvNhanVien)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.guna2Panel4.SuspendLayout();
@@ -74,6 +74,7 @@
             this.btnTimNV.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.btnTimNV.Size = new System.Drawing.Size(36, 36);
             this.btnTimNV.TabIndex = 96;
+            this.btnTimNV.Click += new System.EventHandler(this.btnTimNV_Click);
             // 
             // dgvNhanVien
             // 
@@ -140,6 +141,36 @@
             this.dgvNhanVien.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             this.dgvNhanVien.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvNhanVien_CellClick);
             this.dgvNhanVien.RowsAdded += new System.Windows.Forms.DataGridViewRowsAddedEventHandler(this.dgvNhanVien_RowsAdded);
+            // 
+            // clMaNhanVien
+            // 
+            this.clMaNhanVien.HeaderText = "Mã nhân viên";
+            this.clMaNhanVien.Name = "clMaNhanVien";
+            // 
+            // clTenNhanVien
+            // 
+            this.clTenNhanVien.HeaderText = "Tên nhân viên";
+            this.clTenNhanVien.Name = "clTenNhanVien";
+            // 
+            // clSoDienThoai
+            // 
+            this.clSoDienThoai.HeaderText = "Số điện thoại";
+            this.clSoDienThoai.Name = "clSoDienThoai";
+            // 
+            // clDiaChi
+            // 
+            this.clDiaChi.HeaderText = "Địa chỉ";
+            this.clDiaChi.Name = "clDiaChi";
+            // 
+            // clEmail
+            // 
+            this.clEmail.HeaderText = "Email";
+            this.clEmail.Name = "clEmail";
+            // 
+            // clMaTK
+            // 
+            this.clMaTK.HeaderText = "MTK";
+            this.clMaTK.Name = "clMaTK";
             // 
             // label1
             // 
@@ -245,6 +276,7 @@
             this.btnDeleteStaff.Size = new System.Drawing.Size(111, 36);
             this.btnDeleteStaff.TabIndex = 33;
             this.btnDeleteStaff.Text = "Xóa";
+            this.btnDeleteStaff.Click += new System.EventHandler(this.btnDeleteStaff_Click);
             // 
             // btnEditStaff
             // 
@@ -284,36 +316,6 @@
             this.guna2Panel3.Name = "guna2Panel3";
             this.guna2Panel3.Size = new System.Drawing.Size(1003, 42);
             this.guna2Panel3.TabIndex = 94;
-            // 
-            // clMaNhanVien
-            // 
-            this.clMaNhanVien.HeaderText = "Mã nhân viên";
-            this.clMaNhanVien.Name = "clMaNhanVien";
-            // 
-            // clTenNhanVien
-            // 
-            this.clTenNhanVien.HeaderText = "Tên nhân viên";
-            this.clTenNhanVien.Name = "clTenNhanVien";
-            // 
-            // clSoDienThoai
-            // 
-            this.clSoDienThoai.HeaderText = "Số điện thoại";
-            this.clSoDienThoai.Name = "clSoDienThoai";
-            // 
-            // clDiaChi
-            // 
-            this.clDiaChi.HeaderText = "Địa chỉ";
-            this.clDiaChi.Name = "clDiaChi";
-            // 
-            // clEmail
-            // 
-            this.clEmail.HeaderText = "Email";
-            this.clEmail.Name = "clEmail";
-            // 
-            // clMaTK
-            // 
-            this.clMaTK.HeaderText = "MTK";
-            this.clMaTK.Name = "clMaTK";
             // 
             // ucStaff
             // 

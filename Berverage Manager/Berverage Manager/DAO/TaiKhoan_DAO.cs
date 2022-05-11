@@ -29,10 +29,17 @@ namespace Berverage_Manager.DAO
             dbQuanLyBanNGK.SaveChanges();
         }
 
-        public void XoaTaiKhoan(TAIKHOAN tk)
+        public void XoaTaiKhoan(String maTK)
         {
+            TAIKHOAN tk = dbQuanLyBanNGK.TAIKHOANs.FirstOrDefault(p => p.MADANGNHAP == maTK);
             dbQuanLyBanNGK.TAIKHOANs.Remove(tk);
             dbQuanLyBanNGK.SaveChanges();
         }
+
+        public TAIKHOAN LayTaiKhoanBangMTK(String maTaiKhoan)
+        {
+            return dbQuanLyBanNGK.TAIKHOANs.FirstOrDefault(p => p.MADANGNHAP == maTaiKhoan);
+        }
+
     }
 }

@@ -28,16 +28,28 @@ namespace Berverage_Manager.DAO
             dbQuanLyBanNGK.SaveChanges();
         }
 
+        public NHANVIEN LayNhanVienBangMNV(int maNV)
+        {
+            return dbQuanLyBanNGK.NHANVIENs.FirstOrDefault(p => p.MANV == maNV);
+        }
+
         public void SuaNhanVien(NHANVIEN nv)
         {
             dbQuanLyBanNGK.NHANVIENs.AddOrUpdate(nv);
             dbQuanLyBanNGK.SaveChanges();
         }
 
-        public void XoaNhanVien(NHANVIEN nv)
+        public void XoaNhanVien(int maNV)
         {
+            NHANVIEN nv = dbQuanLyBanNGK.NHANVIENs.FirstOrDefault(p => p.MANV == maNV);
             dbQuanLyBanNGK.NHANVIENs.Remove(nv);
             dbQuanLyBanNGK.SaveChanges();
+        }
+
+        public List<NHANVIEN> TimKiemNhanVien(List<NHANVIEN> listNV, String timKiemSP)
+        {
+            List<NHANVIEN> listTimNV = listNV.Where(p => p.TENNV.ToLower().Contains(timKiemSP.ToLower())).ToList();
+            return listTimNV;
         }
     }
 }
