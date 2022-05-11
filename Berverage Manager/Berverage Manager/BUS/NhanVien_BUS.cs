@@ -41,9 +41,9 @@ namespace Berverage_Manager.BUS
             nv_DA0.XoaNhanVien(maNV);
         }
 
-        public List<NHANVIEN> TimKiemNhanVien(List<NHANVIEN> listNV, String timKiemSP)
+        public List<NHANVIEN> TimKiemNhanVien(List<NHANVIEN> listNV, String timKiemKH)
         {
-            return nv_DA0.TimKiemNhanVien(listNV, timKiemSP);
+            return nv_DA0.TimKiemNhanVien(listNV, timKiemKH);
         }
 
     }

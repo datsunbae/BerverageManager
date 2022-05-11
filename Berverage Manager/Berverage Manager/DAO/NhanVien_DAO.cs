@@ -46,9 +46,9 @@ namespace Berverage_Manager.DAO
             dbQuanLyBanNGK.SaveChanges();
         }
 
-        public List<NHANVIEN> TimKiemNhanVien(List<NHANVIEN> listNV, String timKiemSP)
+        public List<NHANVIEN> TimKiemNhanVien(List<NHANVIEN> listNV, String timKiemKH)
         {
-            List<NHANVIEN> listTimNV = listNV.Where(p => p.TENNV.ToLower().Contains(timKiemSP.ToLower())).ToList();
+            List<NHANVIEN> listTimNV = listNV.Where(p => p.TENNV.ToLower().Contains(timKiemKH.ToLower())).ToList();
             return listTimNV;
         }
     }

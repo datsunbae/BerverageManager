@@ -110,7 +110,7 @@ namespace Berverage_Manager.GUI
             }
             else
             {
-                MessageBox.Show("Không Tìm Thấy Sản Phẩm Nào!", "THÔNG BÁO", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Không Tìm Thấy Nhân Viên Nào!", "THÔNG BÁO", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
     }

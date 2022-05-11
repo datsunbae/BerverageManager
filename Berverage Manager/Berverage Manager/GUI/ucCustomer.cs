@@ -8,14 +8,25 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Berverage_Manager.DataContext;
+using Berverage_Manager.BUS;
+using Guna.UI2.WinForms;
 
 namespace Berverage_Manager.GUI
 {
     public partial class ucCustomer : UserControl
     {
+        public static ucCustomer uc_KhachHang;
+        public Guna2DataGridView dgv_KhachHang;
+        public int indexRowSelected;
+        public KhachHang_BUS khachHang_BUS;
+
         public ucCustomer()
         {
             InitializeComponent();
+            uc_KhachHang = this;
+            dgv_KhachHang = dgvKhachHang;
+            khachHang_BUS = new KhachHang_BUS();
         }
 
         private void btnAddCustomer_Click(object sender, EventArgs e)
@@ -28,6 +39,73 @@ namespace Berverage_Manager.GUI
         {
             frmUpdateCustomer editCustomer = new frmUpdateCustomer();
             editCustomer.ShowDialog();
+        }
+
+        public void FillDataDGV(List<KHACHHANG> listKhachHang)
+        {
+            dgvKhachHang.Rows.Clear();
+            foreach (var item in listKhachHang)
+            {
+                int RowNew = dgvKhachHang.Rows.Add();
+                dgvKhachHang.Rows[RowNew].Cells[0].Value = item.MAKH;
+                dgvKhachHang.Rows[RowNew].Cells[1].Value = item.TENKH;
+                dgvKhachHang.Rows[RowNew].Cells[2].Value = item.SDTKH;
+                dgvKhachHang.Rows[RowNew].Cells[3].Value = item.DIACHIKH;
+                dgvKhachHang.Rows[RowNew].Cells[4].Value = item.EMAILKH;
+            }
+        }
+
+        private void ucCustomer_Load(object sender, EventArgs e)
+        {
+            FillDataDGV(khachHang_BUS.LayTatCaKhachHang());
+        }
+
+        private void dgvKhachHang_RowsAdded(object sender, DataGridViewRowsAddedEventArgs e)
+        {
+            dgvKhachHang.Rows[e.RowIndex].Height = 40;
+        }
+
+        private void dgvKhachHang_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            indexRowSelected = e.RowIndex;
+        }
+
+        private void btnXoaKH_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("Bạn có muốn xóa không?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (DialogResult.Yes == result)
+            {
+                DataGridViewRow row = dgvKhachHang.Rows[indexRowSelected];
+                int maKH = int.Parse(row.Cells[0].Value.ToString());
+
+                khachHang_BUS.XoaKhachHang(maKH);
+
+                FillDataDGV(khachHang_BUS.LayTatCaKhachHang());
+
+                //ucBanHang.bh.LoadNV();
+
+                //List<NHAPKHO> listtnk = dBQuanLyBanNGK.NHAPKHOes.ToList();
+                //ucNhapKho.nk.FillDataDGV(listtnk);
+
+                //List<DONHANG> listdh = dBQuanLyBanNGK.DONHANGs.ToList();
+                //ucDonHang.dh.FillDataDGV(listdh);
+            }
+        }
+
+        private void btnTimKH_Click(object sender, EventArgs e)
+        {
+            String tenKH = txtTimKH.Text;
+            List<KHACHHANG> listKH = khachHang_BUS.LayTatCaKhachHang();
+            List<KHACHHANG> listTimKH = khachHang_BUS.TimKiemKhachHang(listKH, tenKH);
+
+            if (listTimKH.Count > 0)
+            {
+                FillDataDGV(listTimKH);
+            }
+            else
+            {
+                MessageBox.Show("Không Tìm Thấy Khách Hàng Nào!", "THÔNG BÁO", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
         }
     }
 }
