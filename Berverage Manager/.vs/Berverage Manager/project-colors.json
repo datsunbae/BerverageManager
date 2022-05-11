@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "add23c41-e0fe-4be4-9459-5810f1aed662": {
+      "ProjectGuid": "add23c41-e0fe-4be4-9459-5810f1aed662",
+      "DisplayName": "Berverage Manager",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}

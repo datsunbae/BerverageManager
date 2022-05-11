@@ -1,0 +1,113 @@
+F:\Đồ án\Đồ án cơ sở\Berverage Manager\Berverage Manager\bin\Debug\Berverage Manager.exe.config
+F:\Đồ án\Đồ án cơ sở\Berverage Manager\Berverage Manager\bin\Debug\Berverage Manager.exe
+F:\Đồ án\Đồ án cơ sở\Berverage Manager\Berverage Manager\bin\Debug\Berverage Manager.pdb
+F:\Đồ án\Đồ án cơ sở\Berverage Manager\Berverage Manager\bin\Debug\Guna.UI2.dll
+F:\Đồ án\Đồ án cơ sở\Berverage Manager\Berverage Manager\obj\Debug\Berverage Manager.csproj.AssemblyReference.cache
+F:\Đồ án\Đồ án cơ sở\Berverage Manager\Berverage Manager\obj\Debug\Berverage Manager.csproj.SuggestedBindingRedirects.cache
+F:\Đồ án\Đồ án cơ sở\Berverage Manager\Berverage Manager\obj\Debug\Berverage_Manager.GUI.frmAAA.resources
+F:\Đồ án\Đồ án cơ sở\Berverage Manager\Berverage Manager\obj\Debug\Berverage_Manager.GUI.Customer.frmAddCustomer.resources
+F:\Đồ án\Đồ án cơ sở\Berverage Manager\Berverage Manager\obj\Debug\Berverage_Manager.GUI.frmAddProduct.resources
+F:\Đồ án\Đồ án cơ sở\Berverage Manager\Berverage Manager\obj\Debug\Berverage_Manager.GUI.frmBillDetails.resources
+F:\Đồ án\Đồ án cơ sở\Berverage Manager\Berverage Manager\obj\Debug\Berverage_Manager.GUI.frmOrder.resources
+F:\Đồ án\Đồ án cơ sở\Berverage Manager\Berverage Manager\obj\Debug\Berverage_Manager.GUI.frmOrderDetails.resources
+F:\Đồ án\Đồ án cơ sở\Berverage Manager\Berverage Manager\obj\Debug\Berverage_Manager.GUI.Customer.frmUpdateCustomer.resources
+F:\Đồ án\Đồ án cơ sở\Berverage Manager\Berverage Manager\obj\Debug\Berverage_Manager.GUI.frmHome.resources
+F:\Đồ án\Đồ án cơ sở\Berverage Manager\Berverage Manager\obj\Debug\Berverage_Manager.GUI.frmUpdateProduct.resources
+F:\Đồ án\Đồ án cơ sở\Berverage Manager\Berverage Manager\obj\Debug\Berverage_Manager.GUI.ucBill.resources
+F:\Đồ án\Đồ án cơ sở\Berverage Manager\Berverage Manager\obj\Debug\Berverage_Manager.GUI.ucCustomer.resources
+F:\Đồ án\Đồ án cơ sở\Berverage Manager\Berverage Manager\obj\Debug\Berverage_Manager.GUI.frmLogin.resources
+F:\Đồ án\Đồ án cơ sở\Berverage Manager\Berverage Manager\obj\Debug\Berverage_Manager.GUI.Staff.frmAddStaff.resources
+F:\Đồ án\Đồ án cơ sở\Berverage Manager\Berverage Manager\obj\Debug\Berverage_Manager.GUI.Staff.frmUpdateStaff.resources
+F:\Đồ án\Đồ án cơ sở\Berverage Manager\Berverage Manager\obj\Debug\Berverage_Manager.GUI.ucOder.resources
+F:\Đồ án\Đồ án cơ sở\Berverage Manager\Berverage Manager\obj\Debug\Berverage_Manager.GUI.ucProduct.resources
+F:\Đồ án\Đồ án cơ sở\Berverage Manager\Berverage Manager\obj\Debug\Berverage_Manager.GUI.ucSell.resources
+F:\Đồ án\Đồ án cơ sở\Berverage Manager\Berverage Manager\obj\Debug\Berverage_Manager.GUI.ucStaff.resources
+F:\Đồ án\Đồ án cơ sở\Berverage Manager\Berverage Manager\obj\Debug\Berverage_Manager.GUI.Supplier.frmAddSupplier.resources
+F:\Đồ án\Đồ án cơ sở\Berverage Manager\Berverage Manager\obj\Debug\Berverage_Manager.GUI.Supplier.frmUpdateSupplier.resources
+F:\Đồ án\Đồ án cơ sở\Berverage Manager\Berverage Manager\obj\Debug\Berverage_Manager.GUI.ucSupplier.resources
+F:\Đồ án\Đồ án cơ sở\Berverage Manager\Berverage Manager\obj\Debug\Berverage_Manager.GUI.ucWarehouse.resources
+F:\Đồ án\Đồ án cơ sở\Berverage Manager\Berverage Manager\obj\Debug\Berverage_Manager.Properties.Resources.resources
+F:\Đồ án\Đồ án cơ sở\Berverage Manager\Berverage Manager\obj\Debug\Berverage Manager.csproj.GenerateResource.cache
+F:\Đồ án\Đồ án cơ sở\Berverage Manager\Berverage Manager\obj\Debug\Berverage Manager.csproj.CoreCompileInputs.cache
+F:\Đồ án\Đồ án cơ sở\Berverage Manager\Berverage Manager\obj\Debug\Berverage Manager.csproj.CopyComplete
+F:\Đồ án\Đồ án cơ sở\Berverage Manager\Berverage Manager\obj\Debug\Berverage Manager.exe
+F:\Đồ án\Đồ án cơ sở\Berverage Manager\Berverage Manager\obj\Debug\Berverage Manager.pdb
+F:\Đồ án\Đồ án cơ sở\Berverage Manager\Berverage Manager\obj\Debug\Berverage_Manager.GUI.ucWelcome.resources
+F:\Data Share\Đồ án\Đồ án cơ sở\Berverage Manager\Berverage Manager\bin\Debug\Berverage Manager.exe.config
+F:\Data Share\Đồ án\Đồ án cơ sở\Berverage Manager\Berverage Manager\bin\Debug\Berverage Manager.exe
+F:\Data Share\Đồ án\Đồ án cơ sở\Berverage Manager\Berverage Manager\bin\Debug\Berverage Manager.pdb
+F:\Data Share\Đồ án\Đồ án cơ sở\Berverage Manager\Berverage Manager\bin\Debug\Guna.UI2.dll
+F:\Data Share\Đồ án\Đồ án cơ sở\Berverage Manager\Berverage Manager\obj\Debug\Berverage Manager.csproj.AssemblyReference.cache
+F:\Data Share\Đồ án\Đồ án cơ sở\Berverage Manager\Berverage Manager\obj\Debug\Berverage Manager.csproj.SuggestedBindingRedirects.cache
+F:\Data Share\Đồ án\Đồ án cơ sở\Berverage Manager\Berverage Manager\obj\Debug\Berverage_Manager.GUI.Customer.frmAddCustomer.resources
+F:\Data Share\Đồ án\Đồ án cơ sở\Berverage Manager\Berverage Manager\obj\Debug\Berverage_Manager.GUI.frmAddProduct.resources
+F:\Data Share\Đồ án\Đồ án cơ sở\Berverage Manager\Berverage Manager\obj\Debug\Berverage_Manager.GUI.frmBillDetails.resources
+F:\Data Share\Đồ án\Đồ án cơ sở\Berverage Manager\Berverage Manager\obj\Debug\Berverage_Manager.GUI.frmHomeStaffSell.resources
+F:\Data Share\Đồ án\Đồ án cơ sở\Berverage Manager\Berverage Manager\obj\Debug\Berverage_Manager.GUI.frmOrder.resources
+F:\Data Share\Đồ án\Đồ án cơ sở\Berverage Manager\Berverage Manager\obj\Debug\Berverage_Manager.GUI.frmOrderDetails.resources
+F:\Data Share\Đồ án\Đồ án cơ sở\Berverage Manager\Berverage Manager\obj\Debug\Berverage_Manager.GUI.Customer.frmUpdateCustomer.resources
+F:\Data Share\Đồ án\Đồ án cơ sở\Berverage Manager\Berverage Manager\obj\Debug\Berverage_Manager.GUI.frmUpdateProduct.resources
+F:\Data Share\Đồ án\Đồ án cơ sở\Berverage Manager\Berverage Manager\obj\Debug\Berverage_Manager.GUI.ucBill.resources
+F:\Data Share\Đồ án\Đồ án cơ sở\Berverage Manager\Berverage Manager\obj\Debug\Berverage_Manager.GUI.ucCustomer.resources
+F:\Data Share\Đồ án\Đồ án cơ sở\Berverage Manager\Berverage Manager\obj\Debug\Berverage_Manager.GUI.frmLogin.resources
+F:\Data Share\Đồ án\Đồ án cơ sở\Berverage Manager\Berverage Manager\obj\Debug\Berverage_Manager.GUI.Staff.frmAddStaff.resources
+F:\Data Share\Đồ án\Đồ án cơ sở\Berverage Manager\Berverage Manager\obj\Debug\Berverage_Manager.GUI.Staff.frmUpdateStaff.resources
+F:\Data Share\Đồ án\Đồ án cơ sở\Berverage Manager\Berverage Manager\obj\Debug\Berverage_Manager.GUI.ucOder.resources
+F:\Data Share\Đồ án\Đồ án cơ sở\Berverage Manager\Berverage Manager\obj\Debug\Berverage_Manager.GUI.ucProduct.resources
+F:\Data Share\Đồ án\Đồ án cơ sở\Berverage Manager\Berverage Manager\obj\Debug\Berverage_Manager.GUI.ucSell.resources
+F:\Data Share\Đồ án\Đồ án cơ sở\Berverage Manager\Berverage Manager\obj\Debug\Berverage_Manager.GUI.ucStaff.resources
+F:\Data Share\Đồ án\Đồ án cơ sở\Berverage Manager\Berverage Manager\obj\Debug\Berverage_Manager.GUI.Supplier.frmAddSupplier.resources
+F:\Data Share\Đồ án\Đồ án cơ sở\Berverage Manager\Berverage Manager\obj\Debug\Berverage_Manager.GUI.Supplier.frmUpdateSupplier.resources
+F:\Data Share\Đồ án\Đồ án cơ sở\Berverage Manager\Berverage Manager\obj\Debug\Berverage_Manager.GUI.ucSupplier.resources
+F:\Data Share\Đồ án\Đồ án cơ sở\Berverage Manager\Berverage Manager\obj\Debug\Berverage_Manager.GUI.ucWarehouse.resources
+F:\Data Share\Đồ án\Đồ án cơ sở\Berverage Manager\Berverage Manager\obj\Debug\Berverage_Manager.GUI.ucWelcome.resources
+F:\Data Share\Đồ án\Đồ án cơ sở\Berverage Manager\Berverage Manager\obj\Debug\Berverage_Manager.Properties.Resources.resources
+F:\Data Share\Đồ án\Đồ án cơ sở\Berverage Manager\Berverage Manager\obj\Debug\Berverage Manager.csproj.GenerateResource.cache
+F:\Data Share\Đồ án\Đồ án cơ sở\Berverage Manager\Berverage Manager\obj\Debug\Berverage Manager.csproj.CoreCompileInputs.cache
+F:\Data Share\Đồ án\Đồ án cơ sở\Berverage Manager\Berverage Manager\obj\Debug\Berverage Manager.csproj.CopyComplete
+F:\Data Share\Đồ án\Đồ án cơ sở\Berverage Manager\Berverage Manager\obj\Debug\Berverage Manager.exe
+F:\Data Share\Đồ án\Đồ án cơ sở\Berverage Manager\Berverage Manager\obj\Debug\Berverage Manager.pdb
+F:\Data Share\Đồ án\Đồ án cơ sở\Berverage Manager\Berverage Manager\obj\Debug\Berverage_Manager.GUI.frmHomeStaff1.resources
+F:\Data Share\Đồ án\Đồ án cơ sở\Berverage Manager\Berverage Manager\obj\Debug\Berverage_Manager.GUI.frmHomeAdmin.resources
+F:\Data Share\Đồ án\Đồ án cơ sở\Berverage Manager\Berverage Manager\obj\Debug\Berverage_Manager.GUI.ucBillStaff.resources
+D:\DoAnCoSo\Berverage Manager_DACS\Berverage Manager\Berverage Manager\bin\Debug\Berverage Manager.exe.config
+D:\DoAnCoSo\Berverage Manager_DACS\Berverage Manager\Berverage Manager\bin\Debug\Berverage Manager.exe
+D:\DoAnCoSo\Berverage Manager_DACS\Berverage Manager\Berverage Manager\bin\Debug\Berverage Manager.pdb
+D:\DoAnCoSo\Berverage Manager_DACS\Berverage Manager\Berverage Manager\bin\Debug\Guna.UI2.dll
+D:\DoAnCoSo\Berverage Manager_DACS\Berverage Manager\Berverage Manager\obj\Debug\Berverage Manager.csproj.SuggestedBindingRedirects.cache
+D:\DoAnCoSo\Berverage Manager_DACS\Berverage Manager\Berverage Manager\obj\Debug\Berverage_Manager.GUI.Customer.frmAddCustomer.resources
+D:\DoAnCoSo\Berverage Manager_DACS\Berverage Manager\Berverage Manager\obj\Debug\Berverage_Manager.GUI.frmAddProduct.resources
+D:\DoAnCoSo\Berverage Manager_DACS\Berverage Manager\Berverage Manager\obj\Debug\Berverage_Manager.GUI.frmBillDetails.resources
+D:\DoAnCoSo\Berverage Manager_DACS\Berverage Manager\Berverage Manager\obj\Debug\Berverage_Manager.GUI.frmHomeAdmin.resources
+D:\DoAnCoSo\Berverage Manager_DACS\Berverage Manager\Berverage Manager\obj\Debug\Berverage_Manager.GUI.frmHomeStaffSell.resources
+D:\DoAnCoSo\Berverage Manager_DACS\Berverage Manager\Berverage Manager\obj\Debug\Berverage_Manager.GUI.frmOrder.resources
+D:\DoAnCoSo\Berverage Manager_DACS\Berverage Manager\Berverage Manager\obj\Debug\Berverage_Manager.GUI.frmOrderDetails.resources
+D:\DoAnCoSo\Berverage Manager_DACS\Berverage Manager\Berverage Manager\obj\Debug\Berverage_Manager.GUI.Customer.frmUpdateCustomer.resources
+D:\DoAnCoSo\Berverage Manager_DACS\Berverage Manager\Berverage Manager\obj\Debug\Berverage_Manager.GUI.frmUpdateProduct.resources
+D:\DoAnCoSo\Berverage Manager_DACS\Berverage Manager\Berverage Manager\obj\Debug\Berverage_Manager.GUI.frmHomeStaff1.resources
+D:\DoAnCoSo\Berverage Manager_DACS\Berverage Manager\Berverage Manager\obj\Debug\Berverage_Manager.GUI.ucBill.resources
+D:\DoAnCoSo\Berverage Manager_DACS\Berverage Manager\Berverage Manager\obj\Debug\Berverage_Manager.GUI.ucBillStaff.resources
+D:\DoAnCoSo\Berverage Manager_DACS\Berverage Manager\Berverage Manager\obj\Debug\Berverage_Manager.GUI.ucCustomer.resources
+D:\DoAnCoSo\Berverage Manager_DACS\Berverage Manager\Berverage Manager\obj\Debug\Berverage_Manager.GUI.frmLogin.resources
+D:\DoAnCoSo\Berverage Manager_DACS\Berverage Manager\Berverage Manager\obj\Debug\Berverage_Manager.GUI.Staff.frmAddStaff.resources
+D:\DoAnCoSo\Berverage Manager_DACS\Berverage Manager\Berverage Manager\obj\Debug\Berverage_Manager.GUI.Staff.frmUpdateStaff.resources
+D:\DoAnCoSo\Berverage Manager_DACS\Berverage Manager\Berverage Manager\obj\Debug\Berverage_Manager.GUI.ucOder.resources
+D:\DoAnCoSo\Berverage Manager_DACS\Berverage Manager\Berverage Manager\obj\Debug\Berverage_Manager.GUI.ucProduct.resources
+D:\DoAnCoSo\Berverage Manager_DACS\Berverage Manager\Berverage Manager\obj\Debug\Berverage_Manager.GUI.ucSell.resources
+D:\DoAnCoSo\Berverage Manager_DACS\Berverage Manager\Berverage Manager\obj\Debug\Berverage_Manager.GUI.ucStaff.resources
+D:\DoAnCoSo\Berverage Manager_DACS\Berverage Manager\Berverage Manager\obj\Debug\Berverage_Manager.GUI.Supplier.frmAddSupplier.resources
+D:\DoAnCoSo\Berverage Manager_DACS\Berverage Manager\Berverage Manager\obj\Debug\Berverage_Manager.GUI.Supplier.frmUpdateSupplier.resources
+D:\DoAnCoSo\Berverage Manager_DACS\Berverage Manager\Berverage Manager\obj\Debug\Berverage_Manager.GUI.ucSupplier.resources
+D:\DoAnCoSo\Berverage Manager_DACS\Berverage Manager\Berverage Manager\obj\Debug\Berverage_Manager.GUI.ucWarehouse.resources
+D:\DoAnCoSo\Berverage Manager_DACS\Berverage Manager\Berverage Manager\obj\Debug\Berverage_Manager.GUI.ucWelcome.resources
+D:\DoAnCoSo\Berverage Manager_DACS\Berverage Manager\Berverage Manager\obj\Debug\Berverage_Manager.Properties.Resources.resources
+D:\DoAnCoSo\Berverage Manager_DACS\Berverage Manager\Berverage Manager\obj\Debug\Berverage Manager.csproj.GenerateResource.cache
+D:\DoAnCoSo\Berverage Manager_DACS\Berverage Manager\Berverage Manager\obj\Debug\Berverage Manager.csproj.CoreCompileInputs.cache
+D:\DoAnCoSo\Berverage Manager_DACS\Berverage Manager\Berverage Manager\obj\Debug\Berverage Manager.csproj.CopyComplete
+D:\DoAnCoSo\Berverage Manager_DACS\Berverage Manager\Berverage Manager\obj\Debug\Berverage Manager.exe
+D:\DoAnCoSo\Berverage Manager_DACS\Berverage Manager\Berverage Manager\obj\Debug\Berverage Manager.pdb
+D:\DoAnCoSo\Berverage Manager_DACS\Berverage Manager\Berverage Manager\bin\Debug\EntityFramework.dll
+D:\DoAnCoSo\Berverage Manager_DACS\Berverage Manager\Berverage Manager\bin\Debug\EntityFramework.SqlServer.dll
+D:\DoAnCoSo\Berverage Manager_DACS\Berverage Manager\Berverage Manager\bin\Debug\EntityFramework.xml
+D:\DoAnCoSo\Berverage Manager_DACS\Berverage Manager\Berverage Manager\bin\Debug\EntityFramework.SqlServer.xml
+D:\DoAnCoSo\Berverage Manager_DACS\Berverage Manager\Berverage Manager\obj\Debug\Berverage Manager.csproj.AssemblyReference.cache
