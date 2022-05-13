@@ -29,59 +29,57 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.guna2TextBox4 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtQuyDoi = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2HtmlLabel11 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel10 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel7 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel8 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel9 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2TextBox2 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2ComboBox1 = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.lb_QuyDoi = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.txtGiaBanLe_DVTP = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtGiaBanSi_DVTP = new Guna.UI2.WinForms.Guna2TextBox();
+            this.cbDVTPhu = new Guna.UI2.WinForms.Guna2ComboBox();
             this.DragControl = new Guna.UI2.WinForms.Guna2DragControl(this.components);
-            this.guna2TextBox3 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.cbDonViSP = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.txtGiaBanLe_DVTC = new Guna.UI2.WinForms.Guna2TextBox();
+            this.cbDVTChinh = new Guna.UI2.WinForms.Guna2ComboBox();
             this.Elipse = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2HtmlLabel6 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel5 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.btnThemSP = new Guna.UI2.WinForms.Guna2Button();
-            this.txtGiaBanSP = new Guna.UI2.WinForms.Guna2TextBox();
-            this.txtGiaNhapSP = new Guna.UI2.WinForms.Guna2TextBox();
+            this.btnSuaSP = new Guna.UI2.WinForms.Guna2Button();
+            this.txtGiaBanSi_DVTC = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtGiaNhap_DVTC = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtTenSP = new Guna.UI2.WinForms.Guna2TextBox();
-            this.txtMaSP = new Guna.UI2.WinForms.Guna2TextBox();
             this.SuspendLayout();
             // 
-            // guna2TextBox4
+            // txtQuyDoi
             // 
-            this.guna2TextBox4.BorderRadius = 5;
-            this.guna2TextBox4.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox4.DefaultText = "";
-            this.guna2TextBox4.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox4.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox4.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox4.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox4.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox4.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2TextBox4.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox4.Location = new System.Drawing.Point(133, 403);
-            this.guna2TextBox4.Name = "guna2TextBox4";
-            this.guna2TextBox4.PasswordChar = '\0';
-            this.guna2TextBox4.PlaceholderText = "";
-            this.guna2TextBox4.SelectedText = "";
-            this.guna2TextBox4.Size = new System.Drawing.Size(101, 36);
-            this.guna2TextBox4.TabIndex = 187;
+            this.txtQuyDoi.BorderRadius = 5;
+            this.txtQuyDoi.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtQuyDoi.DefaultText = "";
+            this.txtQuyDoi.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtQuyDoi.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtQuyDoi.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtQuyDoi.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtQuyDoi.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtQuyDoi.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtQuyDoi.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtQuyDoi.Location = new System.Drawing.Point(133, 377);
+            this.txtQuyDoi.Name = "txtQuyDoi";
+            this.txtQuyDoi.PasswordChar = '\0';
+            this.txtQuyDoi.PlaceholderText = "";
+            this.txtQuyDoi.SelectedText = "";
+            this.txtQuyDoi.Size = new System.Drawing.Size(101, 36);
+            this.txtQuyDoi.TabIndex = 187;
             // 
             // guna2HtmlLabel11
             // 
             this.guna2HtmlLabel11.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel11.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(146)))), ((int)(((byte)(228)))));
-            this.guna2HtmlLabel11.Location = new System.Drawing.Point(72, 336);
+            this.guna2HtmlLabel11.Location = new System.Drawing.Point(72, 310);
             this.guna2HtmlLabel11.Name = "guna2HtmlLabel11";
             this.guna2HtmlLabel11.Size = new System.Drawing.Size(55, 17);
             this.guna2HtmlLabel11.TabIndex = 186;
@@ -93,7 +91,7 @@
             this.guna2HtmlLabel10.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel10.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(146)))), ((int)(((byte)(228)))));
-            this.guna2HtmlLabel10.Location = new System.Drawing.Point(33, 378);
+            this.guna2HtmlLabel10.Location = new System.Drawing.Point(33, 352);
             this.guna2HtmlLabel10.Name = "guna2HtmlLabel10";
             this.guna2HtmlLabel10.Size = new System.Drawing.Size(117, 19);
             this.guna2HtmlLabel10.TabIndex = 184;
@@ -105,7 +103,7 @@
             this.guna2HtmlLabel7.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel7.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(146)))), ((int)(((byte)(228)))));
-            this.guna2HtmlLabel7.Location = new System.Drawing.Point(70, 460);
+            this.guna2HtmlLabel7.Location = new System.Drawing.Point(70, 434);
             this.guna2HtmlLabel7.Name = "guna2HtmlLabel7";
             this.guna2HtmlLabel7.Size = new System.Drawing.Size(54, 17);
             this.guna2HtmlLabel7.TabIndex = 181;
@@ -117,121 +115,123 @@
             this.guna2HtmlLabel8.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel8.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(146)))), ((int)(((byte)(228)))));
-            this.guna2HtmlLabel8.Location = new System.Drawing.Point(69, 505);
+            this.guna2HtmlLabel8.Location = new System.Drawing.Point(69, 479);
             this.guna2HtmlLabel8.Name = "guna2HtmlLabel8";
             this.guna2HtmlLabel8.Size = new System.Drawing.Size(55, 17);
             this.guna2HtmlLabel8.TabIndex = 182;
             this.guna2HtmlLabel8.TabStop = false;
             this.guna2HtmlLabel8.Text = "Giá bán lẻ";
             // 
-            // guna2HtmlLabel9
+            // lb_QuyDoi
             // 
-            this.guna2HtmlLabel9.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel9.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(146)))), ((int)(((byte)(228)))));
-            this.guna2HtmlLabel9.Location = new System.Drawing.Point(70, 412);
-            this.guna2HtmlLabel9.Name = "guna2HtmlLabel9";
-            this.guna2HtmlLabel9.Size = new System.Drawing.Size(57, 17);
-            this.guna2HtmlLabel9.TabIndex = 183;
-            this.guna2HtmlLabel9.TabStop = false;
-            this.guna2HtmlLabel9.Text = "THÙNG =";
+            this.lb_QuyDoi.BackColor = System.Drawing.Color.Transparent;
+            this.lb_QuyDoi.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_QuyDoi.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(146)))), ((int)(((byte)(228)))));
+            this.lb_QuyDoi.Location = new System.Drawing.Point(64, 386);
+            this.lb_QuyDoi.Name = "lb_QuyDoi";
+            this.lb_QuyDoi.Size = new System.Drawing.Size(67, 17);
+            this.lb_QuyDoi.TabIndex = 183;
+            this.lb_QuyDoi.TabStop = false;
+            this.lb_QuyDoi.Text = "1 THÙNG =";
             // 
-            // guna2TextBox1
+            // txtGiaBanLe_DVTP
             // 
-            this.guna2TextBox1.BorderRadius = 5;
-            this.guna2TextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox1.DefaultText = "";
-            this.guna2TextBox1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.Location = new System.Drawing.Point(133, 497);
-            this.guna2TextBox1.Name = "guna2TextBox1";
-            this.guna2TextBox1.PasswordChar = '\0';
-            this.guna2TextBox1.PlaceholderText = "";
-            this.guna2TextBox1.SelectedText = "";
-            this.guna2TextBox1.Size = new System.Drawing.Size(200, 36);
-            this.guna2TextBox1.TabIndex = 180;
+            this.txtGiaBanLe_DVTP.BorderRadius = 5;
+            this.txtGiaBanLe_DVTP.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtGiaBanLe_DVTP.DefaultText = "";
+            this.txtGiaBanLe_DVTP.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtGiaBanLe_DVTP.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtGiaBanLe_DVTP.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtGiaBanLe_DVTP.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtGiaBanLe_DVTP.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtGiaBanLe_DVTP.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtGiaBanLe_DVTP.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtGiaBanLe_DVTP.Location = new System.Drawing.Point(133, 471);
+            this.txtGiaBanLe_DVTP.Name = "txtGiaBanLe_DVTP";
+            this.txtGiaBanLe_DVTP.PasswordChar = '\0';
+            this.txtGiaBanLe_DVTP.PlaceholderText = "";
+            this.txtGiaBanLe_DVTP.SelectedText = "";
+            this.txtGiaBanLe_DVTP.Size = new System.Drawing.Size(200, 36);
+            this.txtGiaBanLe_DVTP.TabIndex = 180;
             // 
-            // guna2TextBox2
+            // txtGiaBanSi_DVTP
             // 
-            this.guna2TextBox2.BorderRadius = 5;
-            this.guna2TextBox2.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox2.DefaultText = "";
-            this.guna2TextBox2.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox2.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox2.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox2.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2TextBox2.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox2.Location = new System.Drawing.Point(133, 450);
-            this.guna2TextBox2.Name = "guna2TextBox2";
-            this.guna2TextBox2.PasswordChar = '\0';
-            this.guna2TextBox2.PlaceholderText = "";
-            this.guna2TextBox2.SelectedText = "";
-            this.guna2TextBox2.Size = new System.Drawing.Size(200, 36);
-            this.guna2TextBox2.TabIndex = 179;
+            this.txtGiaBanSi_DVTP.BorderRadius = 5;
+            this.txtGiaBanSi_DVTP.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtGiaBanSi_DVTP.DefaultText = "";
+            this.txtGiaBanSi_DVTP.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtGiaBanSi_DVTP.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtGiaBanSi_DVTP.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtGiaBanSi_DVTP.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtGiaBanSi_DVTP.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtGiaBanSi_DVTP.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtGiaBanSi_DVTP.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtGiaBanSi_DVTP.Location = new System.Drawing.Point(133, 424);
+            this.txtGiaBanSi_DVTP.Name = "txtGiaBanSi_DVTP";
+            this.txtGiaBanSi_DVTP.PasswordChar = '\0';
+            this.txtGiaBanSi_DVTP.PlaceholderText = "";
+            this.txtGiaBanSi_DVTP.SelectedText = "";
+            this.txtGiaBanSi_DVTP.Size = new System.Drawing.Size(200, 36);
+            this.txtGiaBanSi_DVTP.TabIndex = 179;
             // 
-            // guna2ComboBox1
+            // cbDVTPhu
             // 
-            this.guna2ComboBox1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ComboBox1.BorderRadius = 5;
-            this.guna2ComboBox1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.guna2ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.guna2ComboBox1.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ComboBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ComboBox1.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.guna2ComboBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.guna2ComboBox1.ItemHeight = 30;
-            this.guna2ComboBox1.Location = new System.Drawing.Point(240, 403);
-            this.guna2ComboBox1.Name = "guna2ComboBox1";
-            this.guna2ComboBox1.Size = new System.Drawing.Size(93, 36);
-            this.guna2ComboBox1.TabIndex = 178;
+            this.cbDVTPhu.BackColor = System.Drawing.Color.Transparent;
+            this.cbDVTPhu.BorderRadius = 5;
+            this.cbDVTPhu.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cbDVTPhu.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbDVTPhu.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cbDVTPhu.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cbDVTPhu.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.cbDVTPhu.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.cbDVTPhu.ItemHeight = 30;
+            this.cbDVTPhu.Location = new System.Drawing.Point(240, 377);
+            this.cbDVTPhu.Name = "cbDVTPhu";
+            this.cbDVTPhu.Size = new System.Drawing.Size(93, 36);
+            this.cbDVTPhu.TabIndex = 178;
             // 
             // DragControl
             // 
+            this.DragControl.DockIndicatorTransparencyValue = 0.6D;
             this.DragControl.TargetControl = this;
             this.DragControl.UseTransparentDrag = true;
             // 
-            // guna2TextBox3
+            // txtGiaBanLe_DVTC
             // 
-            this.guna2TextBox3.BorderRadius = 5;
-            this.guna2TextBox3.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox3.DefaultText = "";
-            this.guna2TextBox3.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox3.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox3.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox3.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox3.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox3.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2TextBox3.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox3.Location = new System.Drawing.Point(133, 327);
-            this.guna2TextBox3.Name = "guna2TextBox3";
-            this.guna2TextBox3.PasswordChar = '\0';
-            this.guna2TextBox3.PlaceholderText = "";
-            this.guna2TextBox3.SelectedText = "";
-            this.guna2TextBox3.Size = new System.Drawing.Size(200, 36);
-            this.guna2TextBox3.TabIndex = 185;
+            this.txtGiaBanLe_DVTC.BorderRadius = 5;
+            this.txtGiaBanLe_DVTC.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtGiaBanLe_DVTC.DefaultText = "";
+            this.txtGiaBanLe_DVTC.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtGiaBanLe_DVTC.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtGiaBanLe_DVTC.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtGiaBanLe_DVTC.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtGiaBanLe_DVTC.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtGiaBanLe_DVTC.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtGiaBanLe_DVTC.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtGiaBanLe_DVTC.Location = new System.Drawing.Point(133, 301);
+            this.txtGiaBanLe_DVTC.Name = "txtGiaBanLe_DVTC";
+            this.txtGiaBanLe_DVTC.PasswordChar = '\0';
+            this.txtGiaBanLe_DVTC.PlaceholderText = "";
+            this.txtGiaBanLe_DVTC.SelectedText = "";
+            this.txtGiaBanLe_DVTC.Size = new System.Drawing.Size(200, 36);
+            this.txtGiaBanLe_DVTC.TabIndex = 185;
             // 
-            // cbDonViSP
+            // cbDVTChinh
             // 
-            this.cbDonViSP.BackColor = System.Drawing.Color.Transparent;
-            this.cbDonViSP.BorderRadius = 5;
-            this.cbDonViSP.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.cbDonViSP.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbDonViSP.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cbDonViSP.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cbDonViSP.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.cbDonViSP.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.cbDonViSP.ItemHeight = 30;
-            this.cbDonViSP.Location = new System.Drawing.Point(133, 186);
-            this.cbDonViSP.Name = "cbDonViSP";
-            this.cbDonViSP.Size = new System.Drawing.Size(200, 36);
-            this.cbDonViSP.TabIndex = 167;
+            this.cbDVTChinh.BackColor = System.Drawing.Color.Transparent;
+            this.cbDVTChinh.BorderRadius = 5;
+            this.cbDVTChinh.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cbDVTChinh.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbDVTChinh.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cbDVTChinh.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cbDVTChinh.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.cbDVTChinh.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.cbDVTChinh.ItemHeight = 30;
+            this.cbDVTChinh.Location = new System.Drawing.Point(133, 160);
+            this.cbDVTChinh.Name = "cbDVTChinh";
+            this.cbDVTChinh.Size = new System.Drawing.Size(200, 36);
+            this.cbDVTChinh.TabIndex = 167;
+            this.cbDVTChinh.SelectedIndexChanged += new System.EventHandler(this.cbDVTChinh_SelectedIndexChanged);
             // 
             // Elipse
             // 
@@ -254,7 +254,7 @@
             this.guna2HtmlLabel6.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel6.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(146)))), ((int)(((byte)(228)))));
-            this.guna2HtmlLabel6.Location = new System.Drawing.Point(77, 243);
+            this.guna2HtmlLabel6.Location = new System.Drawing.Point(77, 217);
             this.guna2HtmlLabel6.Name = "guna2HtmlLabel6";
             this.guna2HtmlLabel6.Size = new System.Drawing.Size(50, 17);
             this.guna2HtmlLabel6.TabIndex = 171;
@@ -266,7 +266,7 @@
             this.guna2HtmlLabel5.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(146)))), ((int)(((byte)(228)))));
-            this.guna2HtmlLabel5.Location = new System.Drawing.Point(73, 289);
+            this.guna2HtmlLabel5.Location = new System.Drawing.Point(73, 263);
             this.guna2HtmlLabel5.Name = "guna2HtmlLabel5";
             this.guna2HtmlLabel5.Size = new System.Drawing.Size(54, 17);
             this.guna2HtmlLabel5.TabIndex = 172;
@@ -278,7 +278,7 @@
             this.guna2HtmlLabel4.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(146)))), ((int)(((byte)(228)))));
-            this.guna2HtmlLabel4.Location = new System.Drawing.Point(49, 196);
+            this.guna2HtmlLabel4.Location = new System.Drawing.Point(49, 170);
             this.guna2HtmlLabel4.Name = "guna2HtmlLabel4";
             this.guna2HtmlLabel4.Size = new System.Drawing.Size(78, 17);
             this.guna2HtmlLabel4.TabIndex = 173;
@@ -290,24 +290,12 @@
             this.guna2HtmlLabel3.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(146)))), ((int)(((byte)(228)))));
-            this.guna2HtmlLabel3.Location = new System.Drawing.Point(50, 149);
+            this.guna2HtmlLabel3.Location = new System.Drawing.Point(50, 123);
             this.guna2HtmlLabel3.Name = "guna2HtmlLabel3";
             this.guna2HtmlLabel3.Size = new System.Drawing.Size(77, 17);
             this.guna2HtmlLabel3.TabIndex = 174;
             this.guna2HtmlLabel3.TabStop = false;
             this.guna2HtmlLabel3.Text = "Tên sản phẩm";
-            // 
-            // guna2HtmlLabel2
-            // 
-            this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(146)))), ((int)(((byte)(228)))));
-            this.guna2HtmlLabel2.Location = new System.Drawing.Point(52, 102);
-            this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
-            this.guna2HtmlLabel2.Size = new System.Drawing.Size(75, 17);
-            this.guna2HtmlLabel2.TabIndex = 175;
-            this.guna2HtmlLabel2.TabStop = false;
-            this.guna2HtmlLabel2.Text = "Mã sản phẩm";
             // 
             // guna2HtmlLabel1
             // 
@@ -321,62 +309,63 @@
             this.guna2HtmlLabel1.TabStop = false;
             this.guna2HtmlLabel1.Text = "SỬA SẢN PHẨM";
             // 
-            // btnThemSP
+            // btnSuaSP
             // 
-            this.btnThemSP.BorderRadius = 5;
-            this.btnThemSP.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnThemSP.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnThemSP.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnThemSP.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnThemSP.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(146)))), ((int)(((byte)(228)))));
-            this.btnThemSP.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnThemSP.ForeColor = System.Drawing.Color.White;
-            this.btnThemSP.Location = new System.Drawing.Point(274, 564);
-            this.btnThemSP.Name = "btnThemSP";
-            this.btnThemSP.Size = new System.Drawing.Size(113, 45);
-            this.btnThemSP.TabIndex = 170;
-            this.btnThemSP.TabStop = false;
-            this.btnThemSP.Text = "Thêm";
+            this.btnSuaSP.BorderRadius = 5;
+            this.btnSuaSP.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnSuaSP.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnSuaSP.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnSuaSP.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnSuaSP.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(146)))), ((int)(((byte)(228)))));
+            this.btnSuaSP.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSuaSP.ForeColor = System.Drawing.Color.White;
+            this.btnSuaSP.Location = new System.Drawing.Point(274, 564);
+            this.btnSuaSP.Name = "btnSuaSP";
+            this.btnSuaSP.Size = new System.Drawing.Size(113, 45);
+            this.btnSuaSP.TabIndex = 170;
+            this.btnSuaSP.TabStop = false;
+            this.btnSuaSP.Text = "Sửa";
+            this.btnSuaSP.Click += new System.EventHandler(this.btnSuaSP_Click);
             // 
-            // txtGiaBanSP
+            // txtGiaBanSi_DVTC
             // 
-            this.txtGiaBanSP.BorderRadius = 5;
-            this.txtGiaBanSP.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtGiaBanSP.DefaultText = "";
-            this.txtGiaBanSP.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtGiaBanSP.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtGiaBanSP.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtGiaBanSP.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtGiaBanSP.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtGiaBanSP.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtGiaBanSP.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtGiaBanSP.Location = new System.Drawing.Point(133, 280);
-            this.txtGiaBanSP.Name = "txtGiaBanSP";
-            this.txtGiaBanSP.PasswordChar = '\0';
-            this.txtGiaBanSP.PlaceholderText = "";
-            this.txtGiaBanSP.SelectedText = "";
-            this.txtGiaBanSP.Size = new System.Drawing.Size(200, 36);
-            this.txtGiaBanSP.TabIndex = 169;
+            this.txtGiaBanSi_DVTC.BorderRadius = 5;
+            this.txtGiaBanSi_DVTC.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtGiaBanSi_DVTC.DefaultText = "";
+            this.txtGiaBanSi_DVTC.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtGiaBanSi_DVTC.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtGiaBanSi_DVTC.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtGiaBanSi_DVTC.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtGiaBanSi_DVTC.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtGiaBanSi_DVTC.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtGiaBanSi_DVTC.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtGiaBanSi_DVTC.Location = new System.Drawing.Point(133, 254);
+            this.txtGiaBanSi_DVTC.Name = "txtGiaBanSi_DVTC";
+            this.txtGiaBanSi_DVTC.PasswordChar = '\0';
+            this.txtGiaBanSi_DVTC.PlaceholderText = "";
+            this.txtGiaBanSi_DVTC.SelectedText = "";
+            this.txtGiaBanSi_DVTC.Size = new System.Drawing.Size(200, 36);
+            this.txtGiaBanSi_DVTC.TabIndex = 169;
             // 
-            // txtGiaNhapSP
+            // txtGiaNhap_DVTC
             // 
-            this.txtGiaNhapSP.BorderRadius = 5;
-            this.txtGiaNhapSP.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtGiaNhapSP.DefaultText = "";
-            this.txtGiaNhapSP.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtGiaNhapSP.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtGiaNhapSP.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtGiaNhapSP.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtGiaNhapSP.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtGiaNhapSP.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtGiaNhapSP.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtGiaNhapSP.Location = new System.Drawing.Point(133, 233);
-            this.txtGiaNhapSP.Name = "txtGiaNhapSP";
-            this.txtGiaNhapSP.PasswordChar = '\0';
-            this.txtGiaNhapSP.PlaceholderText = "";
-            this.txtGiaNhapSP.SelectedText = "";
-            this.txtGiaNhapSP.Size = new System.Drawing.Size(200, 36);
-            this.txtGiaNhapSP.TabIndex = 168;
+            this.txtGiaNhap_DVTC.BorderRadius = 5;
+            this.txtGiaNhap_DVTC.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtGiaNhap_DVTC.DefaultText = "";
+            this.txtGiaNhap_DVTC.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtGiaNhap_DVTC.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtGiaNhap_DVTC.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtGiaNhap_DVTC.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtGiaNhap_DVTC.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtGiaNhap_DVTC.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtGiaNhap_DVTC.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtGiaNhap_DVTC.Location = new System.Drawing.Point(133, 207);
+            this.txtGiaNhap_DVTC.Name = "txtGiaNhap_DVTC";
+            this.txtGiaNhap_DVTC.PasswordChar = '\0';
+            this.txtGiaNhap_DVTC.PlaceholderText = "";
+            this.txtGiaNhap_DVTC.SelectedText = "";
+            this.txtGiaNhap_DVTC.Size = new System.Drawing.Size(200, 36);
+            this.txtGiaNhap_DVTC.TabIndex = 168;
             // 
             // txtTenSP
             // 
@@ -390,7 +379,7 @@
             this.txtTenSP.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtTenSP.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtTenSP.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtTenSP.Location = new System.Drawing.Point(133, 139);
+            this.txtTenSP.Location = new System.Drawing.Point(133, 113);
             this.txtTenSP.Name = "txtTenSP";
             this.txtTenSP.PasswordChar = '\0';
             this.txtTenSP.PlaceholderText = "";
@@ -398,60 +387,38 @@
             this.txtTenSP.Size = new System.Drawing.Size(200, 36);
             this.txtTenSP.TabIndex = 166;
             // 
-            // txtMaSP
-            // 
-            this.txtMaSP.BorderRadius = 5;
-            this.txtMaSP.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtMaSP.DefaultText = "";
-            this.txtMaSP.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtMaSP.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtMaSP.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtMaSP.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtMaSP.Enabled = false;
-            this.txtMaSP.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtMaSP.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtMaSP.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtMaSP.Location = new System.Drawing.Point(133, 92);
-            this.txtMaSP.Name = "txtMaSP";
-            this.txtMaSP.PasswordChar = '\0';
-            this.txtMaSP.PlaceholderText = "";
-            this.txtMaSP.SelectedText = "";
-            this.txtMaSP.Size = new System.Drawing.Size(200, 36);
-            this.txtMaSP.TabIndex = 165;
-            // 
             // frmUpdateProduct
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
             this.ClientSize = new System.Drawing.Size(398, 621);
-            this.Controls.Add(this.guna2TextBox4);
+            this.Controls.Add(this.txtQuyDoi);
             this.Controls.Add(this.guna2HtmlLabel11);
             this.Controls.Add(this.guna2HtmlLabel10);
             this.Controls.Add(this.guna2HtmlLabel7);
             this.Controls.Add(this.guna2HtmlLabel8);
-            this.Controls.Add(this.guna2HtmlLabel9);
-            this.Controls.Add(this.guna2TextBox1);
-            this.Controls.Add(this.guna2TextBox2);
-            this.Controls.Add(this.guna2ComboBox1);
-            this.Controls.Add(this.guna2TextBox3);
-            this.Controls.Add(this.cbDonViSP);
+            this.Controls.Add(this.lb_QuyDoi);
+            this.Controls.Add(this.txtGiaBanLe_DVTP);
+            this.Controls.Add(this.txtGiaBanSi_DVTP);
+            this.Controls.Add(this.cbDVTPhu);
+            this.Controls.Add(this.txtGiaBanLe_DVTC);
+            this.Controls.Add(this.cbDVTChinh);
             this.Controls.Add(this.guna2ControlBox1);
             this.Controls.Add(this.guna2HtmlLabel6);
             this.Controls.Add(this.guna2HtmlLabel5);
             this.Controls.Add(this.guna2HtmlLabel4);
             this.Controls.Add(this.guna2HtmlLabel3);
-            this.Controls.Add(this.guna2HtmlLabel2);
             this.Controls.Add(this.guna2HtmlLabel1);
-            this.Controls.Add(this.btnThemSP);
-            this.Controls.Add(this.txtGiaBanSP);
-            this.Controls.Add(this.txtGiaNhapSP);
+            this.Controls.Add(this.btnSuaSP);
+            this.Controls.Add(this.txtGiaBanSi_DVTC);
+            this.Controls.Add(this.txtGiaNhap_DVTC);
             this.Controls.Add(this.txtTenSP);
-            this.Controls.Add(this.txtMaSP);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmUpdateProduct";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmUpdateProduct";
+            this.Load += new System.EventHandler(this.frmUpdateProduct_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -459,30 +426,28 @@
 
         #endregion
 
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox4;
+        private Guna.UI2.WinForms.Guna2TextBox txtQuyDoi;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel11;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel10;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel7;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel8;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel9;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox2;
-        private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox1;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lb_QuyDoi;
+        private Guna.UI2.WinForms.Guna2TextBox txtGiaBanLe_DVTP;
+        private Guna.UI2.WinForms.Guna2TextBox txtGiaBanSi_DVTP;
+        private Guna.UI2.WinForms.Guna2ComboBox cbDVTPhu;
         private Guna.UI2.WinForms.Guna2DragControl DragControl;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox3;
-        private Guna.UI2.WinForms.Guna2ComboBox cbDonViSP;
+        private Guna.UI2.WinForms.Guna2TextBox txtGiaBanLe_DVTC;
+        private Guna.UI2.WinForms.Guna2ComboBox cbDVTChinh;
         private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox1;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel6;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel5;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel4;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel3;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
-        private Guna.UI2.WinForms.Guna2Button btnThemSP;
-        private Guna.UI2.WinForms.Guna2TextBox txtGiaBanSP;
-        private Guna.UI2.WinForms.Guna2TextBox txtGiaNhapSP;
+        private Guna.UI2.WinForms.Guna2Button btnSuaSP;
+        private Guna.UI2.WinForms.Guna2TextBox txtGiaBanSi_DVTC;
+        private Guna.UI2.WinForms.Guna2TextBox txtGiaNhap_DVTC;
         private Guna.UI2.WinForms.Guna2TextBox txtTenSP;
-        private Guna.UI2.WinForms.Guna2TextBox txtMaSP;
         private Guna.UI2.WinForms.Guna2Elipse Elipse;
     }
 }

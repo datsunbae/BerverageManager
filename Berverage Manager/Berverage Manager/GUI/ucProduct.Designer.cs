@@ -32,12 +32,6 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.btnTimKiemCbDV = new Guna.UI2.WinForms.Guna2CircleButton();
-            this.clDonVi = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.clGiaBan = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.clGiaNhap = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.clTenSP = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.clMaSP = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnTimSP = new Guna.UI2.WinForms.Guna2CircleButton();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             this.btnAddProduct = new Guna.UI2.WinForms.Guna2Button();
@@ -45,56 +39,24 @@
             this.btnUpdateProduct = new Guna.UI2.WinForms.Guna2Button();
             this.label1 = new System.Windows.Forms.Label();
             this.dgvSanPham = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.clMaSP = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clTenSP = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clDVTChinh = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clGiaNhapDVTC = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clGiaBanSiDVTC = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clGiaBanLeDVTC = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clDVTP = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clGiaBanSiDVTP = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clGiaBanLe = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clQuyDoi = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.txtTimSP = new Guna.UI2.WinForms.Guna2TextBox();
-            this.cbxTimSP = new Guna.UI2.WinForms.Guna2ComboBox();
             this.guna2Panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvSanPham)).BeginInit();
             this.guna2Panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // btnTimKiemCbDV
-            // 
-            this.btnTimKiemCbDV.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnTimKiemCbDV.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnTimKiemCbDV.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnTimKiemCbDV.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnTimKiemCbDV.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(146)))), ((int)(((byte)(228)))));
-            this.btnTimKiemCbDV.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnTimKiemCbDV.ForeColor = System.Drawing.Color.White;
-            this.btnTimKiemCbDV.Image = ((System.Drawing.Image)(resources.GetObject("btnTimKiemCbDV.Image")));
-            this.btnTimKiemCbDV.Location = new System.Drawing.Point(946, 55);
-            this.btnTimKiemCbDV.Name = "btnTimKiemCbDV";
-            this.btnTimKiemCbDV.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.btnTimKiemCbDV.Size = new System.Drawing.Size(36, 36);
-            this.btnTimKiemCbDV.TabIndex = 99;
-            // 
-            // clDonVi
-            // 
-            this.clDonVi.HeaderText = "Đơn vị";
-            this.clDonVi.Name = "clDonVi";
-            // 
-            // clGiaBan
-            // 
-            this.clGiaBan.HeaderText = "Giá bán";
-            this.clGiaBan.Name = "clGiaBan";
-            // 
-            // clGiaNhap
-            // 
-            this.clGiaNhap.HeaderText = "Giá nhập";
-            this.clGiaNhap.Name = "clGiaNhap";
-            // 
-            // clTenSP
-            // 
-            this.clTenSP.HeaderText = "Tên sản phẩm";
-            this.clTenSP.Name = "clTenSP";
-            // 
-            // clMaSP
-            // 
-            this.clMaSP.HeaderText = "Mã sản phẩm";
-            this.clMaSP.Name = "clMaSP";
             // 
             // btnTimSP
             // 
@@ -111,6 +73,7 @@
             this.btnTimSP.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.btnTimSP.Size = new System.Drawing.Size(36, 36);
             this.btnTimSP.TabIndex = 98;
+            this.btnTimSP.Click += new System.EventHandler(this.btnTimSP_Click);
             // 
             // guna2Panel2
             // 
@@ -156,6 +119,7 @@
             this.btnXoaSP.Size = new System.Drawing.Size(111, 36);
             this.btnXoaSP.TabIndex = 33;
             this.btnXoaSP.Text = "Xóa";
+            this.btnXoaSP.Click += new System.EventHandler(this.btnXoaSP_Click);
             // 
             // btnUpdateProduct
             // 
@@ -207,9 +171,14 @@
             this.dgvSanPham.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.clMaSP,
             this.clTenSP,
-            this.clGiaNhap,
-            this.clGiaBan,
-            this.clDonVi});
+            this.clDVTChinh,
+            this.clGiaNhapDVTC,
+            this.clGiaBanSiDVTC,
+            this.clGiaBanLeDVTC,
+            this.clDVTP,
+            this.clGiaBanSiDVTP,
+            this.clGiaBanLe,
+            this.clQuyDoi});
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
@@ -247,6 +216,58 @@
             this.dgvSanPham.ThemeStyle.RowsStyle.Height = 22;
             this.dgvSanPham.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dgvSanPham.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.dgvSanPham.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvSanPham_CellClick);
+            this.dgvSanPham.RowsAdded += new System.Windows.Forms.DataGridViewRowsAddedEventHandler(this.dgvSanPham_RowsAdded);
+            // 
+            // clMaSP
+            // 
+            this.clMaSP.HeaderText = "MSP";
+            this.clMaSP.Name = "clMaSP";
+            // 
+            // clTenSP
+            // 
+            this.clTenSP.HeaderText = "Tên sản phẩm";
+            this.clTenSP.Name = "clTenSP";
+            // 
+            // clDVTChinh
+            // 
+            this.clDVTChinh.HeaderText = "ĐVT (Chính)";
+            this.clDVTChinh.Name = "clDVTChinh";
+            // 
+            // clGiaNhapDVTC
+            // 
+            this.clGiaNhapDVTC.HeaderText = "Giá nhập";
+            this.clGiaNhapDVTC.Name = "clGiaNhapDVTC";
+            // 
+            // clGiaBanSiDVTC
+            // 
+            this.clGiaBanSiDVTC.HeaderText = "Giá bán sỉ";
+            this.clGiaBanSiDVTC.Name = "clGiaBanSiDVTC";
+            // 
+            // clGiaBanLeDVTC
+            // 
+            this.clGiaBanLeDVTC.HeaderText = "Giá bán lẻ";
+            this.clGiaBanLeDVTC.Name = "clGiaBanLeDVTC";
+            // 
+            // clDVTP
+            // 
+            this.clDVTP.HeaderText = "ĐVT (Phụ)";
+            this.clDVTP.Name = "clDVTP";
+            // 
+            // clGiaBanSiDVTP
+            // 
+            this.clGiaBanSiDVTP.HeaderText = "Giá bán sỉ";
+            this.clGiaBanSiDVTP.Name = "clGiaBanSiDVTP";
+            // 
+            // clGiaBanLe
+            // 
+            this.clGiaBanLe.HeaderText = "Giá bán lẻ";
+            this.clGiaBanLe.Name = "clGiaBanLe";
+            // 
+            // clQuyDoi
+            // 
+            this.clQuyDoi.HeaderText = "Quy Đổi";
+            this.clQuyDoi.Name = "clQuyDoi";
             // 
             // guna2Panel3
             // 
@@ -288,35 +309,18 @@
             this.txtTimSP.Size = new System.Drawing.Size(242, 36);
             this.txtTimSP.TabIndex = 94;
             // 
-            // cbxTimSP
-            // 
-            this.cbxTimSP.BackColor = System.Drawing.Color.Transparent;
-            this.cbxTimSP.BorderRadius = 5;
-            this.cbxTimSP.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.cbxTimSP.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbxTimSP.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cbxTimSP.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cbxTimSP.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.cbxTimSP.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.cbxTimSP.ItemHeight = 30;
-            this.cbxTimSP.Location = new System.Drawing.Point(796, 55);
-            this.cbxTimSP.Name = "cbxTimSP";
-            this.cbxTimSP.Size = new System.Drawing.Size(143, 36);
-            this.cbxTimSP.TabIndex = 96;
-            // 
             // ucProduct
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.btnTimKiemCbDV);
             this.Controls.Add(this.btnTimSP);
             this.Controls.Add(this.guna2Panel2);
             this.Controls.Add(this.dgvSanPham);
             this.Controls.Add(this.guna2Panel3);
             this.Controls.Add(this.txtTimSP);
-            this.Controls.Add(this.cbxTimSP);
             this.Name = "ucProduct";
             this.Size = new System.Drawing.Size(1003, 656);
+            this.Load += new System.EventHandler(this.ucProduct_Load);
             this.guna2Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvSanPham)).EndInit();
             this.guna2Panel3.ResumeLayout(false);
@@ -327,13 +331,6 @@
         }
 
         #endregion
-
-        private Guna.UI2.WinForms.Guna2CircleButton btnTimKiemCbDV;
-        private System.Windows.Forms.DataGridViewTextBoxColumn clDonVi;
-        private System.Windows.Forms.DataGridViewTextBoxColumn clGiaBan;
-        private System.Windows.Forms.DataGridViewTextBoxColumn clGiaNhap;
-        private System.Windows.Forms.DataGridViewTextBoxColumn clTenSP;
-        private System.Windows.Forms.DataGridViewTextBoxColumn clMaSP;
         private Guna.UI2.WinForms.Guna2CircleButton btnTimSP;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
         private Guna.UI2.WinForms.Guna2Button btnAddProduct;
@@ -344,6 +341,15 @@
         private Guna.UI2.WinForms.Guna2Panel guna2Panel3;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
         private Guna.UI2.WinForms.Guna2TextBox txtTimSP;
-        private Guna.UI2.WinForms.Guna2ComboBox cbxTimSP;
+        private System.Windows.Forms.DataGridViewTextBoxColumn clMaSP;
+        private System.Windows.Forms.DataGridViewTextBoxColumn clTenSP;
+        private System.Windows.Forms.DataGridViewTextBoxColumn clDVTChinh;
+        private System.Windows.Forms.DataGridViewTextBoxColumn clGiaNhapDVTC;
+        private System.Windows.Forms.DataGridViewTextBoxColumn clGiaBanSiDVTC;
+        private System.Windows.Forms.DataGridViewTextBoxColumn clGiaBanLeDVTC;
+        private System.Windows.Forms.DataGridViewTextBoxColumn clDVTP;
+        private System.Windows.Forms.DataGridViewTextBoxColumn clGiaBanSiDVTP;
+        private System.Windows.Forms.DataGridViewTextBoxColumn clGiaBanLe;
+        private System.Windows.Forms.DataGridViewTextBoxColumn clQuyDoi;
     }
 }

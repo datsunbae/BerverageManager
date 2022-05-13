@@ -58,14 +58,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BUS\DonVi_BUS.cs" />
     <Compile Include="BUS\KhachHang_BUS.cs" />
     <Compile Include="BUS\NhaCungCap_BUS.cs" />
     <Compile Include="BUS\NhanVien_BUS.cs" />
+    <Compile Include="BUS\SanPham_BUS.cs" />
     <Compile Include="BUS\TaiKhoan_BUS.cs" />
     <Compile Include="BUS\VaiTro_BUS.cs" />
+    <Compile Include="DAO\DonVi_DAO.cs" />
     <Compile Include="DAO\KhachHang_DAO.cs" />
     <Compile Include="DAO\NhaCungCap_DAO.cs" />
     <Compile Include="DAO\NhanVien_DAO.cs" />
+    <Compile Include="DAO\SanPham_DAO.cs" />
     <Compile Include="DAO\TaiKhoan_DAO.cs" />
     <Compile Include="DAO\VaiTro_DAO.cs" />
     <Compile Include="DataContext\CT_DONHANG.cs" />
