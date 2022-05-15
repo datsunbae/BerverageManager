@@ -27,9 +27,14 @@ namespace Berverage_Manager.BUS
             nhapKho_DAO.ThemPhieuNhapKho(pnk);
         }
 
-        public List<NHAPKHO> TimKiemPhieuNhapKho(List<NHAPKHO> listPNK, String timKiemPNK)
+        public List<NHAPKHO> TimKiemPhieuNhapKho(String timKiemPNK)
         {
-            return nhapKho_DAO.TimKiemPhieuNhapKho(listPNK, timKiemPNK);
+            return nhapKho_DAO.TimKiemPhieuNhapKho(timKiemPNK);
+        }
+
+        public List<NHAPKHO> TimKiemPhieuNhapKhoTheoNgay(DateTime tuNgay, DateTime denNgay)
+        {
+            return nhapKho_DAO.TimKiemPhieuNhapKhoTheoNgay(tuNgay, denNgay);
         }
     }
 }

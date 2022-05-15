@@ -30,5 +30,9 @@ namespace Berverage_Manager.DAO
             return dbQuanLyBanNGK.DONVIs.Where(p => p.DVTC == false).ToList();
         }
 
+        public string LayMaDVTBangTenDVT(String tenDVT)
+        {
+            return dbQuanLyBanNGK.DONVIs.SingleOrDefault(p => p.TENDV == tenDVT).MADV;
+        }
     }
 }

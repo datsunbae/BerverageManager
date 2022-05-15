@@ -18,6 +18,8 @@ namespace Berverage_Manager.GUI
         public static ucOder uc_PhieuNhapKho;
         public Guna2DataGridView dgv_PhieuNhapKho;
         NhapKho_BUS nhapKho_BUS;
+        NhaCungCap_BUS nhaCungCap_BUS;
+        NhanVien_BUS nhanVien_BUS;
 
         public int maPhieuNhapKho;
         public ucOder()
@@ -26,18 +28,14 @@ namespace Berverage_Manager.GUI
             uc_PhieuNhapKho = this;
             dgv_PhieuNhapKho = dgvNHAPKHO;
             nhapKho_BUS = new NhapKho_BUS();
+            nhaCungCap_BUS = new NhaCungCap_BUS();
+            nhanVien_BUS = new NhanVien_BUS();
         }
 
         private void btnOder_Click(object sender, EventArgs e)
         {
             frmOrder frmOrder = new frmOrder();
             frmOrder.ShowDialog();
-        }
-
-        private void btnVỉewOrder_Click(object sender, EventArgs e)
-        {
-            frmOrderDetails frmOrderDetails = new frmOrderDetails();
-            frmOrderDetails.ShowDialog();
         }
 
         public void FillDataDGV(List<NHAPKHO> listPhieuNhapKho)
@@ -52,7 +50,7 @@ namespace Berverage_Manager.GUI
 
                 if (item.IDNCC != null)
                 {
-                    dgvNHAPKHO.Rows[RowNew].Cells[2].Value = item.NHACUNGCAP.TENNCC;
+                    dgvNHAPKHO.Rows[RowNew].Cells[2].Value = nhaCungCap_BUS.LayNhaCungCapBangMNCC(item.IDNCC.Value).TENNCC;
                 }
                 else
                 {
@@ -61,7 +59,8 @@ namespace Berverage_Manager.GUI
 
                 if (item.IDNV != null)
                 {
-                    dgvNHAPKHO.Rows[RowNew].Cells[3].Value = item.NHANVIEN.TENNV;
+
+                    dgvNHAPKHO.Rows[RowNew].Cells[3].Value = nhanVien_BUS.LayNhanVienBangMNV(item.IDNV.Value).TENNV;
                 }
                 else
                 {
@@ -86,6 +85,50 @@ namespace Berverage_Manager.GUI
         private void ucOder_Load(object sender, EventArgs e)
         {
             FillDataDGV(nhapKho_BUS.LayTatCaPhieuNhapKho());
+        }
+
+        private void btnViewOrder_Click(object sender, EventArgs e)
+        {
+            if (dgvNHAPKHO.SelectedRows.Count > 0)
+            {
+                frmOrderDetails nhapKho = new frmOrderDetails(maPhieuNhapKho);
+                nhapKho.ShowDialog();
+            }
+        }
+
+        private void btnXemDHTheoNgay_Click(object sender, EventArgs e)
+        {
+            List<NHAPKHO> listTimKiemPNK = nhapKho_BUS.TimKiemPhieuNhapKhoTheoNgay(DTP_DH_TUNGAY.Value.Date, DTP_DH_DENNGAY.Value.Date);
+
+            if (listTimKiemPNK.Count > 0)
+            {
+                FillDataDGV(listTimKiemPNK);
+            }
+            else
+            {
+                MessageBox.Show("Không Tìm Thấy Phiếu Nhập Kho Nào!", "THÔNG BÁO", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
+
+        private void btnTimNK_Click(object sender, EventArgs e)
+        {
+            List<NHAPKHO> listTimKiemPNK = nhapKho_BUS.TimKiemPhieuNhapKho(txtTimNK.Text);
+           
+            if(txtTimNK.Text != "")
+            {
+                if (listTimKiemPNK.Count > 0)
+                {
+                    FillDataDGV(listTimKiemPNK);
+                }
+                else
+                {
+                    MessageBox.Show("Không Tìm Thấy Phiếu Nhập Kho Nào!", "THÔNG BÁO", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+            }
+            else
+            {
+                FillDataDGV(nhapKho_BUS.LayTatCaPhieuNhapKho());
+            }
         }
     }
 }

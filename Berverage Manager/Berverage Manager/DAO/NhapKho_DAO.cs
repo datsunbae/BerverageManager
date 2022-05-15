@@ -26,11 +26,15 @@ namespace Berverage_Manager.DAO
             dbQuanLyBanNGK.SaveChanges();
         }
 
-        public List<NHAPKHO> TimKiemPhieuNhapKho(List<NHAPKHO> listPNK, String timKiemPNK)
+        public List<NHAPKHO> TimKiemPhieuNhapKho(String timKiemPNK)
         {
-            List<NHAPKHO> listTimPNK = listPNK.Where(p => p.NHACUNGCAP.TENNCC.ToLower().Contains(timKiemPNK.ToLower())
-                                       || p.NHACUNGCAP.TENNCC.ToLower().Contains(timKiemPNK.ToLower())).ToList();
-            return listTimPNK;
+            return dbQuanLyBanNGK.NHAPKHOes.Where(p => p.NHACUNGCAP.TENNCC.ToLower().Contains(timKiemPNK.ToLower())
+                   || p.NHANVIEN.TENNV.ToLower().Contains(timKiemPNK.ToLower())).ToList();
+        }
+
+        public List<NHAPKHO> TimKiemPhieuNhapKhoTheoNgay(DateTime tuNgay, DateTime denNgay)
+        {
+           return dbQuanLyBanNGK.NHAPKHOes.Where(p => p.NGAYNHAP.Value >= tuNgay && p.NGAYNHAP <= denNgay).ToList();
         }
     }
 }

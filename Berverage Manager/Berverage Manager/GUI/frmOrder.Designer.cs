@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
             this.DragControl = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.guna2HtmlLabel6 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel5 = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -45,17 +45,18 @@
             this.NK_CB_SP = new Guna.UI2.WinForms.Guna2ComboBox();
             this.NK_CB_NCC = new Guna.UI2.WinForms.Guna2ComboBox();
             this.Elipse = new Guna.UI2.WinForms.Guna2Elipse(this.components);
-            this.clGia = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.clSoLuong = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.clTenSP = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colMSP = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.NK_CB_NV = new Guna.UI2.WinForms.Guna2ComboBox();
             this.NK_DGV_CTNK = new Guna.UI2.WinForms.Guna2DataGridView();
             this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2ComboBox1 = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.NK_TXT_SL = new Guna.UI2.WinForms.Guna2TextBox();
+            this.NK_CB_DVTinh = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.NK_LB_DVT = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.colMSP = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clTenSP = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clSoLuong = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clDVT = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clGia = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.NK_DGV_CTNK)).BeginInit();
             this.SuspendLayout();
             // 
@@ -153,6 +154,7 @@
             this.NK_BTN_XACNHAN.TabIndex = 156;
             this.NK_BTN_XACNHAN.TabStop = false;
             this.NK_BTN_XACNHAN.Text = "Xác nhận";
+            this.NK_BTN_XACNHAN.Click += new System.EventHandler(this.NK_BTN_XACNHAN_Click);
             // 
             // NK_BTN_THEM_CTNK
             // 
@@ -170,6 +172,7 @@
             this.NK_BTN_THEM_CTNK.TabIndex = 155;
             this.NK_BTN_THEM_CTNK.TabStop = false;
             this.NK_BTN_THEM_CTNK.Text = "Thêm";
+            this.NK_BTN_THEM_CTNK.Click += new System.EventHandler(this.NK_BTN_THEM_CTNK_Click);
             // 
             // NK_DATENK
             // 
@@ -203,6 +206,7 @@
             this.NK_CB_SP.Name = "NK_CB_SP";
             this.NK_CB_SP.Size = new System.Drawing.Size(200, 36);
             this.NK_CB_SP.TabIndex = 153;
+            this.NK_CB_SP.SelectedIndexChanged += new System.EventHandler(this.NK_CB_SP_SelectedIndexChanged);
             // 
             // NK_CB_NCC
             // 
@@ -224,30 +228,6 @@
             // 
             this.Elipse.TargetControl = this;
             // 
-            // clGia
-            // 
-            this.clGia.HeaderText = "Thành tiền";
-            this.clGia.Name = "clGia";
-            this.clGia.ReadOnly = true;
-            // 
-            // clSoLuong
-            // 
-            this.clSoLuong.HeaderText = "Số lượng";
-            this.clSoLuong.Name = "clSoLuong";
-            this.clSoLuong.ReadOnly = true;
-            // 
-            // clTenSP
-            // 
-            this.clTenSP.HeaderText = "Tên sản phẩm";
-            this.clTenSP.Name = "clTenSP";
-            this.clTenSP.ReadOnly = true;
-            // 
-            // colMSP
-            // 
-            this.colMSP.HeaderText = "Mã sản phẩm";
-            this.colMSP.Name = "colMSP";
-            this.colMSP.ReadOnly = true;
-            // 
             // NK_CB_NV
             // 
             this.NK_CB_NV.BackColor = System.Drawing.Color.Transparent;
@@ -268,35 +248,36 @@
             // 
             this.NK_DGV_CTNK.AllowUserToAddRows = false;
             this.NK_DGV_CTNK.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
-            this.NK_DGV_CTNK.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.White;
+            this.NK_DGV_CTNK.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
             this.NK_DGV_CTNK.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.NK_DGV_CTNK.BackgroundColor = System.Drawing.Color.White;
             this.NK_DGV_CTNK.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.NK_DGV_CTNK.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.NK_DGV_CTNK.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(185)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.NK_DGV_CTNK.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(185)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.NK_DGV_CTNK.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
             this.NK_DGV_CTNK.ColumnHeadersHeight = 40;
             this.NK_DGV_CTNK.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.colMSP,
             this.clTenSP,
             this.clSoLuong,
+            this.clDVT,
             this.clGia});
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.NK_DGV_CTNK.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.NK_DGV_CTNK.DefaultCellStyle = dataGridViewCellStyle9;
             this.NK_DGV_CTNK.EnableHeadersVisualStyles = false;
             this.NK_DGV_CTNK.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.NK_DGV_CTNK.Location = new System.Drawing.Point(410, 43);
@@ -328,6 +309,7 @@
             this.NK_DGV_CTNK.ThemeStyle.RowsStyle.Height = 22;
             this.NK_DGV_CTNK.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.NK_DGV_CTNK.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.NK_DGV_CTNK.RowsAdded += new System.Windows.Forms.DataGridViewRowsAddedEventHandler(this.NK_DGV_CTNK_RowsAdded);
             // 
             // guna2ControlBox1
             // 
@@ -353,53 +335,84 @@
             this.guna2HtmlLabel2.TabStop = false;
             this.guna2HtmlLabel2.Text = "Số lượng";
             // 
-            // guna2TextBox1
+            // NK_TXT_SL
             // 
-            this.guna2TextBox1.BorderRadius = 5;
-            this.guna2TextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox1.DefaultText = "";
-            this.guna2TextBox1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.Location = new System.Drawing.Point(118, 308);
-            this.guna2TextBox1.Name = "guna2TextBox1";
-            this.guna2TextBox1.PasswordChar = '\0';
-            this.guna2TextBox1.PlaceholderText = "";
-            this.guna2TextBox1.SelectedText = "";
-            this.guna2TextBox1.Size = new System.Drawing.Size(145, 36);
-            this.guna2TextBox1.TabIndex = 163;
+            this.NK_TXT_SL.BorderRadius = 5;
+            this.NK_TXT_SL.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.NK_TXT_SL.DefaultText = "";
+            this.NK_TXT_SL.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.NK_TXT_SL.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.NK_TXT_SL.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.NK_TXT_SL.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.NK_TXT_SL.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.NK_TXT_SL.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.NK_TXT_SL.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.NK_TXT_SL.Location = new System.Drawing.Point(118, 308);
+            this.NK_TXT_SL.Name = "NK_TXT_SL";
+            this.NK_TXT_SL.PasswordChar = '\0';
+            this.NK_TXT_SL.PlaceholderText = "";
+            this.NK_TXT_SL.SelectedText = "";
+            this.NK_TXT_SL.Size = new System.Drawing.Size(145, 36);
+            this.NK_TXT_SL.TabIndex = 163;
             // 
-            // guna2ComboBox1
+            // NK_CB_DVTinh
             // 
-            this.guna2ComboBox1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ComboBox1.BorderRadius = 5;
-            this.guna2ComboBox1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.guna2ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.guna2ComboBox1.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ComboBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ComboBox1.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.guna2ComboBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.guna2ComboBox1.ItemHeight = 30;
-            this.guna2ComboBox1.Location = new System.Drawing.Point(118, 260);
-            this.guna2ComboBox1.Name = "guna2ComboBox1";
-            this.guna2ComboBox1.Size = new System.Drawing.Size(200, 36);
-            this.guna2ComboBox1.TabIndex = 165;
+            this.NK_CB_DVTinh.BackColor = System.Drawing.Color.Transparent;
+            this.NK_CB_DVTinh.BorderRadius = 5;
+            this.NK_CB_DVTinh.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.NK_CB_DVTinh.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.NK_CB_DVTinh.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.NK_CB_DVTinh.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.NK_CB_DVTinh.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.NK_CB_DVTinh.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.NK_CB_DVTinh.ItemHeight = 30;
+            this.NK_CB_DVTinh.Location = new System.Drawing.Point(118, 260);
+            this.NK_CB_DVTinh.Name = "NK_CB_DVTinh";
+            this.NK_CB_DVTinh.Size = new System.Drawing.Size(200, 36);
+            this.NK_CB_DVTinh.TabIndex = 165;
+            this.NK_CB_DVTinh.SelectedIndexChanged += new System.EventHandler(this.NK_CB_DVTinh_SelectedIndexChanged);
             // 
-            // guna2HtmlLabel3
+            // NK_LB_DVT
             // 
-            this.guna2HtmlLabel3.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel3.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(146)))), ((int)(((byte)(228)))));
-            this.guna2HtmlLabel3.Location = new System.Drawing.Point(278, 318);
-            this.guna2HtmlLabel3.Name = "guna2HtmlLabel3";
-            this.guna2HtmlLabel3.Size = new System.Drawing.Size(49, 19);
-            this.guna2HtmlLabel3.TabIndex = 166;
-            this.guna2HtmlLabel3.TabStop = false;
-            this.guna2HtmlLabel3.Text = "THÙNG";
+            this.NK_LB_DVT.BackColor = System.Drawing.Color.Transparent;
+            this.NK_LB_DVT.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NK_LB_DVT.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(146)))), ((int)(((byte)(228)))));
+            this.NK_LB_DVT.Location = new System.Drawing.Point(278, 318);
+            this.NK_LB_DVT.Name = "NK_LB_DVT";
+            this.NK_LB_DVT.Size = new System.Drawing.Size(49, 19);
+            this.NK_LB_DVT.TabIndex = 166;
+            this.NK_LB_DVT.TabStop = false;
+            this.NK_LB_DVT.Text = "THÙNG";
+            // 
+            // colMSP
+            // 
+            this.colMSP.HeaderText = "MSP";
+            this.colMSP.Name = "colMSP";
+            this.colMSP.ReadOnly = true;
+            // 
+            // clTenSP
+            // 
+            this.clTenSP.HeaderText = "Tên sản phẩm";
+            this.clTenSP.Name = "clTenSP";
+            this.clTenSP.ReadOnly = true;
+            // 
+            // clSoLuong
+            // 
+            this.clSoLuong.HeaderText = "Số lượng";
+            this.clSoLuong.Name = "clSoLuong";
+            this.clSoLuong.ReadOnly = true;
+            // 
+            // clDVT
+            // 
+            this.clDVT.HeaderText = "ĐVT";
+            this.clDVT.Name = "clDVT";
+            this.clDVT.ReadOnly = true;
+            // 
+            // clGia
+            // 
+            this.clGia.HeaderText = "Thành tiền";
+            this.clGia.Name = "clGia";
+            this.clGia.ReadOnly = true;
             // 
             // frmOrder
             // 
@@ -407,10 +420,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
             this.ClientSize = new System.Drawing.Size(954, 425);
-            this.Controls.Add(this.guna2HtmlLabel3);
-            this.Controls.Add(this.guna2ComboBox1);
+            this.Controls.Add(this.NK_LB_DVT);
+            this.Controls.Add(this.NK_CB_DVTinh);
             this.Controls.Add(this.guna2HtmlLabel2);
-            this.Controls.Add(this.guna2TextBox1);
+            this.Controls.Add(this.NK_TXT_SL);
             this.Controls.Add(this.guna2HtmlLabel6);
             this.Controls.Add(this.guna2HtmlLabel5);
             this.Controls.Add(this.guna2HtmlLabel4);
@@ -429,6 +442,7 @@
             this.Name = "frmOrder";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmOrder";
+            this.Load += new System.EventHandler(this.frmOrder_Load);
             ((System.ComponentModel.ISupportInitialize)(this.NK_DGV_CTNK)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -450,16 +464,17 @@
         private Guna.UI2.WinForms.Guna2ComboBox NK_CB_SP;
         private Guna.UI2.WinForms.Guna2ComboBox NK_CB_NCC;
         private Guna.UI2.WinForms.Guna2Elipse Elipse;
-        private System.Windows.Forms.DataGridViewTextBoxColumn clGia;
-        private System.Windows.Forms.DataGridViewTextBoxColumn clSoLuong;
-        private System.Windows.Forms.DataGridViewTextBoxColumn clTenSP;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colMSP;
         private Guna.UI2.WinForms.Guna2ComboBox NK_CB_NV;
         private Guna.UI2.WinForms.Guna2DataGridView NK_DGV_CTNK;
         private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox1;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
-        private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox1;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel3;
+        private Guna.UI2.WinForms.Guna2TextBox NK_TXT_SL;
+        private Guna.UI2.WinForms.Guna2ComboBox NK_CB_DVTinh;
+        private Guna.UI2.WinForms.Guna2HtmlLabel NK_LB_DVT;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colMSP;
+        private System.Windows.Forms.DataGridViewTextBoxColumn clTenSP;
+        private System.Windows.Forms.DataGridViewTextBoxColumn clSoLuong;
+        private System.Windows.Forms.DataGridViewTextBoxColumn clDVT;
+        private System.Windows.Forms.DataGridViewTextBoxColumn clGia;
     }
 }
