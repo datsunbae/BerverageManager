@@ -66,6 +66,7 @@
     <Compile Include="BUS\NhapKho_BUS.cs" />
     <Compile Include="BUS\SanPham_BUS.cs" />
     <Compile Include="BUS\TaiKhoan_BUS.cs" />
+    <Compile Include="BUS\TonKho_BUS.cs" />
     <Compile Include="BUS\VaiTro_BUS.cs" />
     <Compile Include="DAO\CT_NhapKho_DAO.cs" />
     <Compile Include="DAO\DonVi_DAO.cs" />
@@ -75,6 +76,7 @@
     <Compile Include="DAO\NhapKho_DAO.cs" />
     <Compile Include="DAO\SanPham_DAO.cs" />
     <Compile Include="DAO\TaiKhoan_DAO.cs" />
+    <Compile Include="DAO\TonKho_DAO.cs" />
     <Compile Include="DAO\VaiTro_DAO.cs" />
     <Compile Include="DataContext\CT_DONHANG.cs" />
     <Compile Include="DataContext\CT_PNHAPKHO.cs" />

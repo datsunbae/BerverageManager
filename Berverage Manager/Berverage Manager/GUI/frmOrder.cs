@@ -20,6 +20,7 @@ namespace Berverage_Manager.GUI
         DonVi_BUS donVi_BUS;
         NhapKho_BUS nhapKho_BUS;
         CT_NhapKho_BUS ct_NhapKho_BUS;
+        TonKho_BUS tonKho_BUS;
         bool checkEventCBSP = false;
 
         public frmOrder()
@@ -31,6 +32,7 @@ namespace Berverage_Manager.GUI
             donVi_BUS = new DonVi_BUS();
             nhapKho_BUS = new NhapKho_BUS();
             ct_NhapKho_BUS = new CT_NhapKho_BUS();
+            tonKho_BUS = new TonKho_BUS();
         }
 
         public void LoadCBNhaCungCap()
@@ -69,12 +71,26 @@ namespace Berverage_Manager.GUI
             LoadCBSanPham();
         }
 
+        private void NK_DGV_CTNK_RowsAdded(object sender, DataGridViewRowsAddedEventArgs e)
+        {
+            NK_DGV_CTNK.Rows[e.RowIndex].Height = 40;
+        }
+
+        private void NK_CB_SP_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (checkEventCBSP == true)
+            {
+                SANPHAM sp = sanPham_BUS.LaySanPhamBangMSP(int.Parse(NK_CB_SP.SelectedValue.ToString()));
+                NK_CB_DVTinh.SelectedValue = sp.DVTCHINH;
+            }
+        }
+
         private void NK_CB_DVTinh_SelectedIndexChanged(object sender, EventArgs e)
         {
             NK_LB_DVT.Text = NK_CB_DVTinh.Text.ToUpper();
         }
 
-        public int LayDongTonTaiSP()
+        private int LayDongTonTaiSP()
         {
             int tongDong = NK_DGV_CTNK.Rows.Count;
             string mspNhapKho = NK_CB_SP.SelectedValue.ToString();
@@ -90,7 +106,7 @@ namespace Berverage_Manager.GUI
             return -1;
         }
 
-        public void ThemCTNhapKho_DGV()
+        private void ThemCTNhapKho_DGV()
         {
             int row = NK_DGV_CTNK.Rows.Add();
             string maSP = NK_CB_SP.SelectedValue.ToString();
@@ -104,7 +120,7 @@ namespace Berverage_Manager.GUI
             NK_DGV_CTNK.Rows[row].Cells[4].Value = thanhTien.ToString();
         }
 
-        public void XuLyThemCTNhapKho_DGV()
+        private void XuLyThemCTNhapKho_DGV()
         {
             if (NK_TXT_SL.Text != "")
             {
@@ -139,19 +155,7 @@ namespace Berverage_Manager.GUI
             XuLyThemCTNhapKho_DGV();
         }
 
-        private void NK_DGV_CTNK_RowsAdded(object sender, DataGridViewRowsAddedEventArgs e)
-        {
-            NK_DGV_CTNK.Rows[e.RowIndex].Height = 40;
-        }
-
-        private void NK_CB_SP_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            if(checkEventCBSP == true)
-            {
-                SANPHAM sp = sanPham_BUS.LaySanPhamBangMSP(int.Parse(NK_CB_SP.SelectedValue.ToString()));
-                NK_CB_DVTinh.SelectedValue = sp.DVTCHINH;
-            }
-        }
+        
 
         private double TinhTongTien()
         {
@@ -163,6 +167,45 @@ namespace Berverage_Manager.GUI
                 tongTien += double.Parse(NK_DGV_CTNK.Rows[i].Cells[4].Value.ToString());
             }
             return tongTien;
+        }
+
+        private String tinhTonKhoQuyDoi(String tenDVTChinh, String tenDVTPhu, int slTonKho, int slDVTPhuQuyDoi)
+        {
+            int sl_dvtc = slTonKho / slDVTPhuQuyDoi;
+            int sl_dvtp = 0;
+            if (slTonKho % slDVTPhuQuyDoi != 0)
+            {
+                sl_dvtp = slTonKho - sl_dvtc * slDVTPhuQuyDoi;
+            }
+            return sl_dvtc + " " + tenDVTChinh + " " + sl_dvtp + " " + tenDVTPhu;
+        }
+
+        private void ThemSPVaoTonKho_CSDL(int maSP, int slDVTChinh)
+        {
+            TONKHO tk = tonKho_BUS.LayTonKhoBangMSP(maSP);
+            SANPHAM sp = sanPham_BUS.LaySanPhamBangMSP(maSP);
+            String tenDVTChinh = donVi_BUS.LayTenDVTBangMaDVT(sp.DVTCHINH);
+            String tenDVTPhu = donVi_BUS.LayTenDVTBangMaDVT(sp.DVTPHU);
+            int slNhapKho = slDVTChinh * sp.QUIDOI.Value;
+
+            if (tk != null)
+            {
+                tk.IDSP = maSP;
+                int slHienTai = int.Parse(tk.SLTON.ToString());
+                slNhapKho += slHienTai;
+                tk.SLTON = slNhapKho;
+                tk.SLTONQUIDOI = tinhTonKhoQuyDoi(tenDVTChinh, tenDVTPhu, slNhapKho, sp.QUIDOI.Value);
+                tonKho_BUS.CapNhatSanPhamTonKho(tk);
+            }
+            else
+            {
+                TONKHO tonkho = new TONKHO();
+                tonkho.IDSP = maSP;
+                tonkho.SLTON = slNhapKho;
+                tonkho.SLTONQUIDOI = tinhTonKhoQuyDoi(tenDVTChinh, tenDVTPhu, slNhapKho, sp.QUIDOI.Value);
+                tonKho_BUS.ThemSanPhamVaoTonKho(tonkho);
+
+            }
         }
 
         private void NK_BTN_XACNHAN_Click(object sender, EventArgs e)
@@ -189,16 +232,20 @@ namespace Berverage_Manager.GUI
                     ct_PNK.THANHTIEN = double.Parse(NK_DGV_CTNK.Rows[i].Cells[4].Value.ToString());
                     ct_NhapKho_BUS.ThemCTPhieuNhapKho(ct_PNK);
 
-                    /*string idsp = NK_DGV_CTNK.Rows[i].Cells[0].Value.ToString();
-                    int slton = int.Parse(NK_DGV_CTNK.Rows[i].Cells[2].Value.ToString());
-                    ThemSPVaoTonKho(idsp, slton);
+                    //Them san pham vao ton kho
+                    int maSP = int.Parse(NK_DGV_CTNK.Rows[i].Cells[0].Value.ToString());
+                    int slDVTChinh = int.Parse(NK_DGV_CTNK.Rows[i].Cells[2].Value.ToString());
+                    ThemSPVaoTonKho_CSDL(maSP, slDVTChinh);
+
+                    /*Load DGV Ton Kho*/
+                    ucWarehouse.uc_TonKho.FillDataDGV(tonKho_BUS.LayTatCaTonKho());
+
                     //Load lai DGV DANH SACH SAN PHAM
-                    List<TONKHO> listSP = dBQuanLyBanNGK.TONKHOes.Where(p => p.SLTON > 0).ToList();
+                    /*List<TONKHO> listSP = dBQuanLyBanNGK.TONKHOes.Where(p => p.SLTON > 0).ToList();
                     ucBanHang.bh.FillDataDGV(listSP);*/
                 }
-                
-                ucOder.uc_PhieuNhapKho.FillDataDGV(nhapKho_BUS.LayTatCaPhieuNhapKho());
 
+                ucOder.uc_PhieuNhapKho.FillDataDGV(nhapKho_BUS.LayTatCaPhieuNhapKho());
                 this.Close();
                 MessageBox.Show("Sản phẩm đã được thêm vào kho!", "Thông báo");
             }

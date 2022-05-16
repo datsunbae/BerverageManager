@@ -36,5 +36,10 @@ namespace Berverage_Manager.BUS
         {
             return donVi_DAO.LayMaDVTBangTenDVT(tenDVT);
         }
+
+        public string LayTenDVTBangMaDVT(String maDVT)
+        {
+            return donVi_DAO.LayTenDVTBangMaDVT(maDVT);
+        }
     }
 }
