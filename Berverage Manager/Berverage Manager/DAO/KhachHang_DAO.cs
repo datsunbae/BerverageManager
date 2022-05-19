@@ -22,6 +22,16 @@ namespace Berverage_Manager.DAO
             return dbQuanLyBanNGK.KHACHHANGs.ToList();
         }
 
+        public List<KHACHHANG> LayKhachLe()
+        {
+            return dbQuanLyBanNGK.KHACHHANGs.Where(p => p.LOAIKH == false).ToList();
+        }
+
+        public List<KHACHHANG> LayTatCaKhachSi()
+        {
+            return dbQuanLyBanNGK.KHACHHANGs.Where(p => p.LOAIKH == true).ToList();
+        }
+
         public KHACHHANG LayKhachHangBangMKH(int maKH)
         {
             return dbQuanLyBanNGK.KHACHHANGs.FirstOrDefault(p => p.MAKH == maKH);

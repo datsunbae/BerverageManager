@@ -22,6 +22,16 @@ namespace Berverage_Manager.BUS
             return khachHang_DAO.LayTatCaKhachHang();
         }
 
+        public List<KHACHHANG> LayKhachLe()
+        {
+            return khachHang_DAO.LayKhachLe(); 
+        }
+
+        public List<KHACHHANG> LayTatCaKhachSi()
+        {
+            return khachHang_DAO.LayTatCaKhachSi(); 
+        }
+
         public KHACHHANG LayKhachHangBangMKH(int maKH)
         {
             return khachHang_DAO.LayKhachHangBangMKH(maKH);

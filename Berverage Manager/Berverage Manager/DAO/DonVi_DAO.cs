@@ -39,5 +39,10 @@ namespace Berverage_Manager.DAO
         {
             return dbQuanLyBanNGK.DONVIs.SingleOrDefault(p => p.MADV == maDVT).TENDV;
         }
+
+        public List<DONVI> LayDonViTinhCuaSanPham(SANPHAM sp)
+        {
+            return dbQuanLyBanNGK.DONVIs.Include("SANPHAMs").Where(p => p.MADV == sp.DVTCHINH || p.MADV == sp.DVTPHU).ToList();
+        }
     }
 }

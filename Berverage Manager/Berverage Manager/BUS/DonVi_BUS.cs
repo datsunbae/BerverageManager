@@ -41,5 +41,10 @@ namespace Berverage_Manager.BUS
         {
             return donVi_DAO.LayTenDVTBangMaDVT(maDVT);
         }
+
+        public List<DONVI> LayDonViTinhCuaSanPham(SANPHAM sp)
+        {
+            return donVi_DAO.LayDonViTinhCuaSanPham(sp);
+        }
     }
 }
