@@ -35,10 +35,6 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.colMaSP = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.guna2HtmlLabel13 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2GroupBox3 = new Guna.UI2.WinForms.Guna2GroupBox();
             this.btnTimSP_BH = new Guna.UI2.WinForms.Guna2CircleButton();
@@ -49,8 +45,6 @@
             this.clSLTonQD = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.txtTimSP_BH = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.BH_TXT_MADH = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2HtmlLabel11 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel9 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel8 = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -64,7 +58,6 @@
             this.BH_DATE_TTOAN = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.BH_CB_NV = new Guna.UI2.WinForms.Guna2ComboBox();
             this.BH_CB_KH = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.guna2GroupBox4 = new Guna.UI2.WinForms.Guna2GroupBox();
             this.guna2HtmlLabel6 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel5 = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -80,11 +73,18 @@
             this.btnXacNhan = new Guna.UI2.WinForms.Guna2Button();
             this.guna2GroupBox2 = new Guna.UI2.WinForms.Guna2GroupBox();
             this.BH_DGV_CTHD = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.colMaSP = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clDVTinh = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.BH_BTN_XOASPCT = new Guna.UI2.WinForms.Guna2Button();
             this.guna2GroupBox1 = new Guna.UI2.WinForms.Guna2GroupBox();
             this.guna2HtmlLabel7 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1d = new System.Windows.Forms.Label();
+            this.BH_BTN_TaoDonMoi = new Guna.UI2.WinForms.Guna2Button();
             this.guna2GroupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.BH_DGV_DSSP)).BeginInit();
             this.guna2GroupBox4.SuspendLayout();
@@ -93,30 +93,6 @@
             this.guna2GroupBox1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // colMaSP
-            // 
-            this.colMaSP.FillWeight = 61.22903F;
-            this.colMaSP.HeaderText = "Mã";
-            this.colMaSP.Name = "colMaSP";
-            // 
-            // dataGridViewTextBoxColumn5
-            // 
-            this.dataGridViewTextBoxColumn5.FillWeight = 79.71252F;
-            this.dataGridViewTextBoxColumn5.HeaderText = "Đơn giá";
-            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
-            // 
-            // dataGridViewTextBoxColumn6
-            // 
-            this.dataGridViewTextBoxColumn6.FillWeight = 102.1194F;
-            this.dataGridViewTextBoxColumn6.HeaderText = "Số lượng";
-            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
-            // 
-            // dataGridViewTextBoxColumn7
-            // 
-            this.dataGridViewTextBoxColumn7.FillWeight = 104.6548F;
-            this.dataGridViewTextBoxColumn7.HeaderText = "Thành tiền";
-            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
             // 
             // guna2HtmlLabel13
             // 
@@ -161,6 +137,7 @@
             this.btnTimSP_BH.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.btnTimSP_BH.Size = new System.Drawing.Size(36, 36);
             this.btnTimSP_BH.TabIndex = 2;
+            this.btnTimSP_BH.Click += new System.EventHandler(this.btnTimSP_BH_Click);
             // 
             // BH_DGV_DSSP
             // 
@@ -277,40 +254,6 @@
             this.txtTimSP_BH.Size = new System.Drawing.Size(409, 36);
             this.txtTimSP_BH.TabIndex = 1;
             // 
-            // guna2HtmlLabel2
-            // 
-            this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel2.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(146)))), ((int)(((byte)(228)))));
-            this.guna2HtmlLabel2.Location = new System.Drawing.Point(21, 49);
-            this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
-            this.guna2HtmlLabel2.Size = new System.Drawing.Size(77, 15);
-            this.guna2HtmlLabel2.TabIndex = 60;
-            this.guna2HtmlLabel2.TabStop = false;
-            this.guna2HtmlLabel2.Text = "Mã đơn hàng:";
-            // 
-            // BH_TXT_MADH
-            // 
-            this.BH_TXT_MADH.BorderRadius = 5;
-            this.BH_TXT_MADH.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.BH_TXT_MADH.DefaultText = "";
-            this.BH_TXT_MADH.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.BH_TXT_MADH.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.BH_TXT_MADH.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.BH_TXT_MADH.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.BH_TXT_MADH.Enabled = false;
-            this.BH_TXT_MADH.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.BH_TXT_MADH.Font = new System.Drawing.Font("Segoe UI", 9.75F);
-            this.BH_TXT_MADH.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.BH_TXT_MADH.Location = new System.Drawing.Point(21, 68);
-            this.BH_TXT_MADH.Name = "BH_TXT_MADH";
-            this.BH_TXT_MADH.PasswordChar = '\0';
-            this.BH_TXT_MADH.PlaceholderText = "Mã đơn hàng";
-            this.BH_TXT_MADH.ReadOnly = true;
-            this.BH_TXT_MADH.SelectedText = "";
-            this.BH_TXT_MADH.Size = new System.Drawing.Size(128, 36);
-            this.BH_TXT_MADH.TabIndex = 59;
-            // 
             // guna2HtmlLabel11
             // 
             this.guna2HtmlLabel11.BackColor = System.Drawing.Color.Transparent;
@@ -399,6 +342,7 @@
             this.BH_TXT_KhachDua.SelectedText = "";
             this.BH_TXT_KhachDua.Size = new System.Drawing.Size(132, 36);
             this.BH_TXT_KhachDua.TabIndex = 14;
+            this.BH_TXT_KhachDua.TextChanged += new System.EventHandler(this.BH_TXT_KhachDua_TextChanged);
             // 
             // BH_TXT_TongTien
             // 
@@ -442,11 +386,12 @@
             this.BH_BTN_HUY.FillColor = System.Drawing.Color.Red;
             this.BH_BTN_HUY.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.BH_BTN_HUY.ForeColor = System.Drawing.Color.White;
-            this.BH_BTN_HUY.Location = new System.Drawing.Point(323, 292);
+            this.BH_BTN_HUY.Location = new System.Drawing.Point(258, 292);
             this.BH_BTN_HUY.Name = "BH_BTN_HUY";
             this.BH_BTN_HUY.Size = new System.Drawing.Size(115, 35);
             this.BH_BTN_HUY.TabIndex = 17;
             this.BH_BTN_HUY.Text = "Hủy";
+            this.BH_BTN_HUY.Click += new System.EventHandler(this.BH_BTN_HUY_Click);
             // 
             // BH_BTN_INHD
             // 
@@ -458,7 +403,7 @@
             this.BH_BTN_INHD.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(151)))), ((int)(((byte)(12)))));
             this.BH_BTN_INHD.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BH_BTN_INHD.ForeColor = System.Drawing.Color.White;
-            this.BH_BTN_INHD.Location = new System.Drawing.Point(202, 292);
+            this.BH_BTN_INHD.Location = new System.Drawing.Point(137, 292);
             this.BH_BTN_INHD.Name = "BH_BTN_INHD";
             this.BH_BTN_INHD.Size = new System.Drawing.Size(115, 35);
             this.BH_BTN_INHD.TabIndex = 16;
@@ -473,7 +418,7 @@
             this.BH_DATE_TTOAN.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.BH_DATE_TTOAN.ForeColor = System.Drawing.Color.White;
             this.BH_DATE_TTOAN.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.BH_DATE_TTOAN.Location = new System.Drawing.Point(155, 68);
+            this.BH_DATE_TTOAN.Location = new System.Drawing.Point(81, 68);
             this.BH_DATE_TTOAN.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.BH_DATE_TTOAN.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.BH_DATE_TTOAN.Name = "BH_DATE_TTOAN";
@@ -512,12 +457,6 @@
             this.BH_CB_KH.Name = "BH_CB_KH";
             this.BH_CB_KH.Size = new System.Drawing.Size(195, 36);
             this.BH_CB_KH.TabIndex = 11;
-            // 
-            // dataGridViewTextBoxColumn1
-            // 
-            this.dataGridViewTextBoxColumn1.FillWeight = 152.2843F;
-            this.dataGridViewTextBoxColumn1.HeaderText = "Tên sản phẩm";
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
             // 
             // guna2GroupBox4
             // 
@@ -683,6 +622,7 @@
             this.BH_BTN_THEMVAOHD.Size = new System.Drawing.Size(95, 120);
             this.BH_BTN_THEMVAOHD.TabIndex = 5;
             this.BH_BTN_THEMVAOHD.Text = "Thêm vào hóa đơn";
+            this.BH_BTN_THEMVAOHD.Click += new System.EventHandler(this.BH_BTN_THEMVAOHD_Click);
             // 
             // BH_TXT_TENSP
             // 
@@ -716,11 +656,12 @@
             this.BH_BTN_THANHTOAN.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(146)))), ((int)(((byte)(228)))));
             this.BH_BTN_THANHTOAN.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BH_BTN_THANHTOAN.ForeColor = System.Drawing.Color.White;
-            this.BH_BTN_THANHTOAN.Location = new System.Drawing.Point(81, 292);
+            this.BH_BTN_THANHTOAN.Location = new System.Drawing.Point(16, 292);
             this.BH_BTN_THANHTOAN.Name = "BH_BTN_THANHTOAN";
             this.BH_BTN_THANHTOAN.Size = new System.Drawing.Size(115, 35);
             this.BH_BTN_THANHTOAN.TabIndex = 15;
             this.BH_BTN_THANHTOAN.Text = "Thanh toán";
+            this.BH_BTN_THANHTOAN.Click += new System.EventHandler(this.BH_BTN_THANHTOAN_Click);
             // 
             // btnXacNhan
             // 
@@ -737,6 +678,7 @@
             this.btnXacNhan.Size = new System.Drawing.Size(115, 35);
             this.btnXacNhan.TabIndex = 9;
             this.btnXacNhan.Text = "Xác nhận";
+            this.btnXacNhan.Click += new System.EventHandler(this.btnXacNhan_Click);
             // 
             // guna2GroupBox2
             // 
@@ -776,6 +718,7 @@
             this.colMaSP,
             this.dataGridViewTextBoxColumn1,
             this.dataGridViewTextBoxColumn5,
+            this.clDVTinh,
             this.dataGridViewTextBoxColumn6,
             this.dataGridViewTextBoxColumn7});
             dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -815,7 +758,43 @@
             this.BH_DGV_CTHD.ThemeStyle.RowsStyle.Height = 22;
             this.BH_DGV_CTHD.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.BH_DGV_CTHD.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.BH_DGV_CTHD.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.BH_DGV_CTHD_CellClick);
             this.BH_DGV_CTHD.RowsAdded += new System.Windows.Forms.DataGridViewRowsAddedEventHandler(this.BH_DGV_CTHD_RowsAdded);
+            // 
+            // colMaSP
+            // 
+            this.colMaSP.FillWeight = 61.22903F;
+            this.colMaSP.HeaderText = "Mã";
+            this.colMaSP.Name = "colMaSP";
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.FillWeight = 152.2843F;
+            this.dataGridViewTextBoxColumn1.HeaderText = "Tên sản phẩm";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            // 
+            // dataGridViewTextBoxColumn5
+            // 
+            this.dataGridViewTextBoxColumn5.FillWeight = 79.71252F;
+            this.dataGridViewTextBoxColumn5.HeaderText = "Đơn giá";
+            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            // 
+            // clDVTinh
+            // 
+            this.clDVTinh.HeaderText = "ĐVT";
+            this.clDVTinh.Name = "clDVTinh";
+            // 
+            // dataGridViewTextBoxColumn6
+            // 
+            this.dataGridViewTextBoxColumn6.FillWeight = 102.1194F;
+            this.dataGridViewTextBoxColumn6.HeaderText = "SL";
+            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
+            // 
+            // dataGridViewTextBoxColumn7
+            // 
+            this.dataGridViewTextBoxColumn7.FillWeight = 104.6548F;
+            this.dataGridViewTextBoxColumn7.HeaderText = "Thành tiền";
+            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
             // 
             // BH_BTN_XOASPCT
             // 
@@ -832,12 +811,12 @@
             this.BH_BTN_XOASPCT.Size = new System.Drawing.Size(115, 35);
             this.BH_BTN_XOASPCT.TabIndex = 8;
             this.BH_BTN_XOASPCT.Text = "Xóa sản phẩm";
+            this.BH_BTN_XOASPCT.Click += new System.EventHandler(this.BH_BTN_XOASPCT_Click);
             // 
             // guna2GroupBox1
             // 
+            this.guna2GroupBox1.Controls.Add(this.BH_BTN_TaoDonMoi);
             this.guna2GroupBox1.Controls.Add(this.guna2HtmlLabel7);
-            this.guna2GroupBox1.Controls.Add(this.guna2HtmlLabel2);
-            this.guna2GroupBox1.Controls.Add(this.BH_TXT_MADH);
             this.guna2GroupBox1.Controls.Add(this.guna2HtmlLabel11);
             this.guna2GroupBox1.Controls.Add(this.guna2HtmlLabel9);
             this.guna2GroupBox1.Controls.Add(this.guna2HtmlLabel8);
@@ -865,7 +844,7 @@
             this.guna2HtmlLabel7.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel7.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(146)))), ((int)(((byte)(228)))));
-            this.guna2HtmlLabel7.Location = new System.Drawing.Point(155, 49);
+            this.guna2HtmlLabel7.Location = new System.Drawing.Point(81, 49);
             this.guna2HtmlLabel7.Name = "guna2HtmlLabel7";
             this.guna2HtmlLabel7.Size = new System.Drawing.Size(53, 15);
             this.guna2HtmlLabel7.TabIndex = 61;
@@ -892,6 +871,23 @@
             this.label1d.TabIndex = 0;
             this.label1d.Text = "THÔNG TIN SẢN PHẨM";
             this.label1d.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // BH_BTN_TaoDonMoi
+            // 
+            this.BH_BTN_TaoDonMoi.BorderRadius = 5;
+            this.BH_BTN_TaoDonMoi.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.BH_BTN_TaoDonMoi.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.BH_BTN_TaoDonMoi.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.BH_BTN_TaoDonMoi.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.BH_BTN_TaoDonMoi.FillColor = System.Drawing.Color.DarkMagenta;
+            this.BH_BTN_TaoDonMoi.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.BH_BTN_TaoDonMoi.ForeColor = System.Drawing.Color.White;
+            this.BH_BTN_TaoDonMoi.Location = new System.Drawing.Point(380, 292);
+            this.BH_BTN_TaoDonMoi.Name = "BH_BTN_TaoDonMoi";
+            this.BH_BTN_TaoDonMoi.Size = new System.Drawing.Size(115, 35);
+            this.BH_BTN_TaoDonMoi.TabIndex = 62;
+            this.BH_BTN_TaoDonMoi.Text = "Tạo đơn mới";
+            this.BH_BTN_TaoDonMoi.Click += new System.EventHandler(this.BH_BTN_TaoDonMoi_Click);
             // 
             // ucSell
             // 
@@ -922,19 +918,12 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.DataGridViewTextBoxColumn colMaSP;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel13;
         private Guna.UI2.WinForms.Guna2GroupBox guna2GroupBox3;
         private Guna.UI2.WinForms.Guna2CircleButton btnTimSP_BH;
         private Guna.UI2.WinForms.Guna2DataGridView BH_DGV_DSSP;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
         private Guna.UI2.WinForms.Guna2TextBox txtTimSP_BH;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
-        private Guna.UI2.WinForms.Guna2TextBox BH_TXT_MADH;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel11;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel9;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel8;
@@ -948,7 +937,6 @@
         private Guna.UI2.WinForms.Guna2DateTimePicker BH_DATE_TTOAN;
         private Guna.UI2.WinForms.Guna2ComboBox BH_CB_NV;
         private Guna.UI2.WinForms.Guna2ComboBox BH_CB_KH;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private Guna.UI2.WinForms.Guna2GroupBox guna2GroupBox4;
         private Guna.UI2.WinForms.Guna2TextBox BH_TXT_GIATIEN;
         private Guna.UI2.WinForms.Guna2TextBox BH_TXT_SL;
@@ -973,5 +961,12 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
         private System.Windows.Forms.DataGridViewTextBoxColumn clSLTon;
         private System.Windows.Forms.DataGridViewTextBoxColumn clSLTonQD;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colMaSP;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn clDVTinh;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
+        private Guna.UI2.WinForms.Guna2Button BH_BTN_TaoDonMoi;
     }
 }

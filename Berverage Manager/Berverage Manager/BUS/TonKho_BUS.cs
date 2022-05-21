@@ -22,6 +22,11 @@ namespace Berverage_Manager.BUS
             return tonKho_DAO.LayTatCaTonKho();
         }
 
+        public List<TONKHO> LayTatCaSanPhamConTonKho()
+        {
+            return tonKho_DAO.LayTatCaSanPhamConTonKho();
+        }
+
         public void ThemSanPhamVaoTonKho(TONKHO tk)
         {
             tonKho_DAO.ThemSanPhamVaoTonKho(tk);
@@ -35,6 +40,11 @@ namespace Berverage_Manager.BUS
         public TONKHO LayTonKhoBangMSP(int maSP)
         {
             return tonKho_DAO.LayTonKhoBangMSP(maSP);
+        }
+
+        public List<TONKHO> TimKiemSanPhamTonKho(List<TONKHO> listSPTK, String timKiemSPTK)
+        {
+            return tonKho_DAO.TimKiemSanPhamTonKho(listSPTK, timKiemSPTK);
         }
     }
 }

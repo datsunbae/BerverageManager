@@ -21,6 +21,11 @@ namespace Berverage_Manager.DAO
             return dbQuanLyBanNGK.TONKHOes.ToList();
         }
 
+        public List<TONKHO> LayTatCaSanPhamConTonKho()
+        {
+            return dbQuanLyBanNGK.TONKHOes.Where(p => p.SLTON > 0).ToList();
+        }
+
         public void ThemSanPhamVaoTonKho(TONKHO tk)
         {
             dbQuanLyBanNGK.TONKHOes.Add(tk);
@@ -36,6 +41,12 @@ namespace Berverage_Manager.DAO
         public TONKHO LayTonKhoBangMSP(int maSP)
         {
             return dbQuanLyBanNGK.TONKHOes.SingleOrDefault(p => p.IDSP == maSP);
+        }
+
+        public List<TONKHO> TimKiemSanPhamTonKho(List<TONKHO> listSPTK, String timKiemSPTK)
+        {
+            List<TONKHO> listTimSPTK = listSPTK.Where(p => p.SANPHAM.TENSP.ToLower().Contains(timKiemSPTK.ToLower())).ToList();
+            return listTimSPTK;
         }
     }
 }
