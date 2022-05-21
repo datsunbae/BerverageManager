@@ -79,14 +79,11 @@ D:\DoAnCoSo\Berverage Manager_DACS\Berverage Manager\Berverage Manager\obj\Debug
 D:\DoAnCoSo\Berverage Manager_DACS\Berverage Manager\Berverage Manager\obj\Debug\Berverage_Manager.GUI.frmAddProduct.resources
 D:\DoAnCoSo\Berverage Manager_DACS\Berverage Manager\Berverage Manager\obj\Debug\Berverage_Manager.GUI.frmBillDetails.resources
 D:\DoAnCoSo\Berverage Manager_DACS\Berverage Manager\Berverage Manager\obj\Debug\Berverage_Manager.GUI.frmHomeAdmin.resources
-D:\DoAnCoSo\Berverage Manager_DACS\Berverage Manager\Berverage Manager\obj\Debug\Berverage_Manager.GUI.frmHomeStaffSell.resources
 D:\DoAnCoSo\Berverage Manager_DACS\Berverage Manager\Berverage Manager\obj\Debug\Berverage_Manager.GUI.frmOrder.resources
 D:\DoAnCoSo\Berverage Manager_DACS\Berverage Manager\Berverage Manager\obj\Debug\Berverage_Manager.GUI.frmOrderDetails.resources
 D:\DoAnCoSo\Berverage Manager_DACS\Berverage Manager\Berverage Manager\obj\Debug\Berverage_Manager.GUI.Customer.frmUpdateCustomer.resources
 D:\DoAnCoSo\Berverage Manager_DACS\Berverage Manager\Berverage Manager\obj\Debug\Berverage_Manager.GUI.frmUpdateProduct.resources
-D:\DoAnCoSo\Berverage Manager_DACS\Berverage Manager\Berverage Manager\obj\Debug\Berverage_Manager.GUI.frmHomeStaff1.resources
 D:\DoAnCoSo\Berverage Manager_DACS\Berverage Manager\Berverage Manager\obj\Debug\Berverage_Manager.GUI.ucBill.resources
-D:\DoAnCoSo\Berverage Manager_DACS\Berverage Manager\Berverage Manager\obj\Debug\Berverage_Manager.GUI.ucBillStaff.resources
 D:\DoAnCoSo\Berverage Manager_DACS\Berverage Manager\Berverage Manager\obj\Debug\Berverage_Manager.GUI.ucCustomer.resources
 D:\DoAnCoSo\Berverage Manager_DACS\Berverage Manager\Berverage Manager\obj\Debug\Berverage_Manager.GUI.frmLogin.resources
 D:\DoAnCoSo\Berverage Manager_DACS\Berverage Manager\Berverage Manager\obj\Debug\Berverage_Manager.GUI.Staff.frmAddStaff.resources
@@ -111,3 +108,5 @@ D:\DoAnCoSo\Berverage Manager_DACS\Berverage Manager\Berverage Manager\bin\Debug
 D:\DoAnCoSo\Berverage Manager_DACS\Berverage Manager\Berverage Manager\bin\Debug\EntityFramework.xml
 D:\DoAnCoSo\Berverage Manager_DACS\Berverage Manager\Berverage Manager\bin\Debug\EntityFramework.SqlServer.xml
 D:\DoAnCoSo\Berverage Manager_DACS\Berverage Manager\Berverage Manager\obj\Debug\Berverage Manager.csproj.AssemblyReference.cache
+D:\DoAnCoSo\Berverage Manager_DACS\Berverage Manager\Berverage Manager\obj\Debug\Berverage_Manager.GUI.frmHomeSellStaff.resources
+D:\DoAnCoSo\Berverage Manager_DACS\Berverage Manager\Berverage Manager\obj\Debug\Berverage_Manager.GUI.frmHomeStaffWarehouse.resources

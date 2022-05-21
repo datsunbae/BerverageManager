@@ -17,11 +17,13 @@ namespace Berverage_Manager.GUI
         DataGridViewRow row;
         SanPham_BUS sanPham_BUS;
         DonVi_BUS donVi_BUS;
+        TonKho_BUS tonKho_BUS;
         public frmUpdateProduct()
         {
             InitializeComponent();
             sanPham_BUS = new SanPham_BUS(); 
             donVi_BUS = new DonVi_BUS();
+            tonKho_BUS = new TonKho_BUS();
         }
         public void LoadCB()
         {
@@ -77,14 +79,8 @@ namespace Berverage_Manager.GUI
                 sanPham_BUS.SuaSanPham(sp);
 
                 ucProduct.uc_Product.FillDataDGV(sanPham_BUS.LayTatCaSanPham());
-
-                //ucBanHang.bh.LoadNV();
-
-                //List<NHAPKHO> listnk = dBQuanLyBanNGK.NHAPKHOes.ToList();
-                //ucNhapKho.nk.FillDataDGV(listnk);
-
-                //List<DONHANG> listdh = dBQuanLyBanNGK.DONHANGs.ToList();
-                //ucDonHang.dh.FillDataDGV(listdh);
+                ucSell.uc_BanHang.FillDataDGV(tonKho_BUS.LayTatCaSanPhamConTonKho());
+                ucWarehouse.uc_TonKho.FillDataDGV(tonKho_BUS.LayTatCaTonKho());
 
                 this.Close();
             }

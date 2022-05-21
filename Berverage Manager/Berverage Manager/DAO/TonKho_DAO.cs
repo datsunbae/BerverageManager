@@ -10,37 +10,46 @@ namespace Berverage_Manager.DAO
 {
     internal class TonKho_DAO
     {
-        DBQuanLyBanNuocGiaiKhat dbQuanLyBanNGK;
-        public TonKho_DAO()
-        {
-            dbQuanLyBanNGK = new DBQuanLyBanNuocGiaiKhat();
-        }
-
         public List<TONKHO> LayTatCaTonKho()
         {
-            return dbQuanLyBanNGK.TONKHOes.ToList();
+            using (DBQuanLyBanNuocGiaiKhat dbQuanLyBanNGK = new DBQuanLyBanNuocGiaiKhat())
+            {
+                return dbQuanLyBanNGK.TONKHOes.ToList();
+            }
         }
 
         public List<TONKHO> LayTatCaSanPhamConTonKho()
         {
-            return dbQuanLyBanNGK.TONKHOes.Where(p => p.SLTON > 0).ToList();
+            using (DBQuanLyBanNuocGiaiKhat dbQuanLyBanNGK = new DBQuanLyBanNuocGiaiKhat())
+            {
+                return dbQuanLyBanNGK.TONKHOes.Where(p => p.SLTON > 0).ToList();
+            }
         }
 
         public void ThemSanPhamVaoTonKho(TONKHO tk)
         {
-            dbQuanLyBanNGK.TONKHOes.Add(tk);
-            dbQuanLyBanNGK.SaveChanges();
+            using (DBQuanLyBanNuocGiaiKhat dbQuanLyBanNGK = new DBQuanLyBanNuocGiaiKhat())
+            {
+                dbQuanLyBanNGK.TONKHOes.Add(tk);
+                dbQuanLyBanNGK.SaveChanges();
+            }
         }
 
         public void CapNhatSanPhamTonKho(TONKHO tk)
         {
-            dbQuanLyBanNGK.TONKHOes.AddOrUpdate(tk);
-            dbQuanLyBanNGK.SaveChanges();
+            using (DBQuanLyBanNuocGiaiKhat dbQuanLyBanNGK = new DBQuanLyBanNuocGiaiKhat())
+            {
+                dbQuanLyBanNGK.TONKHOes.AddOrUpdate(tk);
+                dbQuanLyBanNGK.SaveChanges();
+            }
         }
 
         public TONKHO LayTonKhoBangMSP(int maSP)
         {
-            return dbQuanLyBanNGK.TONKHOes.SingleOrDefault(p => p.IDSP == maSP);
+            using (DBQuanLyBanNuocGiaiKhat dbQuanLyBanNGK = new DBQuanLyBanNuocGiaiKhat())
+            {
+                return dbQuanLyBanNGK.TONKHOes.SingleOrDefault(p => p.IDSP == maSP);
+            }
         }
 
         public List<TONKHO> TimKiemSanPhamTonKho(List<TONKHO> listSPTK, String timKiemSPTK)

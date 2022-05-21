@@ -9,40 +9,52 @@ namespace Berverage_Manager.DAO
 {
     internal class DonVi_DAO
     {
-        DBQuanLyBanNuocGiaiKhat dbQuanLyBanNGK;
-        public DonVi_DAO()
-        {
-            dbQuanLyBanNGK = new DBQuanLyBanNuocGiaiKhat();
-        }
-
         public List<DONVI> LayTatCaDonVi()
         {
-            return dbQuanLyBanNGK.DONVIs.ToList();
+            using (DBQuanLyBanNuocGiaiKhat dbQuanLyBanNGK = new DBQuanLyBanNuocGiaiKhat())
+            {
+                return dbQuanLyBanNGK.DONVIs.ToList();
+            }
         }
 
         public List<DONVI> LayTatCaDonViChinh()
         {
-            return dbQuanLyBanNGK.DONVIs.Where(p => p.DVTC == true).ToList();
+            using (DBQuanLyBanNuocGiaiKhat dbQuanLyBanNGK = new DBQuanLyBanNuocGiaiKhat())
+            {
+                return dbQuanLyBanNGK.DONVIs.Where(p => p.DVTC == true).ToList();
+            }  
         }
 
         public List<DONVI> LayTatCaDonViPhu()
         {
-            return dbQuanLyBanNGK.DONVIs.Where(p => p.DVTC == false).ToList();
+            using (DBQuanLyBanNuocGiaiKhat dbQuanLyBanNGK = new DBQuanLyBanNuocGiaiKhat())
+            {
+                return dbQuanLyBanNGK.DONVIs.Where(p => p.DVTC == false).ToList();
+            }
         }
 
         public string LayMaDVTBangTenDVT(String tenDVT)
         {
-            return dbQuanLyBanNGK.DONVIs.SingleOrDefault(p => p.TENDV == tenDVT).MADV;
+            using (DBQuanLyBanNuocGiaiKhat dbQuanLyBanNGK = new DBQuanLyBanNuocGiaiKhat())
+            {
+                return dbQuanLyBanNGK.DONVIs.SingleOrDefault(p => p.TENDV == tenDVT).MADV;
+            }
         }
 
         public string LayTenDVTBangMaDVT(String maDVT)
         {
-            return dbQuanLyBanNGK.DONVIs.SingleOrDefault(p => p.MADV == maDVT).TENDV;
+            using (DBQuanLyBanNuocGiaiKhat dbQuanLyBanNGK = new DBQuanLyBanNuocGiaiKhat())
+            {
+                return dbQuanLyBanNGK.DONVIs.SingleOrDefault(p => p.MADV == maDVT).TENDV;
+            }
         }
 
         public List<DONVI> LayDonViTinhCuaSanPham(SANPHAM sp)
         {
-            return dbQuanLyBanNGK.DONVIs.Include("SANPHAMs").Where(p => p.MADV == sp.DVTCHINH || p.MADV == sp.DVTPHU).ToList();
+            using (DBQuanLyBanNuocGiaiKhat dbQuanLyBanNGK = new DBQuanLyBanNuocGiaiKhat())
+            {
+                return dbQuanLyBanNGK.DONVIs.Include("SANPHAMs").Where(p => p.MADV == sp.DVTCHINH || p.MADV == sp.DVTPHU).ToList();
+            }
         }
     }
 }

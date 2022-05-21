@@ -19,7 +19,8 @@ namespace Berverage_Manager.GUI
         public static ucCustomer uc_KhachHang;
         public Guna2DataGridView dgv_KhachHang;
         public int indexRowSelected;
-        public KhachHang_BUS khachHang_BUS;
+        private KhachHang_BUS khachHang_BUS;
+        private DonHang_BUS donHang_BUS;
 
         public ucCustomer()
         {
@@ -27,6 +28,7 @@ namespace Berverage_Manager.GUI
             uc_KhachHang = this;
             dgv_KhachHang = dgvKhachHang;
             khachHang_BUS = new KhachHang_BUS();
+            donHang_BUS = new DonHang_BUS();
         }
 
         private void btnAddCustomer_Click(object sender, EventArgs e)
@@ -81,14 +83,8 @@ namespace Berverage_Manager.GUI
                 khachHang_BUS.XoaKhachHang(maKH);
 
                 FillDataDGV(khachHang_BUS.LayTatCaKhachHang());
-
-                //ucBanHang.bh.LoadNV();
-
-                //List<NHAPKHO> listtnk = dBQuanLyBanNGK.NHAPKHOes.ToList();
-                //ucNhapKho.nk.FillDataDGV(listtnk);
-
-                //List<DONHANG> listdh = dBQuanLyBanNGK.DONHANGs.ToList();
-                //ucDonHang.dh.FillDataDGV(listdh);
+                ucSell.uc_BanHang.LoadCBKhachHang();
+                ucBill.uc_DonHang.FillDataDGV(donHang_BUS.LayTatCaDonHang());
             }
         }
 

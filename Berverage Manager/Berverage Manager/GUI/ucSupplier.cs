@@ -22,6 +22,7 @@ namespace Berverage_Manager.GUI
         public Guna2DataGridView dgv_NhaCungCap;
         public int indexRowSelected;
         public NhaCungCap_BUS nhaCungCap_BUS;
+        private NhapKho_BUS nhapKho_BUS;
 
         public ucSupplier()
         {
@@ -29,6 +30,7 @@ namespace Berverage_Manager.GUI
             uc_NhaCungCap = this;
             dgv_NhaCungCap = dgvNhaCungCap;
             nhaCungCap_BUS = new NhaCungCap_BUS();
+            nhapKho_BUS = new NhapKho_BUS();
         }
 
         private void btnAddSupplier_Click(object sender, EventArgs e)
@@ -83,14 +85,7 @@ namespace Berverage_Manager.GUI
                 nhaCungCap_BUS.XoaNhaCungCap(maNCC);
 
                 FillDataDGV(nhaCungCap_BUS.LayTatCaNhaCungCap());
-
-                //ucBanHang.bh.LoadNV();
-
-                //List<NHAPKHO> listtnk = dBQuanLyBanNGK.NHAPKHOes.ToList();
-                //ucNhapKho.nk.FillDataDGV(listtnk);
-
-                //List<DONHANG> listdh = dBQuanLyBanNGK.DONHANGs.ToList();
-                //ucDonHang.dh.FillDataDGV(listdh);
+                ucOder.uc_PhieuNhapKho.FillDataDGV(nhapKho_BUS.LayTatCaPhieuNhapKho());
             }
         }
 

@@ -34,7 +34,7 @@ namespace Berverage_Manager.GUI.Customer
                 khachHang_BUS.ThemKhachHang(kh);
 
                 ucCustomer.uc_KhachHang.FillDataDGV(khachHang_BUS.LayTatCaKhachHang());
-                //ucBanHang.bh.LoadNV();
+                ucSell.uc_BanHang.LoadCBKhachHang();
 
                 this.Close();
             }

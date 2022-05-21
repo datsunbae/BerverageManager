@@ -10,39 +10,48 @@ namespace Berverage_Manager.DAO
 {
     internal class SanPham_DAO
     {
-        DBQuanLyBanNuocGiaiKhat dbQuanLyBanNGK;
-        public SanPham_DAO()
-        {
-            dbQuanLyBanNGK = new DBQuanLyBanNuocGiaiKhat();
-        }
-
         public List<SANPHAM> LayTatCaSanPham()
         {
-            return dbQuanLyBanNGK.SANPHAMs.ToList();
+            using (DBQuanLyBanNuocGiaiKhat dbQuanLyBanNGK = new DBQuanLyBanNuocGiaiKhat())
+            {
+                return dbQuanLyBanNGK.SANPHAMs.ToList();
+            }
         }
 
         public void ThemSanPham(SANPHAM sp)
         {
-            dbQuanLyBanNGK.SANPHAMs.Add(sp);
-            dbQuanLyBanNGK.SaveChanges();
+            using (DBQuanLyBanNuocGiaiKhat dbQuanLyBanNGK = new DBQuanLyBanNuocGiaiKhat())
+            {
+                dbQuanLyBanNGK.SANPHAMs.Add(sp);
+                dbQuanLyBanNGK.SaveChanges();
+            }
         }
 
         public SANPHAM LaySanPhamBangMSP(int maSP)
         {
-            return dbQuanLyBanNGK.SANPHAMs.FirstOrDefault(p => p.MASP == maSP);
+            using (DBQuanLyBanNuocGiaiKhat dbQuanLyBanNGK = new DBQuanLyBanNuocGiaiKhat())
+            {
+                return dbQuanLyBanNGK.SANPHAMs.FirstOrDefault(p => p.MASP == maSP);
+            }
         }
 
         public void SuaSanPham(SANPHAM sp)
         {
-            dbQuanLyBanNGK.SANPHAMs.AddOrUpdate(sp);
-            dbQuanLyBanNGK.SaveChanges();
+            using (DBQuanLyBanNuocGiaiKhat dbQuanLyBanNGK = new DBQuanLyBanNuocGiaiKhat())
+            {
+                dbQuanLyBanNGK.SANPHAMs.AddOrUpdate(sp);
+                dbQuanLyBanNGK.SaveChanges();
+            }
         }
 
         public void XoaSanPham(int maSP)
         {
-            SANPHAM sp = dbQuanLyBanNGK.SANPHAMs.FirstOrDefault(p => p.MASP == maSP);
-            dbQuanLyBanNGK.SANPHAMs.Remove(sp);
-            dbQuanLyBanNGK.SaveChanges();
+            using (DBQuanLyBanNuocGiaiKhat dbQuanLyBanNGK = new DBQuanLyBanNuocGiaiKhat())
+            {
+                SANPHAM sp = dbQuanLyBanNGK.SANPHAMs.FirstOrDefault(p => p.MASP == maSP);
+                dbQuanLyBanNGK.SANPHAMs.Remove(sp);
+                dbQuanLyBanNGK.SaveChanges();
+            }
         }
 
         public List<SANPHAM> TimKiemSanPham(List<SANPHAM> listSP, String timKiemSP)

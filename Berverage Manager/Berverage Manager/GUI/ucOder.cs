@@ -16,7 +16,6 @@ namespace Berverage_Manager.GUI
     public partial class ucOder : UserControl
     {
         public static ucOder uc_PhieuNhapKho;
-        public Guna2DataGridView dgv_PhieuNhapKho;
         NhapKho_BUS nhapKho_BUS;
         NhaCungCap_BUS nhaCungCap_BUS;
         NhanVien_BUS nhanVien_BUS;
@@ -26,7 +25,6 @@ namespace Berverage_Manager.GUI
         {
             InitializeComponent();
             uc_PhieuNhapKho = this;
-            dgv_PhieuNhapKho = dgvNHAPKHO;
             nhapKho_BUS = new NhapKho_BUS();
             nhaCungCap_BUS = new NhaCungCap_BUS();
             nhanVien_BUS = new NhanVien_BUS();
@@ -59,7 +57,6 @@ namespace Berverage_Manager.GUI
 
                 if (item.IDNV != null)
                 {
-
                     dgvNHAPKHO.Rows[RowNew].Cells[3].Value = nhanVien_BUS.LayNhanVienBangMNV(item.IDNV.Value).TENNV;
                 }
                 else

@@ -175,6 +175,7 @@
             this.btnLogin.TabIndex = 14;
             this.btnLogin.TabStop = false;
             this.btnLogin.Text = "Đăng nhập";
+            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
             // frmLogin
             // 

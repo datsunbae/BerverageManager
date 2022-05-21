@@ -9,16 +9,12 @@ namespace Berverage_Manager.DAO
 {
     internal class VaiTro_DAO
     {
-        DBQuanLyBanNuocGiaiKhat dbQuanLyBanNGK;
-
-        public VaiTro_DAO()
-        {
-            dbQuanLyBanNGK = new DBQuanLyBanNuocGiaiKhat();
-        }
-
         public List<VAITRO> LayTatCaVaiTro()
         {
-            return dbQuanLyBanNGK.VAITROes.ToList();
+            using (DBQuanLyBanNuocGiaiKhat dbQuanLyBanNGK = new DBQuanLyBanNuocGiaiKhat())
+            {
+                return dbQuanLyBanNGK.VAITROes.ToList();
+            }
         }
     }
 }

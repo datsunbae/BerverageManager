@@ -9,21 +9,21 @@ namespace Berverage_Manager.DAO
 {
     internal class CT_NhapKho_DAO
     {
-        DBQuanLyBanNuocGiaiKhat dbQuanLyBanNGK;
-        public CT_NhapKho_DAO()
-        {
-            dbQuanLyBanNGK = new DBQuanLyBanNuocGiaiKhat();
-        }
-
         public void ThemCTPhieuNhapKho(CT_PNHAPKHO ct_PNK)
         {
-            dbQuanLyBanNGK.CT_PNHAPKHO.Add(ct_PNK);
-            dbQuanLyBanNGK.SaveChanges();
+            using (DBQuanLyBanNuocGiaiKhat dbQuanLyBanNGK = new DBQuanLyBanNuocGiaiKhat())
+            {
+                dbQuanLyBanNGK.CT_PNHAPKHO.Add(ct_PNK);
+                dbQuanLyBanNGK.SaveChanges();
+            } 
         }
 
         public List<CT_PNHAPKHO> LayDanhSachCTPNKBangMaPNK(int maPNK)
         {
-            return dbQuanLyBanNGK.CT_PNHAPKHO.Where(p => p.IDPNK == maPNK).ToList();
+            using (DBQuanLyBanNuocGiaiKhat dbQuanLyBanNGK = new DBQuanLyBanNuocGiaiKhat())
+            {
+                return dbQuanLyBanNGK.CT_PNHAPKHO.Where(p => p.IDPNK == maPNK).ToList();
+            } 
         }
     }
 }

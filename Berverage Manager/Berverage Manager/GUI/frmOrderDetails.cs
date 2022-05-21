@@ -16,14 +16,16 @@ namespace Berverage_Manager.GUI
     {
         int ma_PNK;
         CT_NhapKho_BUS ct_PhieuNhapKho_BUS;
+        SanPham_BUS sanPham_BUS;
         public frmOrderDetails(int maPNK)
         {
             InitializeComponent();
             ma_PNK = maPNK;
             ct_PhieuNhapKho_BUS = new CT_NhapKho_BUS();
+            sanPham_BUS = new SanPham_BUS();
         }
 
-        public void FillDataDGV(List<CT_PNHAPKHO> list_CTPNK)
+        private void FillDataDGV(List<CT_PNHAPKHO> list_CTPNK)
         {
             CTNK_DGV_CTNK.Rows.Clear();
 
@@ -31,7 +33,14 @@ namespace Berverage_Manager.GUI
             {
                 int RowNew = CTNK_DGV_CTNK.Rows.Add();
                 CTNK_DGV_CTNK.Rows[RowNew].Cells[0].Value = item.IDSP;
-                CTNK_DGV_CTNK.Rows[RowNew].Cells[1].Value = item.SANPHAM.TENSP;
+                if (item.IDSP != null)
+                {
+                    CTNK_DGV_CTNK.Rows[RowNew].Cells[1].Value = sanPham_BUS.LaySanPhamBangMSP(item.IDSP.Value).TENSP;
+                }
+                else
+                {
+                    CTNK_DGV_CTNK.Rows[RowNew].Cells[1].Value = "Null";
+                }
                 CTNK_DGV_CTNK.Rows[RowNew].Cells[2].Value = item.SL;
                 CTNK_DGV_CTNK.Rows[RowNew].Cells[3].Value = item.DONVI.TENDV;
                 CTNK_DGV_CTNK.Rows[RowNew].Cells[4].Value = item.THANHTIEN;

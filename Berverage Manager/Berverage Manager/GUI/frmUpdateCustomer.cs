@@ -16,10 +16,12 @@ namespace Berverage_Manager.GUI.Customer
     {
         DataGridViewRow row;
         KhachHang_BUS khachHang_BUS;
+        DonHang_BUS donHang_BUS;
         public frmUpdateCustomer()
         {
             InitializeComponent();
-            khachHang_BUS = new KhachHang_BUS();  
+            khachHang_BUS = new KhachHang_BUS();
+            donHang_BUS = new DonHang_BUS();
         }
 
         private void LoadThongTinKH()
@@ -46,14 +48,8 @@ namespace Berverage_Manager.GUI.Customer
                 khachHang_BUS.SuaKhachHang(kh);
 
                 ucCustomer.uc_KhachHang.FillDataDGV(khachHang_BUS.LayTatCaKhachHang());
-
-                //ucBanHang.bh.LoadNV();
-
-                //List<NHAPKHO> listnk = dBQuanLyBanNGK.NHAPKHOes.ToList();
-                //ucNhapKho.nk.FillDataDGV(listnk);
-
-                //List<DONHANG> listdh = dBQuanLyBanNGK.DONHANGs.ToList();
-                //ucDonHang.dh.FillDataDGV(listdh);
+                ucSell.uc_BanHang.LoadCBKhachHang();
+                ucBill.uc_DonHang.FillDataDGV(donHang_BUS.LayTatCaDonHang());
 
                 this.Close();
             }

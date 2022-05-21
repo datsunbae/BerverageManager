@@ -19,8 +19,11 @@ namespace Berverage_Manager.GUI
         public static ucStaff uc_NhanVien;
         public Guna2DataGridView dgv_NhanVien;
         public int indexRowSelected;
-        public NhanVien_BUS nhanVien_BUS;
-        public TaiKhoan_BUS taiKhoan_BUS;
+        private NhanVien_BUS nhanVien_BUS;
+        private TaiKhoan_BUS taiKhoan_BUS;
+        private NhapKho_BUS nhapKho_BUS;
+        private DonHang_BUS donHang_BUS;
+
         public ucStaff()
         {
             InitializeComponent();
@@ -28,6 +31,8 @@ namespace Berverage_Manager.GUI
             dgv_NhanVien = dgvNhanVien;
             nhanVien_BUS = new NhanVien_BUS();
             taiKhoan_BUS = new TaiKhoan_BUS();
+            nhapKho_BUS = new NhapKho_BUS();
+            donHang_BUS = new DonHang_BUS();
         }
 
         private void btnAddStaff_Click(object sender, EventArgs e)
@@ -83,17 +88,11 @@ namespace Berverage_Manager.GUI
 
                 nhanVien_BUS.XoaNhanVien(maNV);
                 taiKhoan_BUS.XoaTaiKhoan(maTK);
-               
 
                 FillDataDGV(nhanVien_BUS.LayTatCaNhanVien());
-
-                //ucBanHang.bh.LoadNV();
-
-                //List<NHAPKHO> listtnk = dBQuanLyBanNGK.NHAPKHOes.ToList();
-                //ucNhapKho.nk.FillDataDGV(listtnk);
-
-                //List<DONHANG> listdh = dBQuanLyBanNGK.DONHANGs.ToList();
-                //ucDonHang.dh.FillDataDGV(listdh);
+                ucSell.uc_BanHang.LoadCBNhanVien();
+                ucOder.uc_PhieuNhapKho.FillDataDGV(nhapKho_BUS.LayTatCaPhieuNhapKho());
+                ucBill.uc_DonHang.FillDataDGV(donHang_BUS.LayTatCaDonHang());
             }
             
         }

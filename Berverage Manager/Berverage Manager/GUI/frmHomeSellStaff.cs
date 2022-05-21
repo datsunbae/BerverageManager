@@ -10,15 +10,11 @@ using System.Windows.Forms;
 
 namespace Berverage_Manager.GUI
 {
-    public partial class frmHomeAdmin : Form
+    public partial class frmHomeSellStaff : Form
     {
-        public static frmHomeAdmin home;
-        public UserControl sell;
-        public frmHomeAdmin()
+        public frmHomeSellStaff()
         {
             InitializeComponent();
-            home = this;
-            sell = Sell;
         }
         private void pcbClose_Click(object sender, EventArgs e)
         {
@@ -40,37 +36,15 @@ namespace Berverage_Manager.GUI
                 new frmLogin().Show();
                 this.Close();
             }
-            
+            else if (dialogResult == DialogResult.No)
+            {
+
+            }
         }
 
-        private void btnSupplier_Click(object sender, EventArgs e)
+        private void btnSell_Click(object sender, EventArgs e)
         {
-            Supplier.BringToFront();
-        }
-
-        private void btnCustomer_Click(object sender, EventArgs e)
-        {
-            Customer.BringToFront();
-        }
-
-        private void btnStaff_Click(object sender, EventArgs e)
-        {
-            Staff.BringToFront();
-        }
-
-        private void btnWarehouse_Click(object sender, EventArgs e)
-        {
-            Warehouse.BringToFront();
-        }
-
-        private void btnOrder_Click(object sender, EventArgs e)
-        {
-            Oder.BringToFront();
-        }
-
-        private void btnProduct_Click(object sender, EventArgs e)
-        {
-            Product.BringToFront();
+            Sell.BringToFront();
         }
 
         private void btnBill_Click(object sender, EventArgs e)
@@ -78,9 +52,14 @@ namespace Berverage_Manager.GUI
             Bill.BringToFront();
         }
 
-        private void btnSell_Click(object sender, EventArgs e)
+        private void btnProduct_Click(object sender, EventArgs e)
         {
-            Sell.BringToFront();
+            Product.BringToFront();
+        }
+
+        private void btnCustomer_Click(object sender, EventArgs e)
+        {
+            Customer.BringToFront();
         }
     }
 }

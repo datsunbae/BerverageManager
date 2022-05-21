@@ -23,7 +23,7 @@ namespace Berverage_Manager.GUI
             donVi_BUS = new DonVi_BUS();
         }
 
-        public void LoadCB()
+        private void LoadCB()
         {
             cbDVTChinh.DataSource = donVi_BUS.LayTatCaDonViChinh();
             cbDVTChinh.DisplayMember = "TENDV";
@@ -56,7 +56,6 @@ namespace Berverage_Manager.GUI
 
                 sanPham_BUS.ThemSanPham(sp);
                 ucProduct.uc_Product.FillDataDGV(sanPham_BUS.LayTatCaSanPham());
-                //ucBanHang.bh.LoadNV();
                 this.Close();
             }
             else

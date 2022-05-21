@@ -15,9 +15,10 @@ namespace Berverage_Manager.GUI
     public partial class ucBill : UserControl
     {
         public static ucBill uc_DonHang;
-        KhachHang_BUS khachHang_BUS;
-        NhanVien_BUS nhanVien_BUS;
-        DonHang_BUS donHang_BUS;
+        private KhachHang_BUS khachHang_BUS;
+        private NhanVien_BUS nhanVien_BUS;
+        private DonHang_BUS donHang_BUS;
+        public int maDonHang;
 
         public ucBill()
         {
@@ -30,8 +31,12 @@ namespace Berverage_Manager.GUI
 
         private void btn_BillDetails_Click(object sender, EventArgs e)
         {
-            frmBillDetails billDetails = new frmBillDetails();
-            billDetails.ShowDialog();
+            
+            if (dgvDonHang.SelectedRows.Count > 0)
+            {
+                frmBillDetails billDetails = new frmBillDetails(maDonHang);
+                billDetails.ShowDialog();
+            }
         }
 
         private void btnSell_Click(object sender, EventArgs e)
@@ -80,6 +85,47 @@ namespace Berverage_Manager.GUI
         private void dgvDonHang_RowsAdded(object sender, DataGridViewRowsAddedEventArgs e)
         {
             dgvDonHang.Rows[e.RowIndex].Height = 40;
+        }
+
+        private void dgvDonHang_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int rowIndex = e.RowIndex;
+            maDonHang = int.Parse(dgvDonHang.Rows[rowIndex].Cells[0].Value.ToString());
+        }
+
+        private void btnTimDH_Click(object sender, EventArgs e)
+        {
+            List<DONHANG> listTimKiemDH = donHang_BUS.TimKiemDonHang(txtTimDH.Text);
+
+            if (txtTimDH.Text != "")
+            {
+                if (listTimKiemDH.Count > 0)
+                {
+                    FillDataDGV(listTimKiemDH);
+                }
+                else
+                {
+                    MessageBox.Show("Không Tìm Thấy Đơn Hàng Nào!", "THÔNG BÁO", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+            }
+            else
+            {
+                FillDataDGV(donHang_BUS.LayTatCaDonHang());
+            }
+        }
+
+        private void btnXemDHTheoNgay_Click(object sender, EventArgs e)
+        {
+            List<DONHANG> listTimKiemDH = donHang_BUS.TimKiemDonHangTheoNgay(DTP_DH_TUNGAY.Value.Date, DTP_DH_DENNGAY.Value.Date);
+
+            if (listTimKiemDH.Count > 0)
+            {
+                FillDataDGV(listTimKiemDH);
+            }
+            else
+            {
+                MessageBox.Show("Không Tìm Thấy Đơn Hàng Nào!", "THÔNG BÁO", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
         }
     }
 }

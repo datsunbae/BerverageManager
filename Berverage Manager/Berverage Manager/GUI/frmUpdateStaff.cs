@@ -17,6 +17,8 @@ namespace Berverage_Manager.GUI.Staff
         TaiKhoan_BUS taiKhoan_BUS;
         VaiTro_BUS vaiTro_BUS;
         NhanVien_BUS nhanVien_BUS;
+        NhapKho_BUS nhapKho_BUS;
+        DonHang_BUS donHang_BUS;
         DataGridViewRow row;
         public frmUpdateStaff()
         {
@@ -24,8 +26,8 @@ namespace Berverage_Manager.GUI.Staff
             taiKhoan_BUS = new TaiKhoan_BUS();
             vaiTro_BUS = new VaiTro_BUS();
             nhanVien_BUS = new NhanVien_BUS();
-
-
+            nhapKho_BUS = new NhapKho_BUS();
+            donHang_BUS = new DonHang_BUS();
         }
         public void LoadCB()
         {
@@ -74,17 +76,10 @@ namespace Berverage_Manager.GUI.Staff
                 taiKhoan_BUS.SuaTaiKhoan(tk);
                 nhanVien_BUS.SuaNhanVien(nv);
 
-
                 ucStaff.uc_NhanVien.FillDataDGV(nhanVien_BUS.LayTatCaNhanVien());
-
-                //ucBanHang.bh.LoadNV();
-
-                //List<NHAPKHO> listnk = dBQuanLyBanNGK.NHAPKHOes.ToList();
-                //ucNhapKho.nk.FillDataDGV(listnk);
-
-                //List<DONHANG> listdh = dBQuanLyBanNGK.DONHANGs.ToList();
-                //ucDonHang.dh.FillDataDGV(listdh);
-
+                ucSell.uc_BanHang.LoadCBNhanVien();
+                ucOder.uc_PhieuNhapKho.FillDataDGV(nhapKho_BUS.LayTatCaPhieuNhapKho());
+                ucBill.uc_DonHang.FillDataDGV(donHang_BUS.LayTatCaDonHang());
                 this.Close();
             }
         }

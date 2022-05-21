@@ -29,20 +29,21 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.DH_DGV_CTHD = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.colMSP = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.clTenSP = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.clSoLuong = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.clGia = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel6 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.CTHD_TXT_MHDON = new Guna.UI2.WinForms.Guna2TextBox();
             this.Elipse = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.ctbClose = new Guna.UI2.WinForms.Guna2ControlBox();
             this.DragControl = new Guna.UI2.WinForms.Guna2DragControl(this.components);
+            this.colMSP = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clTenSP = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clSoLuong = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clDVT = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clGia = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.DH_DGV_CTHD)).BeginInit();
             this.SuspendLayout();
             // 
@@ -50,35 +51,36 @@
             // 
             this.DH_DGV_CTHD.AllowUserToAddRows = false;
             this.DH_DGV_CTHD.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
-            this.DH_DGV_CTHD.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.DH_DGV_CTHD.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.DH_DGV_CTHD.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.DH_DGV_CTHD.BackgroundColor = System.Drawing.Color.White;
             this.DH_DGV_CTHD.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.DH_DGV_CTHD.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.DH_DGV_CTHD.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(185)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DH_DGV_CTHD.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(185)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DH_DGV_CTHD.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.DH_DGV_CTHD.ColumnHeadersHeight = 40;
             this.DH_DGV_CTHD.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.colMSP,
             this.clTenSP,
             this.clSoLuong,
+            this.clDVT,
             this.clGia});
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.DH_DGV_CTHD.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.DH_DGV_CTHD.DefaultCellStyle = dataGridViewCellStyle3;
             this.DH_DGV_CTHD.EnableHeadersVisualStyles = false;
             this.DH_DGV_CTHD.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.DH_DGV_CTHD.Location = new System.Drawing.Point(14, 132);
@@ -110,30 +112,7 @@
             this.DH_DGV_CTHD.ThemeStyle.RowsStyle.Height = 22;
             this.DH_DGV_CTHD.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.DH_DGV_CTHD.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            // 
-            // colMSP
-            // 
-            this.colMSP.HeaderText = "Mã sản phẩm";
-            this.colMSP.Name = "colMSP";
-            this.colMSP.ReadOnly = true;
-            // 
-            // clTenSP
-            // 
-            this.clTenSP.HeaderText = "Tên sản phẩm";
-            this.clTenSP.Name = "clTenSP";
-            this.clTenSP.ReadOnly = true;
-            // 
-            // clSoLuong
-            // 
-            this.clSoLuong.HeaderText = "Số lượng";
-            this.clSoLuong.Name = "clSoLuong";
-            this.clSoLuong.ReadOnly = true;
-            // 
-            // clGia
-            // 
-            this.clGia.HeaderText = "Thành tiền";
-            this.clGia.Name = "clGia";
-            this.clGia.ReadOnly = true;
+            this.DH_DGV_CTHD.RowsAdded += new System.Windows.Forms.DataGridViewRowsAddedEventHandler(this.DH_DGV_CTHD_RowsAdded);
             // 
             // guna2HtmlLabel1
             // 
@@ -200,8 +179,39 @@
             // 
             // DragControl
             // 
+            this.DragControl.DockIndicatorTransparencyValue = 0.6D;
             this.DragControl.TargetControl = this;
             this.DragControl.UseTransparentDrag = true;
+            // 
+            // colMSP
+            // 
+            this.colMSP.HeaderText = "MSP";
+            this.colMSP.Name = "colMSP";
+            this.colMSP.ReadOnly = true;
+            // 
+            // clTenSP
+            // 
+            this.clTenSP.HeaderText = "Tên sản phẩm";
+            this.clTenSP.Name = "clTenSP";
+            this.clTenSP.ReadOnly = true;
+            // 
+            // clSoLuong
+            // 
+            this.clSoLuong.HeaderText = "Số lượng";
+            this.clSoLuong.Name = "clSoLuong";
+            this.clSoLuong.ReadOnly = true;
+            // 
+            // clDVT
+            // 
+            this.clDVT.HeaderText = "Đơn vị tính";
+            this.clDVT.Name = "clDVT";
+            this.clDVT.ReadOnly = true;
+            // 
+            // clGia
+            // 
+            this.clGia.HeaderText = "Thành tiền";
+            this.clGia.Name = "clGia";
+            this.clGia.ReadOnly = true;
             // 
             // frmBillDetails
             // 
@@ -218,6 +228,7 @@
             this.Name = "frmBillDetails";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmBillDetails";
+            this.Load += new System.EventHandler(this.frmBillDetails_Load);
             ((System.ComponentModel.ISupportInitialize)(this.DH_DGV_CTHD)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -227,15 +238,16 @@
         #endregion
 
         private Guna.UI2.WinForms.Guna2DataGridView DH_DGV_CTHD;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colMSP;
-        private System.Windows.Forms.DataGridViewTextBoxColumn clTenSP;
-        private System.Windows.Forms.DataGridViewTextBoxColumn clSoLuong;
-        private System.Windows.Forms.DataGridViewTextBoxColumn clGia;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel6;
         private Guna.UI2.WinForms.Guna2TextBox CTHD_TXT_MHDON;
         private Guna.UI2.WinForms.Guna2Elipse Elipse;
         private Guna.UI2.WinForms.Guna2ControlBox ctbClose;
         private Guna.UI2.WinForms.Guna2DragControl DragControl;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colMSP;
+        private System.Windows.Forms.DataGridViewTextBoxColumn clTenSP;
+        private System.Windows.Forms.DataGridViewTextBoxColumn clSoLuong;
+        private System.Windows.Forms.DataGridViewTextBoxColumn clDVT;
+        private System.Windows.Forms.DataGridViewTextBoxColumn clGia;
     }
 }

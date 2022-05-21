@@ -10,35 +10,40 @@ namespace Berverage_Manager.DAO
 {
     internal class TaiKhoan_DAO
     {
-        DBQuanLyBanNuocGiaiKhat dbQuanLyBanNGK;
-
-        public TaiKhoan_DAO()
-        {
-            dbQuanLyBanNGK = new DBQuanLyBanNuocGiaiKhat();
-        }
-
         public void ThemTaiKhoan(TAIKHOAN tk)
         {
-            dbQuanLyBanNGK.TAIKHOANs.Add(tk);
-            dbQuanLyBanNGK.SaveChanges();
+            using (DBQuanLyBanNuocGiaiKhat dbQuanLyBanNGK = new DBQuanLyBanNuocGiaiKhat())
+            {
+                dbQuanLyBanNGK.TAIKHOANs.Add(tk);
+                dbQuanLyBanNGK.SaveChanges();
+            }
         }
 
         public void SuaTaiKhoan(TAIKHOAN tk)
         {
-            dbQuanLyBanNGK.TAIKHOANs.AddOrUpdate(tk);
-            dbQuanLyBanNGK.SaveChanges();
+            using (DBQuanLyBanNuocGiaiKhat dbQuanLyBanNGK = new DBQuanLyBanNuocGiaiKhat())
+            {
+                dbQuanLyBanNGK.TAIKHOANs.AddOrUpdate(tk);
+                dbQuanLyBanNGK.SaveChanges();
+            }
         }
 
         public void XoaTaiKhoan(String maTK)
         {
-            TAIKHOAN tk = dbQuanLyBanNGK.TAIKHOANs.FirstOrDefault(p => p.MADANGNHAP == maTK);
-            dbQuanLyBanNGK.TAIKHOANs.Remove(tk);
-            dbQuanLyBanNGK.SaveChanges();
+            using (DBQuanLyBanNuocGiaiKhat dbQuanLyBanNGK = new DBQuanLyBanNuocGiaiKhat())
+            {
+                TAIKHOAN tk = dbQuanLyBanNGK.TAIKHOANs.FirstOrDefault(p => p.MADANGNHAP == maTK);
+                dbQuanLyBanNGK.TAIKHOANs.Remove(tk);
+                dbQuanLyBanNGK.SaveChanges();
+            }
         }
 
         public TAIKHOAN LayTaiKhoanBangMTK(String maTaiKhoan)
         {
-            return dbQuanLyBanNGK.TAIKHOANs.FirstOrDefault(p => p.MADANGNHAP == maTaiKhoan);
+            using (DBQuanLyBanNuocGiaiKhat dbQuanLyBanNGK = new DBQuanLyBanNuocGiaiKhat())
+            {
+                return dbQuanLyBanNGK.TAIKHOANs.FirstOrDefault(p => p.MADANGNHAP == maTaiKhoan);
+            }
         }
 
     }

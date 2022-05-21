@@ -47,5 +47,21 @@ namespace Berverage_Manager.GUI
         {
             FillDataDGV(tonKho_BUS.LayTatCaTonKho());
         }
+
+        private void btnTimTK_Click(object sender, EventArgs e)
+        {
+            String tenSP = txtTimTK.Text;
+            List<TONKHO> lisTK = tonKho_BUS.LayTatCaTonKho();
+            List<TONKHO> listTimTK = tonKho_BUS.TimKiemSanPhamTonKho(lisTK, tenSP);
+
+            if (listTimTK.Count > 0)
+            {
+                FillDataDGV(listTimTK);
+            }
+            else
+            {
+                MessageBox.Show("Không Tìm Thấy Sản Phẩm Nào!", "THÔNG BÁO", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
     }
 }

@@ -34,7 +34,6 @@ namespace Berverage_Manager.GUI.Supplier
                 nhaCungCap_BUS.ThemNhaCungCap(ncc);
 
                 ucSupplier.uc_NhaCungCap.FillDataDGV(nhaCungCap_BUS.LayTatCaNhaCungCap());
-                //ucBanHang.bh.LoadNV();
 
                 this.Close();
             }

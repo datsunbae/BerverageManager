@@ -20,6 +20,7 @@ namespace Berverage_Manager.GUI
         public int indexRowSelected;
         SanPham_BUS sanPham_BUS;
         DonVi_BUS donVi_BUS;
+        TonKho_BUS tonKho_BUS;
         List<DONVI> list_DonVi;
         public ucProduct()
         {
@@ -31,6 +32,7 @@ namespace Berverage_Manager.GUI
             dgv_SanPham = dgvSanPham;
             sanPham_BUS = new SanPham_BUS();
             donVi_BUS = new DonVi_BUS();
+            tonKho_BUS = new TonKho_BUS();  
             list_DonVi = donVi_BUS.LayTatCaDonVi();
         }
 
@@ -80,7 +82,7 @@ namespace Berverage_Manager.GUI
             }
         }
 
-        public String layTenDVTBangMDVT(String maDVT)
+        private String layTenDVTBangMDVT(String maDVT)
         {
             foreach(var item in list_DonVi)
             {
@@ -101,14 +103,8 @@ namespace Berverage_Manager.GUI
                 int maSP = int.Parse(row.Cells[0].Value.ToString());
                 sanPham_BUS.XoaSanPham(maSP);
                 FillDataDGV(sanPham_BUS.LayTatCaSanPham());
-
-                //ucBanHang.bh.LoadNV();
-
-                //List<NHAPKHO> listtnk = dBQuanLyBanNGK.NHAPKHOes.ToList();
-                //ucNhapKho.nk.FillDataDGV(listtnk);
-
-                //List<DONHANG> listdh = dBQuanLyBanNGK.DONHANGs.ToList();
-                //ucDonHang.dh.FillDataDGV(listdh);
+                ucSell.uc_BanHang.FillDataDGV(tonKho_BUS.LayTatCaSanPhamConTonKho());
+                ucWarehouse.uc_TonKho.FillDataDGV(tonKho_BUS.LayTatCaTonKho());
             }
         }
 

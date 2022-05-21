@@ -16,10 +16,12 @@ namespace Berverage_Manager.GUI.Supplier
     {
         DataGridViewRow row;
         NhaCungCap_BUS nhaCungCap_BUS;
+        NhapKho_BUS nhapKho_BUS;
         public frmUpdateSupplier()
         {
             InitializeComponent();
             nhaCungCap_BUS = new NhaCungCap_BUS();
+            nhapKho_BUS = new NhapKho_BUS();
         }
 
         private void LoadThongTinNCC()
@@ -46,14 +48,7 @@ namespace Berverage_Manager.GUI.Supplier
                 nhaCungCap_BUS.SuaNhaCungCap(ncc);
 
                 ucSupplier.uc_NhaCungCap.FillDataDGV(nhaCungCap_BUS.LayTatCaNhaCungCap());
-
-                //ucBanHang.bh.LoadNV();
-
-                //List<NHAPKHO> listnk = dBQuanLyBanNGK.NHAPKHOes.ToList();
-                //ucNhapKho.nk.FillDataDGV(listnk);
-
-                //List<DONHANG> listdh = dBQuanLyBanNGK.DONHANGs.ToList();
-                //ucDonHang.dh.FillDataDGV(listdh);
+                ucOder.uc_PhieuNhapKho.FillDataDGV(nhapKho_BUS.LayTatCaPhieuNhapKho());
 
                 this.Close();
             }

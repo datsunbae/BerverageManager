@@ -10,40 +10,48 @@ namespace Berverage_Manager.DAO
 {
     internal class NhaCungCap_DAO
     {
-        DBQuanLyBanNuocGiaiKhat dbQuanLyBanNGK;
-
-        public NhaCungCap_DAO()
-        {
-            dbQuanLyBanNGK = new DBQuanLyBanNuocGiaiKhat();
-        }
-
         public List<NHACUNGCAP> LayTatCaNhaCungCap()
         {
-            return dbQuanLyBanNGK.NHACUNGCAPs.ToList();
+            using (DBQuanLyBanNuocGiaiKhat dbQuanLyBanNGK = new DBQuanLyBanNuocGiaiKhat())
+            {
+                return dbQuanLyBanNGK.NHACUNGCAPs.ToList();
+            }
         }
 
         public NHACUNGCAP LayNhaCungCapBangMNCC(int maNCC)
         {
-            return dbQuanLyBanNGK.NHACUNGCAPs.FirstOrDefault(p => p.MANCC == maNCC);
+            using (DBQuanLyBanNuocGiaiKhat dbQuanLyBanNGK = new DBQuanLyBanNuocGiaiKhat())
+            {
+                return dbQuanLyBanNGK.NHACUNGCAPs.FirstOrDefault(p => p.MANCC == maNCC);
+            }
         }
 
         public void ThemNhaCungCap(NHACUNGCAP ncc)
         {
-            dbQuanLyBanNGK.NHACUNGCAPs.Add(ncc);
-            dbQuanLyBanNGK.SaveChanges();
+            using (DBQuanLyBanNuocGiaiKhat dbQuanLyBanNGK = new DBQuanLyBanNuocGiaiKhat())
+            {
+                dbQuanLyBanNGK.NHACUNGCAPs.Add(ncc);
+                dbQuanLyBanNGK.SaveChanges();
+            }
         }
 
         public void SuaNhaCungCap(NHACUNGCAP ncc)
         {
-            dbQuanLyBanNGK.NHACUNGCAPs.AddOrUpdate(ncc);
-            dbQuanLyBanNGK.SaveChanges();
+            using (DBQuanLyBanNuocGiaiKhat dbQuanLyBanNGK = new DBQuanLyBanNuocGiaiKhat())
+            {
+                dbQuanLyBanNGK.NHACUNGCAPs.AddOrUpdate(ncc);
+                dbQuanLyBanNGK.SaveChanges();
+            }
         }
 
         public void XoaNhaCungCap(int maNCC)
         {
-            NHACUNGCAP ncc = dbQuanLyBanNGK.NHACUNGCAPs.FirstOrDefault(p => p.MANCC == maNCC);
-            dbQuanLyBanNGK.NHACUNGCAPs.Remove(ncc);
-            dbQuanLyBanNGK.SaveChanges();
+            using (DBQuanLyBanNuocGiaiKhat dbQuanLyBanNGK = new DBQuanLyBanNuocGiaiKhat())
+            {
+                NHACUNGCAP ncc = dbQuanLyBanNGK.NHACUNGCAPs.FirstOrDefault(p => p.MANCC == maNCC);
+                dbQuanLyBanNGK.NHACUNGCAPs.Remove(ncc);
+                dbQuanLyBanNGK.SaveChanges();
+            }
         }
 
         public List<NHACUNGCAP> TimKiemNhaCungCap(List<NHACUNGCAP> listNCC, String timKiemNCC)

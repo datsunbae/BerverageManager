@@ -25,7 +25,7 @@ namespace Berverage_Manager.GUI.Staff
             nhanVien_BUS = new NhanVien_BUS();
         }
 
-        public void LoadCB()
+        private void LoadCB()
         {
             TNV_CB_VaiTro.DataSource = vaiTro_BUS.LayTatCaVaiTro();
             TNV_CB_VaiTro.DisplayMember = "TENVAITRO";
@@ -48,14 +48,9 @@ namespace Berverage_Manager.GUI.Staff
                 tk.MATKHAU = txtMatKhauNV.Text;
                 tk.MVAITRO = TNV_CB_VaiTro.SelectedValue.ToString();
                 taiKhoan_BUS.ThemTaiKhoan(tk);
-
                 nhanVien_BUS.ThemNhanVien(nv);
-
-               
                 ucStaff.uc_NhanVien.FillDataDGV(nhanVien_BUS.LayTatCaNhanVien());
-
-               //ucBanHang.bh.LoadNV();
-
+                ucSell.uc_BanHang.LoadCBNhanVien();
                 this.Close();
             }
             else

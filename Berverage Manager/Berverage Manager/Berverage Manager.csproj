@@ -113,17 +113,23 @@
     <Compile Include="GUI\frmBillDetails.Designer.cs">
       <DependentUpon>frmBillDetails.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\frmHomeStaffWarehouse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frmHomeStaffWarehouse.Designer.cs">
+      <DependentUpon>frmHomeStaffWarehouse.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\frmHomeAdmin.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="GUI\frmHomeAdmin.Designer.cs">
       <DependentUpon>frmHomeAdmin.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\frmHomeStaffSell.cs">
+    <Compile Include="GUI\frmHomeSellStaff.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GUI\frmHomeStaffSell.Designer.cs">
-      <DependentUpon>frmHomeStaffSell.cs</DependentUpon>
+    <Compile Include="GUI\frmHomeSellStaff.Designer.cs">
+      <DependentUpon>frmHomeSellStaff.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\frmOrder.cs">
       <SubType>Form</SubType>
@@ -149,23 +155,11 @@
     <Compile Include="GUI\frmUpdateProduct.Designer.cs">
       <DependentUpon>frmUpdateProduct.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\frmHomeStaff1.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="GUI\frmHomeStaff1.Designer.cs">
-      <DependentUpon>frmHomeStaff1.cs</DependentUpon>
-    </Compile>
     <Compile Include="GUI\ucBill.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="GUI\ucBill.Designer.cs">
       <DependentUpon>ucBill.cs</DependentUpon>
-    </Compile>
-    <Compile Include="GUI\ucBillStaff.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="GUI\ucBillStaff.Designer.cs">
-      <DependentUpon>ucBillStaff.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\ucCustomer.cs">
       <SubType>UserControl</SubType>
@@ -256,11 +250,14 @@
     <EmbeddedResource Include="GUI\frmBillDetails.resx">
       <DependentUpon>frmBillDetails.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frmHomeStaffWarehouse.resx">
+      <DependentUpon>frmHomeStaffWarehouse.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI\frmHomeAdmin.resx">
       <DependentUpon>frmHomeAdmin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI\frmHomeStaffSell.resx">
-      <DependentUpon>frmHomeStaffSell.cs</DependentUpon>
+    <EmbeddedResource Include="GUI\frmHomeSellStaff.resx">
+      <DependentUpon>frmHomeSellStaff.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\frmOrder.resx">
       <DependentUpon>frmOrder.cs</DependentUpon>
@@ -274,14 +271,8 @@
     <EmbeddedResource Include="GUI\frmUpdateProduct.resx">
       <DependentUpon>frmUpdateProduct.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI\frmHomeStaff1.resx">
-      <DependentUpon>frmHomeStaff1.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="GUI\ucBill.resx">
       <DependentUpon>ucBill.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="GUI\ucBillStaff.resx">
-      <DependentUpon>ucBillStaff.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\ucCustomer.resx">
       <DependentUpon>ucCustomer.cs</DependentUpon>

@@ -14,6 +14,7 @@ namespace Berverage_Manager.GUI
 {
     public partial class ucSell : UserControl
     {
+        public static ucSell uc_BanHang;
         private TonKho_BUS tonKho_BUS;
         private SanPham_BUS sanPham_BUS;
         private KhachHang_BUS khachHang_BUS;
@@ -30,6 +31,7 @@ namespace Berverage_Manager.GUI
             BH_DGV_CTHD.Columns[3].Width = 50;
             BH_DGV_CTHD.Columns[4].Width = 40;
 
+            uc_BanHang = this;
             tonKho_BUS = new TonKho_BUS();
             sanPham_BUS = new SanPham_BUS();
             khachHang_BUS = new KhachHang_BUS();
@@ -48,7 +50,7 @@ namespace Berverage_Manager.GUI
             {
                 int RowNew = BH_DGV_DSSP.Rows.Add();
                 BH_DGV_DSSP.Rows[RowNew].Cells[0].Value = item.IDSP;
-                BH_DGV_DSSP.Rows[RowNew].Cells[1].Value = item.SANPHAM.TENSP;
+                BH_DGV_DSSP.Rows[RowNew].Cells[1].Value = sanPham_BUS.LaySanPhamBangMSP(item.IDSP.Value).TENSP;
                 BH_DGV_DSSP.Rows[RowNew].Cells[2].Value = item.SLTON;
                 BH_DGV_DSSP.Rows[RowNew].Cells[3].Value = item.SLTONQUIDOI;
             }
@@ -73,8 +75,9 @@ namespace Berverage_Manager.GUI
         public void LoadCBNhanVien()
         {
             BH_CB_NV.DataSource = nhanVien_BUS.LayTatCaNhanVien();
-            BH_CB_NV.DisplayMember = "TENNV";
             BH_CB_NV.ValueMember = "MANV";
+            BH_CB_NV.DisplayMember = "TENNV";
+            
         }
 
         public void LoadCBDonViTinh(List<DONVI> listDVT)
@@ -84,7 +87,7 @@ namespace Berverage_Manager.GUI
             BH_CB_DVTinh.ValueMember = "MADV";
         }
 
-        public void RefreshForm()
+        private void RefreshForm()
         {
             FillDataDGV(tonKho_BUS.LayTatCaSanPhamConTonKho());
             BH_DGV_CTHD.Rows.Clear();

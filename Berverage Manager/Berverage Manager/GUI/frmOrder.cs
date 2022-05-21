@@ -35,19 +35,19 @@ namespace Berverage_Manager.GUI
             tonKho_BUS = new TonKho_BUS();
         }
 
-        public void LoadCBNhaCungCap()
+        private void LoadCBNhaCungCap()
         {
             NK_CB_NCC.DataSource = nhaCungCap_BUS.LayTatCaNhaCungCap();
             NK_CB_NCC.DisplayMember = "TENNCC";
             NK_CB_NCC.ValueMember = "MANCC";
         }
-        public void LoadCBNhanVien()
+        private void LoadCBNhanVien()
         {
             NK_CB_NV.DataSource = nhanVien_BUS.LayTatCaNhanVien();
             NK_CB_NV.DisplayMember = "TENNV";
             NK_CB_NV.ValueMember = "MANV";
         }
-        public void LoadCBSanPham()
+        private void LoadCBSanPham()
         {
             NK_CB_SP.DataSource = sanPham_BUS.LayTatCaSanPham();
             NK_CB_SP.ValueMember = "MASP";
@@ -55,7 +55,7 @@ namespace Berverage_Manager.GUI
             NK_CB_SP.DisplayMember = "TENSP";
         }
 
-        public void LoadCBDonViTinh()
+        private void LoadCBDonViTinh()
         {
             NK_CB_DVTinh.DataSource = donVi_BUS.LayTatCaDonViChinh();
             NK_CB_DVTinh.DisplayMember = "TENDV";
