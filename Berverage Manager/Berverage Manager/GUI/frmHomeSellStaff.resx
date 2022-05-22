@@ -117,13 +117,31 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="ElipseSidePanel.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>950, 17</value>
-  </metadata>
-  <metadata name="ElipseSidePanel2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>1086, 17</value>
+  <metadata name="DragControl.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>1309, 4</value>
   </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="pcbClose.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAABGdBTUEAALGPC/xhBQAAAU5JREFUSEvt
+        lcFOg0AURceq8QfaAVnoplGGJm78SZdtoqbqQjemrkz/xHWX/oIVZtfxPfomGYaBGcBlT3JTBu67F0gB
+        dmAwirHR72QW0zKIfHyd0KYfxW5Pi0isQUpG6RIKj+iQEzwhGYln9IM+cZ4OucFAMH7QQCkMaCqighfT
+        D1q1ntg2uuFg2llDUJQ92YNUoK/A1O4nuRqTzU3BxYNjsFLUUqBg/r4MagODwDyvDe8Ft2J6Br+VW2ro
+        jmL8eIq+HftQ4QUaT5Gt7gWafVG6cISamqOPRvpRPjdcbBzhqojFBgpOyNoPCDiGsFUt3FDOxRv4RjTS
+        jZACrZxnr52LPAVfjn3ditoL0gUGNf0ZgouGPvEyFo9lUBP/9O5S23g6IVsdDALTwLdw9k6Hm6l+T+pX
+        YGNd0dr7PdFgsDwXl7QMQiazCyyk5YG+MPYH3ci7/QABa6gAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="btnProduct.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAQRJREFUWEft
+        kk0KwjAQhbvUswh6Ghe60LSX8DjdS39OICJeoJ7AhauauhNdalImkIboZGopRfLBW8y8vMdAG3g8g2a+
+        vYxZxk9hxl8tVbD4PII6OiytYkspSbID6miwlC+h5LFKyimsnYmyciayz7oj5wtYu7FObpMw5XcZjvIr
+        gzUZma0PEF2yE9Y4P373TyqgHscS7kRQj0MOIPzXAWK/V75FO3jWQPkw4nwLiP1R+abEz3uAZw2UDyMO
+        OYDgD+jlAJZVGykYG3MvB5gZfTY9FHJAYGb02fRQyAGEXg5QGVO6Vz90gRwQqIwp3asfukAOILQ+oGtB
+        PY4t3IWg3uMZEkHwBo2OsOnaBEjOAAAAAElFTkSuQmCC
+</value>
+  </data>
   <data name="btnSell.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAhcAAAHSCAYAAABfFOnSAAAABGdBTUEAALGPC/xhBQAA/8dJREFUeF7s
@@ -1348,16 +1366,6 @@
         xcXFxWVp+j//5/8HbvHWaFXpPBcAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="btnProduct.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAQRJREFUWEft
-        kk0KwjAQhbvUswh6Ghe60LSX8DjdS39OICJeoJ7AhauauhNdalImkIboZGopRfLBW8y8vMdAG3g8g2a+
-        vYxZxk9hxl8tVbD4PII6OiytYkspSbID6miwlC+h5LFKyimsnYmyciayz7oj5wtYu7FObpMw5XcZjvIr
-        gzUZma0PEF2yE9Y4P373TyqgHscS7kRQj0MOIPzXAWK/V75FO3jWQPkw4nwLiP1R+abEz3uAZw2UDyMO
-        OYDgD+jlAJZVGykYG3MvB5gZfTY9FHJAYGb02fRQyAGEXg5QGVO6Vz90gRwQqIwp3asfukAOILQ+oGtB
-        PY4t3IWg3uMZEkHwBo2OsOnaBEjOAAAAAElFTkSuQmCC
-</value>
-  </data>
   <data name="btnBill.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAaVJREFUWEft
@@ -1371,9 +1379,6 @@
         T1IAAAAASUVORK5CYII=
 </value>
   </data>
-  <metadata name="ElipseSidePanel1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>612, 20</value>
-  </metadata>
   <data name="btnCustomer.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAhtJREFUWEft
@@ -1400,21 +1405,16 @@
         t5U3fMxQfSJ9WxEUde86xhetzEB9urdF966i+AbcC2D46LfMowAAAABJRU5ErkJggg==
 </value>
   </data>
-  <metadata name="DragControl.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>754, 20</value>
-  </metadata>
-  <data name="pcbClose.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAABGdBTUEAALGPC/xhBQAAAU5JREFUSEvt
-        lcFOg0AURceq8QfaAVnoplGGJm78SZdtoqbqQjemrkz/xHWX/oIVZtfxPfomGYaBGcBlT3JTBu67F0gB
-        dmAwirHR72QW0zKIfHyd0KYfxW5Pi0isQUpG6RIKj+iQEzwhGYln9IM+cZ4OucFAMH7QQCkMaCqighfT
-        D1q1ntg2uuFg2llDUJQ92YNUoK/A1O4nuRqTzU3BxYNjsFLUUqBg/r4MagODwDyvDe8Ft2J6Br+VW2ro
-        jmL8eIq+HftQ4QUaT5Gt7gWafVG6cISamqOPRvpRPjdcbBzhqojFBgpOyNoPCDiGsFUt3FDOxRv4RjTS
-        jZACrZxnr52LPAVfjn3ditoL0gUGNf0ZgouGPvEyFo9lUBP/9O5S23g6IVsdDALTwLdw9k6Hm6l+T+pX
-        YGNd0dr7PdFgsDwXl7QMQiazCyyk5YG+MPYH3ci7/QABa6gAAAAASUVORK5CYII=
-</value>
-  </data>
   <metadata name="Elipse.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>873, 20</value>
+    <value>1428, 4</value>
+  </metadata>
+  <metadata name="ElipseSidePanel.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 43</value>
+  </metadata>
+  <metadata name="ElipseSidePanel1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>153, 43</value>
+  </metadata>
+  <metadata name="ElipseSidePanel2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>295, 43</value>
   </metadata>
 </root>

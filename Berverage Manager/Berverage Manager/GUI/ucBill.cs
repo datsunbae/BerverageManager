@@ -41,7 +41,7 @@ namespace Berverage_Manager.GUI
 
         private void btnSell_Click(object sender, EventArgs e)
         {
-            frmHomeAdmin.home.sell.BringToFront();
+            //frmHomeAdmin.home.sell.BringToFront();
         }
 
         public void FillDataDGV(List<DONHANG> listDonHang)

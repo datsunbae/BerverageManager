@@ -85,7 +85,7 @@
             this.btnEditSupplier.FillColor = System.Drawing.Color.White;
             this.btnEditSupplier.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.btnEditSupplier.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(146)))), ((int)(((byte)(228)))));
-            this.btnEditSupplier.Location = new System.Drawing.Point(886, 4);
+            this.btnEditSupplier.Location = new System.Drawing.Point(994, 4);
             this.btnEditSupplier.Name = "btnEditSupplier";
             this.btnEditSupplier.Size = new System.Drawing.Size(111, 36);
             this.btnEditSupplier.TabIndex = 32;
@@ -134,7 +134,7 @@
             this.guna2Panel4.Controls.Add(this.guna2PictureBox2);
             this.guna2Panel4.Location = new System.Drawing.Point(0, 100);
             this.guna2Panel4.Name = "guna2Panel4";
-            this.guna2Panel4.Size = new System.Drawing.Size(1003, 42);
+            this.guna2Panel4.Size = new System.Drawing.Size(1110, 42);
             this.guna2Panel4.TabIndex = 92;
             // 
             // label2
@@ -207,7 +207,7 @@
             this.dgvNhaCungCap.Name = "dgvNhaCungCap";
             this.dgvNhaCungCap.RowHeadersVisible = false;
             this.dgvNhaCungCap.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvNhaCungCap.Size = new System.Drawing.Size(1003, 514);
+            this.dgvNhaCungCap.Size = new System.Drawing.Size(1110, 620);
             this.dgvNhaCungCap.TabIndex = 94;
             this.dgvNhaCungCap.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.dgvNhaCungCap.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -264,7 +264,7 @@
             this.btnAddSupplier.FillColor = System.Drawing.Color.White;
             this.btnAddSupplier.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.btnAddSupplier.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(146)))), ((int)(((byte)(228)))));
-            this.btnAddSupplier.Location = new System.Drawing.Point(652, 4);
+            this.btnAddSupplier.Location = new System.Drawing.Point(760, 4);
             this.btnAddSupplier.Name = "btnAddSupplier";
             this.btnAddSupplier.Size = new System.Drawing.Size(111, 36);
             this.btnAddSupplier.TabIndex = 33;
@@ -281,7 +281,7 @@
             this.btnXoaNCC.FillColor = System.Drawing.Color.White;
             this.btnXoaNCC.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.btnXoaNCC.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(146)))), ((int)(((byte)(228)))));
-            this.btnXoaNCC.Location = new System.Drawing.Point(769, 4);
+            this.btnXoaNCC.Location = new System.Drawing.Point(877, 4);
             this.btnXoaNCC.Name = "btnXoaNCC";
             this.btnXoaNCC.Size = new System.Drawing.Size(111, 36);
             this.btnXoaNCC.TabIndex = 33;
@@ -307,7 +307,7 @@
             this.guna2Panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.guna2Panel2.Location = new System.Drawing.Point(0, 0);
             this.guna2Panel2.Name = "guna2Panel2";
-            this.guna2Panel2.Size = new System.Drawing.Size(1003, 45);
+            this.guna2Panel2.Size = new System.Drawing.Size(1110, 45);
             this.guna2Panel2.TabIndex = 90;
             // 
             // ucSupplier
@@ -321,7 +321,7 @@
             this.Controls.Add(this.guna2Panel3);
             this.Controls.Add(this.guna2Panel2);
             this.Name = "ucSupplier";
-            this.Size = new System.Drawing.Size(1003, 656);
+            this.Size = new System.Drawing.Size(1110, 762);
             this.Load += new System.EventHandler(this.ucSupplier_Load);
             this.guna2Panel4.ResumeLayout(false);
             this.guna2Panel4.PerformLayout();

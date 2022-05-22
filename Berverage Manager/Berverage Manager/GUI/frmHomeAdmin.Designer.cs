@@ -55,15 +55,7 @@
             this.DragControl = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.btnProduct = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
-            this.Supplier = new Berverage_Manager.GUI.ucSupplier();
-            this.Customer = new Berverage_Manager.GUI.ucCustomer();
-            this.Staff = new Berverage_Manager.GUI.ucStaff();
-            this.Warehouse = new Berverage_Manager.GUI.ucWarehouse();
-            this.Oder = new Berverage_Manager.GUI.ucOder();
-            this.Product = new Berverage_Manager.GUI.ucProduct();
-            this.Bill = new Berverage_Manager.GUI.ucBill();
-            this.Sell = new Berverage_Manager.GUI.ucSell();
-            this.Welcome = new Berverage_Manager.GUI.ucWelcome();
+            this.Panel = new Guna.UI2.WinForms.Guna2Panel();
             this.SidePanel2.SuspendLayout();
             this.SidePanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pcbLogout)).BeginInit();
@@ -238,7 +230,7 @@
             this.lbLogout.BackColor = System.Drawing.Color.Transparent;
             this.lbLogout.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbLogout.ForeColor = System.Drawing.Color.White;
-            this.lbLogout.Location = new System.Drawing.Point(42, 654);
+            this.lbLogout.Location = new System.Drawing.Point(42, 759);
             this.lbLogout.Name = "lbLogout";
             this.lbLogout.Size = new System.Drawing.Size(47, 19);
             this.lbLogout.TabIndex = 1;
@@ -249,7 +241,7 @@
             // 
             this.pcbLogout.Image = ((System.Drawing.Image)(resources.GetObject("pcbLogout.Image")));
             this.pcbLogout.ImageRotate = 0F;
-            this.pcbLogout.Location = new System.Drawing.Point(12, 652);
+            this.pcbLogout.Location = new System.Drawing.Point(12, 757);
             this.pcbLogout.Name = "pcbLogout";
             this.pcbLogout.Size = new System.Drawing.Size(24, 28);
             this.pcbLogout.TabIndex = 0;
@@ -285,7 +277,7 @@
             // 
             this.pcbClose.Image = ((System.Drawing.Image)(resources.GetObject("pcbClose.Image")));
             this.pcbClose.ImageRotate = 0F;
-            this.pcbClose.Location = new System.Drawing.Point(1255, 6);
+            this.pcbClose.Location = new System.Drawing.Point(1364, 6);
             this.pcbClose.Name = "pcbClose";
             this.pcbClose.Size = new System.Drawing.Size(25, 26);
             this.pcbClose.TabIndex = 17;
@@ -348,7 +340,7 @@
             this.btnSell.Image = ((System.Drawing.Image)(resources.GetObject("btnSell.Image")));
             this.btnSell.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnSell.ImageSize = new System.Drawing.Size(50, 50);
-            this.btnSell.Location = new System.Drawing.Point(16, 171);
+            this.btnSell.Location = new System.Drawing.Point(16, 166);
             this.btnSell.Name = "btnSell";
             this.btnSell.Size = new System.Drawing.Size(248, 63);
             this.btnSell.TabIndex = 11;
@@ -403,94 +395,31 @@
             this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
             this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(281, 692);
+            this.guna2Panel1.Size = new System.Drawing.Size(290, 800);
             this.guna2Panel1.TabIndex = 16;
             // 
-            // Supplier
+            // Panel
             // 
-            this.Supplier.Location = new System.Drawing.Point(281, 36);
-            this.Supplier.Name = "Supplier";
-            this.Supplier.Size = new System.Drawing.Size(1003, 656);
-            this.Supplier.TabIndex = 18;
-            // 
-            // Customer
-            // 
-            this.Customer.Location = new System.Drawing.Point(281, 36);
-            this.Customer.Name = "Customer";
-            this.Customer.Size = new System.Drawing.Size(1003, 656);
-            this.Customer.TabIndex = 19;
-            // 
-            // Staff
-            // 
-            this.Staff.Location = new System.Drawing.Point(281, 36);
-            this.Staff.Name = "Staff";
-            this.Staff.Size = new System.Drawing.Size(1003, 656);
-            this.Staff.TabIndex = 20;
-            // 
-            // Warehouse
-            // 
-            this.Warehouse.Location = new System.Drawing.Point(281, 36);
-            this.Warehouse.Name = "Warehouse";
-            this.Warehouse.Size = new System.Drawing.Size(1003, 656);
-            this.Warehouse.TabIndex = 21;
-            // 
-            // Oder
-            // 
-            this.Oder.Location = new System.Drawing.Point(281, 36);
-            this.Oder.Name = "Oder";
-            this.Oder.Size = new System.Drawing.Size(1003, 656);
-            this.Oder.TabIndex = 22;
-            // 
-            // Product
-            // 
-            this.Product.Location = new System.Drawing.Point(281, 36);
-            this.Product.Name = "Product";
-            this.Product.Size = new System.Drawing.Size(1003, 656);
-            this.Product.TabIndex = 23;
-            // 
-            // Bill
-            // 
-            this.Bill.Location = new System.Drawing.Point(281, 36);
-            this.Bill.Name = "Bill";
-            this.Bill.Size = new System.Drawing.Size(1003, 656);
-            this.Bill.TabIndex = 24;
-            // 
-            // Sell
-            // 
-            this.Sell.Location = new System.Drawing.Point(281, 36);
-            this.Sell.Name = "Sell";
-            this.Sell.Size = new System.Drawing.Size(1003, 656);
-            this.Sell.TabIndex = 25;
-            // 
-            // Welcome
-            // 
-            this.Welcome.BackColor = System.Drawing.Color.White;
-            this.Welcome.Location = new System.Drawing.Point(281, 36);
-            this.Welcome.Name = "Welcome";
-            this.Welcome.Size = new System.Drawing.Size(1003, 656);
-            this.Welcome.TabIndex = 26;
+            this.Panel.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.Panel.Location = new System.Drawing.Point(290, 38);
+            this.Panel.Name = "Panel";
+            this.Panel.Size = new System.Drawing.Size(1110, 762);
+            this.Panel.TabIndex = 18;
             // 
             // frmHomeAdmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1284, 692);
-            this.Controls.Add(this.Welcome);
-            this.Controls.Add(this.Sell);
-            this.Controls.Add(this.Bill);
-            this.Controls.Add(this.Product);
-            this.Controls.Add(this.Oder);
-            this.Controls.Add(this.Warehouse);
-            this.Controls.Add(this.Staff);
-            this.Controls.Add(this.Customer);
-            this.Controls.Add(this.Supplier);
+            this.ClientSize = new System.Drawing.Size(1400, 800);
+            this.Controls.Add(this.Panel);
             this.Controls.Add(this.pcbClose);
             this.Controls.Add(this.guna2Panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmHomeAdmin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmHomeAdmin";
+            this.Load += new System.EventHandler(this.frmHomeAdmin_Load);
             this.SidePanel2.ResumeLayout(false);
             this.SidePanel2.PerformLayout();
             this.SidePanel.ResumeLayout(false);
@@ -532,14 +461,6 @@
         private Guna.UI2.WinForms.Guna2DragControl DragControl;
         private Guna.UI2.WinForms.Guna2Button btnProduct;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
-        private ucSupplier Supplier;
-        private ucCustomer Customer;
-        private ucStaff Staff;
-        private ucWarehouse Warehouse;
-        private ucOder Oder;
-        private ucProduct Product;
-        private ucBill Bill;
-        private ucSell Sell;
-        private ucWelcome Welcome;
+        private Guna.UI2.WinForms.Guna2Panel Panel;
     }
 }

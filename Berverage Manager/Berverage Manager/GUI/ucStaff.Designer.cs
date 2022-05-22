@@ -116,7 +116,7 @@
             this.dgvNhanVien.Name = "dgvNhanVien";
             this.dgvNhanVien.RowHeadersVisible = false;
             this.dgvNhanVien.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvNhanVien.Size = new System.Drawing.Size(1003, 514);
+            this.dgvNhanVien.Size = new System.Drawing.Size(1110, 620);
             this.dgvNhanVien.TabIndex = 95;
             this.dgvNhanVien.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.dgvNhanVien.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -220,7 +220,7 @@
             this.guna2Panel4.Controls.Add(this.guna2PictureBox2);
             this.guna2Panel4.Location = new System.Drawing.Point(0, 100);
             this.guna2Panel4.Name = "guna2Panel4";
-            this.guna2Panel4.Size = new System.Drawing.Size(1003, 42);
+            this.guna2Panel4.Size = new System.Drawing.Size(1110, 42);
             this.guna2Panel4.TabIndex = 93;
             // 
             // label2
@@ -254,7 +254,7 @@
             this.btnAddStaff.FillColor = System.Drawing.Color.White;
             this.btnAddStaff.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.btnAddStaff.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(146)))), ((int)(((byte)(228)))));
-            this.btnAddStaff.Location = new System.Drawing.Point(652, 4);
+            this.btnAddStaff.Location = new System.Drawing.Point(760, 4);
             this.btnAddStaff.Name = "btnAddStaff";
             this.btnAddStaff.Size = new System.Drawing.Size(111, 36);
             this.btnAddStaff.TabIndex = 33;
@@ -271,7 +271,7 @@
             this.btnDeleteStaff.FillColor = System.Drawing.Color.White;
             this.btnDeleteStaff.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.btnDeleteStaff.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(146)))), ((int)(((byte)(228)))));
-            this.btnDeleteStaff.Location = new System.Drawing.Point(769, 4);
+            this.btnDeleteStaff.Location = new System.Drawing.Point(877, 4);
             this.btnDeleteStaff.Name = "btnDeleteStaff";
             this.btnDeleteStaff.Size = new System.Drawing.Size(111, 36);
             this.btnDeleteStaff.TabIndex = 33;
@@ -288,7 +288,7 @@
             this.btnEditStaff.FillColor = System.Drawing.Color.White;
             this.btnEditStaff.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.btnEditStaff.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(146)))), ((int)(((byte)(228)))));
-            this.btnEditStaff.Location = new System.Drawing.Point(886, 4);
+            this.btnEditStaff.Location = new System.Drawing.Point(994, 4);
             this.btnEditStaff.Name = "btnEditStaff";
             this.btnEditStaff.Size = new System.Drawing.Size(111, 36);
             this.btnEditStaff.TabIndex = 32;
@@ -304,7 +304,7 @@
             this.guna2Panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.guna2Panel2.Location = new System.Drawing.Point(0, 0);
             this.guna2Panel2.Name = "guna2Panel2";
-            this.guna2Panel2.Size = new System.Drawing.Size(1003, 45);
+            this.guna2Panel2.Size = new System.Drawing.Size(1110, 45);
             this.guna2Panel2.TabIndex = 91;
             // 
             // guna2Panel3
@@ -328,7 +328,7 @@
             this.Controls.Add(this.guna2Panel2);
             this.Controls.Add(this.guna2Panel3);
             this.Name = "ucStaff";
-            this.Size = new System.Drawing.Size(1003, 656);
+            this.Size = new System.Drawing.Size(1110, 762);
             this.Load += new System.EventHandler(this.ucStaff_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvNhanVien)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();

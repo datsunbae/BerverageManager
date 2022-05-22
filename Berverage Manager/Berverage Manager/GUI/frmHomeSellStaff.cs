@@ -12,9 +12,18 @@ namespace Berverage_Manager.GUI
 {
     public partial class frmHomeSellStaff : Form
     {
+        ucSell sell;
+        ucBill bill;
+        ucProduct product;
+        ucCustomer customer;
         public frmHomeSellStaff()
         {
             InitializeComponent();
+            
+            sell = new ucSell();
+            bill = new ucBill();
+            product = new ucProduct();
+            customer = new ucCustomer();
         }
         private void pcbClose_Click(object sender, EventArgs e)
         {
@@ -34,32 +43,35 @@ namespace Berverage_Manager.GUI
             if (dialogResult == DialogResult.Yes)
             {
                 new frmLogin().Show();
-                this.Close();
+                this.Hide();
             }
-            else if (dialogResult == DialogResult.No)
-            {
+        }
 
-            }
+        private void frmHomeSellStaff_Load(object sender, EventArgs e)
+        {
+            Panel.Controls.Add(sell);
+            Panel.Controls.Add(bill);
+            Panel.Controls.Add(product);
+            Panel.Controls.Add(customer);
         }
 
         private void btnSell_Click(object sender, EventArgs e)
         {
-            Sell.BringToFront();
+            sell.BringToFront();
         }
 
         private void btnBill_Click(object sender, EventArgs e)
         {
-            Bill.BringToFront();
+            bill.BringToFront();
+        }
+        private void btnCustomer_Click(object sender, EventArgs e)
+        {
+            customer.BringToFront();
         }
 
         private void btnProduct_Click(object sender, EventArgs e)
         {
-            Product.BringToFront();
-        }
-
-        private void btnCustomer_Click(object sender, EventArgs e)
-        {
-            Customer.BringToFront();
+            product.BringToFront();
         }
     }
 }

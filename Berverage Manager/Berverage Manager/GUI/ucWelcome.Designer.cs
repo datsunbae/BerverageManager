@@ -40,7 +40,7 @@
             // 
             this.guna2PictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox1.Image")));
             this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(497, 76);
+            this.guna2PictureBox1.Location = new System.Drawing.Point(601, 109);
             this.guna2PictureBox1.Name = "guna2PictureBox1";
             this.guna2PictureBox1.Size = new System.Drawing.Size(467, 480);
             this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -90,7 +90,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.guna2PictureBox1);
             this.Name = "ucWelcome";
-            this.Size = new System.Drawing.Size(1003, 656);
+            this.Size = new System.Drawing.Size(1110, 762);
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -110,3 +110,43 @@ D:\DoAnCoSo\Berverage Manager_DACS\Berverage Manager\Berverage Manager\bin\Debug
 D:\DoAnCoSo\Berverage Manager_DACS\Berverage Manager\Berverage Manager\obj\Debug\Berverage Manager.csproj.AssemblyReference.cache
 D:\DoAnCoSo\Berverage Manager_DACS\Berverage Manager\Berverage Manager\obj\Debug\Berverage_Manager.GUI.frmHomeSellStaff.resources
 D:\DoAnCoSo\Berverage Manager_DACS\Berverage Manager\Berverage Manager\obj\Debug\Berverage_Manager.GUI.frmHomeStaffWarehouse.resources
+C:\Users\daitr\OneDrive\Máy tính\Berverage Manager_DACS\Berverage Manager\Berverage Manager\bin\Debug\Berverage Manager.exe.config
+C:\Users\daitr\OneDrive\Máy tính\Berverage Manager_DACS\Berverage Manager\Berverage Manager\bin\Debug\Berverage Manager.exe
+C:\Users\daitr\OneDrive\Máy tính\Berverage Manager_DACS\Berverage Manager\Berverage Manager\bin\Debug\Berverage Manager.pdb
+C:\Users\daitr\OneDrive\Máy tính\Berverage Manager_DACS\Berverage Manager\Berverage Manager\bin\Debug\EntityFramework.dll
+C:\Users\daitr\OneDrive\Máy tính\Berverage Manager_DACS\Berverage Manager\Berverage Manager\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\daitr\OneDrive\Máy tính\Berverage Manager_DACS\Berverage Manager\Berverage Manager\bin\Debug\Guna.UI2.dll
+C:\Users\daitr\OneDrive\Máy tính\Berverage Manager_DACS\Berverage Manager\Berverage Manager\bin\Debug\EntityFramework.xml
+C:\Users\daitr\OneDrive\Máy tính\Berverage Manager_DACS\Berverage Manager\Berverage Manager\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\daitr\OneDrive\Máy tính\Berverage Manager_DACS\Berverage Manager\Berverage Manager\obj\Debug\Berverage Manager.csproj.AssemblyReference.cache
+C:\Users\daitr\OneDrive\Máy tính\Berverage Manager_DACS\Berverage Manager\Berverage Manager\obj\Debug\Berverage Manager.csproj.SuggestedBindingRedirects.cache
+C:\Users\daitr\OneDrive\Máy tính\Berverage Manager_DACS\Berverage Manager\Berverage Manager\obj\Debug\Berverage_Manager.GUI.Customer.frmAddCustomer.resources
+C:\Users\daitr\OneDrive\Máy tính\Berverage Manager_DACS\Berverage Manager\Berverage Manager\obj\Debug\Berverage_Manager.GUI.frmAddProduct.resources
+C:\Users\daitr\OneDrive\Máy tính\Berverage Manager_DACS\Berverage Manager\Berverage Manager\obj\Debug\Berverage_Manager.GUI.frmBillDetails.resources
+C:\Users\daitr\OneDrive\Máy tính\Berverage Manager_DACS\Berverage Manager\Berverage Manager\obj\Debug\Berverage_Manager.GUI.frmHomeStaffWarehouse.resources
+C:\Users\daitr\OneDrive\Máy tính\Berverage Manager_DACS\Berverage Manager\Berverage Manager\obj\Debug\Berverage_Manager.GUI.frmHomeAdmin.resources
+C:\Users\daitr\OneDrive\Máy tính\Berverage Manager_DACS\Berverage Manager\Berverage Manager\obj\Debug\Berverage_Manager.GUI.frmHomeSellStaff.resources
+C:\Users\daitr\OneDrive\Máy tính\Berverage Manager_DACS\Berverage Manager\Berverage Manager\obj\Debug\Berverage_Manager.GUI.frmOrder.resources
+C:\Users\daitr\OneDrive\Máy tính\Berverage Manager_DACS\Berverage Manager\Berverage Manager\obj\Debug\Berverage_Manager.GUI.frmOrderDetails.resources
+C:\Users\daitr\OneDrive\Máy tính\Berverage Manager_DACS\Berverage Manager\Berverage Manager\obj\Debug\Berverage_Manager.GUI.Customer.frmUpdateCustomer.resources
+C:\Users\daitr\OneDrive\Máy tính\Berverage Manager_DACS\Berverage Manager\Berverage Manager\obj\Debug\Berverage_Manager.GUI.frmUpdateProduct.resources
+C:\Users\daitr\OneDrive\Máy tính\Berverage Manager_DACS\Berverage Manager\Berverage Manager\obj\Debug\Berverage_Manager.GUI.ucBill.resources
+C:\Users\daitr\OneDrive\Máy tính\Berverage Manager_DACS\Berverage Manager\Berverage Manager\obj\Debug\Berverage_Manager.GUI.ucCustomer.resources
+C:\Users\daitr\OneDrive\Máy tính\Berverage Manager_DACS\Berverage Manager\Berverage Manager\obj\Debug\Berverage_Manager.GUI.frmLogin.resources
+C:\Users\daitr\OneDrive\Máy tính\Berverage Manager_DACS\Berverage Manager\Berverage Manager\obj\Debug\Berverage_Manager.GUI.Staff.frmAddStaff.resources
+C:\Users\daitr\OneDrive\Máy tính\Berverage Manager_DACS\Berverage Manager\Berverage Manager\obj\Debug\Berverage_Manager.GUI.Staff.frmUpdateStaff.resources
+C:\Users\daitr\OneDrive\Máy tính\Berverage Manager_DACS\Berverage Manager\Berverage Manager\obj\Debug\Berverage_Manager.GUI.ucOder.resources
+C:\Users\daitr\OneDrive\Máy tính\Berverage Manager_DACS\Berverage Manager\Berverage Manager\obj\Debug\Berverage_Manager.GUI.ucProduct.resources
+C:\Users\daitr\OneDrive\Máy tính\Berverage Manager_DACS\Berverage Manager\Berverage Manager\obj\Debug\Berverage_Manager.GUI.ucSell.resources
+C:\Users\daitr\OneDrive\Máy tính\Berverage Manager_DACS\Berverage Manager\Berverage Manager\obj\Debug\Berverage_Manager.GUI.ucStaff.resources
+C:\Users\daitr\OneDrive\Máy tính\Berverage Manager_DACS\Berverage Manager\Berverage Manager\obj\Debug\Berverage_Manager.GUI.Supplier.frmAddSupplier.resources
+C:\Users\daitr\OneDrive\Máy tính\Berverage Manager_DACS\Berverage Manager\Berverage Manager\obj\Debug\Berverage_Manager.GUI.Supplier.frmUpdateSupplier.resources
+C:\Users\daitr\OneDrive\Máy tính\Berverage Manager_DACS\Berverage Manager\Berverage Manager\obj\Debug\Berverage_Manager.GUI.ucSupplier.resources
+C:\Users\daitr\OneDrive\Máy tính\Berverage Manager_DACS\Berverage Manager\Berverage Manager\obj\Debug\Berverage_Manager.GUI.ucWarehouse.resources
+C:\Users\daitr\OneDrive\Máy tính\Berverage Manager_DACS\Berverage Manager\Berverage Manager\obj\Debug\Berverage_Manager.GUI.ucWelcome.resources
+C:\Users\daitr\OneDrive\Máy tính\Berverage Manager_DACS\Berverage Manager\Berverage Manager\obj\Debug\Berverage_Manager.Properties.Resources.resources
+C:\Users\daitr\OneDrive\Máy tính\Berverage Manager_DACS\Berverage Manager\Berverage Manager\obj\Debug\Berverage Manager.csproj.GenerateResource.cache
+C:\Users\daitr\OneDrive\Máy tính\Berverage Manager_DACS\Berverage Manager\Berverage Manager\obj\Debug\Berverage Manager.csproj.CoreCompileInputs.cache
+C:\Users\daitr\OneDrive\Máy tính\Berverage Manager_DACS\Berverage Manager\Berverage Manager\obj\Debug\Berverage Manager.csproj.CopyComplete
+C:\Users\daitr\OneDrive\Máy tính\Berverage Manager_DACS\Berverage Manager\Berverage Manager\obj\Debug\Berverage Manager.exe
+C:\Users\daitr\OneDrive\Máy tính\Berverage Manager_DACS\Berverage Manager\Berverage Manager\obj\Debug\Berverage Manager.pdb

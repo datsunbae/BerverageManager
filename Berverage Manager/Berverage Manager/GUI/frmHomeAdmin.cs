@@ -12,13 +12,25 @@ namespace Berverage_Manager.GUI
 {
     public partial class frmHomeAdmin : Form
     {
-        public static frmHomeAdmin home;
-        public UserControl sell;
+        ucSell sell;
+        ucBill bill;
+        ucProduct product;
+        ucOder order;
+        ucWarehouse warehouse;
+        ucStaff staff;
+        ucCustomer customer;
+        ucSupplier supplier;
         public frmHomeAdmin()
         {
             InitializeComponent();
-            home = this;
-            sell = Sell;
+            sell = new ucSell();
+            bill = new ucBill();
+            product = new ucProduct();
+            order = new ucOder();
+            warehouse = new ucWarehouse();
+            staff = new ucStaff();
+            customer = new ucCustomer();
+            supplier = new ucSupplier();
         }
         private void pcbClose_Click(object sender, EventArgs e)
         {
@@ -38,49 +50,60 @@ namespace Berverage_Manager.GUI
             if (dialogResult == DialogResult.Yes)
             {
                 new frmLogin().Show();
-                this.Close();
+                this.Hide();
             }
-            
         }
 
-        private void btnSupplier_Click(object sender, EventArgs e)
+        private void frmHomeAdmin_Load(object sender, EventArgs e)
         {
-            Supplier.BringToFront();
-        }
-
-        private void btnCustomer_Click(object sender, EventArgs e)
-        {
-            Customer.BringToFront();
-        }
-
-        private void btnStaff_Click(object sender, EventArgs e)
-        {
-            Staff.BringToFront();
-        }
-
-        private void btnWarehouse_Click(object sender, EventArgs e)
-        {
-            Warehouse.BringToFront();
-        }
-
-        private void btnOrder_Click(object sender, EventArgs e)
-        {
-            Oder.BringToFront();
-        }
-
-        private void btnProduct_Click(object sender, EventArgs e)
-        {
-            Product.BringToFront();
-        }
-
-        private void btnBill_Click(object sender, EventArgs e)
-        {
-            Bill.BringToFront();
+            Panel.Controls.Add(sell);
+            Panel.Controls.Add(bill);
+            Panel.Controls.Add(product);
+            Panel.Controls.Add(order);
+            Panel.Controls.Add(warehouse);
+            Panel.Controls.Add(staff);
+            Panel.Controls.Add(customer);
+            Panel.Controls.Add(supplier);
         }
 
         private void btnSell_Click(object sender, EventArgs e)
         {
-            Sell.BringToFront();
+            sell.BringToFront();
+        }
+
+        private void btnBill_Click(object sender, EventArgs e)
+        {
+            bill.BringToFront();
+        }
+
+        private void btnProduct_Click(object sender, EventArgs e)
+        {
+            product.BringToFront();
+        }
+
+        private void btnOrder_Click(object sender, EventArgs e)
+        {
+            order.BringToFront();
+        }
+
+        private void btnWarehouse_Click(object sender, EventArgs e)
+        {
+            warehouse.BringToFront();
+        }
+
+        private void btnStaff_Click(object sender, EventArgs e)
+        {
+            staff.BringToFront();
+        }
+
+        private void btnCustomer_Click(object sender, EventArgs e)
+        {
+            customer.BringToFront();
+        }
+
+        private void btnSupplier_Click(object sender, EventArgs e)
+        {
+            supplier.BringToFront();
         }
     }
 }

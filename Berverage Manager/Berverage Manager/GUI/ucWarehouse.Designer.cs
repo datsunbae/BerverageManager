@@ -111,7 +111,7 @@
             this.dgv_TK.Name = "dgv_TK";
             this.dgv_TK.RowHeadersVisible = false;
             this.dgv_TK.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgv_TK.Size = new System.Drawing.Size(1003, 514);
+            this.dgv_TK.Size = new System.Drawing.Size(1110, 620);
             this.dgv_TK.TabIndex = 97;
             this.dgv_TK.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.dgv_TK.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -183,7 +183,7 @@
             this.guna2Panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.guna2Panel2.Location = new System.Drawing.Point(0, 0);
             this.guna2Panel2.Name = "guna2Panel2";
-            this.guna2Panel2.Size = new System.Drawing.Size(1003, 45);
+            this.guna2Panel2.Size = new System.Drawing.Size(1110, 45);
             this.guna2Panel2.TabIndex = 93;
             // 
             // guna2Panel3
@@ -193,7 +193,7 @@
             this.guna2Panel3.Controls.Add(this.guna2PictureBox1);
             this.guna2Panel3.Location = new System.Drawing.Point(0, 100);
             this.guna2Panel3.Name = "guna2Panel3";
-            this.guna2Panel3.Size = new System.Drawing.Size(1003, 42);
+            this.guna2Panel3.Size = new System.Drawing.Size(1110, 42);
             this.guna2Panel3.TabIndex = 96;
             // 
             // guna2Panel4
@@ -255,7 +255,7 @@
             this.Controls.Add(this.guna2Panel4);
             this.Controls.Add(this.btnTimTK);
             this.Name = "ucWarehouse";
-            this.Size = new System.Drawing.Size(1003, 656);
+            this.Size = new System.Drawing.Size(1110, 762);
             this.Load += new System.EventHandler(this.ucWarehouse_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_TK)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();

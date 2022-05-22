@@ -72,7 +72,7 @@
             this.btnXemDHTheoNgay.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(146)))), ((int)(((byte)(228)))));
             this.btnXemDHTheoNgay.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.btnXemDHTheoNgay.ForeColor = System.Drawing.Color.White;
-            this.btnXemDHTheoNgay.Location = new System.Drawing.Point(916, 63);
+            this.btnXemDHTheoNgay.Location = new System.Drawing.Point(1024, 63);
             this.btnXemDHTheoNgay.Name = "btnXemDHTheoNgay";
             this.btnXemDHTheoNgay.Size = new System.Drawing.Size(81, 32);
             this.btnXemDHTheoNgay.TabIndex = 109;
@@ -84,7 +84,7 @@
             this.guna2HtmlLabel4.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel4.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(146)))), ((int)(((byte)(228)))));
-            this.guna2HtmlLabel4.Location = new System.Drawing.Point(779, 46);
+            this.guna2HtmlLabel4.Location = new System.Drawing.Point(887, 46);
             this.guna2HtmlLabel4.Name = "guna2HtmlLabel4";
             this.guna2HtmlLabel4.Size = new System.Drawing.Size(56, 15);
             this.guna2HtmlLabel4.TabIndex = 107;
@@ -95,7 +95,7 @@
             this.guna2HtmlLabel3.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel3.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(146)))), ((int)(((byte)(228)))));
-            this.guna2HtmlLabel3.Location = new System.Drawing.Point(642, 46);
+            this.guna2HtmlLabel3.Location = new System.Drawing.Point(750, 46);
             this.guna2HtmlLabel3.Name = "guna2HtmlLabel3";
             this.guna2HtmlLabel3.Size = new System.Drawing.Size(48, 15);
             this.guna2HtmlLabel3.TabIndex = 108;
@@ -110,7 +110,7 @@
             this.DTP_DH_TUNGAY.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.DTP_DH_TUNGAY.ForeColor = System.Drawing.Color.White;
             this.DTP_DH_TUNGAY.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.DTP_DH_TUNGAY.Location = new System.Drawing.Point(642, 63);
+            this.DTP_DH_TUNGAY.Location = new System.Drawing.Point(750, 63);
             this.DTP_DH_TUNGAY.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.DTP_DH_TUNGAY.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.DTP_DH_TUNGAY.Name = "DTP_DH_TUNGAY";
@@ -143,7 +143,7 @@
             this.guna2Panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.guna2Panel2.Location = new System.Drawing.Point(0, 0);
             this.guna2Panel2.Name = "guna2Panel2";
-            this.guna2Panel2.Size = new System.Drawing.Size(1003, 45);
+            this.guna2Panel2.Size = new System.Drawing.Size(1110, 45);
             this.guna2Panel2.TabIndex = 99;
             // 
             // btnViewOrder
@@ -156,7 +156,7 @@
             this.btnViewOrder.FillColor = System.Drawing.Color.White;
             this.btnViewOrder.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.btnViewOrder.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(146)))), ((int)(((byte)(228)))));
-            this.btnViewOrder.Location = new System.Drawing.Point(769, 4);
+            this.btnViewOrder.Location = new System.Drawing.Point(877, 4);
             this.btnViewOrder.Name = "btnViewOrder";
             this.btnViewOrder.Size = new System.Drawing.Size(111, 36);
             this.btnViewOrder.TabIndex = 34;
@@ -173,7 +173,7 @@
             this.btnOder.FillColor = System.Drawing.Color.White;
             this.btnOder.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.btnOder.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(146)))), ((int)(((byte)(228)))));
-            this.btnOder.Location = new System.Drawing.Point(886, 4);
+            this.btnOder.Location = new System.Drawing.Point(994, 4);
             this.btnOder.Name = "btnOder";
             this.btnOder.Size = new System.Drawing.Size(111, 36);
             this.btnOder.TabIndex = 32;
@@ -187,7 +187,7 @@
             this.guna2Panel4.Controls.Add(this.guna2PictureBox2);
             this.guna2Panel4.Location = new System.Drawing.Point(0, 100);
             this.guna2Panel4.Name = "guna2Panel4";
-            this.guna2Panel4.Size = new System.Drawing.Size(1003, 42);
+            this.guna2Panel4.Size = new System.Drawing.Size(1110, 42);
             this.guna2Panel4.TabIndex = 101;
             // 
             // label2
@@ -252,7 +252,7 @@
             this.DTP_DH_DENNGAY.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.DTP_DH_DENNGAY.ForeColor = System.Drawing.Color.White;
             this.DTP_DH_DENNGAY.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.DTP_DH_DENNGAY.Location = new System.Drawing.Point(779, 63);
+            this.DTP_DH_DENNGAY.Location = new System.Drawing.Point(887, 63);
             this.DTP_DH_DENNGAY.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.DTP_DH_DENNGAY.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.DTP_DH_DENNGAY.Name = "DTP_DH_DENNGAY";
@@ -319,7 +319,7 @@
             this.dgvNHAPKHO.Name = "dgvNHAPKHO";
             this.dgvNHAPKHO.RowHeadersVisible = false;
             this.dgvNHAPKHO.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvNHAPKHO.Size = new System.Drawing.Size(1003, 514);
+            this.dgvNHAPKHO.Size = new System.Drawing.Size(1110, 620);
             this.dgvNHAPKHO.TabIndex = 103;
             this.dgvNHAPKHO.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.dgvNHAPKHO.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -386,7 +386,7 @@
             this.Controls.Add(this.txtTimNK);
             this.Controls.Add(this.dgvNHAPKHO);
             this.Name = "ucOder";
-            this.Size = new System.Drawing.Size(1003, 656);
+            this.Size = new System.Drawing.Size(1110, 762);
             this.Load += new System.EventHandler(this.ucOder_Load);
             this.guna2Panel2.ResumeLayout(false);
             this.guna2Panel4.ResumeLayout(false);
