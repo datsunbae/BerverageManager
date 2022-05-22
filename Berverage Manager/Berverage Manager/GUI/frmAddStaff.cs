@@ -9,6 +9,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Berverage_Manager.BUS;
+using System.IO;
+using System.Drawing.Imaging;
 
 namespace Berverage_Manager.GUI.Staff
 {
@@ -42,6 +44,9 @@ namespace Berverage_Manager.GUI.Staff
                 nv.DIACHINV = txtDiaChiNV.Text;
                 nv.EMAILNV = txtEmailNV.Text;
                 nv.MATK = txtMaTaiKhoanNV.Text;
+                MemoryStream memoryStream = new MemoryStream();
+                PB_ImgStaff.Image.Save(memoryStream, ImageFormat.Jpeg);
+                nv.HINHANHNV = memoryStream.ToArray();
 
                 TAIKHOAN tk = new TAIKHOAN();
                 tk.MADANGNHAP = txtMaTaiKhoanNV.Text;
@@ -62,6 +67,17 @@ namespace Berverage_Manager.GUI.Staff
         private void frmAddStaff_Load(object sender, EventArgs e)
         {
             LoadCB();
+        }
+
+        private void BTN_ChonHinhAnh_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog.ShowDialog();
+            String fileName = OpenFileDialog.FileName;
+            if (string.IsNullOrEmpty(fileName)){
+                return;
+            }
+            Image image = Image.FromFile(fileName);
+            PB_ImgStaff.Image = image;
         }
     }
 }

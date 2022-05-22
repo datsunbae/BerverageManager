@@ -38,6 +38,14 @@ namespace Berverage_Manager.DAO
             }
         }
 
+        public NHANVIEN LayNhanVienBangMaTaiKhoan(string maTaiKhoan)
+        {
+            using (DBQuanLyBanNuocGiaiKhat dbQuanLyBanNGK = new DBQuanLyBanNuocGiaiKhat())
+            {
+                return dbQuanLyBanNGK.NHANVIENs.FirstOrDefault(p => p.MATK == maTaiKhoan);
+            }
+        }
+
         public void SuaNhanVien(NHANVIEN nv)
         {
             using (DBQuanLyBanNuocGiaiKhat dbQuanLyBanNGK = new DBQuanLyBanNuocGiaiKhat())

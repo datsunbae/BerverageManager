@@ -35,7 +35,7 @@ namespace Berverage_Manager.GUI
                     switch (user.MVAITRO) 
                     {
                         case "VT1":
-                            new frmHomeAdmin().Show();
+                            new frmHomeAdmin(user).Show();
                             this.Hide();
                             break;
                         case "VT2":

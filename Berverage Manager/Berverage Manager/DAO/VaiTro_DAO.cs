@@ -16,5 +16,13 @@ namespace Berverage_Manager.DAO
                 return dbQuanLyBanNGK.VAITROes.ToList();
             }
         }
+
+        public VAITRO LayTenVaiTroBangMVT(string maVaiTro)
+        {
+            using (DBQuanLyBanNuocGiaiKhat dbQuanLyBanNGK = new DBQuanLyBanNuocGiaiKhat())
+            {
+                return dbQuanLyBanNGK.VAITROes.FirstOrDefault(p => p.MAVAITRO == maVaiTro);
+            }
+        }
     }
 }

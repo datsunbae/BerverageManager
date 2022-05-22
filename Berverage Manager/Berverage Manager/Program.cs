@@ -17,7 +17,7 @@ namespace Berverage_Manager
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmHomeAdmin());
+            Application.Run(new frmLogin());
         }
     }
 }

@@ -26,6 +26,10 @@ namespace Berverage_Manager.BUS
             return nv_DA0.LayNhanVienBangMNV(maNV);
         }
 
+        public NHANVIEN LayNhanVienBangMaTaiKhoan(string maTaiKhoan)
+        {
+            return nv_DA0.LayNhanVienBangMaTaiKhoan(maTaiKhoan);
+        }
         public void ThemNhanVien(NHANVIEN nv)
         {
             nv_DA0.ThemNhanVien(nv);

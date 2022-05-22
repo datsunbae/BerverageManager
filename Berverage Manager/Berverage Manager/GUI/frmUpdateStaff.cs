@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Imaging;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -40,6 +42,7 @@ namespace Berverage_Manager.GUI.Staff
         {
             int rowSelectedUpdate = ucStaff.uc_NhanVien.indexRowSelected;
             row = ucStaff.uc_NhanVien.dgv_NhanVien.Rows[rowSelectedUpdate];
+            int maNV = int.Parse(row.Cells[0].Value.ToString());
             txtTenNV.Text = row.Cells[1].Value.ToString();
             txtDienThoaiNV.Text = row.Cells[2].Value.ToString();
             txtDiaChiNV.Text = row.Cells[3].Value.ToString();
@@ -48,6 +51,11 @@ namespace Berverage_Manager.GUI.Staff
             TAIKHOAN tk = taiKhoan_BUS.LayTaiKhoanBangMTK(txtMaTaiKhoanNV.Text);
             txtMatKhauNV.Text = tk.MATKHAU;
             SNV_CB_VaiTro.SelectedValue = tk.MVAITRO;
+
+            NHANVIEN nv = nhanVien_BUS.LayNhanVienBangMNV(maNV);
+            MemoryStream memoryStream = new MemoryStream(nv.HINHANHNV.ToArray());
+            Image img = Image.FromStream(memoryStream);
+            PB_ImgStaff.Image = img;
         }
 
         private void frmUpdateStaff_Load(object sender, EventArgs e)
@@ -69,6 +77,9 @@ namespace Berverage_Manager.GUI.Staff
                 nv.DIACHINV = txtDiaChiNV.Text;
                 nv.EMAILNV = txtEmailNV.Text;
                 nv.MATK = txtMaTaiKhoanNV.Text;
+                MemoryStream memoryStream = new MemoryStream();
+                PB_ImgStaff.Image.Save(memoryStream, ImageFormat.Jpeg);
+                nv.HINHANHNV = memoryStream.ToArray();
 
                 tk.MATKHAU = txtMatKhauNV.Text;
                 tk.MVAITRO = SNV_CB_VaiTro.SelectedValue.ToString();
@@ -82,6 +93,17 @@ namespace Berverage_Manager.GUI.Staff
                 ucBill.uc_DonHang.FillDataDGV(donHang_BUS.LayTatCaDonHang());
                 this.Close();
             }
+        }
+
+        private void BTN_ChonHinhAnh_Click(object sender, EventArgs e)
+        {
+            if (OpenFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                String fileName = OpenFileDialog.FileName;
+                Image image = Image.FromFile(fileName);
+                PB_ImgStaff.Image = image;
+            }
+            
         }
     }
 }

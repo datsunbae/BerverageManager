@@ -7,6 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Berverage_Manager.DataContext;
+using Berverage_Manager.BUS;
+using System.IO;
 
 namespace Berverage_Manager.GUI
 {
@@ -20,9 +23,14 @@ namespace Berverage_Manager.GUI
         ucStaff staff;
         ucCustomer customer;
         ucSupplier supplier;
-        public frmHomeAdmin()
+        NhanVien_BUS nhanVien_BUS;
+        VaiTro_BUS vaiTro_BUS;
+        TAIKHOAN taiKhoan;
+
+        public frmHomeAdmin(TAIKHOAN user)
         {
             InitializeComponent();
+            taiKhoan = user;
             sell = new ucSell();
             bill = new ucBill();
             product = new ucProduct();
@@ -31,6 +39,8 @@ namespace Berverage_Manager.GUI
             staff = new ucStaff();
             customer = new ucCustomer();
             supplier = new ucSupplier();
+            nhanVien_BUS = new NhanVien_BUS();
+            vaiTro_BUS = new VaiTro_BUS();
         }
         private void pcbClose_Click(object sender, EventArgs e)
         {
@@ -64,6 +74,13 @@ namespace Berverage_Manager.GUI
             Panel.Controls.Add(staff);
             Panel.Controls.Add(customer);
             Panel.Controls.Add(supplier);
+
+            NHANVIEN nv = nhanVien_BUS.LayNhanVienBangMaTaiKhoan(taiKhoan.MADANGNHAP);
+            MemoryStream memoryStream = new MemoryStream(nv.HINHANHNV.ToArray());
+            Image img = Image.FromStream(memoryStream);
+            PB_ImgStaff.Image = img;
+            LB_Ten.Text = nv.TENNV.ToUpper();
+            LB_VaiTro.Text = vaiTro_BUS.LayTenVaiTroBangMVT(taiKhoan.MVAITRO).TENVAITRO;
         }
 
         private void btnSell_Click(object sender, EventArgs e)

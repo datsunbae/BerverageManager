@@ -21,5 +21,10 @@ namespace Berverage_Manager.BUS
         {
             return vt_DAO.LayTatCaVaiTro();
         }
+
+        public VAITRO LayTenVaiTroBangMVT(string maVaiTro)
+        {
+            return vt_DAO.LayTenVaiTroBangMVT(maVaiTro);
+        }
     }
 }
