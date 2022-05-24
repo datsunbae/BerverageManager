@@ -39,11 +39,11 @@ namespace Berverage_Manager.GUI
                             this.Hide();
                             break;
                         case "VT2":
-                            new frmHomeSellStaff().Show();
+                            new frmHomeSellStaff(user).Show();
                             this.Hide();
                             break;
                         case "VT3":
-                            new frmHomeStaffWarehouse().Show();
+                            new frmHomeStaffWarehouse(user).Show();
                             this.Hide();
                             break;
                     }

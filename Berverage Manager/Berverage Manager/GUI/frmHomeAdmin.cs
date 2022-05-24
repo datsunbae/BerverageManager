@@ -79,7 +79,7 @@ namespace Berverage_Manager.GUI
             MemoryStream memoryStream = new MemoryStream(nv.HINHANHNV.ToArray());
             Image img = Image.FromStream(memoryStream);
             PB_ImgStaff.Image = img;
-            LB_Ten.Text = nv.TENNV.ToUpper();
+            LB_Ten.Text = "Chào, " + nv.TENNV.ToUpper();
             LB_VaiTro.Text = vaiTro_BUS.LayTenVaiTroBangMVT(taiKhoan.MVAITRO).TENVAITRO;
         }
 

@@ -52,12 +52,16 @@
             this.ElipseSidePanel = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.ElipseSidePanel1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.ElipseSidePanel2 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.LB_VaiTro = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.LB_Ten = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.PB_ImgStaff = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.SidePanel2.SuspendLayout();
             this.SidePanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pcbClose)).BeginInit();
             this.SidePanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pcbLogout)).BeginInit();
             this.guna2Panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_ImgStaff)).BeginInit();
             this.SuspendLayout();
             // 
             // Panel
@@ -73,7 +77,7 @@
             this.SidePanel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(181)))), ((int)(((byte)(254)))));
             this.SidePanel2.Controls.Add(this.guna2HtmlLabel6);
             this.SidePanel2.ForeColor = System.Drawing.Color.White;
-            this.SidePanel2.Location = new System.Drawing.Point(16, 463);
+            this.SidePanel2.Location = new System.Drawing.Point(20, 530);
             this.SidePanel2.Name = "SidePanel2";
             this.SidePanel2.Size = new System.Drawing.Size(248, 26);
             this.SidePanel2.TabIndex = 10;
@@ -102,7 +106,7 @@
             this.btnProduct.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(97)))), ((int)(((byte)(174)))), ((int)(((byte)(235)))));
             this.btnProduct.Image = ((System.Drawing.Image)(resources.GetObject("btnProduct.Image")));
             this.btnProduct.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnProduct.Location = new System.Drawing.Point(16, 292);
+            this.btnProduct.Location = new System.Drawing.Point(20, 359);
             this.btnProduct.Name = "btnProduct";
             this.btnProduct.Size = new System.Drawing.Size(248, 42);
             this.btnProduct.TabIndex = 6;
@@ -121,7 +125,7 @@
             this.SidePanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(181)))), ((int)(((byte)(254)))));
             this.SidePanel.Controls.Add(this.guna2HtmlLabel4);
             this.SidePanel.ForeColor = System.Drawing.Color.White;
-            this.SidePanel.Location = new System.Drawing.Point(16, 260);
+            this.SidePanel.Location = new System.Drawing.Point(20, 327);
             this.SidePanel.Name = "SidePanel";
             this.SidePanel.Size = new System.Drawing.Size(248, 26);
             this.SidePanel.TabIndex = 9;
@@ -150,7 +154,7 @@
             this.btnOrder.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(97)))), ((int)(((byte)(174)))), ((int)(((byte)(235)))));
             this.btnOrder.Image = ((System.Drawing.Image)(resources.GetObject("btnOrder.Image")));
             this.btnOrder.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnOrder.Location = new System.Drawing.Point(16, 395);
+            this.btnOrder.Location = new System.Drawing.Point(20, 462);
             this.btnOrder.Name = "btnOrder";
             this.btnOrder.Size = new System.Drawing.Size(121, 42);
             this.btnOrder.TabIndex = 6;
@@ -171,7 +175,7 @@
             this.btnWarehouse.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(97)))), ((int)(((byte)(174)))), ((int)(((byte)(235)))));
             this.btnWarehouse.Image = ((System.Drawing.Image)(resources.GetObject("btnWarehouse.Image")));
             this.btnWarehouse.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnWarehouse.Location = new System.Drawing.Point(143, 395);
+            this.btnWarehouse.Location = new System.Drawing.Point(147, 462);
             this.btnWarehouse.Name = "btnWarehouse";
             this.btnWarehouse.Size = new System.Drawing.Size(121, 42);
             this.btnWarehouse.TabIndex = 6;
@@ -192,7 +196,7 @@
             this.btnSupplier.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(97)))), ((int)(((byte)(174)))), ((int)(((byte)(235)))));
             this.btnSupplier.Image = ((System.Drawing.Image)(resources.GetObject("btnSupplier.Image")));
             this.btnSupplier.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnSupplier.Location = new System.Drawing.Point(16, 495);
+            this.btnSupplier.Location = new System.Drawing.Point(20, 562);
             this.btnSupplier.Name = "btnSupplier";
             this.btnSupplier.Size = new System.Drawing.Size(248, 42);
             this.btnSupplier.TabIndex = 6;
@@ -205,7 +209,7 @@
             this.guna2HtmlLabel3.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel3.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel3.ForeColor = System.Drawing.Color.White;
-            this.guna2HtmlLabel3.Location = new System.Drawing.Point(54, 86);
+            this.guna2HtmlLabel3.Location = new System.Drawing.Point(54, 61);
             this.guna2HtmlLabel3.Name = "guna2HtmlLabel3";
             this.guna2HtmlLabel3.Size = new System.Drawing.Size(172, 30);
             this.guna2HtmlLabel3.TabIndex = 5;
@@ -238,7 +242,7 @@
             this.SidePanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(181)))), ((int)(((byte)(254)))));
             this.SidePanel1.Controls.Add(this.guna2HtmlLabel5);
             this.SidePanel1.ForeColor = System.Drawing.Color.White;
-            this.SidePanel1.Location = new System.Drawing.Point(16, 363);
+            this.SidePanel1.Location = new System.Drawing.Point(20, 430);
             this.SidePanel1.Name = "SidePanel1";
             this.SidePanel1.Size = new System.Drawing.Size(248, 26);
             this.SidePanel1.TabIndex = 10;
@@ -248,7 +252,7 @@
             this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel2.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel2.ForeColor = System.Drawing.Color.White;
-            this.guna2HtmlLabel2.Location = new System.Drawing.Point(78, 46);
+            this.guna2HtmlLabel2.Location = new System.Drawing.Point(78, 21);
             this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
             this.guna2HtmlLabel2.Size = new System.Drawing.Size(120, 39);
             this.guna2HtmlLabel2.TabIndex = 5;
@@ -280,6 +284,9 @@
             // guna2Panel1
             // 
             this.guna2Panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(146)))), ((int)(((byte)(228)))));
+            this.guna2Panel1.Controls.Add(this.LB_VaiTro);
+            this.guna2Panel1.Controls.Add(this.LB_Ten);
+            this.guna2Panel1.Controls.Add(this.PB_ImgStaff);
             this.guna2Panel1.Controls.Add(this.SidePanel2);
             this.guna2Panel1.Controls.Add(this.SidePanel1);
             this.guna2Panel1.Controls.Add(this.SidePanel);
@@ -314,6 +321,43 @@
             // 
             this.ElipseSidePanel2.TargetControl = this.SidePanel2;
             // 
+            // LB_VaiTro
+            // 
+            this.LB_VaiTro.AutoSize = false;
+            this.LB_VaiTro.BackColor = System.Drawing.Color.Transparent;
+            this.LB_VaiTro.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LB_VaiTro.ForeColor = System.Drawing.Color.White;
+            this.LB_VaiTro.Location = new System.Drawing.Point(18, 240);
+            this.LB_VaiTro.Name = "LB_VaiTro";
+            this.LB_VaiTro.Size = new System.Drawing.Size(248, 31);
+            this.LB_VaiTro.TabIndex = 21;
+            this.LB_VaiTro.Text = "VAI TRÒ";
+            this.LB_VaiTro.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // LB_Ten
+            // 
+            this.LB_Ten.AutoSize = false;
+            this.LB_Ten.BackColor = System.Drawing.Color.Transparent;
+            this.LB_Ten.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LB_Ten.ForeColor = System.Drawing.Color.White;
+            this.LB_Ten.Location = new System.Drawing.Point(5, 211);
+            this.LB_Ten.Name = "LB_Ten";
+            this.LB_Ten.Size = new System.Drawing.Size(272, 31);
+            this.LB_Ten.TabIndex = 20;
+            this.LB_Ten.Text = "HỌ VÀ TÊN";
+            this.LB_Ten.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // PB_ImgStaff
+            // 
+            this.PB_ImgStaff.ImageRotate = 0F;
+            this.PB_ImgStaff.Location = new System.Drawing.Point(89, 123);
+            this.PB_ImgStaff.Name = "PB_ImgStaff";
+            this.PB_ImgStaff.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.PB_ImgStaff.Size = new System.Drawing.Size(88, 79);
+            this.PB_ImgStaff.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.PB_ImgStaff.TabIndex = 19;
+            this.PB_ImgStaff.TabStop = false;
+            // 
             // frmHomeStaffWarehouse
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -338,6 +382,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pcbLogout)).EndInit();
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_ImgStaff)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -365,5 +410,8 @@
         private Guna.UI2.WinForms.Guna2Elipse ElipseSidePanel;
         private Guna.UI2.WinForms.Guna2Elipse ElipseSidePanel1;
         private Guna.UI2.WinForms.Guna2Elipse ElipseSidePanel2;
+        private Guna.UI2.WinForms.Guna2HtmlLabel LB_VaiTro;
+        private Guna.UI2.WinForms.Guna2HtmlLabel LB_Ten;
+        private Guna.UI2.WinForms.Guna2CirclePictureBox PB_ImgStaff;
     }
 }
