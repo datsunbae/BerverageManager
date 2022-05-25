@@ -478,5 +478,10 @@ namespace Berverage_Manager.GUI
                 MessageBox.Show("Không Tìm Thấy Sản Phẩm Nào!", "THÔNG BÁO", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
+
+        private void BH_BTN_KHUYENMAI_Click(object sender, EventArgs e)
+        {
+            new frmSellDiscount().Show();
+        }
     }
 }

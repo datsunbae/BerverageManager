@@ -23,6 +23,7 @@ namespace Berverage_Manager.GUI
         ucStaff staff;
         ucCustomer customer;
         ucSupplier supplier;
+        ucDiscount discount;
         NhanVien_BUS nhanVien_BUS;
         VaiTro_BUS vaiTro_BUS;
         TAIKHOAN taiKhoan;
@@ -39,6 +40,7 @@ namespace Berverage_Manager.GUI
             staff = new ucStaff();
             customer = new ucCustomer();
             supplier = new ucSupplier();
+            discount = new ucDiscount();
             nhanVien_BUS = new NhanVien_BUS();
             vaiTro_BUS = new VaiTro_BUS();
         }
@@ -74,6 +76,7 @@ namespace Berverage_Manager.GUI
             Panel.Controls.Add(staff);
             Panel.Controls.Add(customer);
             Panel.Controls.Add(supplier);
+            Panel.Controls.Add(discount);
 
             NHANVIEN nv = nhanVien_BUS.LayNhanVienBangMaTaiKhoan(taiKhoan.MADANGNHAP);
             MemoryStream memoryStream = new MemoryStream(nv.HINHANHNV.ToArray());
@@ -121,6 +124,11 @@ namespace Berverage_Manager.GUI
         private void btnSupplier_Click(object sender, EventArgs e)
         {
             supplier.BringToFront();
+        }
+
+        private void btnDiscount_Click(object sender, EventArgs e)
+        {
+            discount.BringToFront();
         }
     }
 }

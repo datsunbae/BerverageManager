@@ -30,6 +30,11 @@ namespace Berverage_Manager.DataContext
         [StringLength(100)]
         public string DIACHIKH { get; set; }
 
+        public bool? GIOITINH { get; set; }
+
+        [Column(TypeName = "date")]
+        public DateTime? NGAYTHANGNAMSINH { get; set; }
+
         public bool? LOAIKH { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]

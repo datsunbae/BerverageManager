@@ -18,6 +18,20 @@ namespace Berverage_Manager.DAO
             }
         }
 
+        public List<SANPHAM> LayTatCaSanPhamConTonKho(List<TONKHO> listTK)
+        {
+            List <SANPHAM> listSP = new List<SANPHAM> ();
+            using (DBQuanLyBanNuocGiaiKhat dbQuanLyBanNGK = new DBQuanLyBanNuocGiaiKhat())
+            {
+                foreach(var item in listTK)
+                {
+                    listSP.Add(dbQuanLyBanNGK.SANPHAMs.Include("TONKHOes").FirstOrDefault(p => p.MASP == item.IDSP && item.SLTON > 0));
+                }
+
+                return listSP;
+            }
+        }
+
         public void ThemSanPham(SANPHAM sp)
         {
             using (DBQuanLyBanNuocGiaiKhat dbQuanLyBanNGK = new DBQuanLyBanNuocGiaiKhat())
@@ -59,5 +73,7 @@ namespace Berverage_Manager.DAO
             List<SANPHAM> listTimSP = listSP.Where(p => p.TENSP.ToLower().Contains(timKiemSP.ToLower())).ToList();
             return listTimSP;
         }
+
+        
     }
 }

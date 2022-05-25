@@ -27,11 +27,17 @@ namespace Berverage_Manager.DataContext
 
         public double? TONGTIEN { get; set; }
 
+        public int? MAKHUYENMAI { get; set; }
+
+        public double? GIATRIKHUYENMAI { get; set; }
+
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<CT_DONHANG> CT_DONHANG { get; set; }
 
         public virtual KHACHHANG KHACHHANG { get; set; }
 
         public virtual NHANVIEN NHANVIEN { get; set; }
+
+        public virtual KHUYENMAI KHUYENMAI { get; set; }
     }
 }

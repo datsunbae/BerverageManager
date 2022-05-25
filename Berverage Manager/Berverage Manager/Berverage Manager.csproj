@@ -59,10 +59,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BUS\CT_DonHang_BUS.cs" />
+    <Compile Include="BUS\CT_KhuyenMaiChietKhau_BUS.cs" />
+    <Compile Include="BUS\CT_KhuyenMaiTangSP_BUS.cs" />
     <Compile Include="BUS\CT_NhapKho_BUS.cs" />
+    <Compile Include="BUS\DoiTuongKhuyenMai_BUS.cs" />
     <Compile Include="BUS\DonHang_BUS.cs" />
     <Compile Include="BUS\DonVi_BUS.cs" />
     <Compile Include="BUS\KhachHang_BUS.cs" />
+    <Compile Include="BUS\KhuyenMai_BUS.cs" />
     <Compile Include="BUS\NhaCungCap_BUS.cs" />
     <Compile Include="BUS\NhanVien_BUS.cs" />
     <Compile Include="BUS\NhapKho_BUS.cs" />
@@ -71,10 +75,14 @@
     <Compile Include="BUS\TonKho_BUS.cs" />
     <Compile Include="BUS\VaiTro_BUS.cs" />
     <Compile Include="DAO\CT_DonHang_DAO.cs" />
+    <Compile Include="DAO\CT_KhuyenMaiChietKhau_DAO.cs" />
+    <Compile Include="DAO\CT_KhuyenMaiTangSP_DAO.cs" />
     <Compile Include="DAO\CT_NhapKho_DAO.cs" />
+    <Compile Include="DAO\DoiTuongKhuyenMai_DAO.cs" />
     <Compile Include="DAO\DonHang_DAO.cs" />
     <Compile Include="DAO\DonVi_DAO.cs" />
     <Compile Include="DAO\KhachHang_DAO.cs" />
+    <Compile Include="DAO\KhuyenMai_DAO.cs" />
     <Compile Include="DAO\NhaCungCap_DAO.cs" />
     <Compile Include="DAO\NhanVien_DAO.cs" />
     <Compile Include="DAO\NhapKho_DAO.cs" />
@@ -82,12 +90,18 @@
     <Compile Include="DAO\TaiKhoan_DAO.cs" />
     <Compile Include="DAO\TonKho_DAO.cs" />
     <Compile Include="DAO\VaiTro_DAO.cs" />
+    <Compile Include="DataContext\CHIETKHAU.cs" />
+    <Compile Include="DataContext\CTKHUYENMAI_CHIETKHAU.cs" />
+    <Compile Include="DataContext\CTKHUYENMAI_TANGSP.cs" />
     <Compile Include="DataContext\CT_DONHANG.cs" />
     <Compile Include="DataContext\CT_PNHAPKHO.cs" />
     <Compile Include="DataContext\DBQuanLyBanNuocGiaiKhat.cs" />
+    <Compile Include="DataContext\DOITUONGKHUYENMAI.cs" />
     <Compile Include="DataContext\DONHANG.cs" />
     <Compile Include="DataContext\DONVI.cs" />
+    <Compile Include="DataContext\HINHTHUCKHUYENMAI.cs" />
     <Compile Include="DataContext\KHACHHANG.cs" />
+    <Compile Include="DataContext\KHUYENMAI.cs" />
     <Compile Include="DataContext\NHACUNGCAP.cs" />
     <Compile Include="DataContext\NHANVIEN.cs" />
     <Compile Include="DataContext\NHAPKHO.cs" />
@@ -101,6 +115,18 @@
     <Compile Include="GUI\frmAddCustomer.Designer.cs">
       <DependentUpon>frmAddCustomer.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\frmAddOrUpdateDiscount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frmAddOrUpdateDiscount.Designer.cs">
+      <DependentUpon>frmAddOrUpdateDiscount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frmAddOrUpdateDiscountProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frmAddOrUpdateDiscountProduct.Designer.cs">
+      <DependentUpon>frmAddOrUpdateDiscountProduct.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\frmAddProduct.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -112,6 +138,24 @@
     </Compile>
     <Compile Include="GUI\frmBillDetails.Designer.cs">
       <DependentUpon>frmBillDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frmChooseDiscountOrProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frmChooseDiscountOrProduct.Designer.cs">
+      <DependentUpon>frmChooseDiscountOrProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frmChooseProductGiveaways.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frmChooseProductGiveaways.Designer.cs">
+      <DependentUpon>frmChooseProductGiveaways.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frmDetailDiscount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frmDetailDiscount.Designer.cs">
+      <DependentUpon>frmDetailDiscount.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\frmHomeStaffWarehouse.cs">
       <SubType>Form</SubType>
@@ -142,6 +186,12 @@
     </Compile>
     <Compile Include="GUI\frmOrderDetails.Designer.cs">
       <DependentUpon>frmOrderDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frmSellDiscount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frmSellDiscount.Designer.cs">
+      <DependentUpon>frmSellDiscount.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\frmUpdateCustomer.cs">
       <SubType>Form</SubType>
@@ -184,6 +234,12 @@
     </Compile>
     <Compile Include="GUI\frmUpdateStaff.Designer.cs">
       <DependentUpon>frmUpdateStaff.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\ucDiscount.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\ucDiscount.Designer.cs">
+      <DependentUpon>ucDiscount.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\ucOder.cs">
       <SubType>UserControl</SubType>
@@ -244,11 +300,26 @@
     <EmbeddedResource Include="GUI\frmAddCustomer.resx">
       <DependentUpon>frmAddCustomer.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frmAddOrUpdateDiscount.resx">
+      <DependentUpon>frmAddOrUpdateDiscount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frmAddOrUpdateDiscountProduct.resx">
+      <DependentUpon>frmAddOrUpdateDiscountProduct.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI\frmAddProduct.resx">
       <DependentUpon>frmAddProduct.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\frmBillDetails.resx">
       <DependentUpon>frmBillDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frmChooseDiscountOrProduct.resx">
+      <DependentUpon>frmChooseDiscountOrProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frmChooseProductGiveaways.resx">
+      <DependentUpon>frmChooseProductGiveaways.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frmDetailDiscount.resx">
+      <DependentUpon>frmDetailDiscount.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\frmHomeStaffWarehouse.resx">
       <DependentUpon>frmHomeStaffWarehouse.cs</DependentUpon>
@@ -264,6 +335,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\frmOrderDetails.resx">
       <DependentUpon>frmOrderDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frmSellDiscount.resx">
+      <DependentUpon>frmSellDiscount.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\frmUpdateCustomer.resx">
       <DependentUpon>frmUpdateCustomer.cs</DependentUpon>
@@ -285,6 +359,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\frmUpdateStaff.resx">
       <DependentUpon>frmUpdateStaff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\ucDiscount.resx">
+      <DependentUpon>ucDiscount.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\ucOder.resx">
       <DependentUpon>ucOder.cs</DependentUpon>

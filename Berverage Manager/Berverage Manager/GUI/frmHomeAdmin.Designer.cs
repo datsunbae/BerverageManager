@@ -59,6 +59,7 @@
             this.LB_Ten = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.PB_ImgStaff = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.Panel = new Guna.UI2.WinForms.Guna2Panel();
+            this.btnDiscount = new Guna.UI2.WinForms.Guna2Button();
             this.SidePanel2.SuspendLayout();
             this.SidePanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pcbLogout)).BeginInit();
@@ -381,6 +382,7 @@
             // guna2Panel1
             // 
             this.guna2Panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(146)))), ((int)(((byte)(228)))));
+            this.guna2Panel1.Controls.Add(this.btnDiscount);
             this.guna2Panel1.Controls.Add(this.LB_VaiTro);
             this.guna2Panel1.Controls.Add(this.LB_Ten);
             this.guna2Panel1.Controls.Add(this.PB_ImgStaff);
@@ -450,6 +452,27 @@
             this.Panel.Size = new System.Drawing.Size(1110, 762);
             this.Panel.TabIndex = 18;
             // 
+            // btnDiscount
+            // 
+            this.btnDiscount.BackColor = System.Drawing.Color.Transparent;
+            this.btnDiscount.BorderRadius = 5;
+            this.btnDiscount.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnDiscount.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnDiscount.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnDiscount.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnDiscount.FillColor = System.Drawing.Color.White;
+            this.btnDiscount.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDiscount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(97)))), ((int)(((byte)(174)))), ((int)(((byte)(235)))));
+            this.btnDiscount.Image = ((System.Drawing.Image)(resources.GetObject("btnDiscount.Image")));
+            this.btnDiscount.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnDiscount.Location = new System.Drawing.Point(121, 719);
+            this.btnDiscount.Name = "btnDiscount";
+            this.btnDiscount.Size = new System.Drawing.Size(148, 42);
+            this.btnDiscount.TabIndex = 16;
+            this.btnDiscount.Text = "Khuyến mãi";
+            this.btnDiscount.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnDiscount.Click += new System.EventHandler(this.btnDiscount_Click);
+            // 
             // frmHomeAdmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -510,5 +533,6 @@
         private Guna.UI2.WinForms.Guna2CirclePictureBox PB_ImgStaff;
         private Guna.UI2.WinForms.Guna2HtmlLabel LB_VaiTro;
         private Guna.UI2.WinForms.Guna2HtmlLabel LB_Ten;
+        private Guna.UI2.WinForms.Guna2Button btnDiscount;
     }
 }

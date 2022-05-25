@@ -150,3 +150,10 @@ C:\Users\daitr\OneDrive\Máy tính\Berverage Manager_DACS\Berverage Manager\Berv
 C:\Users\daitr\OneDrive\Máy tính\Berverage Manager_DACS\Berverage Manager\Berverage Manager\obj\Debug\Berverage Manager.csproj.CopyComplete
 C:\Users\daitr\OneDrive\Máy tính\Berverage Manager_DACS\Berverage Manager\Berverage Manager\obj\Debug\Berverage Manager.exe
 C:\Users\daitr\OneDrive\Máy tính\Berverage Manager_DACS\Berverage Manager\Berverage Manager\obj\Debug\Berverage Manager.pdb
+D:\DoAnCoSo\Berverage Manager_DACS\Berverage Manager\Berverage Manager\obj\Debug\Berverage_Manager.GUI.ucDiscount.resources
+D:\DoAnCoSo\Berverage Manager_DACS\Berverage Manager\Berverage Manager\obj\Debug\Berverage_Manager.GUI.frmAddOrUpdateDiscount.resources
+D:\DoAnCoSo\Berverage Manager_DACS\Berverage Manager\Berverage Manager\obj\Debug\Berverage_Manager.GUI.frmAddOrUpdateDiscountProduct.resources
+D:\DoAnCoSo\Berverage Manager_DACS\Berverage Manager\Berverage Manager\obj\Debug\Berverage_Manager.GUI.frmChooseDiscountOrProduct.resources
+D:\DoAnCoSo\Berverage Manager_DACS\Berverage Manager\Berverage Manager\obj\Debug\Berverage_Manager.GUI.frmDetailDiscount.resources
+D:\DoAnCoSo\Berverage Manager_DACS\Berverage Manager\Berverage Manager\obj\Debug\Berverage_Manager.GUI.frmSellDiscount.resources
+D:\DoAnCoSo\Berverage Manager_DACS\Berverage Manager\Berverage Manager\obj\Debug\Berverage_Manager.GUI.frmChooseProductGiveaways.resources

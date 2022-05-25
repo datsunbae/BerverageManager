@@ -22,6 +22,11 @@ namespace Berverage_Manager.BUS
             return sanPham_DAO.LayTatCaSanPham();
         }
 
+        public List<SANPHAM> LayTatCaSanPhamConTonKho(List<TONKHO> listTK)
+        {
+            return sanPham_DAO.LayTatCaSanPhamConTonKho(listTK);
+        }
+
         public void ThemSanPham(SANPHAM sp)
         {
             sanPham_DAO.ThemSanPham(sp);

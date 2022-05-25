@@ -238,7 +238,7 @@ namespace Berverage_Manager.GUI
                     ThemSPVaoTonKho_CSDL(maSP, slDVTChinh);
 
                     /*Load DGV Ton Kho*/
-                    ucWarehouse.uc_TonKho.FillDataDGV(tonKho_BUS.LayTatCaTonKho());
+                    ucWarehouse.uc_TonKho.FillDataDGV(tonKho_BUS.LayTatCaSanPhamConTonKho());
 
                     //Load lai DGV DANH SACH SAN PHAM
                     /*List<TONKHO> listSP = dBQuanLyBanNGK.TONKHOes.Where(p => p.SLTON > 0).ToList();
