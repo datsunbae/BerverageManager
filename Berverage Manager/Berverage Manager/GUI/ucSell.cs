@@ -1,5 +1,7 @@
 ﻿using Berverage_Manager.BUS;
 using Berverage_Manager.DataContext;
+using Berverage_Manager.GUI.Customer;
+using Guna.UI2.WinForms;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -15,6 +17,8 @@ namespace Berverage_Manager.GUI
     public partial class ucSell : UserControl
     {
         public static ucSell uc_BanHang;
+        public Guna2DataGridView dgv_CTHD;
+        
         private TonKho_BUS tonKho_BUS;
         private SanPham_BUS sanPham_BUS;
         private KhachHang_BUS khachHang_BUS;
@@ -25,6 +29,9 @@ namespace Berverage_Manager.GUI
         private List<DONVI> list_DVT;
         private int indexRowSelected = -1;
         private int indexSelected_DGVCTHD = -1;
+        public double tongTien;
+        public int cb_HinhThucBanValue;
+
         public ucSell()
         {
             InitializeComponent();
@@ -32,6 +39,8 @@ namespace Berverage_Manager.GUI
             BH_DGV_CTHD.Columns[4].Width = 40;
 
             uc_BanHang = this;
+            dgv_CTHD = BH_DGV_CTHD;
+            cb_HinhThucBanValue = BH_CB_HTBan.SelectedIndex;
             tonKho_BUS = new TonKho_BUS();
             sanPham_BUS = new SanPham_BUS();
             khachHang_BUS = new KhachHang_BUS();
@@ -58,15 +67,15 @@ namespace Berverage_Manager.GUI
 
         public void LoadCBKhachHang()
         {
-            if (BH_CB_HTBan.SelectedIndex == 0) // Khach si
+            if (BH_CB_HTBan.SelectedIndex == 0) // Khach le
             {
-                BH_CB_KH.DataSource = khachHang_BUS.LayTatCaKhachSi();
+                BH_CB_KH.DataSource = khachHang_BUS.LayKhachLe();
                 BH_CB_KH.DisplayMember = "TENKH";
                 BH_CB_KH.ValueMember = "MAKH";
             }
-            else // Khach le
+            else // Khach si
             {
-                BH_CB_KH.DataSource = khachHang_BUS.LayKhachLe();
+                BH_CB_KH.DataSource = khachHang_BUS.LayTatCaKhachSi();
                 BH_CB_KH.DisplayMember = "TENKH";
                 BH_CB_KH.ValueMember = "MAKH";
             }
@@ -103,10 +112,11 @@ namespace Berverage_Manager.GUI
 
         private void ucSell_Load(object sender, EventArgs e)
         {
-            BH_CB_HTBan.SelectedIndex = 0; //set Hinh thuc ban: Khach si
+            BH_CB_HTBan.SelectedIndex = 0; //set Hinh thuc ban: Khach le
             LoadCBKhachHang();
             LoadCBNhanVien();
             FillDataDGV(tonKho_BUS.LayTatCaSanPhamConTonKho());
+            BH_DATE_TTOAN.Value = DateTime.Now;
         }
 
         private void BH_DGV_DSSP_RowsAdded(object sender, DataGridViewRowsAddedEventArgs e)
@@ -128,6 +138,7 @@ namespace Berverage_Manager.GUI
                 SANPHAM sp = sanPham_BUS.LaySanPhamBangMSP(maSP);
                 EventDGV_DSSanPham(sp);
             }
+            cb_HinhThucBanValue = BH_CB_HTBan.SelectedIndex;
         }
 
         private void BH_DGV_DSSP_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -167,22 +178,22 @@ namespace Berverage_Manager.GUI
                 {
                     if (KiemTraLoaiDonViTinh(BH_CB_DVTinh.Text))
                     {
-                        BH_TXT_GIATIEN.Text = sp.GIABANSI_DVTC.ToString();
+                        BH_TXT_GIATIEN.Text = sp.GIABANLE_DVTC.ToString();
                     }
                     else
                     {
-                        BH_TXT_GIATIEN.Text = sp.GIABANSI_DVTP.ToString();
+                        BH_TXT_GIATIEN.Text = sp.GIABANLE_DVTP.ToString();
                     }
                 }
                 else
                 {
                     if (KiemTraLoaiDonViTinh(BH_CB_DVTinh.Text))
                     {
-                        BH_TXT_GIATIEN.Text = sp.GIABANLE_DVTC.ToString();
+                        BH_TXT_GIATIEN.Text = sp.GIABANSI_DVTC.ToString();
                     }
                     else
                     {
-                        BH_TXT_GIATIEN.Text = sp.GIABANLE_DVTP.ToString();
+                        BH_TXT_GIATIEN.Text = sp.GIABANSI_DVTP.ToString();
                     }
                 }
             }
@@ -283,7 +294,8 @@ namespace Berverage_Manager.GUI
                     BH_DGV_DSSP.Rows[indexRowSelected].Cells[2].Value = slDVT_DGVSanPham_CapNhat;
                     BH_DGV_DSSP.Rows[indexRowSelected].Cells[3].Value = slQuyDoi_DGVSanPham_CapNhat;
                     ThemSPVaoDGV_CTHD(maSP);
-
+                    BH_TXT_TongTien.Text = TinhTongTien().ToString();
+                    tongTien = double.Parse(BH_TXT_TongTien.Text);
                 }
                 else
                 {
@@ -299,7 +311,7 @@ namespace Berverage_Manager.GUI
         private int LayDongDGVSanPham_CapNhatSLTon(int maSP)
         {
             int idSP;
-            int tongDong = BH_DGV_CTHD.RowCount;
+            int tongDong = BH_DGV_DSSP.RowCount;
             for (int i = 0; i < tongDong; i++)
             {
                 idSP = int.Parse(BH_DGV_DSSP.Rows[i].Cells[0].Value.ToString());
@@ -313,32 +325,37 @@ namespace Berverage_Manager.GUI
 
         private void BH_BTN_XOASPCT_Click(object sender, EventArgs e)
         {
-            if(indexSelected_DGVCTHD != -1)
+            
+            if (indexSelected_DGVCTHD != -1 && BH_DGV_CTHD.Rows.Count > 0)
             {
-                int maSP = int.Parse(BH_DGV_DSSP.Rows[indexRowSelected].Cells[0].Value.ToString());
-                SANPHAM sp = sanPham_BUS.LaySanPhamBangMSP(maSP);
-                String tenDVTChinh = donVi_BUS.LayTenDVTBangMaDVT(sp.DVTCHINH);
-                String tenDVTPhu = donVi_BUS.LayTenDVTBangMaDVT(sp.DVTPHU);
-                String dvt_DGVCTHD = BH_DGV_CTHD.Rows[indexSelected_DGVCTHD].Cells[3].Value.ToString();
-                int slBan_DGVCTHD = int.Parse(BH_DGV_CTHD.Rows[indexSelected_DGVCTHD].Cells[4].Value.ToString());
-                int soDong_DGVSP = LayDongDGVSanPham_CapNhatSLTon(maSP);
-                int slTK_DGVSP = int.Parse(BH_DGV_DSSP.Rows[soDong_DGVSP].Cells[2].Value.ToString());
-
-                if (KiemTraLoaiDonViTinh(dvt_DGVCTHD))
+                int thanhTien = int.Parse(BH_DGV_CTHD.Rows[indexSelected_DGVCTHD].Cells[5].Value.ToString());
+                if(thanhTien != 0)
                 {
-                    slBan_DGVCTHD *= sp.QUIDOI.Value;
+                    int maSP = int.Parse(BH_DGV_DSSP.Rows[indexRowSelected].Cells[0].Value.ToString());
+                    SANPHAM sp = sanPham_BUS.LaySanPhamBangMSP(maSP);
+                    String tenDVTChinh = donVi_BUS.LayTenDVTBangMaDVT(sp.DVTCHINH);
+                    String tenDVTPhu = donVi_BUS.LayTenDVTBangMaDVT(sp.DVTPHU);
+                    String dvt_DGVCTHD = BH_DGV_CTHD.Rows[indexSelected_DGVCTHD].Cells[3].Value.ToString();
+                    int slBan_DGVCTHD = int.Parse(BH_DGV_CTHD.Rows[indexSelected_DGVCTHD].Cells[4].Value.ToString());
+                    int soDong_DGVSP = LayDongDGVSanPham_CapNhatSLTon(maSP);
+                    int slTK_DGVSP = int.Parse(BH_DGV_DSSP.Rows[soDong_DGVSP].Cells[2].Value.ToString());
+
+                    if (KiemTraLoaiDonViTinh(dvt_DGVCTHD))
+                    {
+                        slBan_DGVCTHD *= sp.QUIDOI.Value;
+                    }
+
+                    slTK_DGVSP += slBan_DGVCTHD;
+                    String slQuyDoi_DGVSanPham_CapNhat = tinhTonKhoQuyDoi(tenDVTChinh, tenDVTPhu, slTK_DGVSP, sp.QUIDOI.Value);
+                    BH_DGV_DSSP.Rows[soDong_DGVSP].Cells[2].Value = slTK_DGVSP;
+                    BH_DGV_DSSP.Rows[soDong_DGVSP].Cells[3].Value = slQuyDoi_DGVSanPham_CapNhat;
                 }
 
-                slTK_DGVSP += slBan_DGVCTHD; 
-                String slQuyDoi_DGVSanPham_CapNhat = tinhTonKhoQuyDoi(tenDVTChinh, tenDVTPhu, slTK_DGVSP, sp.QUIDOI.Value);
-                BH_DGV_DSSP.Rows[soDong_DGVSP].Cells[2].Value = slTK_DGVSP;
-                BH_DGV_DSSP.Rows[soDong_DGVSP].Cells[3].Value = slQuyDoi_DGVSanPham_CapNhat;
-
                 BH_DGV_CTHD.Rows.RemoveAt(indexSelected_DGVCTHD);
-
-                if(BH_DGV_CTHD.RowCount == 0)
+                BH_TXT_TongTien.Text = TinhTongTien().ToString();
+                if (BH_DGV_CTHD.RowCount == 0)
                 {
-                    BH_CB_HTBan.Enabled = true;
+                    BH_TXT_TongTien.Text = "";
                 }
             }
             else
@@ -360,16 +377,7 @@ namespace Berverage_Manager.GUI
 
         private void btnXacNhan_Click(object sender, EventArgs e)
         {
-            int tongDong = BH_DGV_CTHD.RowCount;
-            if(tongDong > 0)
-            {
-                BH_BTN_XOASPCT.Enabled = false;
-                BH_TXT_TongTien.Text = TinhTongTien().ToString();
-            }
-            else
-            {
-                MessageBox.Show("Không thể xác nhận! Vui lòng thêm sản phẩm vào đơn hàng", "THÔNG BÁO", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
+            
         }
 
         private void BH_TXT_KhachDua_TextChanged(object sender, EventArgs e)
@@ -387,6 +395,21 @@ namespace Berverage_Manager.GUI
             }
         }
 
+        private bool KiemTraCoKhuyenMai()
+        {
+            int tongDong = BH_DGV_CTHD.Rows.Count;
+            for(int i = 0; i < tongDong; i++)
+            {
+                int thanhTien = int.Parse(BH_DGV_CTHD.Rows[i].Cells[5].Value.ToString());
+                if (thanhTien == 0 || BH_TXT_ChietKhau.Text != "")
+                {
+                    return true;
+                }
+            }
+
+            return false;
+        }
+
         private void BH_BTN_THANHTOAN_Click(object sender, EventArgs e)
         {
             int maSP;
@@ -401,6 +424,11 @@ namespace Berverage_Manager.GUI
                 dh.TONGTIEN = double.Parse(BH_TXT_TongTien.Text);
                 dh.IDNV = int.Parse(BH_CB_NV.SelectedValue.ToString());
                 dh.IDKH = int.Parse(BH_CB_KH.SelectedValue.ToString());
+                if (KiemTraCoKhuyenMai())
+                {
+                    //dh.MAKHUYENMAI = 
+                    //dh.GIATRIKHUYENMAI = 
+                }
                 donHang_BUS.ThemDonHang(dh);
 
                 int tongDong = BH_DGV_CTHD.Rows.Count;
@@ -479,9 +507,80 @@ namespace Berverage_Manager.GUI
             }
         }
 
+        private List<KHUYENMAI> listKMThoaiDK(DateTime thoiGioiHienTai, List<int> listDoiTuongKhachHang, double tongTien)
+        {
+            List<KHUYENMAI> listKM_ThoaiDK = new List<KHUYENMAI>();
+            KhuyenMai_BUS khuyenMai_BUS = new KhuyenMai_BUS();
+            CT_KhuyenMaiTangSP_BUS cT_KhuyenMaiTangSP_BUS = new CT_KhuyenMaiTangSP_BUS();
+            List<KHUYENMAI> listKM = khuyenMai_BUS.LayTatCaKhuyenMai();
+            foreach (var km in listKM)
+            {
+                if (km.TUNGAY <= thoiGioiHienTai && (km.DENNGAY >= thoiGioiHienTai || km.DENNGAY == null)
+                && (km.SLAPDUNGCONLAI > 0 || km.SLAPDUNGCONLAI == null) && km.TRANGTHAI == true)
+                {
+                    foreach (var dtkh in listDoiTuongKhachHang)
+                    {
+                        if(km.MADTKM == dtkh)
+                        {
+                            List<CTKHUYENMAI_TANGSP> listCTKMTSP = cT_KhuyenMaiTangSP_BUS.LayDanhSachCTKhuyenMaiBangMKM(km.MAKM);
+                            foreach (var item in listCTKMTSP)
+                            {
+                                if (item.GIATU <= tongTien && (item.DENGIA >= tongTien || item.DENGIA == null))
+                                {
+                                    listKM_ThoaiDK.Add(km);
+                                    break;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            return listKM_ThoaiDK;
+        }
+
+        private List<int> LayDSDoiTuongKhuyenMai()
+        {
+            List<int> doiTuongKhachHang = new List<int>();
+            doiTuongKhachHang.Add(5);
+
+            if (BH_CB_HTBan.SelectedIndex == 0) //khach le
+            {
+                doiTuongKhachHang.Add(3);
+            }
+            else
+            {
+                bool gioiTinhKH = khachHang_BUS.LayKhachHangBangMKH(int.Parse(BH_CB_KH.SelectedValue.ToString())).GIOITINH.Value;
+                if (gioiTinhKH) //gioi tinh nam
+                {
+                    Console.WriteLine("Nam");
+                    doiTuongKhachHang.Add(1);
+                }
+                else //gioi tinh nu
+                {
+                    doiTuongKhachHang.Add(2);
+                }
+            }
+            return doiTuongKhachHang;
+        }
+
         private void BH_BTN_KHUYENMAI_Click(object sender, EventArgs e)
         {
-            new frmSellDiscount().Show();
+            if(BH_TXT_TongTien.Text != "")
+            {
+                DateTime thoiGianHienTai = BH_DATE_TTOAN.Value.Date;
+                double tongTien = int.Parse(BH_TXT_TongTien.Text);
+                new frmSellDiscount(listKMThoaiDK(thoiGianHienTai, LayDSDoiTuongKhuyenMai(), tongTien)).Show();
+            }
+            else
+            {
+                MessageBox.Show("Bạn chưa thêm sản phẩm vào đơn hàng!", "THÔNG BÁO", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
+
+        private void BH_BTN_ThemKH_Click(object sender, EventArgs e)
+        {
+            frmAddCustomer addCustomer = new frmAddCustomer();
+            addCustomer.ShowDialog();
         }
     }
 }

@@ -24,5 +24,10 @@ namespace Berverage_Manager.BUS
         {
             return ct_KhuyenMaiTangSP_DAO.LayDanhSachCTKhuyenMaiBangMKM(maKM);
         }
+
+        public List<CTKHUYENMAI_TANGSP> LayDanhSachCTKhuyenMaiTangSPThoaDK(int maKM, double tongTien)
+        {
+            return ct_KhuyenMaiTangSP_DAO.LayDanhSachCTKhuyenMaiTangSPThoaDK(maKM, tongTien);
+        }
     }
 }

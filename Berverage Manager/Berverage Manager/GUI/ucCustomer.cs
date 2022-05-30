@@ -51,9 +51,20 @@ namespace Berverage_Manager.GUI
                 int RowNew = dgvKhachHang.Rows.Add();
                 dgvKhachHang.Rows[RowNew].Cells[0].Value = item.MAKH;
                 dgvKhachHang.Rows[RowNew].Cells[1].Value = item.TENKH;
-                dgvKhachHang.Rows[RowNew].Cells[2].Value = item.SDTKH;
-                dgvKhachHang.Rows[RowNew].Cells[3].Value = item.DIACHIKH;
-                dgvKhachHang.Rows[RowNew].Cells[4].Value = item.EMAILKH;
+                if (item.GIOITINH != null)
+                {
+                    if (item.GIOITINH == true)
+                    {
+                        dgvKhachHang.Rows[RowNew].Cells[2].Value = "Nam";
+                    }
+                    else
+                    {
+                        dgvKhachHang.Rows[RowNew].Cells[2].Value = "Nữ";
+                    } 
+                }
+                dgvKhachHang.Rows[RowNew].Cells[3].Value = item.SDTKH;
+                dgvKhachHang.Rows[RowNew].Cells[4].Value = item.DIACHIKH;
+                dgvKhachHang.Rows[RowNew].Cells[5].Value = item.EMAILKH;
             }
         }
 

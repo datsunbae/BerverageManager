@@ -68,6 +68,7 @@ namespace Berverage_Manager.GUI
 
         private void frmHomeAdmin_Load(object sender, EventArgs e)
         {
+            timer1.Start();
             Panel.Controls.Add(sell);
             Panel.Controls.Add(bill);
             Panel.Controls.Add(product);
@@ -130,5 +131,11 @@ namespace Berverage_Manager.GUI
         {
             discount.BringToFront();
         }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            lb_Timer.Text = DateTime.Now.ToLongTimeString();
+        }
+
     }
 }

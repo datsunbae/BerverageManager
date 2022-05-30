@@ -41,6 +41,14 @@ namespace Berverage_Manager.GUI.Customer
             if (kh != null)
             {
                 kh.TENKH = txtTenKH.Text;
+                if (NV_CB_GioiTinh.SelectedIndex == 0)
+                {
+                    kh.GIOITINH = true;
+                }
+                else
+                {
+                    kh.GIOITINH = false;
+                }
                 kh.SDTKH = txtDienThoaiKH.Text;
                 kh.DIACHIKH = txtDiaChiKH.Text;
                 kh.EMAILKH = txtEmailKH.Text;

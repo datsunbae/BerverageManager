@@ -8,7 +8,7 @@ namespace Berverage_Manager.DataContext
     public partial class DBQuanLyBanNuocGiaiKhat : DbContext
     {
         public DBQuanLyBanNuocGiaiKhat()
-            : base("name=DBQuanLyBanNuocGiaiKhat")
+            : base("name=DBQuanLyBanNuocGiaiKhat1")
         {
         }
 

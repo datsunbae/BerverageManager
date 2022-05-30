@@ -55,11 +55,13 @@
             this.DragControl = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.btnProduct = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.btnDiscount = new Guna.UI2.WinForms.Guna2Button();
             this.LB_VaiTro = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.LB_Ten = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.PB_ImgStaff = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.Panel = new Guna.UI2.WinForms.Guna2Panel();
-            this.btnDiscount = new Guna.UI2.WinForms.Guna2Button();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.lb_Timer = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.SidePanel2.SuspendLayout();
             this.SidePanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pcbLogout)).BeginInit();
@@ -382,6 +384,7 @@
             // guna2Panel1
             // 
             this.guna2Panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(146)))), ((int)(((byte)(228)))));
+            this.guna2Panel1.Controls.Add(this.lb_Timer);
             this.guna2Panel1.Controls.Add(this.btnDiscount);
             this.guna2Panel1.Controls.Add(this.LB_VaiTro);
             this.guna2Panel1.Controls.Add(this.LB_Ten);
@@ -406,6 +409,28 @@
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.Size = new System.Drawing.Size(290, 800);
             this.guna2Panel1.TabIndex = 16;
+         
+            // 
+            // btnDiscount
+            // 
+            this.btnDiscount.BackColor = System.Drawing.Color.Transparent;
+            this.btnDiscount.BorderRadius = 5;
+            this.btnDiscount.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnDiscount.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnDiscount.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnDiscount.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnDiscount.FillColor = System.Drawing.Color.White;
+            this.btnDiscount.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDiscount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(97)))), ((int)(((byte)(174)))), ((int)(((byte)(235)))));
+            this.btnDiscount.Image = ((System.Drawing.Image)(resources.GetObject("btnDiscount.Image")));
+            this.btnDiscount.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnDiscount.Location = new System.Drawing.Point(121, 719);
+            this.btnDiscount.Name = "btnDiscount";
+            this.btnDiscount.Size = new System.Drawing.Size(148, 42);
+            this.btnDiscount.TabIndex = 16;
+            this.btnDiscount.Text = "Khuyến mãi";
+            this.btnDiscount.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnDiscount.Click += new System.EventHandler(this.btnDiscount_Click);
             // 
             // LB_VaiTro
             // 
@@ -452,26 +477,20 @@
             this.Panel.Size = new System.Drawing.Size(1110, 762);
             this.Panel.TabIndex = 18;
             // 
-            // btnDiscount
+            // timer1
             // 
-            this.btnDiscount.BackColor = System.Drawing.Color.Transparent;
-            this.btnDiscount.BorderRadius = 5;
-            this.btnDiscount.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnDiscount.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnDiscount.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnDiscount.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnDiscount.FillColor = System.Drawing.Color.White;
-            this.btnDiscount.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDiscount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(97)))), ((int)(((byte)(174)))), ((int)(((byte)(235)))));
-            this.btnDiscount.Image = ((System.Drawing.Image)(resources.GetObject("btnDiscount.Image")));
-            this.btnDiscount.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnDiscount.Location = new System.Drawing.Point(121, 719);
-            this.btnDiscount.Name = "btnDiscount";
-            this.btnDiscount.Size = new System.Drawing.Size(148, 42);
-            this.btnDiscount.TabIndex = 16;
-            this.btnDiscount.Text = "Khuyến mãi";
-            this.btnDiscount.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnDiscount.Click += new System.EventHandler(this.btnDiscount_Click);
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // lb_Timer
+            // 
+            this.lb_Timer.BackColor = System.Drawing.Color.Transparent;
+            this.lb_Timer.Font = new System.Drawing.Font("Segoe UI", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_Timer.ForeColor = System.Drawing.Color.White;
+            this.lb_Timer.Location = new System.Drawing.Point(114, 253);
+            this.lb_Timer.Name = "lb_Timer";
+            this.lb_Timer.Size = new System.Drawing.Size(46, 25);
+            this.lb_Timer.TabIndex = 17;
+            this.lb_Timer.Text = "Timer";
             // 
             // frmHomeAdmin
             // 
@@ -534,5 +553,7 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel LB_VaiTro;
         private Guna.UI2.WinForms.Guna2HtmlLabel LB_Ten;
         private Guna.UI2.WinForms.Guna2Button btnDiscount;
+        private System.Windows.Forms.Timer timer1;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lb_Timer;
     }
 }

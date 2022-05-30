@@ -25,5 +25,13 @@ namespace Berverage_Manager.DAO
                 return dbQuanLyBanNGK.CTKHUYENMAI_TANGSP.Where(p => p.MAKM == maKM).ToList();
             }
         }
+
+        public List<CTKHUYENMAI_TANGSP> LayDanhSachCTKhuyenMaiTangSPThoaDK(int maKM, double tongTien)
+        {
+            using (DBQuanLyBanNuocGiaiKhat dbQuanLyBanNGK = new DBQuanLyBanNuocGiaiKhat())
+            {
+                return dbQuanLyBanNGK.CTKHUYENMAI_TANGSP.Where(p => p.MAKM == maKM && p.GIATU <= tongTien && (p.DENGIA >= tongTien || p.DENGIA == null)).ToList();
+            }
+        }
     }
 }

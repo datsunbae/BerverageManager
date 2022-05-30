@@ -33,9 +33,19 @@ namespace Berverage_Manager.BUS
             khuyenMai_DAO.XoaKhuyenMai(maKM);
         }
 
+        public KHUYENMAI LayKhuyenMaiBangMKM(int maKM)
+        {
+            return khuyenMai_DAO.LayKhuyenMaiBangMKM(maKM);
+        }
+
         public List<KHUYENMAI> TimKiemKhuyenMai(List<KHUYENMAI> listKM, String timKiemKM)
         {
             return khuyenMai_DAO.TimKiemKhuyenMai(listKM, timKiemKM);
         }
+
+/*        public List<KHUYENMAI> LayDSKhuyenMaiThoaiDK(DateTime thoiGianHienTai, int doiTuongKhachHang)
+        {
+            return khuyenMai_DAO.LayDSKhuyenMaiThoaiDK(thoiGianHienTai, doiTuongKhachHang);
+        }*/
     }
 }

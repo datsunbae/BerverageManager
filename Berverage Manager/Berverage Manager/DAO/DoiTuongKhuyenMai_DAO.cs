@@ -16,5 +16,13 @@ namespace Berverage_Manager.DAO
                 return dbQuanLyBanNGK.DOITUONGKHUYENMAIs.ToList();
             }
         }
+
+        public String LayTenDoiTuongKhuyenMaiBangMaDTKM(int maDTKM)
+        {
+            using (DBQuanLyBanNuocGiaiKhat dbQuanLyBanNGK = new DBQuanLyBanNuocGiaiKhat())
+            {
+                return dbQuanLyBanNGK.DOITUONGKHUYENMAIs.SingleOrDefault(p => p.MADTKM == maDTKM).TENDTKM;
+            }
+        }
     }
 }

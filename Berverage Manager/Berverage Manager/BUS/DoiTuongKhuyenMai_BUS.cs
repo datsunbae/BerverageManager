@@ -20,5 +20,10 @@ namespace Berverage_Manager.BUS
         {
             return doiTuongKhachHang_DAO.LayTatCaDoiTuongKhuyenMai();
         }
+
+        public String LayTenDoiTuongKhuyenMaiBangMaDTKM(int maDTKM)
+        {
+            return doiTuongKhachHang_DAO.LayTenDoiTuongKhuyenMaiBangMaDTKM(maDTKM);
+        }
     }
 }

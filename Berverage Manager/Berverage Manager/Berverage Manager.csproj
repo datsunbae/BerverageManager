@@ -65,6 +65,7 @@
     <Compile Include="BUS\DoiTuongKhuyenMai_BUS.cs" />
     <Compile Include="BUS\DonHang_BUS.cs" />
     <Compile Include="BUS\DonVi_BUS.cs" />
+    <Compile Include="BUS\HinhThucKhuyenMai_BUS.cs" />
     <Compile Include="BUS\KhachHang_BUS.cs" />
     <Compile Include="BUS\KhuyenMai_BUS.cs" />
     <Compile Include="BUS\NhaCungCap_BUS.cs" />
@@ -81,6 +82,7 @@
     <Compile Include="DAO\DoiTuongKhuyenMai_DAO.cs" />
     <Compile Include="DAO\DonHang_DAO.cs" />
     <Compile Include="DAO\DonVi_DAO.cs" />
+    <Compile Include="DAO\HinhThucKhuyenMai_DAO.cs" />
     <Compile Include="DAO\KhachHang_DAO.cs" />
     <Compile Include="DAO\KhuyenMai_DAO.cs" />
     <Compile Include="DAO\NhaCungCap_DAO.cs" />

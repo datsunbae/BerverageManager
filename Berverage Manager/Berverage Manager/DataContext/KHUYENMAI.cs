@@ -23,8 +23,14 @@ namespace Berverage_Manager.DataContext
         [StringLength(100)]
         public string TENKM { get; set; }
 
+        public int? SLAPDUNG { get; set; }
+
+        public int? SLAPDUNGCONLAI { get; set; }
+
+        [Column(TypeName = "date")]
         public DateTime? TUNGAY { get; set; }
 
+        [Column(TypeName = "date")]
         public DateTime? DENNGAY { get; set; }
 
         public bool? TRANGTHAI { get; set; }

@@ -15,6 +15,9 @@ namespace Berverage_Manager.DataContext
 
         public int? MASP { get; set; }
 
+        [StringLength(50)]
+        public string MADV { get; set; }
+
         public int? SLTANG { get; set; }
 
         public double? GIATU { get; set; }
@@ -22,5 +25,9 @@ namespace Berverage_Manager.DataContext
         public double? DENGIA { get; set; }
 
         public virtual KHUYENMAI KHUYENMAI { get; set; }
+
+        public virtual DONVI DONVI { get; set; }
+
+        public virtual SANPHAM SANPHAM { get; set; }
     }
 }

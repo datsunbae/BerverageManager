@@ -44,10 +44,27 @@ namespace Berverage_Manager.DAO
             }
         }
 
+        public KHUYENMAI LayKhuyenMaiBangMKM(int maKM)
+        {
+            using (DBQuanLyBanNuocGiaiKhat dbQuanLyBanNGK = new DBQuanLyBanNuocGiaiKhat())
+            {
+                return dbQuanLyBanNGK.KHUYENMAIs.FirstOrDefault(p => p.MAKM == maKM);
+            }
+        }
+
         public List<KHUYENMAI> TimKiemKhuyenMai(List<KHUYENMAI> listKM, String timKiemKM)
         {
             List<KHUYENMAI> listTimKM = listKM.Where(p => p.TENKM.ToLower().Contains(timKiemKM.ToLower())).ToList();
             return listTimKM;
         }
+
+/*        public List<KHUYENMAI> LayDSKhuyenMaiThoaiDK(DateTime thoiGianHienTai, int doiTuongKhachHang)
+        {
+            using (DBQuanLyBanNuocGiaiKhat dbQuanLyBanNGK = new DBQuanLyBanNuocGiaiKhat())
+            {
+                return dbQuanLyBanNGK.KHUYENMAIs.Where(p => p.TUNGAY >= thoiGianHienTai && p.DENNGAY <= thoiGianHienTai && p.MADTKM == doiTuongKhachHang && p.SLAPDUNGCONLAI > 0).ToList();
+            }
+        }*/
+
     }
 }
