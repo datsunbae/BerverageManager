@@ -19,8 +19,10 @@ namespace Berverage_Manager.GUI
 
         private void CLKM_BTN_ChietKhau_Click(object sender, EventArgs e)
         {
-            new frmAddOrUpdateDiscount().Show();
+            // Add : Mở form thêm khuyến mãi - Update: Mở form sửa khuyến mãi
+            new frmAddOrUpdateDiscount("Add").Show();
             this.Hide();
+
         }
 
         private void CLKM_BTN_TangSP_Click(object sender, EventArgs e)

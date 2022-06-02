@@ -181,7 +181,7 @@ namespace Berverage_Manager.GUI
 
         private void btn_Them_Click(object sender, EventArgs e)
         {
-            if (txt_SlTang.Text != "")
+            if (txt_GiaTu.Text != "" && txt_SlTang.Text != "")
             {
                 if (LayDongTonTaiSP() != -1) //San pham da ton tai trong DGV
                 {
@@ -198,7 +198,7 @@ namespace Berverage_Manager.GUI
             }
             else
             {
-                MessageBox.Show("Bạn chưa nhập số lượng!", "Thông báo");
+                MessageBox.Show("Vui lòng nhập đủ thông tin!", "Thông báo");
             }
         }
 
@@ -220,6 +220,7 @@ namespace Berverage_Manager.GUI
                     if (checkbox_SL_ApDung.Checked != true)
                     {
                         km.SLAPDUNG = int.Parse(txt_Sl_Apdung.Text);
+                        km.SLAPDUNGCONLAI = int.Parse(txt_Sl_Apdung.Text);
                     }
                     km.TUNGAY = date_NgayBatDau.Value.Date;
                     if (checkbox_NgayKetThuc.Checked != true)
@@ -264,19 +265,21 @@ namespace Berverage_Manager.GUI
                 km.TENKM = txtTenKhuyenMai.Text;
                 if (checkbox_SL_ApDung.Checked != true)
                 {
+                    int slPhieuDaDung = km.SLAPDUNG.Value - km.SLAPDUNGCONLAI.Value;
                     km.SLAPDUNG = int.Parse(txt_Sl_Apdung.Text);
+                    km.SLAPDUNGCONLAI = int.Parse(txt_Sl_Apdung.Text) - slPhieuDaDung;
                 }
                 km.TUNGAY = date_NgayBatDau.Value.Date;
                 if (checkbox_NgayKetThuc.Checked != true)
                 {
                     km.DENNGAY = date_NgayKetThuc.Value.Date;
                 }
-                km.TRANGTHAI = true;
                 km.MAHTKM = 2; // ma = 2 : khuyen mai tang sp
                 km.MADTKM = int.Parse(cb_DoiTuongKH.SelectedValue.ToString());
                 khuyenMai_BUS.SuaKhuyenMai(km);
 
                 ucDiscount.uc_KhuyenMai.FillDataDGV(khuyenMai_BUS.LayTatCaKhuyenMai());
+                ucDiscount.uc_KhuyenMai.CapNhatTrangThaiKM();
                 this.Close();
                 MessageBox.Show("Sửa khuyến mãi thành công!", "Thông báo");
             }

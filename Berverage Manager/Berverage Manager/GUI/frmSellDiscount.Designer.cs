@@ -42,6 +42,7 @@
             this.clTenKM = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clLoaiKhuyenMai = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clChietKhau = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clLoaiCK = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.ADKM_DGV_DSKM)).BeginInit();
             this.SuspendLayout();
             // 
@@ -67,7 +68,7 @@
             this.ADKM_DGV_DSKM.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.ADKM_DGV_DSKM.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.ADKM_DGV_DSKM.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(185)))), ((int)(((byte)(255)))));
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
@@ -80,8 +81,9 @@
             this.colMKM,
             this.clTenKM,
             this.clLoaiKhuyenMai,
-            this.clChietKhau});
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            this.clChietKhau,
+            this.clLoaiCK});
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
@@ -186,6 +188,12 @@
             this.clChietKhau.Name = "clChietKhau";
             this.clChietKhau.ReadOnly = true;
             // 
+            // clLoaiCK
+            // 
+            this.clLoaiCK.HeaderText = "Loại chiết khấu";
+            this.clLoaiCK.Name = "clLoaiCK";
+            this.clLoaiCK.ReadOnly = true;
+            // 
             // frmSellDiscount
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -218,5 +226,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn clTenKM;
         private System.Windows.Forms.DataGridViewTextBoxColumn clLoaiKhuyenMai;
         private System.Windows.Forms.DataGridViewTextBoxColumn clChietKhau;
+        private System.Windows.Forms.DataGridViewTextBoxColumn clLoaiCK;
     }
 }

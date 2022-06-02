@@ -14,15 +14,20 @@ namespace Berverage_Manager.GUI
 {
     public partial class frmChooseProductGiveaways : Form
     {
+        public static frmChooseProductGiveaways frmChonSanPhamTang;
         private static int maKhuyenMai;
         CT_KhuyenMaiTangSP_BUS cT_KhuyenMaiTangSP_BUS;
         SanPham_BUS sanPham_BUS;
         DonVi_BUS donVi_BUS;
         int indexRowSelected;
+        public double gia;
+        public string donViTinh;
+        public int soLuongTang;
         public frmChooseProductGiveaways(int maKM)
         {
             InitializeComponent();
             maKhuyenMai = maKM;
+            frmChonSanPhamTang = this;
             cT_KhuyenMaiTangSP_BUS = new CT_KhuyenMaiTangSP_BUS();
             sanPham_BUS = new SanPham_BUS();
             donVi_BUS = new DonVi_BUS();
@@ -107,8 +112,11 @@ namespace Berverage_Manager.GUI
                 ucSell.uc_BanHang.dgv_CTHD.Rows[row].Cells[1].Value = CSPT_DGV_DSSPT.Rows[indexRowSelected].Cells[1].Value;
                 String tenDVT = CSPT_DGV_DSSPT.Rows[indexRowSelected].Cells[3].Value.ToString();
                 ucSell.uc_BanHang.dgv_CTHD.Rows[row].Cells[2].Value = LayDonGiaThoaDK(sp, tenDVT);
+                gia = LayDonGiaThoaDK(sp, tenDVT);
                 ucSell.uc_BanHang.dgv_CTHD.Rows[row].Cells[3].Value = tenDVT;
+                donViTinh = tenDVT;
                 ucSell.uc_BanHang.dgv_CTHD.Rows[row].Cells[4].Value = CSPT_DGV_DSSPT.Rows[indexRowSelected].Cells[2].Value;
+                soLuongTang = int.Parse(CSPT_DGV_DSSPT.Rows[indexRowSelected].Cells[2].Value.ToString());
                 ucSell.uc_BanHang.dgv_CTHD.Rows[row].Cells[5].Value = 0;
                 MessageBox.Show("Đã thêm sản phẩm tặng vào đơn hàng!", "THÔNG BÁO", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 this.Hide();

@@ -22,6 +22,11 @@ namespace Berverage_Manager.BUS
             return donHang_DAO.LayTatCaDonHang();
         }
 
+        public List<DONHANG> LayDSDonHangBangMaKhuyenMai(int maKM)
+        {
+            return donHang_DAO.LayDSDonHangBangMaKhuyenMai(maKM);
+        }
+
         public void ThemDonHang(DONHANG dh)
         {
             donHang_DAO.ThemDonHang(dh);
@@ -36,5 +41,6 @@ namespace Berverage_Manager.BUS
         {
             return donHang_DAO.TimKiemDonHangTheoNgay(tuNgay, denNgay);
         }
+
     }
 }

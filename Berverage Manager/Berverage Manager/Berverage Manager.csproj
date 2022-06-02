@@ -58,6 +58,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BUS\ChietKhau_BUS.cs" />
     <Compile Include="BUS\CT_DonHang_BUS.cs" />
     <Compile Include="BUS\CT_KhuyenMaiChietKhau_BUS.cs" />
     <Compile Include="BUS\CT_KhuyenMaiTangSP_BUS.cs" />
@@ -75,6 +76,7 @@
     <Compile Include="BUS\TaiKhoan_BUS.cs" />
     <Compile Include="BUS\TonKho_BUS.cs" />
     <Compile Include="BUS\VaiTro_BUS.cs" />
+    <Compile Include="DAO\ChietKhau_DAO.cs" />
     <Compile Include="DAO\CT_DonHang_DAO.cs" />
     <Compile Include="DAO\CT_KhuyenMaiChietKhau_DAO.cs" />
     <Compile Include="DAO\CT_KhuyenMaiTangSP_DAO.cs" />

@@ -17,6 +17,14 @@ namespace Berverage_Manager.DAO
             } 
         }
 
+        public List<DONHANG> LayDSDonHangBangMaKhuyenMai(int maKM)
+        {
+            using (DBQuanLyBanNuocGiaiKhat dbQuanLyBanNGK = new DBQuanLyBanNuocGiaiKhat())
+            {
+                return dbQuanLyBanNGK.DONHANGs.Where(p => p.MAKHUYENMAI == maKM).ToList();
+            }
+        }
+
         public void ThemDonHang(DONHANG dh)
         {
             using (DBQuanLyBanNuocGiaiKhat dbQuanLyBanNGK = new DBQuanLyBanNuocGiaiKhat())

@@ -18,7 +18,9 @@ namespace Berverage_Manager.GUI
     {
         public static ucSell uc_BanHang;
         public Guna2DataGridView dgv_CTHD;
-        
+        public Guna2TextBox textBox_ChietKhau;
+        public Guna2TextBox textBox_CanThanhToan;
+
         private TonKho_BUS tonKho_BUS;
         private SanPham_BUS sanPham_BUS;
         private KhachHang_BUS khachHang_BUS;
@@ -26,6 +28,7 @@ namespace Berverage_Manager.GUI
         private DonVi_BUS donVi_BUS;
         private DonHang_BUS donHang_BUS;
         private CT_DonHang_BUS ct_DonHang_BUS;
+        private KhuyenMai_BUS khuyenMai_BUS;
         private List<DONVI> list_DVT;
         private int indexRowSelected = -1;
         private int indexSelected_DGVCTHD = -1;
@@ -40,6 +43,8 @@ namespace Berverage_Manager.GUI
 
             uc_BanHang = this;
             dgv_CTHD = BH_DGV_CTHD;
+            textBox_ChietKhau = BH_TXT_ChietKhau;
+            textBox_CanThanhToan = BH_TXT_TTCanThanhToan;
             cb_HinhThucBanValue = BH_CB_HTBan.SelectedIndex;
             tonKho_BUS = new TonKho_BUS();
             sanPham_BUS = new SanPham_BUS();
@@ -48,6 +53,7 @@ namespace Berverage_Manager.GUI
             donVi_BUS = new DonVi_BUS();
             donHang_BUS = new DonHang_BUS();
             ct_DonHang_BUS = new CT_DonHang_BUS();
+            khuyenMai_BUS = new KhuyenMai_BUS();
             list_DVT = donVi_BUS.LayTatCaDonVi();
         }
 
@@ -103,9 +109,11 @@ namespace Berverage_Manager.GUI
             BH_TXT_TENSP.Text = "";
             BH_TXT_GIATIEN.Text = "";
             BH_TXT_SL.Text = "";
-            BH_TXT_TongTien.Text = "";
+            BH_TXT_TTCanThanhToan.Text = "";
             BH_TXT_KhachDua.Text = "";
             BH_TXT_TienThua.Text = "";
+            BH_TXT_ChietKhau.Text = "";
+            BH_TXT_TongTien.Text = "";
             BH_CB_HTBan.Enabled = true;
             BH_BTN_XOASPCT.Enabled = true;
         }
@@ -352,10 +360,10 @@ namespace Berverage_Manager.GUI
                 }
 
                 BH_DGV_CTHD.Rows.RemoveAt(indexSelected_DGVCTHD);
-                BH_TXT_TongTien.Text = TinhTongTien().ToString();
+                BH_TXT_TTCanThanhToan.Text = TinhTongTien().ToString();
                 if (BH_DGV_CTHD.RowCount == 0)
                 {
-                    BH_TXT_TongTien.Text = "";
+                    BH_TXT_TTCanThanhToan.Text = "";
                 }
             }
             else
@@ -385,7 +393,7 @@ namespace Berverage_Manager.GUI
             if (BH_TXT_KhachDua.Text != "")
             {
                 double tienKhachDua = double.Parse(BH_TXT_KhachDua.Text);
-                double tongTien = double.Parse(BH_TXT_TongTien.Text);
+                double tongTien = double.Parse(BH_TXT_TTCanThanhToan.Text);
                 double tienThua = tienKhachDua - tongTien;
                 BH_TXT_TienThua.Text = tienThua.ToString();
             }
@@ -398,7 +406,7 @@ namespace Berverage_Manager.GUI
         private bool KiemTraCoKhuyenMai()
         {
             int tongDong = BH_DGV_CTHD.Rows.Count;
-            for(int i = 0; i < tongDong; i++)
+            for (int i = 0; i < tongDong; i++)
             {
                 int thanhTien = int.Parse(BH_DGV_CTHD.Rows[i].Cells[5].Value.ToString());
                 if (thanhTien == 0 || BH_TXT_ChietKhau.Text != "")
@@ -421,13 +429,31 @@ namespace Berverage_Manager.GUI
                 //Them don hang vao CSDL
                 DONHANG dh = new DONHANG();
                 dh.NGAYLAP = BH_DATE_TTOAN.Value.Date;
-                dh.TONGTIEN = double.Parse(BH_TXT_TongTien.Text);
+                dh.TONGTIEN = double.Parse(BH_TXT_TTCanThanhToan.Text);
                 dh.IDNV = int.Parse(BH_CB_NV.SelectedValue.ToString());
                 dh.IDKH = int.Parse(BH_CB_KH.SelectedValue.ToString());
                 if (KiemTraCoKhuyenMai())
                 {
-                    //dh.MAKHUYENMAI = 
-                    //dh.GIATRIKHUYENMAI = 
+                    int maKhuyenMai = frmSellDiscount.frm_KhuyenMaiBanHang.maKhuyenMai;
+                    dh.MAKHUYENMAI = maKhuyenMai;
+                    if(khuyenMai_BUS.LayKhuyenMaiBangMKM(maKhuyenMai).MAHTKM == 1) //Khuyen mai theo chiet khau
+                    {
+                        dh.GIATRIKHUYENMAI = double.Parse(BH_TXT_ChietKhau.Text);
+                    }
+                    else // Khuyen mai tang san pham
+                    {
+                        int soLuongTang = frmChooseProductGiveaways.frmChonSanPhamTang.soLuongTang;
+                        double donGia = frmChooseProductGiveaways.frmChonSanPhamTang.gia;
+                        dh.GIATRIKHUYENMAI = soLuongTang * donGia;
+                    }
+
+                    //Cap nhat lai so luong phieu khuyen mai
+                    KHUYENMAI km = khuyenMai_BUS.LayKhuyenMaiBangMKM(maKhuyenMai);
+                    if (km.SLAPDUNG != null)
+                    {
+                        km.SLAPDUNGCONLAI -= 1;
+                        khuyenMai_BUS.SuaKhuyenMai(km);
+                    }
                 }
                 donHang_BUS.ThemDonHang(dh);
 
@@ -436,6 +462,10 @@ namespace Berverage_Manager.GUI
                 CT_DONHANG ct_DH = new CT_DONHANG();
                 for (int i = 0; i < tongDong; i++)
                 {
+                    if (BH_DGV_CTHD.Rows[i].Cells[5].Value.ToString() == "0")
+                    {
+                        continue;
+                    }
                     maSP = int.Parse(BH_DGV_CTHD.Rows[i].Cells[0].Value.ToString());
                     ct_DH.MADH = dh.MADH;
                     ct_DH.MASP = maSP;
@@ -480,7 +510,7 @@ namespace Berverage_Manager.GUI
 
         private void BH_BTN_HUY_Click(object sender, EventArgs e)
         {
-            BH_TXT_TongTien.Text = "";
+            BH_TXT_TTCanThanhToan.Text = "";
             BH_TXT_KhachDua.Text = "";
             BH_TXT_TienThua.Text = "";
             BH_BTN_XOASPCT.Enabled = true;
@@ -512,6 +542,7 @@ namespace Berverage_Manager.GUI
             List<KHUYENMAI> listKM_ThoaiDK = new List<KHUYENMAI>();
             KhuyenMai_BUS khuyenMai_BUS = new KhuyenMai_BUS();
             CT_KhuyenMaiTangSP_BUS cT_KhuyenMaiTangSP_BUS = new CT_KhuyenMaiTangSP_BUS();
+            CT_KhuyenMaiChietKhau_BUS cT_KhuyenMaiTheoCK_BUS = new CT_KhuyenMaiChietKhau_BUS();
             List<KHUYENMAI> listKM = khuyenMai_BUS.LayTatCaKhuyenMai();
             foreach (var km in listKM)
             {
@@ -522,13 +553,30 @@ namespace Berverage_Manager.GUI
                     {
                         if(km.MADTKM == dtkh)
                         {
-                            List<CTKHUYENMAI_TANGSP> listCTKMTSP = cT_KhuyenMaiTangSP_BUS.LayDanhSachCTKhuyenMaiBangMKM(km.MAKM);
-                            foreach (var item in listCTKMTSP)
+                            if(km.MAHTKM == 1)
                             {
-                                if (item.GIATU <= tongTien && (item.DENGIA >= tongTien || item.DENGIA == null))
+                                List<CTKHUYENMAI_CHIETKHAU> listCTKMTCK = cT_KhuyenMaiTheoCK_BUS.LayDanhSachCTKhuyenMaiBangMKM(km.MAKM);
+
+                                foreach (var item in listCTKMTCK)
                                 {
-                                    listKM_ThoaiDK.Add(km);
-                                    break;
+                                    if (item.GIATU <= tongTien && (item.DENGIA >= tongTien || item.DENGIA == null))
+                                    {
+                                        listKM_ThoaiDK.Add(km);
+                                        break;
+                                    }
+                                }
+                            }
+                            else
+                            {
+                                List<CTKHUYENMAI_TANGSP> listCTKMTSP = cT_KhuyenMaiTangSP_BUS.LayDanhSachCTKhuyenMaiBangMKM(km.MAKM);
+
+                                foreach (var item in listCTKMTSP)
+                                {
+                                    if (item.GIATU <= tongTien && (item.DENGIA >= tongTien || item.DENGIA == null))
+                                    {
+                                        listKM_ThoaiDK.Add(km);
+                                        break;
+                                    }
                                 }
                             }
                         }
@@ -581,6 +629,24 @@ namespace Berverage_Manager.GUI
         {
             frmAddCustomer addCustomer = new frmAddCustomer();
             addCustomer.ShowDialog();
+        }
+
+        private void BH_TXT_TongTien_TextChanged(object sender, EventArgs e)
+        {
+            if(BH_TXT_TongTien.Text != "" && BH_TXT_ChietKhau.Text != "")
+            {
+                double valueChange = double.Parse(BH_TXT_TongTien.Text) - double.Parse(BH_TXT_ChietKhau.Text);
+                BH_TXT_TTCanThanhToan.Text = valueChange.ToString();
+            }  
+        }
+
+        private void BH_TXT_ChietKhau_TextChanged(object sender, EventArgs e)
+        {
+            if (BH_TXT_TongTien.Text != "" && BH_TXT_ChietKhau.Text != "")
+            {
+                double valueChange = double.Parse(BH_TXT_TongTien.Text) - double.Parse(BH_TXT_ChietKhau.Text);
+                BH_TXT_TTCanThanhToan.Text = valueChange.ToString();
+            }
         }
     }
 }

@@ -36,7 +36,32 @@ namespace Berverage_Manager.GUI
 
         private void btnEditDiscount_Click(object sender, EventArgs e)
         {
-            new frmAddOrUpdateDiscountProduct("Update").Show();
+            if(indexRowSelected >= 0)
+            {
+                KHUYENMAI km = khuyenMai_BUS.LayKhuyenMaiBangMKM(int.Parse(dgvKhuyenMai.Rows[indexRowSelected].Cells[0].Value.ToString()));
+                //MaHTKM: 1: Chiet khau, 2: Tang SP
+                if(km.MAHTKM == 1)
+                {
+                    new frmAddOrUpdateDiscount("Update").Show();
+                }
+                else {
+                    new frmAddOrUpdateDiscountProduct("Update").Show();
+                }
+            }
+            
+        }
+
+        public void CapNhatTrangThaiKM()
+        {
+            List<KHUYENMAI> listKM = khuyenMai_BUS.LayTatCaKhuyenMai();
+            foreach (var item in listKM)
+            {
+                if (item.DENNGAY != null && DateTime.Compare(item.DENNGAY.Value, DateTime.Now.Date) < 0)
+                {
+                    item.TRANGTHAI = false;
+                    khuyenMai_BUS.SuaKhuyenMai(item);
+                }
+            }
         }
 
         public void FillDataDGV(List<KHUYENMAI> listKM)
@@ -78,6 +103,7 @@ namespace Berverage_Manager.GUI
 
         private void ucDiscount_Load(object sender, EventArgs e)
         {
+            CapNhatTrangThaiKM();
             FillDataDGV(khuyenMai_BUS.LayTatCaKhuyenMai());
         }
 
@@ -89,7 +115,7 @@ namespace Berverage_Manager.GUI
         private void dgvKhuyenMai_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             indexRowSelected = e.RowIndex;
-    }
+        }
 
         private void btnDeleteDiscount_Click(object sender, EventArgs e)
         {
@@ -101,6 +127,16 @@ namespace Berverage_Manager.GUI
                 khuyenMai_BUS.XoaKhuyenMai(maKM);
                 FillDataDGV(khuyenMai_BUS.LayTatCaKhuyenMai());
             }
+        }
+
+        private void btnShowDiscount_Click(object sender, EventArgs e)
+        {
+            if(indexRowSelected >= 0)
+            {
+                int maKM = int.Parse(dgvKhuyenMai.Rows[indexRowSelected].Cells[0].Value.ToString());
+                frmDetailDiscount frmDetailDiscount = new frmDetailDiscount(maKM);
+                frmDetailDiscount.ShowDialog();
+            } 
         }
     }
 }

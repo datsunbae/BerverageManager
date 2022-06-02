@@ -84,6 +84,7 @@
             this.btnShowDiscount.Size = new System.Drawing.Size(111, 36);
             this.btnShowDiscount.TabIndex = 34;
             this.btnShowDiscount.Text = "Xem khuyến mãi";
+            this.btnShowDiscount.Click += new System.EventHandler(this.btnShowDiscount_Click);
             // 
             // btnAddDiscount
             // 
