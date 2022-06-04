@@ -78,47 +78,47 @@ namespace Berverage_Manager.GUI
             KHUYENMAI km = khuyenMai_BUS.LayKhuyenMaiBangMKM(maKhuyenMai);
             if (km.TRANGTHAI.Value)
             {
-                CTKM_LB_Tinhtrang.Text += " Đang chạy";
+                CTKM_LB_Tinhtrang.Text = "Đang chạy";
                 CTKM_LB_KichHoat.Enabled = false;
             }
             else
             {
-                CTKM_LB_Tinhtrang.Text += " Tạm dừng";
+                CTKM_LB_Tinhtrang.Text = "Tạm dừng";
                 CTKM_BTN_TamDungKM.Enabled = false;
             }
             
             if(km.MAHTKM == 1) //chiet khau
             {
-                CTKM_LB_LoaiKM.Text += " Chiết khấu theo tổng tiền";
+                CTKM_LB_LoaiKM.Text = "Chiết khấu theo tổng tiền";
             }
             else
             {
-                CTKM_LB_LoaiKM.Text += " Tặng sản phẩm theo tổng tiền";
+                CTKM_LB_LoaiKM.Text = "Tặng sản phẩm theo tổng tiền";
             }
 
-            CTKM_LB_TenKM.Text += $" {km.TENKM}";
-            CTKM_LB_TuNgay.Text += $" {km.TUNGAY.Value.ToString("dd/MM/yyyy")}";
-            CTKM_LB_DoiTuongKM.Text += $" {doiTuongKhuyenMai_BUS.LayTenDoiTuongKhuyenMaiBangMaDTKM(km.MADTKM.Value)}";
+            CTKM_LB_TenKM.Text = $" {km.TENKM}";
+            CTKM_LB_TuNgay.Text = $" {km.TUNGAY.Value.ToString("dd/MM/yyyy")}";
+            CTKM_LB_DoiTuongKM.Text = $" {doiTuongKhuyenMai_BUS.LayTenDoiTuongKhuyenMaiBangMaDTKM(km.MADTKM.Value)}";
             if(km.DENNGAY == null)
             {
-                CTKM_LB_DenNgay.Text += "Không giới hạn";
-                CTKM_LB_ThoiGianConLai.Text += " Không giới hạn";
+                CTKM_LB_DenNgay.Text = "Không giới hạn";
+                CTKM_LB_ThoiGianConLai.Text = "Không giới hạn";
             }
             else
             {
-                CTKM_LB_DenNgay.Text += $" {km.DENNGAY.Value.ToString("dd/MM/yyyy")}";
-                CTKM_LB_ThoiGianConLai.Text += $" {km.DENNGAY.Value.Subtract(km.TUNGAY.Value).Days} ngày";
+                CTKM_LB_DenNgay.Text = $" {km.DENNGAY.Value.ToString("dd/MM/yyyy")}";
+                CTKM_LB_ThoiGianConLai.Text = $" {km.DENNGAY.Value.Subtract(km.TUNGAY.Value).Days} ngày";
             }
             if (km.SLAPDUNGCONLAI == null)
             {
-                CTKM_LB_SLConLai.Text += " Không giới hạn";
+                CTKM_LB_SLConLai.Text = "Không giới hạn";
             }
             else
             {
-                CTKM_LB_SLConLai.Text += $" {km.SLAPDUNGCONLAI}";
+                CTKM_LB_SLConLai.Text = $" {km.SLAPDUNGCONLAI}";
             }
 
-            CTKM_LB_TongGiaTriKM.Text += $" {TinhTongTienKhuyenMai()}";
+            CTKM_LB_TongGiaTriKM.Text = $" {TinhTongTienKhuyenMai()}";
 
         }
 
@@ -133,7 +133,7 @@ namespace Berverage_Manager.GUI
             KHUYENMAI km = khuyenMai_BUS.LayKhuyenMaiBangMKM(maKhuyenMai);
             km.TRANGTHAI = false;
             khuyenMai_BUS.SuaKhuyenMai(km);
-            CTKM_LB_Tinhtrang.Text = "Tình trạng: Tạm dừng";
+            CTKM_LB_Tinhtrang.Text = "Tạm dừng";
             CTKM_LB_KichHoat.Enabled = true;
             CTKM_BTN_TamDungKM.Enabled = false;
             ucDiscount.uc_KhuyenMai.FillDataDGV(khuyenMai_BUS.LayTatCaKhuyenMai());
@@ -144,7 +144,7 @@ namespace Berverage_Manager.GUI
             KHUYENMAI km = khuyenMai_BUS.LayKhuyenMaiBangMKM(maKhuyenMai);
             km.TRANGTHAI = true;
             khuyenMai_BUS.SuaKhuyenMai(km);
-            CTKM_LB_Tinhtrang.Text = "Tình trạng: Đang chạy";
+            CTKM_LB_Tinhtrang.Text = "Đang chạy";
             CTKM_LB_KichHoat.Enabled = false;
             CTKM_BTN_TamDungKM.Enabled = true;
             ucDiscount.uc_KhuyenMai.FillDataDGV(khuyenMai_BUS.LayTatCaKhuyenMai());

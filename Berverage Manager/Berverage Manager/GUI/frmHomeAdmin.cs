@@ -134,7 +134,7 @@ namespace Berverage_Manager.GUI
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            lb_Timer.Text = DateTime.Now.ToLongTimeString();
+            lb_Timer.Text = DateTime.Now.ToString("dddd, hh:mm:ss tt");
         }
 
     }

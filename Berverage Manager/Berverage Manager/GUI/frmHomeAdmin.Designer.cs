@@ -80,7 +80,7 @@
             this.SidePanel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(181)))), ((int)(((byte)(254)))));
             this.SidePanel2.Controls.Add(this.guna2HtmlLabel6);
             this.SidePanel2.ForeColor = System.Drawing.Color.White;
-            this.SidePanel2.Location = new System.Drawing.Point(21, 573);
+            this.SidePanel2.Location = new System.Drawing.Point(21, 608);
             this.SidePanel2.Name = "SidePanel2";
             this.SidePanel2.Size = new System.Drawing.Size(248, 26);
             this.SidePanel2.TabIndex = 10;
@@ -160,7 +160,7 @@
             this.btnWarehouse.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(97)))), ((int)(((byte)(174)))), ((int)(((byte)(235)))));
             this.btnWarehouse.Image = ((System.Drawing.Image)(resources.GetObject("btnWarehouse.Image")));
             this.btnWarehouse.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnWarehouse.Location = new System.Drawing.Point(148, 505);
+            this.btnWarehouse.Location = new System.Drawing.Point(148, 545);
             this.btnWarehouse.Name = "btnWarehouse";
             this.btnWarehouse.Size = new System.Drawing.Size(121, 42);
             this.btnWarehouse.TabIndex = 6;
@@ -181,7 +181,7 @@
             this.btnSupplier.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(97)))), ((int)(((byte)(174)))), ((int)(((byte)(235)))));
             this.btnSupplier.Image = ((System.Drawing.Image)(resources.GetObject("btnSupplier.Image")));
             this.btnSupplier.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnSupplier.Location = new System.Drawing.Point(21, 653);
+            this.btnSupplier.Location = new System.Drawing.Point(21, 688);
             this.btnSupplier.Name = "btnSupplier";
             this.btnSupplier.Size = new System.Drawing.Size(248, 42);
             this.btnSupplier.TabIndex = 6;
@@ -202,7 +202,7 @@
             this.btnCustomer.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(97)))), ((int)(((byte)(174)))), ((int)(((byte)(235)))));
             this.btnCustomer.Image = ((System.Drawing.Image)(resources.GetObject("btnCustomer.Image")));
             this.btnCustomer.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnCustomer.Location = new System.Drawing.Point(148, 605);
+            this.btnCustomer.Location = new System.Drawing.Point(148, 640);
             this.btnCustomer.Name = "btnCustomer";
             this.btnCustomer.Size = new System.Drawing.Size(121, 42);
             this.btnCustomer.TabIndex = 6;
@@ -264,7 +264,7 @@
             this.SidePanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(181)))), ((int)(((byte)(254)))));
             this.SidePanel1.Controls.Add(this.guna2HtmlLabel5);
             this.SidePanel1.ForeColor = System.Drawing.Color.White;
-            this.SidePanel1.Location = new System.Drawing.Point(21, 473);
+            this.SidePanel1.Location = new System.Drawing.Point(21, 513);
             this.SidePanel1.Name = "SidePanel1";
             this.SidePanel1.Size = new System.Drawing.Size(248, 26);
             this.SidePanel1.TabIndex = 10;
@@ -304,7 +304,7 @@
             this.btnOrder.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(97)))), ((int)(((byte)(174)))), ((int)(((byte)(235)))));
             this.btnOrder.Image = ((System.Drawing.Image)(resources.GetObject("btnOrder.Image")));
             this.btnOrder.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnOrder.Location = new System.Drawing.Point(21, 505);
+            this.btnOrder.Location = new System.Drawing.Point(21, 545);
             this.btnOrder.Name = "btnOrder";
             this.btnOrder.Size = new System.Drawing.Size(121, 42);
             this.btnOrder.TabIndex = 6;
@@ -325,7 +325,7 @@
             this.btnStaff.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(97)))), ((int)(((byte)(174)))), ((int)(((byte)(235)))));
             this.btnStaff.Image = ((System.Drawing.Image)(resources.GetObject("btnStaff.Image")));
             this.btnStaff.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnStaff.Location = new System.Drawing.Point(21, 605);
+            this.btnStaff.Location = new System.Drawing.Point(21, 640);
             this.btnStaff.Name = "btnStaff";
             this.btnStaff.Size = new System.Drawing.Size(121, 42);
             this.btnStaff.TabIndex = 6;
@@ -409,7 +409,6 @@
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.Size = new System.Drawing.Size(290, 800);
             this.guna2Panel1.TabIndex = 16;
-         
             // 
             // btnDiscount
             // 
@@ -424,9 +423,9 @@
             this.btnDiscount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(97)))), ((int)(((byte)(174)))), ((int)(((byte)(235)))));
             this.btnDiscount.Image = ((System.Drawing.Image)(resources.GetObject("btnDiscount.Image")));
             this.btnDiscount.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnDiscount.Location = new System.Drawing.Point(121, 719);
+            this.btnDiscount.Location = new System.Drawing.Point(21, 450);
             this.btnDiscount.Name = "btnDiscount";
-            this.btnDiscount.Size = new System.Drawing.Size(148, 42);
+            this.btnDiscount.Size = new System.Drawing.Size(248, 42);
             this.btnDiscount.TabIndex = 16;
             this.btnDiscount.Text = "Khuyến mãi";
             this.btnDiscount.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -486,10 +485,10 @@
             this.lb_Timer.BackColor = System.Drawing.Color.Transparent;
             this.lb_Timer.Font = new System.Drawing.Font("Segoe UI", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_Timer.ForeColor = System.Drawing.Color.White;
-            this.lb_Timer.Location = new System.Drawing.Point(114, 253);
+            this.lb_Timer.Location = new System.Drawing.Point(64, 254);
             this.lb_Timer.Name = "lb_Timer";
             this.lb_Timer.Size = new System.Drawing.Size(46, 25);
-            this.lb_Timer.TabIndex = 17;
+            this.lb_Timer.TabIndex = 18;
             this.lb_Timer.Text = "Timer";
             // 
             // frmHomeAdmin

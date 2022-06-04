@@ -29,9 +29,14 @@ namespace Berverage_Manager.GUI.Customer
             int rowSelectedUpdate = ucCustomer.uc_KhachHang.indexRowSelected;
             row = ucCustomer.uc_KhachHang.dgv_KhachHang.Rows[rowSelectedUpdate];
             txtTenKH.Text = row.Cells[1].Value.ToString();
-            txtDienThoaiKH.Text = row.Cells[2].Value.ToString();
-            txtDiaChiKH.Text = row.Cells[3].Value.ToString();
-            txtEmailKH.Text = row.Cells[4].Value.ToString();
+            if(row.Cells[2].Value != null)
+            {
+                int indexGT = NV_CB_GioiTinh.FindString(row.Cells[2].Value.ToString());
+                NV_CB_GioiTinh.SelectedIndex = indexGT;
+                txtDienThoaiKH.Text = row.Cells[3].Value.ToString();
+                txtDiaChiKH.Text = row.Cells[4].Value.ToString();
+                txtEmailKH.Text = row.Cells[5].Value.ToString();
+            }
         }
 
         private void btnSuaKH_Click(object sender, EventArgs e)

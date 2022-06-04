@@ -35,6 +35,39 @@ namespace Berverage_Manager.GUI
         public double tongTien;
         public int cb_HinhThucBanValue;
 
+        //REPORT
+        public Guna2ComboBox cb_NhanVien;
+        public Guna2ComboBox cb_KhachHang;
+        public Guna2DateTimePicker date_NgayTao;
+        //public Guna2TextBox txt_ChietKhau;
+        public Guna2TextBox txt_TongTien;
+        //public Guna2TextBox txt_TienCanThanhToan;
+        public Guna2TextBox txt_TienKhachDua;
+        public Guna2TextBox txt_TienThua;
+
+        public List<HOADON_REPORT> ListCTHD_XuatReport()
+        {
+            int tongDong = BH_DGV_CTHD.Rows.Count;
+
+            List<HOADON_REPORT> listCTHD_Report = new List<HOADON_REPORT>();
+            HOADON_REPORT reportHD;
+
+            for (int i = 0; i < tongDong; i++)
+            {
+                reportHD = new HOADON_REPORT();
+                reportHD.TenSP = BH_DGV_CTHD.Rows[i].Cells[1].Value.ToString();
+                reportHD.DonGia = double.Parse(BH_DGV_CTHD.Rows[i].Cells[2].Value.ToString());
+                reportHD.TenDVT = BH_DGV_CTHD.Rows[i].Cells[3].Value.ToString();
+                reportHD.SL = int.Parse(BH_DGV_CTHD.Rows[i].Cells[4].Value.ToString());
+                reportHD.ThanhTien = double.Parse(BH_DGV_CTHD.Rows[i].Cells[5].Value.ToString());
+                listCTHD_Report.Add(reportHD);
+            }
+
+            return listCTHD_Report;
+        }
+
+        //END REPORT
+
         public ucSell()
         {
             InitializeComponent();
@@ -112,8 +145,8 @@ namespace Berverage_Manager.GUI
             BH_TXT_TTCanThanhToan.Text = "";
             BH_TXT_KhachDua.Text = "";
             BH_TXT_TienThua.Text = "";
-            BH_TXT_ChietKhau.Text = "";
-            BH_TXT_TongTien.Text = "";
+            BH_TXT_ChietKhau.Text = "0";
+            BH_TXT_TongTien.Text = "0";
             BH_CB_HTBan.Enabled = true;
             BH_BTN_XOASPCT.Enabled = true;
         }
@@ -363,7 +396,7 @@ namespace Berverage_Manager.GUI
                 BH_TXT_TTCanThanhToan.Text = TinhTongTien().ToString();
                 if (BH_DGV_CTHD.RowCount == 0)
                 {
-                    BH_TXT_TTCanThanhToan.Text = "";
+                    RefreshForm();
                 }
             }
             else
@@ -647,6 +680,34 @@ namespace Berverage_Manager.GUI
                 double valueChange = double.Parse(BH_TXT_TongTien.Text) - double.Parse(BH_TXT_ChietKhau.Text);
                 BH_TXT_TTCanThanhToan.Text = valueChange.ToString();
             }
+        }
+
+        private void BH_BTN_INHD_Click(object sender, EventArgs e)
+        {
+            cb_NhanVien = BH_CB_NV;
+            cb_KhachHang = BH_CB_KH;
+            date_NgayTao = BH_DATE_TTOAN;
+            //txt_ChietKhau = BH_TXT_ChietKhau;
+            txt_TongTien = BH_TXT_TongTien;
+            //txt_TienCanThanhToan = BH_TXT_TTCanThanhToan;
+            txt_TienKhachDua = BH_TXT_KhachDua;
+            txt_TienThua = BH_TXT_TienThua;
+            
+
+            if (BH_DGV_CTHD.RowCount < 0)
+            {
+                MessageBox.Show("Chưa có sản phẩm trong đơn hàng! Vui lòng thử lại", "Thông báo");
+            }
+            else if (BH_TXT_KhachDua.Text == "")
+            {
+                MessageBox.Show("Bạn chưa nhập tiền khách đưa! Vui lòng thử lại", "Thông báo");
+            }
+            else
+            {
+                frmBillReport frmBillReport = new frmBillReport();
+                frmBillReport.ShowDialog();
+            }
+
         }
     }
 }

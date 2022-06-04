@@ -54,7 +54,7 @@ namespace Berverage_Manager.DAO
 
         public List<TONKHO> TimKiemSanPhamTonKho(List<TONKHO> listSPTK, String timKiemSPTK)
         {
-            List<TONKHO> listTimSPTK = listSPTK.Where(p => p.SANPHAM.TENSP.ToLower().Contains(timKiemSPTK.ToLower())).ToList();
+            List<TONKHO> listTimSPTK = listSPTK.Where(p =>  p.SANPHAM.TENSP.ToLower().Contains(timKiemSPTK.ToLower())).ToList();
             return listTimSPTK;
         }
     }

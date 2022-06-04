@@ -1,5 +1,6 @@
 ﻿using Berverage_Manager.BUS;
 using Berverage_Manager.DataContext;
+using Guna.UI2.WinForms;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -15,6 +16,7 @@ namespace Berverage_Manager.GUI
     public partial class ucBill : UserControl
     {
         public static ucBill uc_DonHang;
+        public Guna2DataGridView dgv_DonHang;
         private KhachHang_BUS khachHang_BUS;
         private NhanVien_BUS nhanVien_BUS;
         private DonHang_BUS donHang_BUS;
@@ -24,6 +26,7 @@ namespace Berverage_Manager.GUI
         {
             InitializeComponent();
             uc_DonHang = this;
+            dgv_DonHang = dgvDonHang;
             khachHang_BUS = new KhachHang_BUS();
             nhanVien_BUS = new NhanVien_BUS();
             donHang_BUS = new DonHang_BUS();

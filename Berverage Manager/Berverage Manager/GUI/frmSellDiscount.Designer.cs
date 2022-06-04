@@ -34,15 +34,15 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.guna2HtmlLabel9 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.ADKM_DGV_DSKM = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
-            this.ADKM_BTN_ApDung = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
-            this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.colMKM = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clTenKM = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clLoaiKhuyenMai = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clChietKhau = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clLoaiCK = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
+            this.ADKM_BTN_ApDung = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
+            this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.ADKM_DGV_DSKM)).BeginInit();
             this.SuspendLayout();
             // 
@@ -86,7 +86,7 @@
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
@@ -123,6 +123,36 @@
             this.ADKM_DGV_DSKM.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             this.ADKM_DGV_DSKM.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.ADKM_DGV_DSKM_CellClick);
             this.ADKM_DGV_DSKM.RowsAdded += new System.Windows.Forms.DataGridViewRowsAddedEventHandler(this.ADKM_DGV_DSKM_RowsAdded);
+            // 
+            // colMKM
+            // 
+            this.colMKM.HeaderText = "Mã khuyến mãi";
+            this.colMKM.Name = "colMKM";
+            this.colMKM.ReadOnly = true;
+            // 
+            // clTenKM
+            // 
+            this.clTenKM.HeaderText = "Tên khuyến mãi";
+            this.clTenKM.Name = "clTenKM";
+            this.clTenKM.ReadOnly = true;
+            // 
+            // clLoaiKhuyenMai
+            // 
+            this.clLoaiKhuyenMai.HeaderText = "Loại khuyến mãi";
+            this.clLoaiKhuyenMai.Name = "clLoaiKhuyenMai";
+            this.clLoaiKhuyenMai.ReadOnly = true;
+            // 
+            // clChietKhau
+            // 
+            this.clChietKhau.HeaderText = "Chiết khấu";
+            this.clChietKhau.Name = "clChietKhau";
+            this.clChietKhau.ReadOnly = true;
+            // 
+            // clLoaiCK
+            // 
+            this.clLoaiCK.HeaderText = "Loại chiết khấu";
+            this.clLoaiCK.Name = "clLoaiCK";
+            this.clLoaiCK.ReadOnly = true;
             // 
             // guna2ControlBox1
             // 
@@ -163,36 +193,6 @@
             // guna2Elipse1
             // 
             this.guna2Elipse1.TargetControl = this;
-            // 
-            // colMKM
-            // 
-            this.colMKM.HeaderText = "Mã khuyến mãi";
-            this.colMKM.Name = "colMKM";
-            this.colMKM.ReadOnly = true;
-            // 
-            // clTenKM
-            // 
-            this.clTenKM.HeaderText = "Tên khuyến mãi";
-            this.clTenKM.Name = "clTenKM";
-            this.clTenKM.ReadOnly = true;
-            // 
-            // clLoaiKhuyenMai
-            // 
-            this.clLoaiKhuyenMai.HeaderText = "Loại khuyến mãi";
-            this.clLoaiKhuyenMai.Name = "clLoaiKhuyenMai";
-            this.clLoaiKhuyenMai.ReadOnly = true;
-            // 
-            // clChietKhau
-            // 
-            this.clChietKhau.HeaderText = "Chiết khấu";
-            this.clChietKhau.Name = "clChietKhau";
-            this.clChietKhau.ReadOnly = true;
-            // 
-            // clLoaiCK
-            // 
-            this.clLoaiCK.HeaderText = "Loại chiết khấu";
-            this.clLoaiCK.Name = "clLoaiCK";
-            this.clLoaiCK.ReadOnly = true;
             // 
             // frmSellDiscount
             // 
