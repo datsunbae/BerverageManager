@@ -42,5 +42,10 @@ namespace Berverage_Manager.BUS
             return donHang_DAO.TimKiemDonHangTheoNgay(tuNgay, denNgay);
         }
 
+        public List<DONHANG> LayDanhSachDonHangTheoThangNam(int thang, int nam)
+        {
+            return donHang_DAO.LayDanhSachDonHangTheoThangNam(thang, nam);
+        }
+
     }
 }

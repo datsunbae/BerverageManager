@@ -56,5 +56,10 @@ namespace Berverage_Manager.BUS
         {
             return khachHang_DAO.TimKiemKhachHang(listKH, timKiemKH);
         }
+
+        public int KhachHangMuaNhieuNhatNhatTheoThangNam(int thang, int nam)
+        {
+            return khachHang_DAO.KhachHangMuaNhieuNhatNhatTheoThangNam(thang, nam);
+        }
     }
 }

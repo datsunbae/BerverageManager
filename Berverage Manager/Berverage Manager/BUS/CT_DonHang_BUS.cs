@@ -26,5 +26,11 @@ namespace Berverage_Manager.BUS
         {
             return ct_DonHang_DAO.LayDanhSachCTDHBangMaDH(maDH);
         }
+
+        public List<CT_DONHANG> LayDanhSachCTDHTheoNgay(DateTime tuNgay, DateTime denNgay)
+        {
+            return ct_DonHang_DAO.LayDanhSachCTDHTheoNgay(tuNgay,denNgay);
+
+        }
     }
 }

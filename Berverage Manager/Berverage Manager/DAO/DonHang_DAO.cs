@@ -50,5 +50,14 @@ namespace Berverage_Manager.DAO
                 return dbQuanLyBanNGK.DONHANGs.Where(p => p.NGAYLAP.Value >= tuNgay && p.NGAYLAP <= denNgay).ToList();
             }  
         }
+
+        public List<DONHANG> LayDanhSachDonHangTheoThangNam(int thang, int nam)
+        {
+            using (DBQuanLyBanNuocGiaiKhat dbQuanLyBanNGK = new DBQuanLyBanNuocGiaiKhat())
+            {
+                return dbQuanLyBanNGK.DONHANGs.Where(p => p.NGAYLAP.Value.Month == thang && p.NGAYLAP.Value.Year == nam).ToList();
+            }
+        }
+
     }
 }

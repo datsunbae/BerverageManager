@@ -1,4 +1,5 @@
 ﻿using Berverage_Manager.DataContext;
+using Berverage_Manager.DTO;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity.Migrations;
@@ -74,6 +75,30 @@ namespace Berverage_Manager.DAO
             return listTimSP;
         }
 
-        
+        public int SanPhamBanChayNhatTheoThangNam(int thang, int nam)
+        {
+            using (DBQuanLyBanNuocGiaiKhat dbQuanLyBanNGK = new DBQuanLyBanNuocGiaiKhat())
+            {
+                var result = from ctdh in dbQuanLyBanNGK.CT_DONHANG
+                             from sp in dbQuanLyBanNGK.SANPHAMs
+                             from dh in dbQuanLyBanNGK.DONHANGs
+                             where ctdh.MASP == sp.MASP
+                                && ctdh.THANHTIEN != 0
+                                && dh.NGAYLAP.Value.Month == thang
+                                && dh.NGAYLAP.Value.Year == nam
+                             group ctdh by ctdh.MASP into g
+                             select new SanPhamBanChay_DTO
+                             {
+                                 MASP = g.FirstOrDefault().MASP.Value,
+                                 SOLUONGBAN = g.Sum(p => p.DVT == "DV1" || p.DVT == "DV2" ? p.SL * p.SANPHAM.QUIDOI.Value :
+                                                    p.DVT == "DV3" || p.DVT == "DV4" ? p.SL : null).Value
+                             };
+
+                var maSP = result.OrderByDescending(p => p.SOLUONGBAN).Select(p => p.MASP).FirstOrDefault();
+                return maSP;
+            }
+        }
+
+
     }
 }

@@ -51,5 +51,10 @@ namespace Berverage_Manager.BUS
         {
             return sanPham_DAO.TimKiemSanPham(listSP, timKiemSP);
         }
+
+        public int SanPhamBanChayNhatTheoThangNam(int thang, int nam)
+        {
+            return sanPham_DAO.SanPhamBanChayNhatTheoThangNam(thang, nam);
+        }
     }
 }

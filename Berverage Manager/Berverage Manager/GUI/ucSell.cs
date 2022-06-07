@@ -442,7 +442,7 @@ namespace Berverage_Manager.GUI
             for (int i = 0; i < tongDong; i++)
             {
                 int thanhTien = int.Parse(BH_DGV_CTHD.Rows[i].Cells[5].Value.ToString());
-                if (thanhTien == 0 || BH_TXT_ChietKhau.Text != "")
+                if (thanhTien == 0 || int.Parse(BH_TXT_ChietKhau.Text) > 0)
                 {
                     return true;
                 }

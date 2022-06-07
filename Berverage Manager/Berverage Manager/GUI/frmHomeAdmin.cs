@@ -24,6 +24,8 @@ namespace Berverage_Manager.GUI
         ucCustomer customer;
         ucSupplier supplier;
         ucDiscount discount;
+        //ucProductReport productReport;
+        ucReportStatistical reportStatistical;
         NhanVien_BUS nhanVien_BUS;
         VaiTro_BUS vaiTro_BUS;
         TAIKHOAN taiKhoan;
@@ -41,6 +43,8 @@ namespace Berverage_Manager.GUI
             customer = new ucCustomer();
             supplier = new ucSupplier();
             discount = new ucDiscount();
+            //productReport = new ucProductReport();
+            reportStatistical = new ucReportStatistical();
             nhanVien_BUS = new NhanVien_BUS();
             vaiTro_BUS = new VaiTro_BUS();
         }
@@ -78,6 +82,8 @@ namespace Berverage_Manager.GUI
             Panel.Controls.Add(customer);
             Panel.Controls.Add(supplier);
             Panel.Controls.Add(discount);
+            //Panel.Controls.Add(productReport);
+            Panel.Controls.Add(reportStatistical);
 
             NHANVIEN nv = nhanVien_BUS.LayNhanVienBangMaTaiKhoan(taiKhoan.MADANGNHAP);
             MemoryStream memoryStream = new MemoryStream(nv.HINHANHNV.ToArray());
@@ -137,5 +143,9 @@ namespace Berverage_Manager.GUI
             lb_Timer.Text = DateTime.Now.ToString("dddd, hh:mm:ss tt");
         }
 
+        private void btnProductReport_Click(object sender, EventArgs e)
+        {
+            reportStatistical.BringToFront();
+        }
     }
 }

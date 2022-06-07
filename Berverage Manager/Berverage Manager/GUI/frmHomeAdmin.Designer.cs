@@ -55,13 +55,14 @@
             this.DragControl = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.btnProduct = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.btnStatistical = new Guna.UI2.WinForms.Guna2Button();
+            this.lb_Timer = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.btnDiscount = new Guna.UI2.WinForms.Guna2Button();
             this.LB_VaiTro = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.LB_Ten = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.PB_ImgStaff = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.Panel = new Guna.UI2.WinForms.Guna2Panel();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.lb_Timer = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.SidePanel2.SuspendLayout();
             this.SidePanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pcbLogout)).BeginInit();
@@ -384,6 +385,7 @@
             // guna2Panel1
             // 
             this.guna2Panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(146)))), ((int)(((byte)(228)))));
+            this.guna2Panel1.Controls.Add(this.btnStatistical);
             this.guna2Panel1.Controls.Add(this.lb_Timer);
             this.guna2Panel1.Controls.Add(this.btnDiscount);
             this.guna2Panel1.Controls.Add(this.LB_VaiTro);
@@ -409,6 +411,38 @@
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.Size = new System.Drawing.Size(290, 800);
             this.guna2Panel1.TabIndex = 16;
+            // 
+            // btnStatistical
+            // 
+            this.btnStatistical.BackColor = System.Drawing.Color.Transparent;
+            this.btnStatistical.BorderRadius = 5;
+            this.btnStatistical.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnStatistical.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnStatistical.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnStatistical.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnStatistical.FillColor = System.Drawing.Color.White;
+            this.btnStatistical.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnStatistical.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(97)))), ((int)(((byte)(174)))), ((int)(((byte)(235)))));
+            this.btnStatistical.Image = ((System.Drawing.Image)(resources.GetObject("btnStatistical.Image")));
+            this.btnStatistical.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnStatistical.Location = new System.Drawing.Point(148, 736);
+            this.btnStatistical.Name = "btnStatistical";
+            this.btnStatistical.Size = new System.Drawing.Size(121, 42);
+            this.btnStatistical.TabIndex = 19;
+            this.btnStatistical.Text = "Thống kê";
+            this.btnStatistical.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnStatistical.Click += new System.EventHandler(this.btnProductReport_Click);
+            // 
+            // lb_Timer
+            // 
+            this.lb_Timer.BackColor = System.Drawing.Color.Transparent;
+            this.lb_Timer.Font = new System.Drawing.Font("Segoe UI", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_Timer.ForeColor = System.Drawing.Color.White;
+            this.lb_Timer.Location = new System.Drawing.Point(64, 254);
+            this.lb_Timer.Name = "lb_Timer";
+            this.lb_Timer.Size = new System.Drawing.Size(46, 25);
+            this.lb_Timer.TabIndex = 18;
+            this.lb_Timer.Text = "Timer";
             // 
             // btnDiscount
             // 
@@ -463,7 +497,7 @@
             this.PB_ImgStaff.Location = new System.Drawing.Point(96, 102);
             this.PB_ImgStaff.Name = "PB_ImgStaff";
             this.PB_ImgStaff.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.PB_ImgStaff.Size = new System.Drawing.Size(88, 79);
+            this.PB_ImgStaff.Size = new System.Drawing.Size(82, 79);
             this.PB_ImgStaff.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.PB_ImgStaff.TabIndex = 13;
             this.PB_ImgStaff.TabStop = false;
@@ -479,17 +513,6 @@
             // timer1
             // 
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
-            // 
-            // lb_Timer
-            // 
-            this.lb_Timer.BackColor = System.Drawing.Color.Transparent;
-            this.lb_Timer.Font = new System.Drawing.Font("Segoe UI", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_Timer.ForeColor = System.Drawing.Color.White;
-            this.lb_Timer.Location = new System.Drawing.Point(64, 254);
-            this.lb_Timer.Name = "lb_Timer";
-            this.lb_Timer.Size = new System.Drawing.Size(46, 25);
-            this.lb_Timer.TabIndex = 18;
-            this.lb_Timer.Text = "Timer";
             // 
             // frmHomeAdmin
             // 
@@ -554,5 +577,6 @@
         private Guna.UI2.WinForms.Guna2Button btnDiscount;
         private System.Windows.Forms.Timer timer1;
         private Guna.UI2.WinForms.Guna2HtmlLabel lb_Timer;
+        private Guna.UI2.WinForms.Guna2Button btnStatistical;
     }
 }

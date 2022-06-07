@@ -1,4 +1,5 @@
 ﻿using Berverage_Manager.DataContext;
+using Berverage_Manager.DTO;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity.Migrations;
@@ -74,6 +75,28 @@ namespace Berverage_Manager.DAO
         {
             List<KHACHHANG> listTimKH = listKH.Where(p => p.TENKH.ToLower().Contains(timKiemKH.ToLower())).ToList();
             return listTimKH;
+        }
+
+        public int KhachHangMuaNhieuNhatNhatTheoThangNam(int thang, int nam)
+        {
+            using (DBQuanLyBanNuocGiaiKhat dbQuanLyBanNGK = new DBQuanLyBanNuocGiaiKhat())
+            {
+                var result = from dh in dbQuanLyBanNGK.DONHANGs
+                             from kh in dbQuanLyBanNGK.KHACHHANGs
+                             where dh.IDKH == kh.MAKH
+                                 && dh.NGAYLAP.Value.Month == thang
+                                 && dh.NGAYLAP.Value.Year == nam
+                                 && kh.MAKH != 1
+                             group dh by dh.IDKH into g
+                             select new KhachHangMuaNhieuNhat_DTO
+                             {
+                                 MAKH = g.FirstOrDefault().IDKH.Value,
+                                 TONGTIENMUA = g.Sum(p => p.TONGTIEN).Value
+                             };
+
+                var maKH = result.OrderByDescending(p => p.TONGTIENMUA).Select(p => p.MAKH).FirstOrDefault();
+                return maKH;
+            }
         }
 
     }

@@ -107,7 +107,6 @@ D:\DoAnCoSo\Berverage Manager_DACS\Berverage Manager\Berverage Manager\bin\Debug
 D:\DoAnCoSo\Berverage Manager_DACS\Berverage Manager\Berverage Manager\bin\Debug\EntityFramework.SqlServer.dll
 D:\DoAnCoSo\Berverage Manager_DACS\Berverage Manager\Berverage Manager\bin\Debug\EntityFramework.xml
 D:\DoAnCoSo\Berverage Manager_DACS\Berverage Manager\Berverage Manager\bin\Debug\EntityFramework.SqlServer.xml
-D:\DoAnCoSo\Berverage Manager_DACS\Berverage Manager\Berverage Manager\obj\Debug\Berverage Manager.csproj.AssemblyReference.cache
 D:\DoAnCoSo\Berverage Manager_DACS\Berverage Manager\Berverage Manager\obj\Debug\Berverage_Manager.GUI.frmHomeSellStaff.resources
 D:\DoAnCoSo\Berverage Manager_DACS\Berverage Manager\Berverage Manager\obj\Debug\Berverage_Manager.GUI.frmHomeStaffWarehouse.resources
 C:\Users\daitr\OneDrive\Máy tính\Berverage Manager_DACS\Berverage Manager\Berverage Manager\bin\Debug\Berverage Manager.exe.config
@@ -211,3 +210,17 @@ D:\DoAnCoSo\Berverage Manager_DACS\Berverage Manager\Berverage Manager\bin\Debug
 D:\DoAnCoSo\Berverage Manager_DACS\Berverage Manager\Berverage Manager\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
 D:\DoAnCoSo\Berverage Manager_DACS\Berverage Manager\Berverage Manager\obj\Debug\Berverage_Manager.GUI.frmBillReport.resources
 D:\DoAnCoSo\Berverage Manager_DACS\Berverage Manager\Berverage Manager\bin\Debug\Report\ReportBill.rdlc
+D:\DoAnCoSo\Berverage Manager_DACS\Berverage Manager\Berverage Manager\obj\Debug\Berverage_Manager.GUI.ucProductReport.resources
+D:\DoAnCoSo\Berverage Manager_DACS\Berverage Manager\Berverage Manager\bin\Debug\LiveCharts.dll
+D:\DoAnCoSo\Berverage Manager_DACS\Berverage Manager\Berverage Manager\bin\Debug\LiveCharts.WinForms.dll
+D:\DoAnCoSo\Berverage Manager_DACS\Berverage Manager\Berverage Manager\bin\Debug\LiveCharts.Wpf.dll
+D:\DoAnCoSo\Berverage Manager_DACS\Berverage Manager\Berverage Manager\bin\Debug\LiveCharts.pdb
+D:\DoAnCoSo\Berverage Manager_DACS\Berverage Manager\Berverage Manager\bin\Debug\LiveCharts.xml
+D:\DoAnCoSo\Berverage Manager_DACS\Berverage Manager\Berverage Manager\bin\Debug\LiveCharts.WinForms.pdb
+D:\DoAnCoSo\Berverage Manager_DACS\Berverage Manager\Berverage Manager\bin\Debug\LiveCharts.WinForms.xml
+D:\DoAnCoSo\Berverage Manager_DACS\Berverage Manager\Berverage Manager\bin\Debug\LiveCharts.Wpf.pdb
+D:\DoAnCoSo\Berverage Manager_DACS\Berverage Manager\Berverage Manager\bin\Debug\LiveCharts.Wpf.xml
+D:\DoAnCoSo\Berverage Manager_DACS\Berverage Manager\Berverage Manager\obj\Debug\Berverage_Manager.GUI.ucReportStatistical.resources
+D:\DoAnCoSo\Berverage Manager_DACS\Berverage Manager\Berverage Manager\bin\Debug\Report\ReportDoanhThu.rdlc
+D:\DoAnCoSo\Berverage Manager_DACS\Berverage Manager\Berverage Manager\obj\Debug\Berverage_Manager.GUI.frmReprotStatistical.resources
+D:\DoAnCoSo\Berverage Manager_DACS\Berverage Manager\Berverage Manager\obj\Debug\Berverage Manager.csproj.AssemblyReference.cache

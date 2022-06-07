@@ -26,5 +26,18 @@ namespace Berverage_Manager.DAO
                 return dbQuanLyBanNGK.CT_DONHANG.Where(p => p.MADH == maDH).ToList();
             }
         }
+
+        public List<CT_DONHANG> LayDanhSachCTDHTheoNgay(DateTime tuNgay, DateTime denNgay)
+        {
+            using (DBQuanLyBanNuocGiaiKhat dbQuanLyBanNGK = new DBQuanLyBanNuocGiaiKhat())
+            {
+                var result = from ctdh in dbQuanLyBanNGK.CT_DONHANG
+                             join dh in dbQuanLyBanNGK.DONHANGs on ctdh.MADH equals dh.MADH
+                             where dh.NGAYLAP >= tuNgay && dh.NGAYLAP <= denNgay
+                             select ctdh;
+
+                return result.ToList();
+            }
+        }
     }
 }
