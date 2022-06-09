@@ -13,10 +13,13 @@ namespace Berverage_Manager.GUI
 {
     public partial class frmLogin : Form
     {
+        public static frmLogin frm_Login;
         TaiKhoan_BUS taiKhoan_BUS;
+        public int vaiTro;
         public frmLogin()
         {
             InitializeComponent();
+            frm_Login = this;
             taiKhoan_BUS = new TaiKhoan_BUS(); 
         }
 
@@ -35,14 +38,17 @@ namespace Berverage_Manager.GUI
                     switch (user.MVAITRO) 
                     {
                         case "VT1":
+                            vaiTro = 1;
                             new frmHomeAdmin(user).Show();
                             this.Hide();
                             break;
                         case "VT2":
+                            vaiTro = 2;
                             new frmHomeSellStaff(user).Show();
                             this.Hide();
                             break;
                         case "VT3":
+                            vaiTro = 3;
                             new frmHomeStaffWarehouse(user).Show();
                             this.Hide();
                             break;
@@ -62,6 +68,18 @@ namespace Berverage_Manager.GUI
         private void btnLogin_Click(object sender, EventArgs e)
         {
             CheckLogin(txtUserName.Text, txtPassword.Text);
+        }
+
+        private void BTN_ShowPassword_Click(object sender, EventArgs e)
+        {
+            if(txtPassword.PasswordChar == '*')
+            {
+                txtPassword.PasswordChar = '\0';
+            }
+            else
+            {
+                txtPassword.PasswordChar = '*';
+            }
         }
     }
 }

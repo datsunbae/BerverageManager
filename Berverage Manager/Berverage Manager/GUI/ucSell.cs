@@ -20,6 +20,8 @@ namespace Berverage_Manager.GUI
         public Guna2DataGridView dgv_CTHD;
         public Guna2TextBox textBox_ChietKhau;
         public Guna2TextBox textBox_CanThanhToan;
+        public Guna2ComboBox comboBox_HinhThucBan;
+        public Guna2ComboBox comboBox_KhachHang;
 
         private TonKho_BUS tonKho_BUS;
         private SanPham_BUS sanPham_BUS;
@@ -34,14 +36,14 @@ namespace Berverage_Manager.GUI
         private int indexSelected_DGVCTHD = -1;
         public double tongTien;
         public int cb_HinhThucBanValue;
+        int vaiTro;
+        NHANVIEN nhanVien;
 
         //REPORT
         public Guna2ComboBox cb_NhanVien;
         public Guna2ComboBox cb_KhachHang;
         public Guna2DateTimePicker date_NgayTao;
-        //public Guna2TextBox txt_ChietKhau;
         public Guna2TextBox txt_TongTien;
-        //public Guna2TextBox txt_TienCanThanhToan;
         public Guna2TextBox txt_TienKhachDua;
         public Guna2TextBox txt_TienThua;
 
@@ -78,6 +80,8 @@ namespace Berverage_Manager.GUI
             dgv_CTHD = BH_DGV_CTHD;
             textBox_ChietKhau = BH_TXT_ChietKhau;
             textBox_CanThanhToan = BH_TXT_TTCanThanhToan;
+            comboBox_HinhThucBan = BH_CB_HTBan;
+            comboBox_KhachHang = BH_CB_KH;
             cb_HinhThucBanValue = BH_CB_HTBan.SelectedIndex;
             tonKho_BUS = new TonKho_BUS();
             sanPham_BUS = new SanPham_BUS();
@@ -88,6 +92,7 @@ namespace Berverage_Manager.GUI
             ct_DonHang_BUS = new CT_DonHang_BUS();
             khuyenMai_BUS = new KhuyenMai_BUS();
             list_DVT = donVi_BUS.LayTatCaDonVi();
+            
         }
 
         public void FillDataDGV(List<TONKHO> listTonKho)
@@ -151,6 +156,22 @@ namespace Berverage_Manager.GUI
             BH_BTN_XOASPCT.Enabled = true;
         }
 
+        private void getNhanVienTheoVaiTro()
+        {
+            switch (vaiTro)
+            {
+                case 1:
+                    nhanVien = frmHomeAdmin.frm_HomeAdmin.nhanVien;
+                    break;
+                case 2:
+                    nhanVien = frmHomeSellStaff.frm_HomeSellStaff.nhanVien;
+                    break;
+                case 3:
+                    nhanVien = frmHomeStaffWarehouse.frm_HomeStaffWarehouse.nhanVien;
+                    break;
+            }
+        }
+
         private void ucSell_Load(object sender, EventArgs e)
         {
             BH_CB_HTBan.SelectedIndex = 0; //set Hinh thuc ban: Khach le
@@ -158,6 +179,10 @@ namespace Berverage_Manager.GUI
             LoadCBNhanVien();
             FillDataDGV(tonKho_BUS.LayTatCaSanPhamConTonKho());
             BH_DATE_TTOAN.Value = DateTime.Now;
+            vaiTro = frmLogin.frm_Login.vaiTro;
+            getNhanVienTheoVaiTro();
+            int indexCBNhanVien = BH_CB_NV.FindString(nhanVien.TENNV);
+            BH_CB_NV.SelectedIndex = indexCBNhanVien;
         }
 
         private void BH_DGV_DSSP_RowsAdded(object sender, DataGridViewRowsAddedEventArgs e)

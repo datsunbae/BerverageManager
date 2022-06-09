@@ -22,6 +22,8 @@ namespace Berverage_Manager.GUI
         CT_NhapKho_BUS ct_NhapKho_BUS;
         TonKho_BUS tonKho_BUS;
         bool checkEventCBSP = false;
+        int vaiTro;
+        NHANVIEN nhanVien;
 
         public frmOrder()
         {
@@ -62,6 +64,22 @@ namespace Berverage_Manager.GUI
             NK_CB_DVTinh.ValueMember = "MADV";
         }
 
+        private void getNhanVienTheoVaiTro()
+        {
+            switch (vaiTro)
+            {
+                case 1:
+                    nhanVien = frmHomeAdmin.frm_HomeAdmin.nhanVien;
+                    break;
+                case 2:
+                    nhanVien = frmHomeSellStaff.frm_HomeSellStaff.nhanVien;
+                    break;
+                case 3:
+                    nhanVien = frmHomeStaffWarehouse.frm_HomeStaffWarehouse.nhanVien;
+                    break;
+            }
+        }
+
         private void frmOrder_Load(object sender, EventArgs e)
         {
             NK_DATENK.Value = DateTime.Now;
@@ -69,6 +87,10 @@ namespace Berverage_Manager.GUI
             LoadCBNhanVien();
             LoadCBDonViTinh();
             LoadCBSanPham();
+            vaiTro = frmLogin.frm_Login.vaiTro;
+            getNhanVienTheoVaiTro();
+            int indexCBNhanVien = NK_CB_NV.FindString(nhanVien.TENNV);
+            NK_CB_NV.SelectedIndex = indexCBNhanVien;
         }
 
         private void NK_DGV_CTNK_RowsAdded(object sender, DataGridViewRowsAddedEventArgs e)

@@ -38,11 +38,15 @@ namespace Berverage_Manager.GUI.Customer
                 kh.SDTKH = txtDienThoaiKH.Text;
                 kh.DIACHIKH = txtDiaChiKH.Text;
                 kh.EMAILKH = txtEmailKH.Text;
+                kh.LOAIKH = true;
 
                 khachHang_BUS.ThemKhachHang(kh);
 
                 ucCustomer.uc_KhachHang.FillDataDGV(khachHang_BUS.LayTatCaKhachHang());
                 ucSell.uc_BanHang.LoadCBKhachHang();
+                ucSell.uc_BanHang.comboBox_HinhThucBan.SelectedIndex = 1;
+                int indexKH = ucSell.uc_BanHang.comboBox_KhachHang.FindString(kh.TENKH);
+                ucSell.uc_BanHang.comboBox_KhachHang.SelectedIndex = indexKH;
 
                 this.Close();
             }

@@ -15,6 +15,7 @@ namespace Berverage_Manager.GUI
 {
     public partial class frmHomeAdmin : Form
     {
+        public static frmHomeAdmin frm_HomeAdmin;
         ucSell sell;
         ucBill bill;
         ucProduct product;
@@ -24,15 +25,16 @@ namespace Berverage_Manager.GUI
         ucCustomer customer;
         ucSupplier supplier;
         ucDiscount discount;
-        //ucProductReport productReport;
         ucReportStatistical reportStatistical;
         NhanVien_BUS nhanVien_BUS;
         VaiTro_BUS vaiTro_BUS;
         TAIKHOAN taiKhoan;
+        public NHANVIEN nhanVien;
 
         public frmHomeAdmin(TAIKHOAN user)
         {
             InitializeComponent();
+            frm_HomeAdmin = this;
             taiKhoan = user;
             sell = new ucSell();
             bill = new ucBill();
@@ -43,10 +45,10 @@ namespace Berverage_Manager.GUI
             customer = new ucCustomer();
             supplier = new ucSupplier();
             discount = new ucDiscount();
-            //productReport = new ucProductReport();
             reportStatistical = new ucReportStatistical();
             nhanVien_BUS = new NhanVien_BUS();
             vaiTro_BUS = new VaiTro_BUS();
+            nhanVien = nhanVien_BUS.LayNhanVienBangMaTaiKhoan(user.MADANGNHAP);
         }
         private void pcbClose_Click(object sender, EventArgs e)
         {
@@ -82,14 +84,16 @@ namespace Berverage_Manager.GUI
             Panel.Controls.Add(customer);
             Panel.Controls.Add(supplier);
             Panel.Controls.Add(discount);
-            //Panel.Controls.Add(productReport);
             Panel.Controls.Add(reportStatistical);
+            LoadThongTinNhanVien();
+        }
 
-            NHANVIEN nv = nhanVien_BUS.LayNhanVienBangMaTaiKhoan(taiKhoan.MADANGNHAP);
-            MemoryStream memoryStream = new MemoryStream(nv.HINHANHNV.ToArray());
+        public void LoadThongTinNhanVien()
+        {
+            MemoryStream memoryStream = new MemoryStream(nhanVien.HINHANHNV.ToArray());
             Image img = Image.FromStream(memoryStream);
             PB_ImgStaff.Image = img;
-            LB_Ten.Text = "Chào, " + nv.TENNV.ToUpper();
+            LB_Ten.Text = "Chào, " + nhanVien.TENNV.ToUpper();
             LB_VaiTro.Text = vaiTro_BUS.LayTenVaiTroBangMVT(taiKhoan.MVAITRO).TENVAITRO;
         }
 
@@ -146,6 +150,16 @@ namespace Berverage_Manager.GUI
         private void btnProductReport_Click(object sender, EventArgs e)
         {
             reportStatistical.BringToFront();
+        }
+
+        private void LB_CaiDat_Click(object sender, EventArgs e)
+        {
+            new frmChooseChangePwOrChangeInfo().Show();
+        }
+
+        private void BTN_CaiDat_Click(object sender, EventArgs e)
+        {
+            new frmChooseChangePwOrChangeInfo().Show();
         }
     }
 }

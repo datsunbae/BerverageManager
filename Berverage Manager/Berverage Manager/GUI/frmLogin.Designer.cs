@@ -40,8 +40,10 @@
             this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.txtPassword = new Guna.UI2.WinForms.Guna2TextBox();
             this.btnLogin = new Guna.UI2.WinForms.Guna2Button();
+            this.BTN_ShowPassword = new Guna.UI2.WinForms.Guna2PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pcbClose)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BTN_ShowPassword)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2Elipse1
@@ -177,12 +179,25 @@
             this.btnLogin.Text = "Đăng nhập";
             this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
+            // BTN_ShowPassword
+            // 
+            this.BTN_ShowPassword.Image = ((System.Drawing.Image)(resources.GetObject("BTN_ShowPassword.Image")));
+            this.BTN_ShowPassword.ImageRotate = 0F;
+            this.BTN_ShowPassword.Location = new System.Drawing.Point(258, 331);
+            this.BTN_ShowPassword.Name = "BTN_ShowPassword";
+            this.BTN_ShowPassword.Size = new System.Drawing.Size(26, 20);
+            this.BTN_ShowPassword.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.BTN_ShowPassword.TabIndex = 18;
+            this.BTN_ShowPassword.TabStop = false;
+            this.BTN_ShowPassword.Click += new System.EventHandler(this.BTN_ShowPassword_Click);
+            // 
             // frmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(814, 533);
+            this.Controls.Add(this.BTN_ShowPassword);
             this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.txtPassword);
             this.Controls.Add(this.guna2HtmlLabel3);
@@ -197,6 +212,7 @@
             this.Text = "frmLogin";
             ((System.ComponentModel.ISupportInitialize)(this.pcbClose)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BTN_ShowPassword)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -214,5 +230,6 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
         private Guna.UI2.WinForms.Guna2PictureBox pcbClose;
+        private Guna.UI2.WinForms.Guna2PictureBox BTN_ShowPassword;
     }
 }

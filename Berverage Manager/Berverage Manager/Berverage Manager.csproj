@@ -187,6 +187,24 @@
     <Compile Include="GUI\frmBillReport.Designer.cs">
       <DependentUpon>frmBillReport.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\frmChangeInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frmChangeInfo.Designer.cs">
+      <DependentUpon>frmChangeInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frmChangePassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frmChangePassword.Designer.cs">
+      <DependentUpon>frmChangePassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frmChooseChangePwOrChangeInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frmChooseChangePwOrChangeInfo.Designer.cs">
+      <DependentUpon>frmChooseChangePwOrChangeInfo.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\frmChooseDiscountOrProduct.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -381,6 +399,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\frmBillReport.resx">
       <DependentUpon>frmBillReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frmChangeInfo.resx">
+      <DependentUpon>frmChangeInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frmChangePassword.resx">
+      <DependentUpon>frmChangePassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frmChooseChangePwOrChangeInfo.resx">
+      <DependentUpon>frmChooseChangePwOrChangeInfo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\frmChooseDiscountOrProduct.resx">
       <DependentUpon>frmChooseDiscountOrProduct.cs</DependentUpon>

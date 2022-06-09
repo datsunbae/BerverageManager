@@ -48,13 +48,15 @@
             this.lbLogout = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.pcbLogout = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.LB_VaiTro = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.LB_Ten = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.PB_ImgStaff = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.Elipse = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.ElipseSidePanel = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.ElipseSidePanel1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.ElipseSidePanel2 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
-            this.LB_VaiTro = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.LB_Ten = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.PB_ImgStaff = new Guna.UI2.WinForms.Guna2CirclePictureBox();
+            this.LB_CaiDat = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.BTN_CaiDat = new Guna.UI2.WinForms.Guna2PictureBox();
             this.SidePanel2.SuspendLayout();
             this.SidePanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pcbClose)).BeginInit();
@@ -62,6 +64,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pcbLogout)).BeginInit();
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PB_ImgStaff)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BTN_CaiDat)).BeginInit();
             this.SuspendLayout();
             // 
             // Panel
@@ -139,7 +142,7 @@
             this.guna2HtmlLabel4.Name = "guna2HtmlLabel4";
             this.guna2HtmlLabel4.Size = new System.Drawing.Size(133, 19);
             this.guna2HtmlLabel4.TabIndex = 8;
-            this.guna2HtmlLabel4.Text = "QUẢN LÝ BÁN HÀNG";
+            this.guna2HtmlLabel4.Text = "QUẢN LÝ SẢN PHẨM";
             // 
             // btnOrder
             // 
@@ -263,7 +266,7 @@
             this.lbLogout.BackColor = System.Drawing.Color.Transparent;
             this.lbLogout.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbLogout.ForeColor = System.Drawing.Color.White;
-            this.lbLogout.Location = new System.Drawing.Point(42, 759);
+            this.lbLogout.Location = new System.Drawing.Point(131, 766);
             this.lbLogout.Name = "lbLogout";
             this.lbLogout.Size = new System.Drawing.Size(47, 19);
             this.lbLogout.TabIndex = 1;
@@ -274,7 +277,7 @@
             // 
             this.pcbLogout.Image = ((System.Drawing.Image)(resources.GetObject("pcbLogout.Image")));
             this.pcbLogout.ImageRotate = 0F;
-            this.pcbLogout.Location = new System.Drawing.Point(12, 757);
+            this.pcbLogout.Location = new System.Drawing.Point(101, 764);
             this.pcbLogout.Name = "pcbLogout";
             this.pcbLogout.Size = new System.Drawing.Size(24, 28);
             this.pcbLogout.TabIndex = 0;
@@ -284,6 +287,8 @@
             // guna2Panel1
             // 
             this.guna2Panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(146)))), ((int)(((byte)(228)))));
+            this.guna2Panel1.Controls.Add(this.LB_CaiDat);
+            this.guna2Panel1.Controls.Add(this.BTN_CaiDat);
             this.guna2Panel1.Controls.Add(this.LB_VaiTro);
             this.guna2Panel1.Controls.Add(this.LB_Ten);
             this.guna2Panel1.Controls.Add(this.PB_ImgStaff);
@@ -303,23 +308,6 @@
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.Size = new System.Drawing.Size(290, 800);
             this.guna2Panel1.TabIndex = 19;
-            // 
-            // Elipse
-            // 
-            this.Elipse.BorderRadius = 10;
-            this.Elipse.TargetControl = this;
-            // 
-            // ElipseSidePanel
-            // 
-            this.ElipseSidePanel.TargetControl = this.SidePanel;
-            // 
-            // ElipseSidePanel1
-            // 
-            this.ElipseSidePanel1.TargetControl = this.SidePanel1;
-            // 
-            // ElipseSidePanel2
-            // 
-            this.ElipseSidePanel2.TargetControl = this.SidePanel2;
             // 
             // LB_VaiTro
             // 
@@ -358,6 +346,46 @@
             this.PB_ImgStaff.TabIndex = 19;
             this.PB_ImgStaff.TabStop = false;
             // 
+            // Elipse
+            // 
+            this.Elipse.BorderRadius = 10;
+            this.Elipse.TargetControl = this;
+            // 
+            // ElipseSidePanel
+            // 
+            this.ElipseSidePanel.TargetControl = this.SidePanel;
+            // 
+            // ElipseSidePanel1
+            // 
+            this.ElipseSidePanel1.TargetControl = this.SidePanel1;
+            // 
+            // ElipseSidePanel2
+            // 
+            this.ElipseSidePanel2.TargetControl = this.SidePanel2;
+            // 
+            // LB_CaiDat
+            // 
+            this.LB_CaiDat.BackColor = System.Drawing.Color.Transparent;
+            this.LB_CaiDat.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LB_CaiDat.ForeColor = System.Drawing.Color.White;
+            this.LB_CaiDat.Location = new System.Drawing.Point(42, 768);
+            this.LB_CaiDat.Name = "LB_CaiDat";
+            this.LB_CaiDat.Size = new System.Drawing.Size(46, 19);
+            this.LB_CaiDat.TabIndex = 26;
+            this.LB_CaiDat.Text = "Cài đặt";
+            this.LB_CaiDat.Click += new System.EventHandler(this.LB_CaiDat_Click);
+            // 
+            // BTN_CaiDat
+            // 
+            this.BTN_CaiDat.Image = ((System.Drawing.Image)(resources.GetObject("BTN_CaiDat.Image")));
+            this.BTN_CaiDat.ImageRotate = 0F;
+            this.BTN_CaiDat.Location = new System.Drawing.Point(12, 764);
+            this.BTN_CaiDat.Name = "BTN_CaiDat";
+            this.BTN_CaiDat.Size = new System.Drawing.Size(24, 28);
+            this.BTN_CaiDat.TabIndex = 25;
+            this.BTN_CaiDat.TabStop = false;
+            this.BTN_CaiDat.Click += new System.EventHandler(this.BTN_CaiDat_Click);
+            // 
             // frmHomeStaffWarehouse
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -383,6 +411,7 @@
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PB_ImgStaff)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BTN_CaiDat)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -413,5 +442,7 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel LB_VaiTro;
         private Guna.UI2.WinForms.Guna2HtmlLabel LB_Ten;
         private Guna.UI2.WinForms.Guna2CirclePictureBox PB_ImgStaff;
+        private Guna.UI2.WinForms.Guna2HtmlLabel LB_CaiDat;
+        private Guna.UI2.WinForms.Guna2PictureBox BTN_CaiDat;
     }
 }

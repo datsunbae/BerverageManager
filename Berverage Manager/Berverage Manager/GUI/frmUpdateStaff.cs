@@ -91,6 +91,7 @@ namespace Berverage_Manager.GUI.Staff
                 ucSell.uc_BanHang.LoadCBNhanVien();
                 ucOder.uc_PhieuNhapKho.FillDataDGV(nhapKho_BUS.LayTatCaPhieuNhapKho());
                 ucBill.uc_DonHang.FillDataDGV(donHang_BUS.LayTatCaDonHang());
+                frmHomeAdmin.frm_HomeAdmin.LoadThongTinNhanVien();
                 this.Close();
             }
         }

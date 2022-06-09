@@ -224,3 +224,6 @@ D:\DoAnCoSo\Berverage Manager_DACS\Berverage Manager\Berverage Manager\obj\Debug
 D:\DoAnCoSo\Berverage Manager_DACS\Berverage Manager\Berverage Manager\bin\Debug\Report\ReportDoanhThu.rdlc
 D:\DoAnCoSo\Berverage Manager_DACS\Berverage Manager\Berverage Manager\obj\Debug\Berverage_Manager.GUI.frmReprotStatistical.resources
 D:\DoAnCoSo\Berverage Manager_DACS\Berverage Manager\Berverage Manager\obj\Debug\Berverage Manager.csproj.AssemblyReference.cache
+D:\DoAnCoSo\Berverage Manager_DACS\Berverage Manager\Berverage Manager\obj\Debug\Berverage_Manager.GUI.frmChangeInfo.resources
+D:\DoAnCoSo\Berverage Manager_DACS\Berverage Manager\Berverage Manager\obj\Debug\Berverage_Manager.GUI.frmChangePassword.resources
+D:\DoAnCoSo\Berverage Manager_DACS\Berverage Manager\Berverage Manager\obj\Debug\Berverage_Manager.GUI.frmChooseChangePwOrChangeInfo.resources
