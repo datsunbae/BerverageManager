@@ -96,26 +96,6 @@ namespace Berverage_Manager.GUI
             maDonHang = int.Parse(dgvDonHang.Rows[rowIndex].Cells[0].Value.ToString());
         }
 
-        private void btnTimDH_Click(object sender, EventArgs e)
-        {
-            List<DONHANG> listTimKiemDH = donHang_BUS.TimKiemDonHang(txtTimDH.Text);
-
-            if (txtTimDH.Text != "")
-            {
-                if (listTimKiemDH.Count > 0)
-                {
-                    FillDataDGV(listTimKiemDH);
-                }
-                else
-                {
-                    MessageBox.Show("Không Tìm Thấy Đơn Hàng Nào!", "THÔNG BÁO", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                }
-            }
-            else
-            {
-                FillDataDGV(donHang_BUS.LayTatCaDonHang());
-            }
-        }
 
         private void btnXemDHTheoNgay_Click(object sender, EventArgs e)
         {
@@ -128,6 +108,20 @@ namespace Berverage_Manager.GUI
             else
             {
                 MessageBox.Show("Không Tìm Thấy Đơn Hàng Nào!", "THÔNG BÁO", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
+
+        private void txtTimDH_TextChanged(object sender, EventArgs e)
+        {
+            List<DONHANG> listTimKiemDH = donHang_BUS.TimKiemDonHang(txtTimDH.Text);
+
+            if (txtTimDH.Text != "")
+            {
+                FillDataDGV(listTimKiemDH);
+            }
+            else
+            {
+                FillDataDGV(donHang_BUS.LayTatCaDonHang());
             }
         }
     }

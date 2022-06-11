@@ -28,11 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ucProduct));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.btnTimSP = new Guna.UI2.WinForms.Guna2CircleButton();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ucProduct));
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             this.btnAddProduct = new Guna.UI2.WinForms.Guna2Button();
             this.btnXoaSP = new Guna.UI2.WinForms.Guna2Button();
@@ -57,23 +56,6 @@
             this.guna2Panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // btnTimSP
-            // 
-            this.btnTimSP.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnTimSP.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnTimSP.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnTimSP.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnTimSP.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(146)))), ((int)(((byte)(228)))));
-            this.btnTimSP.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnTimSP.ForeColor = System.Drawing.Color.White;
-            this.btnTimSP.Image = ((System.Drawing.Image)(resources.GetObject("btnTimSP.Image")));
-            this.btnTimSP.Location = new System.Drawing.Point(256, 55);
-            this.btnTimSP.Name = "btnTimSP";
-            this.btnTimSP.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.btnTimSP.Size = new System.Drawing.Size(36, 36);
-            this.btnTimSP.TabIndex = 98;
-            this.btnTimSP.Click += new System.EventHandler(this.btnTimSP_Click);
             // 
             // guna2Panel2
             // 
@@ -306,14 +288,14 @@
             this.txtTimSP.PasswordChar = '\0';
             this.txtTimSP.PlaceholderText = "Nhập tên sản phẩm";
             this.txtTimSP.SelectedText = "";
-            this.txtTimSP.Size = new System.Drawing.Size(242, 36);
+            this.txtTimSP.Size = new System.Drawing.Size(362, 36);
             this.txtTimSP.TabIndex = 94;
+            this.txtTimSP.TextChanged += new System.EventHandler(this.txtTimSP_TextChanged);
             // 
             // ucProduct
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.btnTimSP);
             this.Controls.Add(this.guna2Panel2);
             this.Controls.Add(this.dgvSanPham);
             this.Controls.Add(this.guna2Panel3);
@@ -331,7 +313,6 @@
         }
 
         #endregion
-        private Guna.UI2.WinForms.Guna2CircleButton btnTimSP;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
         private Guna.UI2.WinForms.Guna2Button btnAddProduct;
         private Guna.UI2.WinForms.Guna2Button btnXoaSP;

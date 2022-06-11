@@ -73,7 +73,8 @@ namespace Berverage_Manager.DAO
 
         public List<KHACHHANG> TimKiemKhachHang(List<KHACHHANG> listKH, String timKiemKH)
         {
-            List<KHACHHANG> listTimKH = listKH.Where(p => p.TENKH.ToLower().Contains(timKiemKH.ToLower())).ToList();
+            List<KHACHHANG> listTimKH = listKH.Where(p => p.TENKH.ToLower().Contains(timKiemKH.ToLower())
+                                        || p.MAKH.ToString().Contains(timKiemKH)).ToList();
             return listTimKH;
         }
 

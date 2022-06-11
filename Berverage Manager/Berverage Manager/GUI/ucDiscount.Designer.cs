@@ -28,16 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ucDiscount));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ucDiscount));
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             this.btnShowDiscount = new Guna.UI2.WinForms.Guna2Button();
             this.btnAddDiscount = new Guna.UI2.WinForms.Guna2Button();
             this.btnDeleteDiscount = new Guna.UI2.WinForms.Guna2Button();
             this.btnEditDiscount = new Guna.UI2.WinForms.Guna2Button();
-            this.btnTimKhuyenMai = new Guna.UI2.WinForms.Guna2CircleButton();
             this.txtTimKhuyenMai = new Guna.UI2.WinForms.Guna2TextBox();
             this.dgvKhuyenMai = new Guna.UI2.WinForms.Guna2DataGridView();
             this.clMKM = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -137,22 +136,6 @@
             this.btnEditDiscount.Text = "Sửa";
             this.btnEditDiscount.Click += new System.EventHandler(this.btnEditDiscount_Click);
             // 
-            // btnTimKhuyenMai
-            // 
-            this.btnTimKhuyenMai.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnTimKhuyenMai.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnTimKhuyenMai.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnTimKhuyenMai.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnTimKhuyenMai.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(146)))), ((int)(((byte)(228)))));
-            this.btnTimKhuyenMai.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnTimKhuyenMai.ForeColor = System.Drawing.Color.White;
-            this.btnTimKhuyenMai.Image = ((System.Drawing.Image)(resources.GetObject("btnTimKhuyenMai.Image")));
-            this.btnTimKhuyenMai.Location = new System.Drawing.Point(321, 63);
-            this.btnTimKhuyenMai.Name = "btnTimKhuyenMai";
-            this.btnTimKhuyenMai.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.btnTimKhuyenMai.Size = new System.Drawing.Size(36, 36);
-            this.btnTimKhuyenMai.TabIndex = 98;
-            // 
             // txtTimKhuyenMai
             // 
             this.txtTimKhuyenMai.BorderRadius = 5;
@@ -165,13 +148,14 @@
             this.txtTimKhuyenMai.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtTimKhuyenMai.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtTimKhuyenMai.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtTimKhuyenMai.Location = new System.Drawing.Point(19, 63);
+            this.txtTimKhuyenMai.Location = new System.Drawing.Point(17, 63);
             this.txtTimKhuyenMai.Name = "txtTimKhuyenMai";
             this.txtTimKhuyenMai.PasswordChar = '\0';
             this.txtTimKhuyenMai.PlaceholderText = "Tìm kiếm khuyến mãi";
             this.txtTimKhuyenMai.SelectedText = "";
-            this.txtTimKhuyenMai.Size = new System.Drawing.Size(296, 36);
+            this.txtTimKhuyenMai.Size = new System.Drawing.Size(416, 36);
             this.txtTimKhuyenMai.TabIndex = 97;
+            this.txtTimKhuyenMai.TextChanged += new System.EventHandler(this.txtTimKhuyenMai_TextChanged);
             // 
             // dgvKhuyenMai
             // 
@@ -312,7 +296,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.dgvKhuyenMai);
             this.Controls.Add(this.guna2Panel4);
-            this.Controls.Add(this.btnTimKhuyenMai);
             this.Controls.Add(this.txtTimKhuyenMai);
             this.Controls.Add(this.guna2Panel2);
             this.Name = "ucDiscount";
@@ -333,7 +316,6 @@
         private Guna.UI2.WinForms.Guna2Button btnAddDiscount;
         private Guna.UI2.WinForms.Guna2Button btnDeleteDiscount;
         private Guna.UI2.WinForms.Guna2Button btnEditDiscount;
-        private Guna.UI2.WinForms.Guna2CircleButton btnTimKhuyenMai;
         private Guna.UI2.WinForms.Guna2TextBox txtTimKhuyenMai;
         private Guna.UI2.WinForms.Guna2Button btnShowDiscount;
         private Guna.UI2.WinForms.Guna2DataGridView dgvKhuyenMai;

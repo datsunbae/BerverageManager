@@ -63,9 +63,12 @@ namespace Berverage_Manager.GUI
 
         public void LoadThongTinNhanVien()
         {
-            MemoryStream memoryStream = new MemoryStream(nhanVien.HINHANHNV.ToArray());
-            Image img = Image.FromStream(memoryStream);
-            PB_ImgStaff.Image = img;
+            if(nhanVien.HINHANHNV != null)
+            {
+                MemoryStream memoryStream = new MemoryStream(nhanVien.HINHANHNV.ToArray());
+                Image img = Image.FromStream(memoryStream);
+                PB_ImgStaff.Image = img;
+            }
             LB_Ten.Text = "Chào, " + nhanVien.TENNV.ToUpper();
             LB_VaiTro.Text = vaiTro_BUS.LayTenVaiTroBangMVT(taiKhoan.MVAITRO).TENVAITRO;
         }

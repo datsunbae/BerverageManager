@@ -65,9 +65,10 @@ namespace Berverage_Manager.DAO
             }
         }
 
-        public List<NHANVIEN> TimKiemNhanVien(List<NHANVIEN> listNV, String timKiemKH)
+        public List<NHANVIEN> TimKiemNhanVien(List<NHANVIEN> listNV, String timKiemNV)
         {
-            List<NHANVIEN> listTimNV = listNV.Where(p => p.TENNV.ToLower().Contains(timKiemKH.ToLower())).ToList();
+            List<NHANVIEN> listTimNV = listNV.Where(p => p.TENNV.ToLower().Contains(timKiemNV.ToLower())
+                                        || p.MANV.ToString().Contains(timKiemNV)).ToList();
             return listTimNV;
         }
     }

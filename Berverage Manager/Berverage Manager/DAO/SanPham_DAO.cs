@@ -19,7 +19,7 @@ namespace Berverage_Manager.DAO
             }
         }
 
-        public List<SANPHAM> LayTatCaSanPhamConTonKho(List<TONKHO> listTK)
+        public List<SANPHAM> LayTatCaSanPhamConTonKho(List<TonKho_DTO> listTK)
         {
             List <SANPHAM> listSP = new List<SANPHAM> ();
             using (DBQuanLyBanNuocGiaiKhat dbQuanLyBanNGK = new DBQuanLyBanNuocGiaiKhat())
@@ -71,7 +71,8 @@ namespace Berverage_Manager.DAO
 
         public List<SANPHAM> TimKiemSanPham(List<SANPHAM> listSP, String timKiemSP)
         {
-            List<SANPHAM> listTimSP = listSP.Where(p => p.TENSP.ToLower().Contains(timKiemSP.ToLower())).ToList();
+            List<SANPHAM> listTimSP = listSP.Where(p => p.TENSP.ToLower().Contains(timKiemSP.ToLower())
+                                        || p.MASP.ToString().Contains(timKiemSP)).ToList();
             return listTimSP;
         }
 

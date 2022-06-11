@@ -107,20 +107,13 @@ namespace Berverage_Manager.GUI
             }
         }
 
-        private void btnTimNK_Click(object sender, EventArgs e)
+        private void txtTimNK_TextChanged(object sender, EventArgs e)
         {
             List<NHAPKHO> listTimKiemPNK = nhapKho_BUS.TimKiemPhieuNhapKho(txtTimNK.Text);
-           
-            if(txtTimNK.Text != "")
+
+            if (txtTimNK.Text != "")
             {
-                if (listTimKiemPNK.Count > 0)
-                {
-                    FillDataDGV(listTimKiemPNK);
-                }
-                else
-                {
-                    MessageBox.Show("Không Tìm Thấy Phiếu Nhập Kho Nào!", "THÔNG BÁO", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                }
+                FillDataDGV(listTimKiemPNK);
             }
             else
             {

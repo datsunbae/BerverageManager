@@ -1,5 +1,6 @@
 ﻿using Berverage_Manager.BUS;
 using Berverage_Manager.DataContext;
+using Berverage_Manager.DTO;
 using Berverage_Manager.GUI.Customer;
 using Guna.UI2.WinForms;
 using System;
@@ -95,7 +96,7 @@ namespace Berverage_Manager.GUI
             
         }
 
-        public void FillDataDGV(List<TONKHO> listTonKho)
+        public void FillDataDGV(List<TonKho_DTO> listTonKho)
         {
 
             BH_DGV_DSSP.Rows.Clear();
@@ -103,7 +104,7 @@ namespace Berverage_Manager.GUI
             {
                 int RowNew = BH_DGV_DSSP.Rows.Add();
                 BH_DGV_DSSP.Rows[RowNew].Cells[0].Value = item.IDSP;
-                BH_DGV_DSSP.Rows[RowNew].Cells[1].Value = sanPham_BUS.LaySanPhamBangMSP(item.IDSP.Value).TENSP;
+                BH_DGV_DSSP.Rows[RowNew].Cells[1].Value = sanPham_BUS.LaySanPhamBangMSP(item.IDSP).TENSP;
                 BH_DGV_DSSP.Rows[RowNew].Cells[2].Value = item.SLTON;
                 BH_DGV_DSSP.Rows[RowNew].Cells[3].Value = item.SLTONQUIDOI;
             }
@@ -579,22 +580,6 @@ namespace Berverage_Manager.GUI
             RefreshForm();
         }
 
-        private void btnTimSP_BH_Click(object sender, EventArgs e)
-        {
-            String tenSP = txtTimSP_BH.Text;
-            List<TONKHO> listSPTK = tonKho_BUS.LayTatCaSanPhamConTonKho();
-            List<TONKHO> listTimSPTK = tonKho_BUS.TimKiemSanPhamTonKho(listSPTK, tenSP);
-
-            if (listTimSPTK.Count > 0)
-            {
-                FillDataDGV(listTimSPTK);
-            }
-            else
-            {
-                MessageBox.Show("Không Tìm Thấy Sản Phẩm Nào!", "THÔNG BÁO", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
-        }
-
         private List<KHUYENMAI> listKMThoaiDK(DateTime thoiGioiHienTai, List<int> listDoiTuongKhachHang, double tongTien)
         {
             List<KHUYENMAI> listKM_ThoaiDK = new List<KHUYENMAI>();
@@ -734,5 +719,28 @@ namespace Berverage_Manager.GUI
             }
 
         }
+
+        private void txtTimSP_BH_TextChanged(object sender, EventArgs e)
+        {
+            String tenSP = txtTimSP_BH.Text;
+            List<TonKho_DTO> listTimSPTK = tonKho_BUS.TimKiemSanPhamTonKho(tenSP);
+
+            if (listTimSPTK.Count > 0)
+            {
+                FillDataDGV(listTimSPTK);
+            }
+            else
+            {
+                if (tenSP == "")
+                {
+                    FillDataDGV(tonKho_BUS.LayTatCaSanPhamConTonKho());
+                }
+                else
+                {
+                    MessageBox.Show("Không Tìm Thấy Sản Phẩm Nào!", "THÔNG BÁO", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+            }
+        }
+
     }
 }

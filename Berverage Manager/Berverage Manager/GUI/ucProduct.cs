@@ -108,20 +108,14 @@ namespace Berverage_Manager.GUI
             }
         }
 
-        private void btnTimSP_Click(object sender, EventArgs e)
+
+        private void txtTimSP_TextChanged(object sender, EventArgs e)
         {
             String tenSP = txtTimSP.Text;
             List<SANPHAM> listSP = sanPham_BUS.LayTatCaSanPham();
             List<SANPHAM> listTimSP = sanPham_BUS.TimKiemSanPham(listSP, tenSP);
 
-            if (listTimSP.Count > 0)
-            {
-                FillDataDGV(listTimSP);
-            }
-            else
-            {
-                MessageBox.Show("Không Tìm Thấy Sản Phẩm Nào!", "THÔNG BÁO", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
+            FillDataDGV(listTimSP);
         }
     }
 }

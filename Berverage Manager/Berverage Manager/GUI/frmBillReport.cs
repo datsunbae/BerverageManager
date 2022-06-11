@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Berverage_Manager.DataContext;
+using Berverage_Manager.DTO;
 using Microsoft.Reporting.WinForms;
 
 namespace Berverage_Manager.GUI
@@ -45,7 +46,6 @@ namespace Berverage_Manager.GUI
             var reportDataSource = new ReportDataSource("DataSetHoaDon", listReport);
             this.reportViewer1.LocalReport.DataSources.Clear();
             this.reportViewer1.LocalReport.DataSources.Add(reportDataSource);
-            this.reportViewer1.RefreshReport();
             this.reportViewer1.RefreshReport();
         }
     }

@@ -53,9 +53,12 @@ namespace Berverage_Manager.GUI
             TXT_SoDienThoai.Text = nhanVien.SDTNV;
             TXT_Email.Text = nhanVien.EMAILNV;
             TXT_DiaChi.Text = nhanVien.DIACHINV;
-            MemoryStream memoryStream = new MemoryStream(nhanVien.HINHANHNV.ToArray());
-            Image img = Image.FromStream(memoryStream);
-            IMG_NhanVien.Image = img;
+            if(nhanVien.HINHANHNV != null)
+            {
+                MemoryStream memoryStream = new MemoryStream(nhanVien.HINHANHNV.ToArray());
+                Image img = Image.FromStream(memoryStream);
+                IMG_NhanVien.Image = img;
+            }
         }
 
         private void frmChangeInfo_Load(object sender, EventArgs e)

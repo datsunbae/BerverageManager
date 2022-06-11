@@ -99,20 +99,13 @@ namespace Berverage_Manager.GUI
             }
         }
 
-        private void btnTimKH_Click(object sender, EventArgs e)
+        private void txtTimKH_TextChanged(object sender, EventArgs e)
         {
             String tenKH = txtTimKH.Text;
             List<KHACHHANG> listKH = khachHang_BUS.LayTatCaKhachHang();
             List<KHACHHANG> listTimKH = khachHang_BUS.TimKiemKhachHang(listKH, tenKH);
 
-            if (listTimKH.Count > 0)
-            {
-                FillDataDGV(listTimKH);
-            }
-            else
-            {
-                MessageBox.Show("Không Tìm Thấy Khách Hàng Nào!", "THÔNG BÁO", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
+            FillDataDGV(listTimKH);
         }
     }
 }

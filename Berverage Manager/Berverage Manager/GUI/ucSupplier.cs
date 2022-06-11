@@ -89,20 +89,14 @@ namespace Berverage_Manager.GUI
             }
         }
 
-        private void btnTimNCC_Click(object sender, EventArgs e)
+
+        private void txtTimNCC_TextChanged(object sender, EventArgs e)
         {
             String tenNCC = txtTimNCC.Text;
             List<NHACUNGCAP> listNCC = nhaCungCap_BUS.LayTatCaNhaCungCap();
             List<NHACUNGCAP> listTimNCC = nhaCungCap_BUS.TimKiemNhaCungCap(listNCC, tenNCC);
 
-            if (listTimNCC.Count > 0)
-            {
-                FillDataDGV(listTimNCC);
-            }
-            else
-            {
-                MessageBox.Show("Không Tìm Thấy Nhà Cung Cấp Nào!", "THÔNG BÁO", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
+            FillDataDGV(listTimNCC);
         }
     }
 }

@@ -1,5 +1,6 @@
 ﻿using Berverage_Manager.DAO;
 using Berverage_Manager.DataContext;
+using Berverage_Manager.DTO;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -22,7 +23,7 @@ namespace Berverage_Manager.BUS
             return sanPham_DAO.LayTatCaSanPham();
         }
 
-        public List<SANPHAM> LayTatCaSanPhamConTonKho(List<TONKHO> listTK)
+        public List<SANPHAM> LayTatCaSanPhamConTonKho(List<TonKho_DTO> listTK)
         {
             return sanPham_DAO.LayTatCaSanPhamConTonKho(listTK);
         }

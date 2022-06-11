@@ -32,7 +32,6 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.btnTimNCC = new Guna.UI2.WinForms.Guna2CircleButton();
             this.btnEditSupplier = new Guna.UI2.WinForms.Guna2Button();
             this.txtTimNCC = new Guna.UI2.WinForms.Guna2TextBox();
             this.clEmail = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -57,23 +56,6 @@
             this.guna2Panel3.SuspendLayout();
             this.guna2Panel2.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // btnTimNCC
-            // 
-            this.btnTimNCC.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnTimNCC.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnTimNCC.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnTimNCC.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnTimNCC.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(146)))), ((int)(((byte)(228)))));
-            this.btnTimNCC.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnTimNCC.ForeColor = System.Drawing.Color.White;
-            this.btnTimNCC.Image = ((System.Drawing.Image)(resources.GetObject("btnTimNCC.Image")));
-            this.btnTimNCC.Location = new System.Drawing.Point(292, 55);
-            this.btnTimNCC.Name = "btnTimNCC";
-            this.btnTimNCC.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.btnTimNCC.Size = new System.Drawing.Size(36, 36);
-            this.btnTimNCC.TabIndex = 95;
-            this.btnTimNCC.Click += new System.EventHandler(this.btnTimNCC_Click);
             // 
             // btnEditSupplier
             // 
@@ -109,8 +91,9 @@
             this.txtTimNCC.PasswordChar = '\0';
             this.txtTimNCC.PlaceholderText = "Nhập mã hoặc tên nhà cung cấp";
             this.txtTimNCC.SelectedText = "";
-            this.txtTimNCC.Size = new System.Drawing.Size(278, 36);
+            this.txtTimNCC.Size = new System.Drawing.Size(357, 36);
             this.txtTimNCC.TabIndex = 91;
+            this.txtTimNCC.TextChanged += new System.EventHandler(this.txtTimNCC_TextChanged);
             // 
             // clEmail
             // 
@@ -314,7 +297,6 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.btnTimNCC);
             this.Controls.Add(this.txtTimNCC);
             this.Controls.Add(this.guna2Panel4);
             this.Controls.Add(this.dgvNhaCungCap);
@@ -336,8 +318,6 @@
         }
 
         #endregion
-
-        private Guna.UI2.WinForms.Guna2CircleButton btnTimNCC;
         private Guna.UI2.WinForms.Guna2Button btnEditSupplier;
         private Guna.UI2.WinForms.Guna2TextBox txtTimNCC;
         private System.Windows.Forms.DataGridViewTextBoxColumn clEmail;

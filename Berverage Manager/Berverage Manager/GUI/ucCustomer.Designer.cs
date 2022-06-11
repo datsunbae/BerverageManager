@@ -32,7 +32,6 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.btnTimKH = new Guna.UI2.WinForms.Guna2CircleButton();
             this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             this.btnAddCustomer = new Guna.UI2.WinForms.Guna2Button();
@@ -44,13 +43,13 @@
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.txtTimKH = new Guna.UI2.WinForms.Guna2TextBox();
             this.dgvKhachHang = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
             this.clMaKhachHang = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clTenKhachHang = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clGioiTinh = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clSoDienThoai = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clDiaChi = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clEmail = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
             this.guna2Panel2.SuspendLayout();
             this.guna2Panel4.SuspendLayout();
@@ -58,23 +57,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgvKhachHang)).BeginInit();
             this.guna2Panel3.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // btnTimKH
-            // 
-            this.btnTimKH.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnTimKH.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnTimKH.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnTimKH.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnTimKH.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(146)))), ((int)(((byte)(228)))));
-            this.btnTimKH.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnTimKH.ForeColor = System.Drawing.Color.White;
-            this.btnTimKH.Image = ((System.Drawing.Image)(resources.GetObject("btnTimKH.Image")));
-            this.btnTimKH.Location = new System.Drawing.Point(292, 55);
-            this.btnTimKH.Name = "btnTimKH";
-            this.btnTimKH.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.btnTimKH.Size = new System.Drawing.Size(36, 36);
-            this.btnTimKH.TabIndex = 94;
-            this.btnTimKH.Click += new System.EventHandler(this.btnTimKH_Click);
             // 
             // guna2PictureBox2
             // 
@@ -208,8 +190,9 @@
             this.txtTimKH.PasswordChar = '\0';
             this.txtTimKH.PlaceholderText = "Nhập mã hoặc tên khách hàng";
             this.txtTimKH.SelectedText = "";
-            this.txtTimKH.Size = new System.Drawing.Size(278, 36);
+            this.txtTimKH.Size = new System.Drawing.Size(400, 36);
             this.txtTimKH.TabIndex = 90;
+            this.txtTimKH.TextChanged += new System.EventHandler(this.txtTimKH_TextChanged);
             // 
             // dgvKhachHang
             // 
@@ -277,16 +260,6 @@
             this.dgvKhachHang.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvKhachHang_CellClick);
             this.dgvKhachHang.RowsAdded += new System.Windows.Forms.DataGridViewRowsAddedEventHandler(this.dgvKhachHang_RowsAdded);
             // 
-            // guna2Panel3
-            // 
-            this.guna2Panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(146)))), ((int)(((byte)(228)))));
-            this.guna2Panel3.Controls.Add(this.label1);
-            this.guna2Panel3.Controls.Add(this.guna2PictureBox1);
-            this.guna2Panel3.Location = new System.Drawing.Point(0, 100);
-            this.guna2Panel3.Name = "guna2Panel3";
-            this.guna2Panel3.Size = new System.Drawing.Size(1003, 42);
-            this.guna2Panel3.TabIndex = 92;
-            // 
             // clMaKhachHang
             // 
             this.clMaKhachHang.HeaderText = "Mã khách hàng";
@@ -317,11 +290,20 @@
             this.clEmail.HeaderText = "Email";
             this.clEmail.Name = "clEmail";
             // 
+            // guna2Panel3
+            // 
+            this.guna2Panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(146)))), ((int)(((byte)(228)))));
+            this.guna2Panel3.Controls.Add(this.label1);
+            this.guna2Panel3.Controls.Add(this.guna2PictureBox1);
+            this.guna2Panel3.Location = new System.Drawing.Point(0, 100);
+            this.guna2Panel3.Name = "guna2Panel3";
+            this.guna2Panel3.Size = new System.Drawing.Size(1003, 42);
+            this.guna2Panel3.TabIndex = 92;
+            // 
             // ucCustomer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.btnTimKH);
             this.Controls.Add(this.guna2Panel2);
             this.Controls.Add(this.guna2Panel4);
             this.Controls.Add(this.txtTimKH);
@@ -343,8 +325,6 @@
         }
 
         #endregion
-
-        private Guna.UI2.WinForms.Guna2CircleButton btnTimKH;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox2;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
         private Guna.UI2.WinForms.Guna2Button btnAddCustomer;

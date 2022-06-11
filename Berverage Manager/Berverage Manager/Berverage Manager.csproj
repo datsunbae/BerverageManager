@@ -74,6 +74,7 @@
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Security" />
     <Reference Include="System.Windows.Forms.DataVisualization" />
@@ -127,7 +128,6 @@
     <Compile Include="DAO\TaiKhoan_DAO.cs" />
     <Compile Include="DAO\TonKho_DAO.cs" />
     <Compile Include="DAO\VaiTro_DAO.cs" />
-    <Compile Include="DataContext\BaoCaoBanHang_SanPham.cs" />
     <Compile Include="DataContext\CHIETKHAU.cs" />
     <Compile Include="DataContext\CTKHUYENMAI_CHIETKHAU.cs" />
     <Compile Include="DataContext\CTKHUYENMAI_TANGSP.cs" />
@@ -151,6 +151,7 @@
     <Compile Include="DTO\DonHangDoanhThuReport_DTO.cs" />
     <Compile Include="DTO\KhachHangMuaNhieuNhat_DTO.cs" />
     <Compile Include="DTO\SanPhamBanChay_DTO.cs" />
+    <Compile Include="DTO\TonKho_DTO.cs" />
     <Compile Include="GUI\frmAddCustomer.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -325,12 +326,6 @@
     <Compile Include="GUI\ucProduct.Designer.cs">
       <DependentUpon>ucProduct.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\ucProductReport.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="GUI\ucProductReport.Designer.cs">
-      <DependentUpon>ucProductReport.cs</DependentUpon>
-    </Compile>
     <Compile Include="GUI\ucReportStatistical.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -469,9 +464,6 @@
     <EmbeddedResource Include="GUI\ucProduct.resx">
       <DependentUpon>ucProduct.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI\ucProductReport.resx">
-      <DependentUpon>ucProductReport.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="GUI\ucReportStatistical.resx">
       <DependentUpon>ucReportStatistical.cs</DependentUpon>
     </EmbeddedResource>
@@ -513,10 +505,15 @@
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\DataSources\Berverage_Manager.DataContext.DONHANG.datasource" />
-    <None Include="Properties\DataSources\Berverage_Manager.DataContext.HoaDonReport.datasource" />
     <None Include="Properties\DataSources\Berverage_Manager.DataContext.HOADON_REPORT.datasource" />
     <None Include="Properties\DataSources\Berverage_Manager.DTO.DonHangDoanhThuReport_DTO.datasource" />
     <None Include="Properties\DataSources\Berverage_Manager.DTO.DonHangDoanhThu_Report_DTO.datasource" />
+    <None Include="Properties\DataSources\Berverage_Manager.DTO.HoaDonBanHangReport_DTO.datasource" />
+    <None Include="Properties\DataSources\Berverage_Manager.DTO.HoaDonBHReport_DTO.datasource" />
+    <None Include="Properties\DataSources\Berverage_Manager.DTO.KhachHangMuaNhieuNhat_DTO.datasource" />
+    <None Include="Properties\DataSources\Berverage_Manager.DTO.ReportHoaDon_DTO.datasource" />
+    <None Include="Properties\DataSources\Berverage_Manager.DTO.SanPhamBanChay_DTO.datasource" />
+    <None Include="Properties\DataSources\Berverage_Manager.DTO.TonKho_DTO.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -544,6 +541,9 @@
     <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

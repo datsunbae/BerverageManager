@@ -53,9 +53,12 @@ namespace Berverage_Manager.GUI.Staff
             SNV_CB_VaiTro.SelectedValue = tk.MVAITRO;
 
             NHANVIEN nv = nhanVien_BUS.LayNhanVienBangMNV(maNV);
-            MemoryStream memoryStream = new MemoryStream(nv.HINHANHNV.ToArray());
-            Image img = Image.FromStream(memoryStream);
-            PB_ImgStaff.Image = img;
+            if(nv.HINHANHNV != null)
+            {
+                MemoryStream memoryStream = new MemoryStream(nv.HINHANHNV.ToArray());
+                Image img = Image.FromStream(memoryStream);
+                PB_ImgStaff.Image = img;
+            }
         }
 
         private void frmUpdateStaff_Load(object sender, EventArgs e)

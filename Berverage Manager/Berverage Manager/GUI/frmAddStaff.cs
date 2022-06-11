@@ -38,25 +38,37 @@ namespace Berverage_Manager.GUI.Staff
         {
             if (txtTenNV.Text != "" && txtMaTaiKhoanNV.Text != "" && txtMatKhauNV.Text != "")
             {
-                NHANVIEN nv = new NHANVIEN();
-                nv.TENNV = txtTenNV.Text;
-                nv.SDTNV = txtDienThoaiNV.Text;
-                nv.DIACHINV = txtDiaChiNV.Text;
-                nv.EMAILNV = txtEmailNV.Text;
-                nv.MATK = txtMaTaiKhoanNV.Text;
-                MemoryStream memoryStream = new MemoryStream();
-                PB_ImgStaff.Image.Save(memoryStream, ImageFormat.Jpeg);
-                nv.HINHANHNV = memoryStream.ToArray();
+                if (!(taiKhoan_BUS.KiemTRaMaTaiKhoanTonTai(txtMaTaiKhoanNV.Text)))
+                {
+                    TAIKHOAN tk = new TAIKHOAN();
+                    tk.MADANGNHAP = txtMaTaiKhoanNV.Text;
+                    tk.MATKHAU = txtMatKhauNV.Text;
+                    tk.MVAITRO = TNV_CB_VaiTro.SelectedValue.ToString();
 
-                TAIKHOAN tk = new TAIKHOAN();
-                tk.MADANGNHAP = txtMaTaiKhoanNV.Text;
-                tk.MATKHAU = txtMatKhauNV.Text;
-                tk.MVAITRO = TNV_CB_VaiTro.SelectedValue.ToString();
-                taiKhoan_BUS.ThemTaiKhoan(tk);
-                nhanVien_BUS.ThemNhanVien(nv);
-                ucStaff.uc_NhanVien.FillDataDGV(nhanVien_BUS.LayTatCaNhanVien());
-                ucSell.uc_BanHang.LoadCBNhanVien();
-                this.Close();
+                    NHANVIEN nv = new NHANVIEN();
+                    nv.TENNV = txtTenNV.Text;
+                    nv.SDTNV = txtDienThoaiNV.Text;
+                    nv.DIACHINV = txtDiaChiNV.Text;
+                    nv.EMAILNV = txtEmailNV.Text;
+                    nv.MATK = txtMaTaiKhoanNV.Text;
+                    if(PB_ImgStaff.Image != null)
+                    {
+                        MemoryStream memoryStream = new MemoryStream();
+                        PB_ImgStaff.Image.Save(memoryStream, ImageFormat.Jpeg);
+                        nv.HINHANHNV = memoryStream.ToArray();
+                    }
+                    taiKhoan_BUS.ThemTaiKhoan(tk);
+                    nhanVien_BUS.ThemNhanVien(nv);
+                    ucStaff.uc_NhanVien.FillDataDGV(nhanVien_BUS.LayTatCaNhanVien());
+                    ucSell.uc_BanHang.LoadCBNhanVien();
+                    this.Close();
+                }
+                else
+                {
+                    MessageBox.Show("Tài khoản đã tồn tại");
+                }
+
+                
             }
             else
             {
@@ -71,13 +83,12 @@ namespace Berverage_Manager.GUI.Staff
 
         private void BTN_ChonHinhAnh_Click(object sender, EventArgs e)
         {
-            OpenFileDialog.ShowDialog();
-            String fileName = OpenFileDialog.FileName;
-            if (string.IsNullOrEmpty(fileName)){
-                return;
+            if (OpenFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                String fileName = OpenFileDialog.FileName;
+                Image image = Image.FromFile(fileName);
+                PB_ImgStaff.Image = image;
             }
-            Image image = Image.FromFile(fileName);
-            PB_ImgStaff.Image = image;
         }
     }
 }

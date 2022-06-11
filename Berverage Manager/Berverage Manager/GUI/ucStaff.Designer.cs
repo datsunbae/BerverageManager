@@ -28,11 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ucStaff));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.btnTimNV = new Guna.UI2.WinForms.Guna2CircleButton();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ucStaff));
             this.dgvNhanVien = new Guna.UI2.WinForms.Guna2DataGridView();
             this.clMaNhanVien = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clTenNhanVien = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -58,23 +57,6 @@
             this.guna2Panel2.SuspendLayout();
             this.guna2Panel3.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // btnTimNV
-            // 
-            this.btnTimNV.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnTimNV.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnTimNV.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnTimNV.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnTimNV.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(146)))), ((int)(((byte)(228)))));
-            this.btnTimNV.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnTimNV.ForeColor = System.Drawing.Color.White;
-            this.btnTimNV.Image = ((System.Drawing.Image)(resources.GetObject("btnTimNV.Image")));
-            this.btnTimNV.Location = new System.Drawing.Point(292, 55);
-            this.btnTimNV.Name = "btnTimNV";
-            this.btnTimNV.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.btnTimNV.Size = new System.Drawing.Size(36, 36);
-            this.btnTimNV.TabIndex = 96;
-            this.btnTimNV.Click += new System.EventHandler(this.btnTimNV_Click);
             // 
             // dgvNhanVien
             // 
@@ -195,13 +177,14 @@
             this.txtTimNV.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtTimNV.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtTimNV.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtTimNV.Location = new System.Drawing.Point(8, 55);
+            this.txtTimNV.Location = new System.Drawing.Point(4, 58);
             this.txtTimNV.Name = "txtTimNV";
             this.txtTimNV.PasswordChar = '\0';
             this.txtTimNV.PlaceholderText = "Nhập mã hoặc tên nhân viên";
             this.txtTimNV.SelectedText = "";
-            this.txtTimNV.Size = new System.Drawing.Size(278, 36);
+            this.txtTimNV.Size = new System.Drawing.Size(399, 36);
             this.txtTimNV.TabIndex = 92;
+            this.txtTimNV.TextChanged += new System.EventHandler(this.txtTimNV_TextChanged);
             // 
             // guna2PictureBox1
             // 
@@ -321,7 +304,6 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.btnTimNV);
             this.Controls.Add(this.dgvNhanVien);
             this.Controls.Add(this.txtTimNV);
             this.Controls.Add(this.guna2Panel4);
@@ -343,8 +325,6 @@
         }
 
         #endregion
-
-        private Guna.UI2.WinForms.Guna2CircleButton btnTimNV;
         private Guna.UI2.WinForms.Guna2DataGridView dgvNhanVien;
         private System.Windows.Forms.Label label1;
         private Guna.UI2.WinForms.Guna2TextBox txtTimNV;

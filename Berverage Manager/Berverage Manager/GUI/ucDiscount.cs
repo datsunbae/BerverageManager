@@ -138,5 +138,19 @@ namespace Berverage_Manager.GUI
                 frmDetailDiscount.ShowDialog();
             } 
         }
+
+        private void txtTimKhuyenMai_TextChanged(object sender, EventArgs e)
+        {
+            List<KHUYENMAI> listTimKiemKM = khuyenMai_BUS.TimKiemKhuyenMai(khuyenMai_BUS.LayTatCaKhuyenMai(), txtTimKhuyenMai.Text);
+
+            if (txtTimKhuyenMai.Text != "")
+            {
+                FillDataDGV(listTimKiemKM);
+            }
+            else
+            {
+                FillDataDGV(khuyenMai_BUS.LayTatCaKhuyenMai());
+            }
+        }
     }
 }

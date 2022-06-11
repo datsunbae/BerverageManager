@@ -36,7 +36,6 @@
             this.guna2HtmlLabel4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.DTP_DH_TUNGAY = new Guna.UI2.WinForms.Guna2DateTimePicker();
-            this.btnTimNK = new Guna.UI2.WinForms.Guna2CircleButton();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             this.btnViewOrder = new Guna.UI2.WinForms.Guna2Button();
             this.btnOder = new Guna.UI2.WinForms.Guna2Button();
@@ -117,23 +116,6 @@
             this.DTP_DH_TUNGAY.Size = new System.Drawing.Size(129, 32);
             this.DTP_DH_TUNGAY.TabIndex = 105;
             this.DTP_DH_TUNGAY.Value = new System.DateTime(2021, 10, 15, 22, 32, 4, 704);
-            // 
-            // btnTimNK
-            // 
-            this.btnTimNK.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnTimNK.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnTimNK.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnTimNK.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnTimNK.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(146)))), ((int)(((byte)(228)))));
-            this.btnTimNK.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnTimNK.ForeColor = System.Drawing.Color.White;
-            this.btnTimNK.Image = ((System.Drawing.Image)(resources.GetObject("btnTimNK.Image")));
-            this.btnTimNK.Location = new System.Drawing.Point(292, 55);
-            this.btnTimNK.Name = "btnTimNK";
-            this.btnTimNK.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.btnTimNK.Size = new System.Drawing.Size(36, 36);
-            this.btnTimNK.TabIndex = 104;
-            this.btnTimNK.Click += new System.EventHandler(this.btnTimNK_Click);
             // 
             // guna2Panel2
             // 
@@ -277,8 +259,9 @@
             this.txtTimNK.PasswordChar = '\0';
             this.txtTimNK.PlaceholderText = "Nhập nhà cung cấp hoặc tên nhân viên";
             this.txtTimNK.SelectedText = "";
-            this.txtTimNK.Size = new System.Drawing.Size(278, 36);
+            this.txtTimNK.Size = new System.Drawing.Size(340, 36);
             this.txtTimNK.TabIndex = 100;
+            this.txtTimNK.TextChanged += new System.EventHandler(this.txtTimNK_TextChanged);
             // 
             // dgvNHAPKHO
             // 
@@ -378,7 +361,6 @@
             this.Controls.Add(this.guna2HtmlLabel4);
             this.Controls.Add(this.guna2HtmlLabel3);
             this.Controls.Add(this.DTP_DH_TUNGAY);
-            this.Controls.Add(this.btnTimNK);
             this.Controls.Add(this.guna2Panel2);
             this.Controls.Add(this.guna2Panel4);
             this.Controls.Add(this.guna2Panel3);
@@ -407,7 +389,6 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel4;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel3;
         private Guna.UI2.WinForms.Guna2DateTimePicker DTP_DH_TUNGAY;
-        private Guna.UI2.WinForms.Guna2CircleButton btnTimNK;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
         private Guna.UI2.WinForms.Guna2Button btnViewOrder;
         private Guna.UI2.WinForms.Guna2Button btnOder;

@@ -263,8 +263,7 @@ namespace Berverage_Manager.GUI
                     ucWarehouse.uc_TonKho.FillDataDGV(tonKho_BUS.LayTatCaSanPhamConTonKho());
 
                     //Load lai DGV DANH SACH SAN PHAM
-                    /*List<TONKHO> listSP = dBQuanLyBanNGK.TONKHOes.Where(p => p.SLTON > 0).ToList();
-                    ucBanHang.bh.FillDataDGV(listSP);*/
+                    ucSell.uc_BanHang.FillDataDGV(tonKho_BUS.LayTatCaSanPhamConTonKho());
                 }
 
                 ucOder.uc_PhieuNhapKho.FillDataDGV(nhapKho_BUS.LayTatCaPhieuNhapKho());

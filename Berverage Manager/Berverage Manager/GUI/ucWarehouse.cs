@@ -1,5 +1,6 @@
 ﻿using Berverage_Manager.BUS;
 using Berverage_Manager.DataContext;
+using Berverage_Manager.DTO;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -25,14 +26,14 @@ namespace Berverage_Manager.GUI
             sanPham_BUS = new SanPham_BUS();
         }
 
-        public void FillDataDGV(List<TONKHO> listTonKho)
+        public void FillDataDGV(List<TonKho_DTO> listTonKho)
         {
             dgv_TK.Rows.Clear();
             foreach (var item in listTonKho)
             {
                 int RowNew = dgv_TK.Rows.Add();
                 dgv_TK.Rows[RowNew].Cells[0].Value = item.IDSP;
-                dgv_TK.Rows[RowNew].Cells[1].Value = sanPham_BUS.LaySanPhamBangMSP(item.IDSP.Value).TENSP;
+                dgv_TK.Rows[RowNew].Cells[1].Value = sanPham_BUS.LaySanPhamBangMSP(item.IDSP).TENSP;
                 dgv_TK.Rows[RowNew].Cells[2].Value = item.SLTON;
                 dgv_TK.Rows[RowNew].Cells[3].Value = item.SLTONQUIDOI;
             }
@@ -48,11 +49,10 @@ namespace Berverage_Manager.GUI
             FillDataDGV(tonKho_BUS.LayTatCaTonKho());
         }
 
-        private void btnTimTK_Click(object sender, EventArgs e)
+        private void txtTimTK_TextChanged(object sender, EventArgs e)
         {
             String tenSP = txtTimTK.Text;
-            List<TONKHO> lisTK = tonKho_BUS.LayTatCaTonKho();
-            List<TONKHO> listTimTK = tonKho_BUS.TimKiemSanPhamTonKho(lisTK, tenSP);
+            List<TonKho_DTO> listTimTK = tonKho_BUS.TimKiemSanPhamTonKho(tenSP);
 
             if (listTimTK.Count > 0)
             {
@@ -60,7 +60,14 @@ namespace Berverage_Manager.GUI
             }
             else
             {
-                MessageBox.Show("Không Tìm Thấy Sản Phẩm Nào!", "THÔNG BÁO", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                if (tenSP == "")
+                {
+                    FillDataDGV(tonKho_BUS.LayTatCaSanPhamConTonKho());
+                }
+                else
+                {
+                    MessageBox.Show("Không Tìm Thấy Sản Phẩm Nào!", "THÔNG BÁO", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
             }
         }
     }

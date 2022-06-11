@@ -8,7 +8,7 @@ namespace Berverage_Manager.DataContext
     public partial class DBQuanLyBanNuocGiaiKhat : DbContext
     {
         public DBQuanLyBanNuocGiaiKhat()
-            : base("name=DBQuanLyBanNuocGiaiKhat1")
+            : base("name=DBQuanLyBanNuocGiaiKhat")
         {
         }
 
@@ -75,6 +75,16 @@ namespace Berverage_Manager.DataContext
                 .HasMany(e => e.DONHANGs)
                 .WithOptional(e => e.KHACHHANG)
                 .HasForeignKey(e => e.IDKH);
+
+            modelBuilder.Entity<KHUYENMAI>()
+                .HasMany(e => e.CTKHUYENMAI_CHIETKHAU)
+                .WithOptional(e => e.KHUYENMAI)
+                .WillCascadeOnDelete();
+
+            modelBuilder.Entity<KHUYENMAI>()
+                .HasMany(e => e.CTKHUYENMAI_TANGSP)
+                .WithOptional(e => e.KHUYENMAI)
+                .WillCascadeOnDelete();
 
             modelBuilder.Entity<KHUYENMAI>()
                 .HasMany(e => e.DONHANGs)

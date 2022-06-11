@@ -36,5 +36,10 @@ namespace Berverage_Manager.BUS
         {
             return tk_DAO.LayTaiKhoanBangMTK(maTaiKhoan);
         }
+
+        public Boolean KiemTRaMaTaiKhoanTonTai(string maTK)
+        {
+            return tk_DAO.KiemTRaMaTaiKhoanTonTai(maTK);
+        }
     }
 }

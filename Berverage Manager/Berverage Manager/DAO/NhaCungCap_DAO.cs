@@ -56,7 +56,8 @@ namespace Berverage_Manager.DAO
 
         public List<NHACUNGCAP> TimKiemNhaCungCap(List<NHACUNGCAP> listNCC, String timKiemNCC)
         {
-            List<NHACUNGCAP> listTimNCC = listNCC.Where(p => p.TENNCC.ToLower().Contains(timKiemNCC.ToLower())).ToList();
+            List<NHACUNGCAP> listTimNCC = listNCC.Where(p => p.TENNCC.ToLower().Contains(timKiemNCC.ToLower())
+                                          || p.MANCC.ToString().Contains(timKiemNCC)).ToList();
             return listTimNCC;
         }
     }

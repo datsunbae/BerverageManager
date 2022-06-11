@@ -97,20 +97,13 @@ namespace Berverage_Manager.GUI
             
         }
 
-        private void btnTimNV_Click(object sender, EventArgs e)
+        private void txtTimNV_TextChanged(object sender, EventArgs e)
         {
             String tenNV = txtTimNV.Text;
             List<NHANVIEN> listNV = nhanVien_BUS.LayTatCaNhanVien();
             List<NHANVIEN> listTimNV = nhanVien_BUS.TimKiemNhanVien(listNV, tenNV);
 
-            if (listTimNV.Count > 0)
-            {
-                FillDataDGV(listTimNV);
-            }
-            else
-            {
-                MessageBox.Show("Không Tìm Thấy Nhân Viên Nào!", "THÔNG BÁO", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
+            FillDataDGV(listTimNV);
         }
     }
 }

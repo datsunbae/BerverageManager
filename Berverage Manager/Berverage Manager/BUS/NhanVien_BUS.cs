@@ -49,6 +49,5 @@ namespace Berverage_Manager.BUS
         {
             return nv_DA0.TimKiemNhanVien(listNV, timKiemKH);
         }
-
     }
 }

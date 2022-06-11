@@ -46,5 +46,19 @@ namespace Berverage_Manager.DAO
             }
         }
 
+        public Boolean KiemTRaMaTaiKhoanTonTai(string maTK)
+        {
+            using (DBQuanLyBanNuocGiaiKhat dbQuanLyBanNGK = new DBQuanLyBanNuocGiaiKhat())
+            {
+                var result = dbQuanLyBanNGK.TAIKHOANs.Find(maTK);
+                if (result != null)
+                {
+                    return true;
+                }
+
+                return false;
+            }
+        }
+
     }
 }

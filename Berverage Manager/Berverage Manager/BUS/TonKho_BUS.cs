@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Berverage_Manager.DataContext;
 using Berverage_Manager.DAO;
+using Berverage_Manager.DTO;
 
 namespace Berverage_Manager.BUS
 {
@@ -17,12 +18,12 @@ namespace Berverage_Manager.BUS
             tonKho_DAO = new TonKho_DAO();
         }
 
-        public List<TONKHO> LayTatCaTonKho()
+        public List<TonKho_DTO> LayTatCaTonKho()
         {
             return tonKho_DAO.LayTatCaTonKho();
         }
 
-        public List<TONKHO> LayTatCaSanPhamConTonKho()
+        public List<TonKho_DTO> LayTatCaSanPhamConTonKho()
         {
             return tonKho_DAO.LayTatCaSanPhamConTonKho();
         }
@@ -42,9 +43,9 @@ namespace Berverage_Manager.BUS
             return tonKho_DAO.LayTonKhoBangMSP(maSP);
         }
 
-        public List<TONKHO> TimKiemSanPhamTonKho(List<TONKHO> listSPTK, String timKiemSPTK)
+        public List<TonKho_DTO> TimKiemSanPhamTonKho(String timKiemSPTK)
         {
-            return tonKho_DAO.TimKiemSanPhamTonKho(listSPTK, timKiemSPTK);
+            return tonKho_DAO.TimKiemSanPhamTonKho(timKiemSPTK);
         }
     }
 }
