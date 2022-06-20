@@ -75,6 +75,7 @@ namespace Berverage_Manager.GUI
 
         private void frmHomeSellStaff_Load(object sender, EventArgs e)
         {
+            timer1.Start();
             Panel.Controls.Add(sell);
             Panel.Controls.Add(bill);
             Panel.Controls.Add(product);
@@ -117,6 +118,9 @@ namespace Berverage_Manager.GUI
             new frmChooseChangePwOrChangeInfo().Show();
         }
 
-        
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            lb_Timer.Text = DateTime.Now.ToString("dddd, hh:mm:ss tt");
+        }
     }
 }

@@ -62,7 +62,7 @@ namespace Berverage_Manager.GUI
                 dgvNhanVien.Rows[RowNew].Cells[1].Value = item.TENNV;
                 dgvNhanVien.Rows[RowNew].Cells[2].Value = item.SDTNV;
                 dgvNhanVien.Rows[RowNew].Cells[3].Value = item.DIACHINV;
-                dgvNhanVien.Rows[RowNew].Cells[4].Value = item.EMAILNV;
+                dgvNhanVien.Rows[RowNew].Cells[4].Value = taiKhoan_BUS.LayTaiKhoanBangMTK(item.MATK).EMAIL;
                 dgvNhanVien.Rows[RowNew].Cells[5].Value = item.MATK;
             }
         }

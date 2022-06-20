@@ -152,6 +152,12 @@
     <Compile Include="DTO\KhachHangMuaNhieuNhat_DTO.cs" />
     <Compile Include="DTO\SanPhamBanChay_DTO.cs" />
     <Compile Include="DTO\TonKho_DTO.cs" />
+    <Compile Include="GUI\frmConfirmCode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frmConfirmCode.Designer.cs">
+      <DependentUpon>frmConfirmCode.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\frmAddCustomer.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -224,6 +230,12 @@
     <Compile Include="GUI\frmDetailDiscount.Designer.cs">
       <DependentUpon>frmDetailDiscount.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\frmForgotPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frmForgotPassword.Designer.cs">
+      <DependentUpon>frmForgotPassword.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\frmHomeStaffWarehouse.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -241,6 +253,12 @@
     </Compile>
     <Compile Include="GUI\frmHomeSellStaff.Designer.cs">
       <DependentUpon>frmHomeSellStaff.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frmNewPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frmNewPassword.Designer.cs">
+      <DependentUpon>frmNewPassword.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\frmOrder.cs">
       <SubType>Form</SubType>
@@ -410,8 +428,14 @@
     <EmbeddedResource Include="GUI\frmChooseProductGiveaways.resx">
       <DependentUpon>frmChooseProductGiveaways.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frmConfirmCode.resx">
+      <DependentUpon>frmConfirmCode.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI\frmDetailDiscount.resx">
       <DependentUpon>frmDetailDiscount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frmForgotPassword.resx">
+      <DependentUpon>frmForgotPassword.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\frmHomeStaffWarehouse.resx">
       <DependentUpon>frmHomeStaffWarehouse.cs</DependentUpon>
@@ -421,6 +445,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\frmHomeSellStaff.resx">
       <DependentUpon>frmHomeSellStaff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frmNewPassword.resx">
+      <DependentUpon>frmNewPassword.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\frmOrder.resx">
       <DependentUpon>frmOrder.cs</DependentUpon>

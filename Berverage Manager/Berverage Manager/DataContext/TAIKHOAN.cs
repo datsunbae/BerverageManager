@@ -23,6 +23,9 @@ namespace Berverage_Manager.DataContext
         [StringLength(50)]
         public string MATKHAU { get; set; }
 
+        [StringLength(100)]
+        public string EMAIL { get; set; }
+
         [Required]
         [StringLength(50)]
         public string MVAITRO { get; set; }

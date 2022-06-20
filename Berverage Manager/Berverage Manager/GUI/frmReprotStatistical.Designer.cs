@@ -63,7 +63,7 @@
             this.frmRS_Date.Checked = true;
             this.frmRS_Date.CustomFormat = "MM/yyyy";
             this.frmRS_Date.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(146)))), ((int)(((byte)(228)))));
-            this.frmRS_Date.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.frmRS_Date.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.frmRS_Date.ForeColor = System.Drawing.Color.White;
             this.frmRS_Date.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.frmRS_Date.Location = new System.Drawing.Point(12, 30);
@@ -89,6 +89,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
             this.ClientSize = new System.Drawing.Size(782, 588);
             this.Controls.Add(this.frmRS_Date);
             this.Controls.Add(this.reportViewer1);

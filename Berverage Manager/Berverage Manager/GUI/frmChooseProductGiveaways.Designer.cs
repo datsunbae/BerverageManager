@@ -160,38 +160,41 @@
             // 
             // CSPT_BTN_ApDung
             // 
-            this.CSPT_BTN_ApDung.BorderRadius = 5;
+            this.CSPT_BTN_ApDung.AutoRoundedCorners = true;
+            this.CSPT_BTN_ApDung.BackColor = System.Drawing.Color.Transparent;
+            this.CSPT_BTN_ApDung.BorderRadius = 21;
             this.CSPT_BTN_ApDung.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.CSPT_BTN_ApDung.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.CSPT_BTN_ApDung.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.CSPT_BTN_ApDung.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.CSPT_BTN_ApDung.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(146)))), ((int)(((byte)(228)))));
-            this.CSPT_BTN_ApDung.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CSPT_BTN_ApDung.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold);
             this.CSPT_BTN_ApDung.ForeColor = System.Drawing.Color.White;
             this.CSPT_BTN_ApDung.Location = new System.Drawing.Point(469, 335);
             this.CSPT_BTN_ApDung.Name = "CSPT_BTN_ApDung";
             this.CSPT_BTN_ApDung.Size = new System.Drawing.Size(167, 45);
             this.CSPT_BTN_ApDung.TabIndex = 277;
             this.CSPT_BTN_ApDung.TabStop = false;
-            this.CSPT_BTN_ApDung.Text = "Áp dụng";
+            this.CSPT_BTN_ApDung.Text = "ÁP DỤNG";
             this.CSPT_BTN_ApDung.Click += new System.EventHandler(this.CSPT_BTN_ApDung_Click);
             // 
             // CSPT_BTN_QuayLai
             // 
-            this.CSPT_BTN_QuayLai.BorderRadius = 5;
+            this.CSPT_BTN_QuayLai.AutoRoundedCorners = true;
+            this.CSPT_BTN_QuayLai.BorderRadius = 21;
             this.CSPT_BTN_QuayLai.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.CSPT_BTN_QuayLai.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.CSPT_BTN_QuayLai.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.CSPT_BTN_QuayLai.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.CSPT_BTN_QuayLai.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(146)))), ((int)(((byte)(228)))));
-            this.CSPT_BTN_QuayLai.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CSPT_BTN_QuayLai.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CSPT_BTN_QuayLai.ForeColor = System.Drawing.Color.White;
             this.CSPT_BTN_QuayLai.Location = new System.Drawing.Point(296, 335);
             this.CSPT_BTN_QuayLai.Name = "CSPT_BTN_QuayLai";
             this.CSPT_BTN_QuayLai.Size = new System.Drawing.Size(167, 45);
             this.CSPT_BTN_QuayLai.TabIndex = 278;
             this.CSPT_BTN_QuayLai.TabStop = false;
-            this.CSPT_BTN_QuayLai.Text = "Quay lại";
+            this.CSPT_BTN_QuayLai.Text = "QUAY LẠI";
             this.CSPT_BTN_QuayLai.Click += new System.EventHandler(this.CSPT_BTN_QuayLai_Click);
             // 
             // guna2ControlBox1
@@ -210,6 +213,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
             this.ClientSize = new System.Drawing.Size(674, 398);
             this.Controls.Add(this.guna2ControlBox1);
             this.Controls.Add(this.CSPT_BTN_QuayLai);

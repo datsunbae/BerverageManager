@@ -81,5 +81,11 @@ namespace Berverage_Manager.GUI
                 txtPassword.PasswordChar = '*';
             }
         }
+
+        private void txtQuenMatKhau_Click(object sender, EventArgs e)
+        {
+            frmForgotPassword frmForgotPassword = new frmForgotPassword();
+            frmForgotPassword.Show();
+        }
     }
 }

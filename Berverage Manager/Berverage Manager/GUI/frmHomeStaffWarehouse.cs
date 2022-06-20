@@ -73,6 +73,7 @@ namespace Berverage_Manager.GUI
 
         private void frmHomeStaffWarehouse_Load(object sender, EventArgs e)
         {
+            timer1.Start();
             Panel.Controls.Add(product);
             Panel.Controls.Add(order);
             Panel.Controls.Add(warehouse);
@@ -108,6 +109,11 @@ namespace Berverage_Manager.GUI
         private void BTN_CaiDat_Click(object sender, EventArgs e)
         {
             new frmChooseChangePwOrChangeInfo().Show();
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            lb_Timer.Text = DateTime.Now.ToString("dddd, hh:mm:ss tt");
         }
     }
 }

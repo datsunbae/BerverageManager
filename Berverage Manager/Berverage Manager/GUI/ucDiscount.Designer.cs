@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ucDiscount));
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             this.btnShowDiscount = new Guna.UI2.WinForms.Guna2Button();
@@ -65,7 +65,7 @@
             this.guna2Panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.guna2Panel2.Location = new System.Drawing.Point(0, 0);
             this.guna2Panel2.Name = "guna2Panel2";
-            this.guna2Panel2.Size = new System.Drawing.Size(1110, 45);
+            this.guna2Panel2.Size = new System.Drawing.Size(1378, 45);
             this.guna2Panel2.TabIndex = 92;
             // 
             // btnShowDiscount
@@ -78,7 +78,7 @@
             this.btnShowDiscount.FillColor = System.Drawing.Color.White;
             this.btnShowDiscount.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.btnShowDiscount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(146)))), ((int)(((byte)(228)))));
-            this.btnShowDiscount.Location = new System.Drawing.Point(642, 4);
+            this.btnShowDiscount.Location = new System.Drawing.Point(909, 5);
             this.btnShowDiscount.Name = "btnShowDiscount";
             this.btnShowDiscount.Size = new System.Drawing.Size(111, 36);
             this.btnShowDiscount.TabIndex = 34;
@@ -95,7 +95,7 @@
             this.btnAddDiscount.FillColor = System.Drawing.Color.White;
             this.btnAddDiscount.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.btnAddDiscount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(146)))), ((int)(((byte)(228)))));
-            this.btnAddDiscount.Location = new System.Drawing.Point(760, 4);
+            this.btnAddDiscount.Location = new System.Drawing.Point(1027, 5);
             this.btnAddDiscount.Name = "btnAddDiscount";
             this.btnAddDiscount.Size = new System.Drawing.Size(111, 36);
             this.btnAddDiscount.TabIndex = 33;
@@ -112,7 +112,7 @@
             this.btnDeleteDiscount.FillColor = System.Drawing.Color.White;
             this.btnDeleteDiscount.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.btnDeleteDiscount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(146)))), ((int)(((byte)(228)))));
-            this.btnDeleteDiscount.Location = new System.Drawing.Point(877, 4);
+            this.btnDeleteDiscount.Location = new System.Drawing.Point(1144, 5);
             this.btnDeleteDiscount.Name = "btnDeleteDiscount";
             this.btnDeleteDiscount.Size = new System.Drawing.Size(111, 36);
             this.btnDeleteDiscount.TabIndex = 33;
@@ -129,7 +129,7 @@
             this.btnEditDiscount.FillColor = System.Drawing.Color.White;
             this.btnEditDiscount.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.btnEditDiscount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(146)))), ((int)(((byte)(228)))));
-            this.btnEditDiscount.Location = new System.Drawing.Point(994, 4);
+            this.btnEditDiscount.Location = new System.Drawing.Point(1261, 5);
             this.btnEditDiscount.Name = "btnEditDiscount";
             this.btnEditDiscount.Size = new System.Drawing.Size(111, 36);
             this.btnEditDiscount.TabIndex = 32;
@@ -148,7 +148,7 @@
             this.txtTimKhuyenMai.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtTimKhuyenMai.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtTimKhuyenMai.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtTimKhuyenMai.Location = new System.Drawing.Point(17, 63);
+            this.txtTimKhuyenMai.Location = new System.Drawing.Point(8, 55);
             this.txtTimKhuyenMai.Name = "txtTimKhuyenMai";
             this.txtTimKhuyenMai.PasswordChar = '\0';
             this.txtTimKhuyenMai.PlaceholderText = "Tìm kiếm khuyến mãi";
@@ -160,21 +160,21 @@
             // dgvKhuyenMai
             // 
             this.dgvKhuyenMai.AllowUserToAddRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.dgvKhuyenMai.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
+            this.dgvKhuyenMai.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
             this.dgvKhuyenMai.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvKhuyenMai.BackgroundColor = System.Drawing.Color.White;
             this.dgvKhuyenMai.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvKhuyenMai.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dgvKhuyenMai.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(185)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvKhuyenMai.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(185)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvKhuyenMai.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.dgvKhuyenMai.ColumnHeadersHeight = 40;
             this.dgvKhuyenMai.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.clMKM,
@@ -184,21 +184,21 @@
             this.clTGKetThuc,
             this.clDoiTuongKH,
             this.clTrangThai});
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvKhuyenMai.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvKhuyenMai.DefaultCellStyle = dataGridViewCellStyle6;
             this.dgvKhuyenMai.EnableHeadersVisualStyles = false;
             this.dgvKhuyenMai.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dgvKhuyenMai.Location = new System.Drawing.Point(0, 159);
+            this.dgvKhuyenMai.Location = new System.Drawing.Point(0, 142);
             this.dgvKhuyenMai.Name = "dgvKhuyenMai";
             this.dgvKhuyenMai.RowHeadersVisible = false;
             this.dgvKhuyenMai.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvKhuyenMai.Size = new System.Drawing.Size(1110, 620);
+            this.dgvKhuyenMai.Size = new System.Drawing.Size(1378, 713);
             this.dgvKhuyenMai.TabIndex = 100;
             this.dgvKhuyenMai.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.dgvKhuyenMai.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -264,9 +264,9 @@
             this.guna2Panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(146)))), ((int)(((byte)(228)))));
             this.guna2Panel4.Controls.Add(this.label2);
             this.guna2Panel4.Controls.Add(this.guna2PictureBox2);
-            this.guna2Panel4.Location = new System.Drawing.Point(0, 117);
+            this.guna2Panel4.Location = new System.Drawing.Point(0, 100);
             this.guna2Panel4.Name = "guna2Panel4";
-            this.guna2Panel4.Size = new System.Drawing.Size(1110, 42);
+            this.guna2Panel4.Size = new System.Drawing.Size(1378, 42);
             this.guna2Panel4.TabIndex = 99;
             // 
             // label2
@@ -299,7 +299,7 @@
             this.Controls.Add(this.txtTimKhuyenMai);
             this.Controls.Add(this.guna2Panel2);
             this.Name = "ucDiscount";
-            this.Size = new System.Drawing.Size(1110, 762);
+            this.Size = new System.Drawing.Size(1378, 855);
             this.Load += new System.EventHandler(this.ucDiscount_Load);
             this.guna2Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvKhuyenMai)).EndInit();

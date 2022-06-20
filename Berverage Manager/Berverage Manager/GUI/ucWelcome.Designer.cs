@@ -40,7 +40,7 @@
             // 
             this.guna2PictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox1.Image")));
             this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(601, 109);
+            this.guna2PictureBox1.Location = new System.Drawing.Point(725, 188);
             this.guna2PictureBox1.Name = "guna2PictureBox1";
             this.guna2PictureBox1.Size = new System.Drawing.Size(467, 480);
             this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -52,7 +52,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(146)))), ((int)(((byte)(228)))));
-            this.label1.Location = new System.Drawing.Point(31, 174);
+            this.label1.Location = new System.Drawing.Point(80, 253);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(441, 90);
             this.label1.TabIndex = 1;
@@ -63,7 +63,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(146)))), ((int)(((byte)(228)))));
-            this.label2.Location = new System.Drawing.Point(35, 285);
+            this.label2.Location = new System.Drawing.Point(84, 364);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(173, 105);
             this.label2.TabIndex = 2;
@@ -74,7 +74,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(146)))), ((int)(((byte)(228)))));
-            this.label3.Location = new System.Drawing.Point(28, 109);
+            this.label3.Location = new System.Drawing.Point(77, 188);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(290, 65);
             this.label3.TabIndex = 3;
@@ -90,7 +90,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.guna2PictureBox1);
             this.Name = "ucWelcome";
-            this.Size = new System.Drawing.Size(1110, 762);
+            this.Size = new System.Drawing.Size(1378, 855);
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

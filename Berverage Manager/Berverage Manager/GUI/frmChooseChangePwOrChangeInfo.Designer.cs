@@ -63,17 +63,18 @@
             // 
             // S_BTN_ThayDoiThongTin
             // 
-            this.S_BTN_ThayDoiThongTin.BorderRadius = 5;
+            this.S_BTN_ThayDoiThongTin.AutoRoundedCorners = true;
+            this.S_BTN_ThayDoiThongTin.BorderRadius = 37;
             this.S_BTN_ThayDoiThongTin.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.S_BTN_ThayDoiThongTin.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.S_BTN_ThayDoiThongTin.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.S_BTN_ThayDoiThongTin.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.S_BTN_ThayDoiThongTin.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(146)))), ((int)(((byte)(228)))));
-            this.S_BTN_ThayDoiThongTin.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.S_BTN_ThayDoiThongTin.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.S_BTN_ThayDoiThongTin.ForeColor = System.Drawing.Color.White;
-            this.S_BTN_ThayDoiThongTin.Location = new System.Drawing.Point(82, 111);
+            this.S_BTN_ThayDoiThongTin.Location = new System.Drawing.Point(62, 100);
             this.S_BTN_ThayDoiThongTin.Name = "S_BTN_ThayDoiThongTin";
-            this.S_BTN_ThayDoiThongTin.Size = new System.Drawing.Size(170, 77);
+            this.S_BTN_ThayDoiThongTin.Size = new System.Drawing.Size(214, 77);
             this.S_BTN_ThayDoiThongTin.TabIndex = 250;
             this.S_BTN_ThayDoiThongTin.TabStop = false;
             this.S_BTN_ThayDoiThongTin.Text = "THAY ĐỔI THÔNG TIN";
@@ -81,17 +82,18 @@
             // 
             // S_BTN_DoiMatKhau
             // 
-            this.S_BTN_DoiMatKhau.BorderRadius = 5;
+            this.S_BTN_DoiMatKhau.AutoRoundedCorners = true;
+            this.S_BTN_DoiMatKhau.BorderRadius = 37;
             this.S_BTN_DoiMatKhau.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.S_BTN_DoiMatKhau.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.S_BTN_DoiMatKhau.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.S_BTN_DoiMatKhau.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.S_BTN_DoiMatKhau.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(146)))), ((int)(((byte)(228)))));
-            this.S_BTN_DoiMatKhau.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.S_BTN_DoiMatKhau.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.S_BTN_DoiMatKhau.ForeColor = System.Drawing.Color.White;
-            this.S_BTN_DoiMatKhau.Location = new System.Drawing.Point(80, 204);
+            this.S_BTN_DoiMatKhau.Location = new System.Drawing.Point(60, 206);
             this.S_BTN_DoiMatKhau.Name = "S_BTN_DoiMatKhau";
-            this.S_BTN_DoiMatKhau.Size = new System.Drawing.Size(170, 77);
+            this.S_BTN_DoiMatKhau.Size = new System.Drawing.Size(216, 77);
             this.S_BTN_DoiMatKhau.TabIndex = 249;
             this.S_BTN_DoiMatKhau.TabStop = false;
             this.S_BTN_DoiMatKhau.Text = "ĐỔI MẬT KHẨU";
@@ -111,6 +113,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
             this.ClientSize = new System.Drawing.Size(342, 324);
             this.Controls.Add(this.guna2HtmlLabel9);
             this.Controls.Add(this.S_BTN_ThayDoiThongTin);

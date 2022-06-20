@@ -61,17 +61,18 @@
             // 
             // CLKM_BTN_TangSP
             // 
-            this.CLKM_BTN_TangSP.BorderRadius = 5;
+            this.CLKM_BTN_TangSP.AutoRoundedCorners = true;
+            this.CLKM_BTN_TangSP.BorderRadius = 37;
             this.CLKM_BTN_TangSP.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.CLKM_BTN_TangSP.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.CLKM_BTN_TangSP.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.CLKM_BTN_TangSP.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.CLKM_BTN_TangSP.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(146)))), ((int)(((byte)(228)))));
-            this.CLKM_BTN_TangSP.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CLKM_BTN_TangSP.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CLKM_BTN_TangSP.ForeColor = System.Drawing.Color.White;
-            this.CLKM_BTN_TangSP.Location = new System.Drawing.Point(128, 221);
+            this.CLKM_BTN_TangSP.Location = new System.Drawing.Point(102, 221);
             this.CLKM_BTN_TangSP.Name = "CLKM_BTN_TangSP";
-            this.CLKM_BTN_TangSP.Size = new System.Drawing.Size(170, 77);
+            this.CLKM_BTN_TangSP.Size = new System.Drawing.Size(218, 77);
             this.CLKM_BTN_TangSP.TabIndex = 246;
             this.CLKM_BTN_TangSP.TabStop = false;
             this.CLKM_BTN_TangSP.Text = "TẶNG SẢN PHẨM";
@@ -79,17 +80,18 @@
             // 
             // CLKM_BTN_ChietKhau
             // 
-            this.CLKM_BTN_ChietKhau.BorderRadius = 5;
+            this.CLKM_BTN_ChietKhau.AutoRoundedCorners = true;
+            this.CLKM_BTN_ChietKhau.BorderRadius = 37;
             this.CLKM_BTN_ChietKhau.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.CLKM_BTN_ChietKhau.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.CLKM_BTN_ChietKhau.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.CLKM_BTN_ChietKhau.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.CLKM_BTN_ChietKhau.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(146)))), ((int)(((byte)(228)))));
-            this.CLKM_BTN_ChietKhau.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CLKM_BTN_ChietKhau.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CLKM_BTN_ChietKhau.ForeColor = System.Drawing.Color.White;
-            this.CLKM_BTN_ChietKhau.Location = new System.Drawing.Point(128, 128);
+            this.CLKM_BTN_ChietKhau.Location = new System.Drawing.Point(102, 119);
             this.CLKM_BTN_ChietKhau.Name = "CLKM_BTN_ChietKhau";
-            this.CLKM_BTN_ChietKhau.Size = new System.Drawing.Size(170, 77);
+            this.CLKM_BTN_ChietKhau.Size = new System.Drawing.Size(218, 77);
             this.CLKM_BTN_ChietKhau.TabIndex = 247;
             this.CLKM_BTN_ChietKhau.TabStop = false;
             this.CLKM_BTN_ChietKhau.Text = "CHIẾT KHẤU";
@@ -111,6 +113,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
             this.ClientSize = new System.Drawing.Size(427, 352);
             this.Controls.Add(this.guna2HtmlLabel9);
             this.Controls.Add(this.CLKM_BTN_ChietKhau);

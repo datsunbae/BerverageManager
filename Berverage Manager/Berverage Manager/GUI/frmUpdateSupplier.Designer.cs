@@ -118,20 +118,21 @@
             // 
             // btnSuaNCC
             // 
-            this.btnSuaNCC.BorderRadius = 5;
+            this.btnSuaNCC.AutoRoundedCorners = true;
+            this.btnSuaNCC.BorderRadius = 21;
             this.btnSuaNCC.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnSuaNCC.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnSuaNCC.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnSuaNCC.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnSuaNCC.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(146)))), ((int)(((byte)(228)))));
-            this.btnSuaNCC.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSuaNCC.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
             this.btnSuaNCC.ForeColor = System.Drawing.Color.White;
             this.btnSuaNCC.Location = new System.Drawing.Point(224, 335);
             this.btnSuaNCC.Name = "btnSuaNCC";
             this.btnSuaNCC.Size = new System.Drawing.Size(113, 45);
             this.btnSuaNCC.TabIndex = 117;
             this.btnSuaNCC.TabStop = false;
-            this.btnSuaNCC.Text = "Sửa";
+            this.btnSuaNCC.Text = "SỬA";
             this.btnSuaNCC.Click += new System.EventHandler(this.btnSuaNCC_Click);
             // 
             // txtEmailNCC

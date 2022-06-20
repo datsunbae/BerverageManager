@@ -120,20 +120,21 @@
             // 
             // btnThemKH
             // 
-            this.btnThemKH.BorderRadius = 5;
+            this.btnThemKH.AutoRoundedCorners = true;
+            this.btnThemKH.BorderRadius = 21;
             this.btnThemKH.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnThemKH.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnThemKH.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnThemKH.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnThemKH.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(146)))), ((int)(((byte)(228)))));
-            this.btnThemKH.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnThemKH.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnThemKH.ForeColor = System.Drawing.Color.White;
             this.btnThemKH.Location = new System.Drawing.Point(235, 405);
             this.btnThemKH.Name = "btnThemKH";
             this.btnThemKH.Size = new System.Drawing.Size(113, 45);
             this.btnThemKH.TabIndex = 145;
             this.btnThemKH.TabStop = false;
-            this.btnThemKH.Text = "Thêm";
+            this.btnThemKH.Text = "THÊM";
             this.btnThemKH.Click += new System.EventHandler(this.btnThemKH_Click);
             // 
             // txtEmailKH

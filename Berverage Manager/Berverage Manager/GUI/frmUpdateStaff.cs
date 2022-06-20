@@ -78,13 +78,13 @@ namespace Berverage_Manager.GUI.Staff
                 nv.TENNV = txtTenNV.Text;
                 nv.SDTNV = txtDienThoaiNV.Text;
                 nv.DIACHINV = txtDiaChiNV.Text;
-                nv.EMAILNV = txtEmailNV.Text;
                 nv.MATK = txtMaTaiKhoanNV.Text;
                 MemoryStream memoryStream = new MemoryStream();
                 PB_ImgStaff.Image.Save(memoryStream, ImageFormat.Jpeg);
                 nv.HINHANHNV = memoryStream.ToArray();
 
                 tk.MATKHAU = txtMatKhauNV.Text;
+                tk.EMAIL = txtEmailNV.Text;
                 tk.MVAITRO = SNV_CB_VaiTro.SelectedValue.ToString();
 
                 taiKhoan_BUS.SuaTaiKhoan(tk);

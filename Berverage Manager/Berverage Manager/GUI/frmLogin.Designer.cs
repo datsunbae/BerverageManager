@@ -41,6 +41,7 @@
             this.txtPassword = new Guna.UI2.WinForms.Guna2TextBox();
             this.btnLogin = new Guna.UI2.WinForms.Guna2Button();
             this.BTN_ShowPassword = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.txtQuenMatKhau = new Guna.UI2.WinForms.Guna2HtmlLabel();
             ((System.ComponentModel.ISupportInitialize)(this.pcbClose)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.BTN_ShowPassword)).BeginInit();
@@ -123,7 +124,7 @@
             this.txtUserName.PlaceholderForeColor = System.Drawing.Color.Gray;
             this.txtUserName.PlaceholderText = "Tên đăng nhập";
             this.txtUserName.SelectedText = "";
-            this.txtUserName.Size = new System.Drawing.Size(190, 38);
+            this.txtUserName.Size = new System.Drawing.Size(208, 38);
             this.txtUserName.TabIndex = 12;
             // 
             // guna2HtmlLabel3
@@ -158,32 +159,33 @@
             this.txtPassword.PlaceholderForeColor = System.Drawing.Color.Gray;
             this.txtPassword.PlaceholderText = "Mật khẩu";
             this.txtPassword.SelectedText = "";
-            this.txtPassword.Size = new System.Drawing.Size(190, 38);
+            this.txtPassword.Size = new System.Drawing.Size(208, 38);
             this.txtPassword.TabIndex = 13;
             // 
             // btnLogin
             // 
-            this.btnLogin.BorderRadius = 5;
+            this.btnLogin.AutoRoundedCorners = true;
+            this.btnLogin.BorderRadius = 21;
             this.btnLogin.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnLogin.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnLogin.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnLogin.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnLogin.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(146)))), ((int)(((byte)(228)))));
-            this.btnLogin.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLogin.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogin.ForeColor = System.Drawing.Color.White;
-            this.btnLogin.Location = new System.Drawing.Point(98, 377);
+            this.btnLogin.Location = new System.Drawing.Point(95, 399);
             this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(106, 45);
+            this.btnLogin.Size = new System.Drawing.Size(134, 45);
             this.btnLogin.TabIndex = 14;
             this.btnLogin.TabStop = false;
-            this.btnLogin.Text = "Đăng nhập";
+            this.btnLogin.Text = "ĐĂNG NHẬP";
             this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
             // BTN_ShowPassword
             // 
             this.BTN_ShowPassword.Image = ((System.Drawing.Image)(resources.GetObject("BTN_ShowPassword.Image")));
             this.BTN_ShowPassword.ImageRotate = 0F;
-            this.BTN_ShowPassword.Location = new System.Drawing.Point(258, 331);
+            this.BTN_ShowPassword.Location = new System.Drawing.Point(276, 329);
             this.BTN_ShowPassword.Name = "BTN_ShowPassword";
             this.BTN_ShowPassword.Size = new System.Drawing.Size(26, 20);
             this.BTN_ShowPassword.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -191,12 +193,26 @@
             this.BTN_ShowPassword.TabStop = false;
             this.BTN_ShowPassword.Click += new System.EventHandler(this.BTN_ShowPassword_Click);
             // 
+            // txtQuenMatKhau
+            // 
+            this.txtQuenMatKhau.BackColor = System.Drawing.Color.Transparent;
+            this.txtQuenMatKhau.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtQuenMatKhau.ForeColor = System.Drawing.Color.Black;
+            this.txtQuenMatKhau.Location = new System.Drawing.Point(177, 369);
+            this.txtQuenMatKhau.Name = "txtQuenMatKhau";
+            this.txtQuenMatKhau.Size = new System.Drawing.Size(90, 17);
+            this.txtQuenMatKhau.TabIndex = 19;
+            this.txtQuenMatKhau.TabStop = false;
+            this.txtQuenMatKhau.Text = "Quên mật khẩu?";
+            this.txtQuenMatKhau.Click += new System.EventHandler(this.txtQuenMatKhau_Click);
+            // 
             // frmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(814, 533);
+            this.Controls.Add(this.txtQuenMatKhau);
             this.Controls.Add(this.BTN_ShowPassword);
             this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.txtPassword);
@@ -231,5 +247,6 @@
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
         private Guna.UI2.WinForms.Guna2PictureBox pcbClose;
         private Guna.UI2.WinForms.Guna2PictureBox BTN_ShowPassword;
+        private Guna.UI2.WinForms.Guna2HtmlLabel txtQuenMatKhau;
     }
 }

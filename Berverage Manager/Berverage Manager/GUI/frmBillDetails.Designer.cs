@@ -33,17 +33,17 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.DH_DGV_CTHD = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.colMSP = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clTenSP = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clSoLuong = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clDVT = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clGia = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel6 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.CTHD_TXT_MHDON = new Guna.UI2.WinForms.Guna2TextBox();
             this.Elipse = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.ctbClose = new Guna.UI2.WinForms.Guna2ControlBox();
             this.DragControl = new Guna.UI2.WinForms.Guna2DragControl(this.components);
-            this.colMSP = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.clTenSP = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.clSoLuong = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.clDVT = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.clGia = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.DH_DGV_CTHD)).BeginInit();
             this.SuspendLayout();
             // 
@@ -114,6 +114,36 @@
             this.DH_DGV_CTHD.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             this.DH_DGV_CTHD.RowsAdded += new System.Windows.Forms.DataGridViewRowsAddedEventHandler(this.DH_DGV_CTHD_RowsAdded);
             // 
+            // colMSP
+            // 
+            this.colMSP.HeaderText = "MSP";
+            this.colMSP.Name = "colMSP";
+            this.colMSP.ReadOnly = true;
+            // 
+            // clTenSP
+            // 
+            this.clTenSP.HeaderText = "Tên sản phẩm";
+            this.clTenSP.Name = "clTenSP";
+            this.clTenSP.ReadOnly = true;
+            // 
+            // clSoLuong
+            // 
+            this.clSoLuong.HeaderText = "Số lượng";
+            this.clSoLuong.Name = "clSoLuong";
+            this.clSoLuong.ReadOnly = true;
+            // 
+            // clDVT
+            // 
+            this.clDVT.HeaderText = "Đơn vị tính";
+            this.clDVT.Name = "clDVT";
+            this.clDVT.ReadOnly = true;
+            // 
+            // clGia
+            // 
+            this.clGia.HeaderText = "Thành tiền";
+            this.clGia.Name = "clGia";
+            this.clGia.ReadOnly = true;
+            // 
             // guna2HtmlLabel1
             // 
             this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
@@ -140,7 +170,8 @@
             // 
             // CTHD_TXT_MHDON
             // 
-            this.CTHD_TXT_MHDON.BorderRadius = 5;
+            this.CTHD_TXT_MHDON.AutoRoundedCorners = true;
+            this.CTHD_TXT_MHDON.BorderRadius = 17;
             this.CTHD_TXT_MHDON.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.CTHD_TXT_MHDON.DefaultText = "";
             this.CTHD_TXT_MHDON.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -182,36 +213,6 @@
             this.DragControl.DockIndicatorTransparencyValue = 0.6D;
             this.DragControl.TargetControl = this;
             this.DragControl.UseTransparentDrag = true;
-            // 
-            // colMSP
-            // 
-            this.colMSP.HeaderText = "MSP";
-            this.colMSP.Name = "colMSP";
-            this.colMSP.ReadOnly = true;
-            // 
-            // clTenSP
-            // 
-            this.clTenSP.HeaderText = "Tên sản phẩm";
-            this.clTenSP.Name = "clTenSP";
-            this.clTenSP.ReadOnly = true;
-            // 
-            // clSoLuong
-            // 
-            this.clSoLuong.HeaderText = "Số lượng";
-            this.clSoLuong.Name = "clSoLuong";
-            this.clSoLuong.ReadOnly = true;
-            // 
-            // clDVT
-            // 
-            this.clDVT.HeaderText = "Đơn vị tính";
-            this.clDVT.Name = "clDVT";
-            this.clDVT.ReadOnly = true;
-            // 
-            // clGia
-            // 
-            this.clGia.HeaderText = "Thành tiền";
-            this.clGia.Name = "clGia";
-            this.clGia.ReadOnly = true;
             // 
             // frmBillDetails
             // 

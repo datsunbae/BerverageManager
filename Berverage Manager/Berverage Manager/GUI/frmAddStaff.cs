@@ -43,13 +43,13 @@ namespace Berverage_Manager.GUI.Staff
                     TAIKHOAN tk = new TAIKHOAN();
                     tk.MADANGNHAP = txtMaTaiKhoanNV.Text;
                     tk.MATKHAU = txtMatKhauNV.Text;
+                    tk.EMAIL = txtEmailNV.Text;
                     tk.MVAITRO = TNV_CB_VaiTro.SelectedValue.ToString();
 
                     NHANVIEN nv = new NHANVIEN();
                     nv.TENNV = txtTenNV.Text;
                     nv.SDTNV = txtDienThoaiNV.Text;
                     nv.DIACHINV = txtDiaChiNV.Text;
-                    nv.EMAILNV = txtEmailNV.Text;
                     nv.MATK = txtMaTaiKhoanNV.Text;
                     if(PB_ImgStaff.Image != null)
                     {

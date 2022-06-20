@@ -120,20 +120,21 @@
             // 
             // btnSuaKH
             // 
-            this.btnSuaKH.BorderRadius = 5;
+            this.btnSuaKH.AutoRoundedCorners = true;
+            this.btnSuaKH.BorderRadius = 21;
             this.btnSuaKH.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnSuaKH.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnSuaKH.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnSuaKH.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnSuaKH.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(146)))), ((int)(((byte)(228)))));
-            this.btnSuaKH.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSuaKH.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
             this.btnSuaKH.ForeColor = System.Drawing.Color.White;
             this.btnSuaKH.Location = new System.Drawing.Point(211, 392);
             this.btnSuaKH.Name = "btnSuaKH";
             this.btnSuaKH.Size = new System.Drawing.Size(113, 45);
             this.btnSuaKH.TabIndex = 131;
             this.btnSuaKH.TabStop = false;
-            this.btnSuaKH.Text = "Sửa";
+            this.btnSuaKH.Text = "SỬA";
             this.btnSuaKH.Click += new System.EventHandler(this.btnSuaKH_Click);
             // 
             // txtEmailKH

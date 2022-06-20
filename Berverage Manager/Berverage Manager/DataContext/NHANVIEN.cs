@@ -25,9 +25,6 @@ namespace Berverage_Manager.DataContext
         [StringLength(20)]
         public string SDTNV { get; set; }
 
-        [StringLength(100)]
-        public string EMAILNV { get; set; }
-
         [StringLength(150)]
         public string DIACHINV { get; set; }
 

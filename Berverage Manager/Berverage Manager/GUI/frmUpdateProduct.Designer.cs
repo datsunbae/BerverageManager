@@ -311,20 +311,21 @@
             // 
             // btnSuaSP
             // 
-            this.btnSuaSP.BorderRadius = 5;
+            this.btnSuaSP.AutoRoundedCorners = true;
+            this.btnSuaSP.BorderRadius = 21;
             this.btnSuaSP.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnSuaSP.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnSuaSP.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnSuaSP.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnSuaSP.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(146)))), ((int)(((byte)(228)))));
-            this.btnSuaSP.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSuaSP.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
             this.btnSuaSP.ForeColor = System.Drawing.Color.White;
             this.btnSuaSP.Location = new System.Drawing.Point(274, 564);
             this.btnSuaSP.Name = "btnSuaSP";
             this.btnSuaSP.Size = new System.Drawing.Size(113, 45);
             this.btnSuaSP.TabIndex = 170;
             this.btnSuaSP.TabStop = false;
-            this.btnSuaSP.Text = "Sửa";
+            this.btnSuaSP.Text = "SỬA";
             this.btnSuaSP.Click += new System.EventHandler(this.btnSuaSP_Click);
             // 
             // txtGiaBanSi_DVTC

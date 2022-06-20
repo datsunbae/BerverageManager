@@ -52,22 +52,14 @@ namespace Berverage_Manager.GUI
         private void txtTimTK_TextChanged(object sender, EventArgs e)
         {
             String tenSP = txtTimTK.Text;
-            List<TonKho_DTO> listTimTK = tonKho_BUS.TimKiemSanPhamTonKho(tenSP);
-
-            if (listTimTK.Count > 0)
+            if (tenSP.Length > 0)
             {
-                FillDataDGV(listTimTK);
+                List<TonKho_DTO> listTimSPTK = tonKho_BUS.TimKiemSanPhamTonKho(tenSP);
+                FillDataDGV(listTimSPTK);
             }
             else
             {
-                if (tenSP == "")
-                {
-                    FillDataDGV(tonKho_BUS.LayTatCaSanPhamConTonKho());
-                }
-                else
-                {
-                    MessageBox.Show("Không Tìm Thấy Sản Phẩm Nào!", "THÔNG BÁO", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                }
+                FillDataDGV(tonKho_BUS.LayTatCaSanPhamConTonKho());
             }
         }
     }

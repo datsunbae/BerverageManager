@@ -93,12 +93,12 @@
             this.ADKM_DGV_DSKM.DefaultCellStyle = dataGridViewCellStyle3;
             this.ADKM_DGV_DSKM.EnableHeadersVisualStyles = false;
             this.ADKM_DGV_DSKM.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.ADKM_DGV_DSKM.Location = new System.Drawing.Point(30, 121);
+            this.ADKM_DGV_DSKM.Location = new System.Drawing.Point(30, 88);
             this.ADKM_DGV_DSKM.Name = "ADKM_DGV_DSKM";
             this.ADKM_DGV_DSKM.ReadOnly = true;
             this.ADKM_DGV_DSKM.RowHeadersVisible = false;
             this.ADKM_DGV_DSKM.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.ADKM_DGV_DSKM.Size = new System.Drawing.Size(658, 238);
+            this.ADKM_DGV_DSKM.Size = new System.Drawing.Size(658, 271);
             this.ADKM_DGV_DSKM.TabIndex = 274;
             this.ADKM_DGV_DSKM.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.ADKM_DGV_DSKM.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -168,20 +168,21 @@
             // 
             // ADKM_BTN_ApDung
             // 
-            this.ADKM_BTN_ApDung.BorderRadius = 5;
+            this.ADKM_BTN_ApDung.AutoRoundedCorners = true;
+            this.ADKM_BTN_ApDung.BorderRadius = 21;
             this.ADKM_BTN_ApDung.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.ADKM_BTN_ApDung.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.ADKM_BTN_ApDung.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.ADKM_BTN_ApDung.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.ADKM_BTN_ApDung.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(146)))), ((int)(((byte)(228)))));
-            this.ADKM_BTN_ApDung.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ADKM_BTN_ApDung.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold);
             this.ADKM_BTN_ApDung.ForeColor = System.Drawing.Color.White;
             this.ADKM_BTN_ApDung.Location = new System.Drawing.Point(521, 381);
             this.ADKM_BTN_ApDung.Name = "ADKM_BTN_ApDung";
             this.ADKM_BTN_ApDung.Size = new System.Drawing.Size(167, 45);
             this.ADKM_BTN_ApDung.TabIndex = 276;
             this.ADKM_BTN_ApDung.TabStop = false;
-            this.ADKM_BTN_ApDung.Text = "Áp dụng";
+            this.ADKM_BTN_ApDung.Text = "ÁP DỤNG";
             this.ADKM_BTN_ApDung.Click += new System.EventHandler(this.ADKM_BTN_ApDung_Click);
             // 
             // guna2DragControl1
@@ -198,6 +199,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
             this.ClientSize = new System.Drawing.Size(727, 447);
             this.Controls.Add(this.ADKM_BTN_ApDung);
             this.Controls.Add(this.guna2ControlBox1);

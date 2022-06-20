@@ -66,7 +66,7 @@
             this.guna2Panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.guna2Panel2.Location = new System.Drawing.Point(0, 0);
             this.guna2Panel2.Name = "guna2Panel2";
-            this.guna2Panel2.Size = new System.Drawing.Size(1110, 45);
+            this.guna2Panel2.Size = new System.Drawing.Size(1378, 45);
             this.guna2Panel2.TabIndex = 93;
             // 
             // btnAddProduct
@@ -79,7 +79,7 @@
             this.btnAddProduct.FillColor = System.Drawing.Color.White;
             this.btnAddProduct.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.btnAddProduct.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(146)))), ((int)(((byte)(228)))));
-            this.btnAddProduct.Location = new System.Drawing.Point(760, 4);
+            this.btnAddProduct.Location = new System.Drawing.Point(1028, 4);
             this.btnAddProduct.Name = "btnAddProduct";
             this.btnAddProduct.Size = new System.Drawing.Size(111, 36);
             this.btnAddProduct.TabIndex = 33;
@@ -96,7 +96,7 @@
             this.btnXoaSP.FillColor = System.Drawing.Color.White;
             this.btnXoaSP.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.btnXoaSP.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(146)))), ((int)(((byte)(228)))));
-            this.btnXoaSP.Location = new System.Drawing.Point(877, 4);
+            this.btnXoaSP.Location = new System.Drawing.Point(1145, 4);
             this.btnXoaSP.Name = "btnXoaSP";
             this.btnXoaSP.Size = new System.Drawing.Size(111, 36);
             this.btnXoaSP.TabIndex = 33;
@@ -113,7 +113,7 @@
             this.btnUpdateProduct.FillColor = System.Drawing.Color.White;
             this.btnUpdateProduct.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.btnUpdateProduct.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(146)))), ((int)(((byte)(228)))));
-            this.btnUpdateProduct.Location = new System.Drawing.Point(994, 4);
+            this.btnUpdateProduct.Location = new System.Drawing.Point(1262, 4);
             this.btnUpdateProduct.Name = "btnUpdateProduct";
             this.btnUpdateProduct.Size = new System.Drawing.Size(111, 36);
             this.btnUpdateProduct.TabIndex = 33;
@@ -175,7 +175,7 @@
             this.dgvSanPham.Name = "dgvSanPham";
             this.dgvSanPham.RowHeadersVisible = false;
             this.dgvSanPham.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvSanPham.Size = new System.Drawing.Size(1110, 620);
+            this.dgvSanPham.Size = new System.Drawing.Size(1378, 713);
             this.dgvSanPham.TabIndex = 97;
             this.dgvSanPham.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.dgvSanPham.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -258,7 +258,7 @@
             this.guna2Panel3.Controls.Add(this.guna2PictureBox1);
             this.guna2Panel3.Location = new System.Drawing.Point(0, 100);
             this.guna2Panel3.Name = "guna2Panel3";
-            this.guna2Panel3.Size = new System.Drawing.Size(1110, 42);
+            this.guna2Panel3.Size = new System.Drawing.Size(1378, 42);
             this.guna2Panel3.TabIndex = 95;
             // 
             // guna2PictureBox1
@@ -301,7 +301,7 @@
             this.Controls.Add(this.guna2Panel3);
             this.Controls.Add(this.txtTimSP);
             this.Name = "ucProduct";
-            this.Size = new System.Drawing.Size(1110, 762);
+            this.Size = new System.Drawing.Size(1378, 855);
             this.Load += new System.EventHandler(this.ucProduct_Load);
             this.guna2Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvSanPham)).EndInit();

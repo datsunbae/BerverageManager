@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2HtmlLabel10 = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -45,6 +45,10 @@
             this.guna2HtmlLabel5 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.KMTCK_TXT_GiaTu = new Guna.UI2.WinForms.Guna2TextBox();
             this.KMTCK_DGV_CTKMTCK = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.clGiaTu = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clDenGia = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clChietKhau = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clLoaiChietKhau = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.KMTCK_CheckBox_SLApDung = new Guna.UI2.WinForms.Guna2CheckBox();
             this.guna2HtmlLabel4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.KMTCK_CB_DoiTuongKH = new Guna.UI2.WinForms.Guna2ComboBox();
@@ -61,10 +65,6 @@
             this.KMTCK_TXT_DenGia = new Guna.UI2.WinForms.Guna2TextBox();
             this.KMTCK_TXT_ChietKhau = new Guna.UI2.WinForms.Guna2TextBox();
             this.KMTCK_CheckBox_NgayKT = new Guna.UI2.WinForms.Guna2CheckBox();
-            this.clGiaTu = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.clDenGia = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.clChietKhau = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.clLoaiChietKhau = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.KMTCK_DGV_CTKMTCK)).BeginInit();
             this.panel1.SuspendLayout();
@@ -99,7 +99,8 @@
             // 
             // KMTCK_BTN_Go
             // 
-            this.KMTCK_BTN_Go.BorderRadius = 5;
+            this.KMTCK_BTN_Go.AutoRoundedCorners = true;
+            this.KMTCK_BTN_Go.BorderRadius = 17;
             this.KMTCK_BTN_Go.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.KMTCK_BTN_Go.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.KMTCK_BTN_Go.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -112,12 +113,13 @@
             this.KMTCK_BTN_Go.Size = new System.Drawing.Size(86, 36);
             this.KMTCK_BTN_Go.TabIndex = 248;
             this.KMTCK_BTN_Go.TabStop = false;
-            this.KMTCK_BTN_Go.Text = "Gỡ";
+            this.KMTCK_BTN_Go.Text = "GỠ";
             this.KMTCK_BTN_Go.Click += new System.EventHandler(this.KMTCK_BTN_Go_Click);
             // 
             // KMTCK_BTN_Them
             // 
-            this.KMTCK_BTN_Them.BorderRadius = 5;
+            this.KMTCK_BTN_Them.AutoRoundedCorners = true;
+            this.KMTCK_BTN_Them.BorderRadius = 17;
             this.KMTCK_BTN_Them.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.KMTCK_BTN_Them.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.KMTCK_BTN_Them.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -130,7 +132,7 @@
             this.KMTCK_BTN_Them.Size = new System.Drawing.Size(86, 36);
             this.KMTCK_BTN_Them.TabIndex = 247;
             this.KMTCK_BTN_Them.TabStop = false;
-            this.KMTCK_BTN_Them.Text = "Thêm";
+            this.KMTCK_BTN_Them.Text = "THÊM";
             this.KMTCK_BTN_Them.Click += new System.EventHandler(this.KMTCK_BTN_Them_Click);
             // 
             // guna2ControlBox1
@@ -159,20 +161,21 @@
             // 
             // KMTCK_BTN_Luu
             // 
-            this.KMTCK_BTN_Luu.BorderRadius = 5;
+            this.KMTCK_BTN_Luu.AutoRoundedCorners = true;
+            this.KMTCK_BTN_Luu.BorderRadius = 21;
             this.KMTCK_BTN_Luu.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.KMTCK_BTN_Luu.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.KMTCK_BTN_Luu.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.KMTCK_BTN_Luu.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.KMTCK_BTN_Luu.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(146)))), ((int)(((byte)(228)))));
-            this.KMTCK_BTN_Luu.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.KMTCK_BTN_Luu.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.KMTCK_BTN_Luu.ForeColor = System.Drawing.Color.White;
-            this.KMTCK_BTN_Luu.Location = new System.Drawing.Point(964, 507);
+            this.KMTCK_BTN_Luu.Location = new System.Drawing.Point(931, 508);
             this.KMTCK_BTN_Luu.Name = "KMTCK_BTN_Luu";
-            this.KMTCK_BTN_Luu.Size = new System.Drawing.Size(167, 45);
+            this.KMTCK_BTN_Luu.Size = new System.Drawing.Size(215, 45);
             this.KMTCK_BTN_Luu.TabIndex = 244;
             this.KMTCK_BTN_Luu.TabStop = false;
-            this.KMTCK_BTN_Luu.Text = "Lưu và kích hoạt";
+            this.KMTCK_BTN_Luu.Text = "LƯU VÀ KÍCH HOẠT";
             this.KMTCK_BTN_Luu.Click += new System.EventHandler(this.KMTCK_BTN_Luu_Click);
             // 
             // guna2HtmlLabel6
@@ -223,35 +226,35 @@
             // 
             this.KMTCK_DGV_CTKMTCK.AllowUserToAddRows = false;
             this.KMTCK_DGV_CTKMTCK.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle10.BackColor = System.Drawing.Color.White;
-            this.KMTCK_DGV_CTKMTCK.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle10;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.KMTCK_DGV_CTKMTCK.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.KMTCK_DGV_CTKMTCK.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.KMTCK_DGV_CTKMTCK.BackgroundColor = System.Drawing.Color.White;
             this.KMTCK_DGV_CTKMTCK.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.KMTCK_DGV_CTKMTCK.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.KMTCK_DGV_CTKMTCK.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(185)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle11.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.KMTCK_DGV_CTKMTCK.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(185)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.KMTCK_DGV_CTKMTCK.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.KMTCK_DGV_CTKMTCK.ColumnHeadersHeight = 40;
             this.KMTCK_DGV_CTKMTCK.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.clGiaTu,
             this.clDenGia,
             this.clChietKhau,
             this.clLoaiChietKhau});
-            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle12.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle12.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.KMTCK_DGV_CTKMTCK.DefaultCellStyle = dataGridViewCellStyle12;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.KMTCK_DGV_CTKMTCK.DefaultCellStyle = dataGridViewCellStyle3;
             this.KMTCK_DGV_CTKMTCK.EnableHeadersVisualStyles = false;
             this.KMTCK_DGV_CTKMTCK.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.KMTCK_DGV_CTKMTCK.Location = new System.Drawing.Point(29, 84);
@@ -259,7 +262,7 @@
             this.KMTCK_DGV_CTKMTCK.ReadOnly = true;
             this.KMTCK_DGV_CTKMTCK.RowHeadersVisible = false;
             this.KMTCK_DGV_CTKMTCK.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.KMTCK_DGV_CTKMTCK.Size = new System.Drawing.Size(723, 243);
+            this.KMTCK_DGV_CTKMTCK.Size = new System.Drawing.Size(723, 282);
             this.KMTCK_DGV_CTKMTCK.TabIndex = 237;
             this.KMTCK_DGV_CTKMTCK.TabStop = false;
             this.KMTCK_DGV_CTKMTCK.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
@@ -286,6 +289,30 @@
             this.KMTCK_DGV_CTKMTCK.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.KMTCK_DGV_CTKMTCK_CellClick);
             this.KMTCK_DGV_CTKMTCK.RowsAdded += new System.Windows.Forms.DataGridViewRowsAddedEventHandler(this.KMTCK_DGV_CTKMTCK_RowsAdded);
             // 
+            // clGiaTu
+            // 
+            this.clGiaTu.HeaderText = "Giá từ";
+            this.clGiaTu.Name = "clGiaTu";
+            this.clGiaTu.ReadOnly = true;
+            // 
+            // clDenGia
+            // 
+            this.clDenGia.HeaderText = "Đến giá";
+            this.clDenGia.Name = "clDenGia";
+            this.clDenGia.ReadOnly = true;
+            // 
+            // clChietKhau
+            // 
+            this.clChietKhau.HeaderText = "Chiết khấu";
+            this.clChietKhau.Name = "clChietKhau";
+            this.clChietKhau.ReadOnly = true;
+            // 
+            // clLoaiChietKhau
+            // 
+            this.clLoaiChietKhau.HeaderText = "Loại chiết khấu";
+            this.clLoaiChietKhau.Name = "clLoaiChietKhau";
+            this.clLoaiChietKhau.ReadOnly = true;
+            // 
             // KMTCK_CheckBox_SLApDung
             // 
             this.KMTCK_CheckBox_SLApDung.AutoSize = true;
@@ -294,7 +321,7 @@
             this.KMTCK_CheckBox_SLApDung.CheckedState.BorderThickness = 0;
             this.KMTCK_CheckBox_SLApDung.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.KMTCK_CheckBox_SLApDung.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(146)))), ((int)(((byte)(228)))));
-            this.KMTCK_CheckBox_SLApDung.Location = new System.Drawing.Point(251, 243);
+            this.KMTCK_CheckBox_SLApDung.Location = new System.Drawing.Point(251, 187);
             this.KMTCK_CheckBox_SLApDung.Name = "KMTCK_CheckBox_SLApDung";
             this.KMTCK_CheckBox_SLApDung.Size = new System.Drawing.Size(97, 17);
             this.KMTCK_CheckBox_SLApDung.TabIndex = 236;
@@ -310,7 +337,7 @@
             this.guna2HtmlLabel4.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(146)))), ((int)(((byte)(228)))));
-            this.guna2HtmlLabel4.Location = new System.Drawing.Point(18, 459);
+            this.guna2HtmlLabel4.Location = new System.Drawing.Point(18, 403);
             this.guna2HtmlLabel4.Name = "guna2HtmlLabel4";
             this.guna2HtmlLabel4.Size = new System.Drawing.Size(124, 17);
             this.guna2HtmlLabel4.TabIndex = 235;
@@ -328,7 +355,7 @@
             this.KMTCK_CB_DoiTuongKH.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.KMTCK_CB_DoiTuongKH.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.KMTCK_CB_DoiTuongKH.ItemHeight = 30;
-            this.KMTCK_CB_DoiTuongKH.Location = new System.Drawing.Point(147, 451);
+            this.KMTCK_CB_DoiTuongKH.Location = new System.Drawing.Point(147, 395);
             this.KMTCK_CB_DoiTuongKH.Name = "KMTCK_CB_DoiTuongKH";
             this.KMTCK_CB_DoiTuongKH.Size = new System.Drawing.Size(200, 36);
             this.KMTCK_CB_DoiTuongKH.TabIndex = 234;
@@ -338,7 +365,7 @@
             this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(146)))), ((int)(((byte)(228)))));
-            this.guna2HtmlLabel2.Location = new System.Drawing.Point(56, 403);
+            this.guna2HtmlLabel2.Location = new System.Drawing.Point(56, 347);
             this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
             this.guna2HtmlLabel2.Size = new System.Drawing.Size(80, 17);
             this.guna2HtmlLabel2.TabIndex = 233;
@@ -354,7 +381,7 @@
             this.KMTCK_DATE_NgayKT.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.KMTCK_DATE_NgayKT.ForeColor = System.Drawing.Color.White;
             this.KMTCK_DATE_NgayKT.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.KMTCK_DATE_NgayKT.Location = new System.Drawing.Point(148, 393);
+            this.KMTCK_DATE_NgayKT.Location = new System.Drawing.Point(148, 337);
             this.KMTCK_DATE_NgayKT.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.KMTCK_DATE_NgayKT.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.KMTCK_DATE_NgayKT.Name = "KMTCK_DATE_NgayKT";
@@ -367,7 +394,7 @@
             this.guna2HtmlLabel7.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel7.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(146)))), ((int)(((byte)(228)))));
-            this.guna2HtmlLabel7.Location = new System.Drawing.Point(56, 335);
+            this.guna2HtmlLabel7.Location = new System.Drawing.Point(56, 279);
             this.guna2HtmlLabel7.Name = "guna2HtmlLabel7";
             this.guna2HtmlLabel7.Size = new System.Drawing.Size(77, 17);
             this.guna2HtmlLabel7.TabIndex = 231;
@@ -383,7 +410,7 @@
             this.KMTCK_DATE_NgayBD.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.KMTCK_DATE_NgayBD.ForeColor = System.Drawing.Color.White;
             this.KMTCK_DATE_NgayBD.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.KMTCK_DATE_NgayBD.Location = new System.Drawing.Point(147, 325);
+            this.KMTCK_DATE_NgayBD.Location = new System.Drawing.Point(147, 269);
             this.KMTCK_DATE_NgayBD.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.KMTCK_DATE_NgayBD.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.KMTCK_DATE_NgayBD.Name = "KMTCK_DATE_NgayBD";
@@ -396,7 +423,7 @@
             this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(146)))), ((int)(((byte)(228)))));
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(44, 274);
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(44, 218);
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
             this.guna2HtmlLabel1.Size = new System.Drawing.Size(97, 17);
             this.guna2HtmlLabel1.TabIndex = 229;
@@ -415,7 +442,7 @@
             this.KMTCK_TXT_SLApDung.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.KMTCK_TXT_SLApDung.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.KMTCK_TXT_SLApDung.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.KMTCK_TXT_SLApDung.Location = new System.Drawing.Point(147, 264);
+            this.KMTCK_TXT_SLApDung.Location = new System.Drawing.Point(147, 208);
             this.KMTCK_TXT_SLApDung.Name = "KMTCK_TXT_SLApDung";
             this.KMTCK_TXT_SLApDung.PasswordChar = '\0';
             this.KMTCK_TXT_SLApDung.PlaceholderText = "";
@@ -435,7 +462,7 @@
             this.KMTCK_TXT_TenKM.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.KMTCK_TXT_TenKM.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.KMTCK_TXT_TenKM.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.KMTCK_TXT_TenKM.Location = new System.Drawing.Point(147, 196);
+            this.KMTCK_TXT_TenKM.Location = new System.Drawing.Point(147, 140);
             this.KMTCK_TXT_TenKM.Name = "KMTCK_TXT_TenKM";
             this.KMTCK_TXT_TenKM.PasswordChar = '\0';
             this.KMTCK_TXT_TenKM.PlaceholderText = "";
@@ -448,7 +475,7 @@
             this.guna2HtmlLabel3.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(146)))), ((int)(((byte)(228)))));
-            this.guna2HtmlLabel3.Location = new System.Drawing.Point(44, 206);
+            this.guna2HtmlLabel3.Location = new System.Drawing.Point(44, 150);
             this.guna2HtmlLabel3.Name = "guna2HtmlLabel3";
             this.guna2HtmlLabel3.Size = new System.Drawing.Size(90, 17);
             this.guna2HtmlLabel3.TabIndex = 227;
@@ -522,7 +549,7 @@
             this.KMTCK_CheckBox_NgayKT.CheckedState.BorderThickness = 0;
             this.KMTCK_CheckBox_NgayKT.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.KMTCK_CheckBox_NgayKT.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(146)))), ((int)(((byte)(228)))));
-            this.KMTCK_CheckBox_NgayKT.Location = new System.Drawing.Point(225, 373);
+            this.KMTCK_CheckBox_NgayKT.Location = new System.Drawing.Point(225, 317);
             this.KMTCK_CheckBox_NgayKT.Name = "KMTCK_CheckBox_NgayKT";
             this.KMTCK_CheckBox_NgayKT.Size = new System.Drawing.Size(125, 17);
             this.KMTCK_CheckBox_NgayKT.TabIndex = 256;
@@ -532,30 +559,6 @@
             this.KMTCK_CheckBox_NgayKT.UncheckedState.BorderThickness = 0;
             this.KMTCK_CheckBox_NgayKT.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
             this.KMTCK_CheckBox_NgayKT.CheckedChanged += new System.EventHandler(this.KMTCK_CheckBox_NgayKT_CheckedChanged);
-            // 
-            // clGiaTu
-            // 
-            this.clGiaTu.HeaderText = "Giá từ";
-            this.clGiaTu.Name = "clGiaTu";
-            this.clGiaTu.ReadOnly = true;
-            // 
-            // clDenGia
-            // 
-            this.clDenGia.HeaderText = "Đến giá";
-            this.clDenGia.Name = "clDenGia";
-            this.clDenGia.ReadOnly = true;
-            // 
-            // clChietKhau
-            // 
-            this.clChietKhau.HeaderText = "Chiết khấu";
-            this.clChietKhau.Name = "clChietKhau";
-            this.clChietKhau.ReadOnly = true;
-            // 
-            // clLoaiChietKhau
-            // 
-            this.clLoaiChietKhau.HeaderText = "Loại chiết khấu";
-            this.clLoaiChietKhau.Name = "clLoaiChietKhau";
-            this.clLoaiChietKhau.ReadOnly = true;
             // 
             // panel1
             // 
@@ -569,15 +572,16 @@
             this.panel1.Controls.Add(this.KMTCK_BTN_Them);
             this.panel1.Controls.Add(this.guna2HtmlLabel10);
             this.panel1.Controls.Add(this.KMTCK_BTN_Go);
-            this.panel1.Location = new System.Drawing.Point(380, 160);
+            this.panel1.Location = new System.Drawing.Point(380, 104);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(767, 338);
+            this.panel1.Size = new System.Drawing.Size(767, 386);
             this.panel1.TabIndex = 257;
             // 
             // frmAddOrUpdateDiscount
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
             this.ClientSize = new System.Drawing.Size(1158, 565);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.KMTCK_CheckBox_NgayKT);

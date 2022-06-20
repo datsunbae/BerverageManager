@@ -49,6 +49,15 @@
             this.guna2DragControl3 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.guna2HtmlLabel6 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2HtmlLabel12 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2HtmlLabel10 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2HtmlLabel8 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2HtmlLabel7 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2HtmlLabel5 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2HtmlLabel4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.CTKM_LB_Tinhtrang = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel11 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.CTKM_LB_DoiTuongKM = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -61,15 +70,6 @@
             this.CTKM_LB_LoaiKM = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.CTKM_LB_KichHoat = new Guna.UI2.WinForms.Guna2Button();
             this.guna2ControlBox2 = new Guna.UI2.WinForms.Guna2ControlBox();
-            this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel5 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel7 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel8 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel10 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel12 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             ((System.ComponentModel.ISupportInitialize)(this.CTKM_DGV_DonHangKM)).BeginInit();
             this.guna2Panel1.SuspendLayout();
             this.SuspendLayout();
@@ -110,20 +110,21 @@
             // 
             // CTKM_BTN_TamDungKM
             // 
-            this.CTKM_BTN_TamDungKM.BorderRadius = 5;
+            this.CTKM_BTN_TamDungKM.AutoRoundedCorners = true;
+            this.CTKM_BTN_TamDungKM.BorderRadius = 21;
             this.CTKM_BTN_TamDungKM.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.CTKM_BTN_TamDungKM.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.CTKM_BTN_TamDungKM.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.CTKM_BTN_TamDungKM.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.CTKM_BTN_TamDungKM.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(146)))), ((int)(((byte)(228)))));
-            this.CTKM_BTN_TamDungKM.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CTKM_BTN_TamDungKM.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CTKM_BTN_TamDungKM.ForeColor = System.Drawing.Color.White;
             this.CTKM_BTN_TamDungKM.Location = new System.Drawing.Point(42, 564);
             this.CTKM_BTN_TamDungKM.Name = "CTKM_BTN_TamDungKM";
             this.CTKM_BTN_TamDungKM.Size = new System.Drawing.Size(167, 45);
             this.CTKM_BTN_TamDungKM.TabIndex = 271;
             this.CTKM_BTN_TamDungKM.TabStop = false;
-            this.CTKM_BTN_TamDungKM.Text = "Tạm dừng";
+            this.CTKM_BTN_TamDungKM.Text = "TẠM DỪNG";
             this.CTKM_BTN_TamDungKM.Click += new System.EventHandler(this.CTKM_BTN_TamDungKM_Click);
             // 
             // CTKM_DGV_DonHangKM
@@ -272,6 +273,114 @@
             this.guna2Panel1.Size = new System.Drawing.Size(351, 409);
             this.guna2Panel1.TabIndex = 277;
             // 
+            // guna2HtmlLabel12
+            // 
+            this.guna2HtmlLabel12.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel12.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(146)))), ((int)(((byte)(228)))));
+            this.guna2HtmlLabel12.Location = new System.Drawing.Point(19, 363);
+            this.guna2HtmlLabel12.Name = "guna2HtmlLabel12";
+            this.guna2HtmlLabel12.Size = new System.Drawing.Size(156, 19);
+            this.guna2HtmlLabel12.TabIndex = 287;
+            this.guna2HtmlLabel12.TabStop = false;
+            this.guna2HtmlLabel12.Text = "Tổng giá trị khuyến mãi:";
+            // 
+            // guna2HtmlLabel10
+            // 
+            this.guna2HtmlLabel10.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel10.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(146)))), ((int)(((byte)(228)))));
+            this.guna2HtmlLabel10.Location = new System.Drawing.Point(22, 324);
+            this.guna2HtmlLabel10.Name = "guna2HtmlLabel10";
+            this.guna2HtmlLabel10.Size = new System.Drawing.Size(108, 19);
+            this.guna2HtmlLabel10.TabIndex = 286;
+            this.guna2HtmlLabel10.TabStop = false;
+            this.guna2HtmlLabel10.Text = "Số lượng còn lại:";
+            // 
+            // guna2HtmlLabel8
+            // 
+            this.guna2HtmlLabel8.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel8.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(146)))), ((int)(((byte)(228)))));
+            this.guna2HtmlLabel8.Location = new System.Drawing.Point(19, 284);
+            this.guna2HtmlLabel8.Name = "guna2HtmlLabel8";
+            this.guna2HtmlLabel8.Size = new System.Drawing.Size(111, 19);
+            this.guna2HtmlLabel8.TabIndex = 285;
+            this.guna2HtmlLabel8.TabStop = false;
+            this.guna2HtmlLabel8.Text = "Thời gian còn lại:";
+            // 
+            // guna2HtmlLabel7
+            // 
+            this.guna2HtmlLabel7.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel7.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(146)))), ((int)(((byte)(228)))));
+            this.guna2HtmlLabel7.Location = new System.Drawing.Point(22, 245);
+            this.guna2HtmlLabel7.Name = "guna2HtmlLabel7";
+            this.guna2HtmlLabel7.Size = new System.Drawing.Size(146, 19);
+            this.guna2HtmlLabel7.TabIndex = 284;
+            this.guna2HtmlLabel7.TabStop = false;
+            this.guna2HtmlLabel7.Text = "Đối tượng khách hàng:";
+            // 
+            // guna2HtmlLabel5
+            // 
+            this.guna2HtmlLabel5.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel5.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(146)))), ((int)(((byte)(228)))));
+            this.guna2HtmlLabel5.Location = new System.Drawing.Point(22, 207);
+            this.guna2HtmlLabel5.Name = "guna2HtmlLabel5";
+            this.guna2HtmlLabel5.Size = new System.Drawing.Size(66, 19);
+            this.guna2HtmlLabel5.TabIndex = 283;
+            this.guna2HtmlLabel5.TabStop = false;
+            this.guna2HtmlLabel5.Text = "Đến ngày:";
+            // 
+            // guna2HtmlLabel4
+            // 
+            this.guna2HtmlLabel4.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel4.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(146)))), ((int)(((byte)(228)))));
+            this.guna2HtmlLabel4.Location = new System.Drawing.Point(22, 173);
+            this.guna2HtmlLabel4.Name = "guna2HtmlLabel4";
+            this.guna2HtmlLabel4.Size = new System.Drawing.Size(58, 19);
+            this.guna2HtmlLabel4.TabIndex = 282;
+            this.guna2HtmlLabel4.TabStop = false;
+            this.guna2HtmlLabel4.Text = "Từ ngày:";
+            // 
+            // guna2HtmlLabel3
+            // 
+            this.guna2HtmlLabel3.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel3.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(146)))), ((int)(((byte)(228)))));
+            this.guna2HtmlLabel3.Location = new System.Drawing.Point(22, 137);
+            this.guna2HtmlLabel3.Name = "guna2HtmlLabel3";
+            this.guna2HtmlLabel3.Size = new System.Drawing.Size(106, 19);
+            this.guna2HtmlLabel3.TabIndex = 281;
+            this.guna2HtmlLabel3.TabStop = false;
+            this.guna2HtmlLabel3.Text = "Tên khuyến mãi:";
+            // 
+            // guna2HtmlLabel2
+            // 
+            this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel2.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(146)))), ((int)(((byte)(228)))));
+            this.guna2HtmlLabel2.Location = new System.Drawing.Point(22, 101);
+            this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
+            this.guna2HtmlLabel2.Size = new System.Drawing.Size(109, 19);
+            this.guna2HtmlLabel2.TabIndex = 280;
+            this.guna2HtmlLabel2.TabStop = false;
+            this.guna2HtmlLabel2.Text = "Loại khuyến mãi:";
+            // 
+            // guna2HtmlLabel1
+            // 
+            this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(146)))), ((int)(((byte)(228)))));
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(22, 67);
+            this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
+            this.guna2HtmlLabel1.Size = new System.Drawing.Size(72, 19);
+            this.guna2HtmlLabel1.TabIndex = 279;
+            this.guna2HtmlLabel1.TabStop = false;
+            this.guna2HtmlLabel1.Text = "Tình trạng:";
+            // 
             // CTKM_LB_Tinhtrang
             // 
             this.CTKM_LB_Tinhtrang.BackColor = System.Drawing.Color.Transparent;
@@ -394,20 +503,21 @@
             // 
             // CTKM_LB_KichHoat
             // 
-            this.CTKM_LB_KichHoat.BorderRadius = 5;
+            this.CTKM_LB_KichHoat.AutoRoundedCorners = true;
+            this.CTKM_LB_KichHoat.BorderRadius = 21;
             this.CTKM_LB_KichHoat.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.CTKM_LB_KichHoat.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.CTKM_LB_KichHoat.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.CTKM_LB_KichHoat.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.CTKM_LB_KichHoat.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(146)))), ((int)(((byte)(228)))));
-            this.CTKM_LB_KichHoat.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CTKM_LB_KichHoat.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CTKM_LB_KichHoat.ForeColor = System.Drawing.Color.White;
             this.CTKM_LB_KichHoat.Location = new System.Drawing.Point(227, 564);
             this.CTKM_LB_KichHoat.Name = "CTKM_LB_KichHoat";
             this.CTKM_LB_KichHoat.Size = new System.Drawing.Size(167, 45);
             this.CTKM_LB_KichHoat.TabIndex = 278;
             this.CTKM_LB_KichHoat.TabStop = false;
-            this.CTKM_LB_KichHoat.Text = "Kích hoạt";
+            this.CTKM_LB_KichHoat.Text = "KÍCH HOẠT";
             this.CTKM_LB_KichHoat.Click += new System.EventHandler(this.CTKM_LB_KichHoat_Click);
             // 
             // guna2ControlBox2
@@ -422,118 +532,11 @@
             this.guna2ControlBox2.TabIndex = 279;
             this.guna2ControlBox2.TabStop = false;
             // 
-            // guna2HtmlLabel1
-            // 
-            this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(146)))), ((int)(((byte)(228)))));
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(22, 67);
-            this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(72, 19);
-            this.guna2HtmlLabel1.TabIndex = 279;
-            this.guna2HtmlLabel1.TabStop = false;
-            this.guna2HtmlLabel1.Text = "Tình trạng:";
-            // 
-            // guna2HtmlLabel2
-            // 
-            this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel2.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(146)))), ((int)(((byte)(228)))));
-            this.guna2HtmlLabel2.Location = new System.Drawing.Point(22, 101);
-            this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
-            this.guna2HtmlLabel2.Size = new System.Drawing.Size(109, 19);
-            this.guna2HtmlLabel2.TabIndex = 280;
-            this.guna2HtmlLabel2.TabStop = false;
-            this.guna2HtmlLabel2.Text = "Loại khuyến mãi:";
-            // 
-            // guna2HtmlLabel3
-            // 
-            this.guna2HtmlLabel3.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel3.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(146)))), ((int)(((byte)(228)))));
-            this.guna2HtmlLabel3.Location = new System.Drawing.Point(22, 137);
-            this.guna2HtmlLabel3.Name = "guna2HtmlLabel3";
-            this.guna2HtmlLabel3.Size = new System.Drawing.Size(106, 19);
-            this.guna2HtmlLabel3.TabIndex = 281;
-            this.guna2HtmlLabel3.TabStop = false;
-            this.guna2HtmlLabel3.Text = "Tên khuyến mãi:";
-            // 
-            // guna2HtmlLabel4
-            // 
-            this.guna2HtmlLabel4.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel4.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(146)))), ((int)(((byte)(228)))));
-            this.guna2HtmlLabel4.Location = new System.Drawing.Point(22, 173);
-            this.guna2HtmlLabel4.Name = "guna2HtmlLabel4";
-            this.guna2HtmlLabel4.Size = new System.Drawing.Size(58, 19);
-            this.guna2HtmlLabel4.TabIndex = 282;
-            this.guna2HtmlLabel4.TabStop = false;
-            this.guna2HtmlLabel4.Text = "Từ ngày:";
-            // 
-            // guna2HtmlLabel5
-            // 
-            this.guna2HtmlLabel5.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel5.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(146)))), ((int)(((byte)(228)))));
-            this.guna2HtmlLabel5.Location = new System.Drawing.Point(22, 207);
-            this.guna2HtmlLabel5.Name = "guna2HtmlLabel5";
-            this.guna2HtmlLabel5.Size = new System.Drawing.Size(66, 19);
-            this.guna2HtmlLabel5.TabIndex = 283;
-            this.guna2HtmlLabel5.TabStop = false;
-            this.guna2HtmlLabel5.Text = "Đến ngày:";
-            // 
-            // guna2HtmlLabel7
-            // 
-            this.guna2HtmlLabel7.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel7.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(146)))), ((int)(((byte)(228)))));
-            this.guna2HtmlLabel7.Location = new System.Drawing.Point(22, 245);
-            this.guna2HtmlLabel7.Name = "guna2HtmlLabel7";
-            this.guna2HtmlLabel7.Size = new System.Drawing.Size(146, 19);
-            this.guna2HtmlLabel7.TabIndex = 284;
-            this.guna2HtmlLabel7.TabStop = false;
-            this.guna2HtmlLabel7.Text = "Đối tượng khách hàng:";
-            // 
-            // guna2HtmlLabel8
-            // 
-            this.guna2HtmlLabel8.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel8.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(146)))), ((int)(((byte)(228)))));
-            this.guna2HtmlLabel8.Location = new System.Drawing.Point(19, 284);
-            this.guna2HtmlLabel8.Name = "guna2HtmlLabel8";
-            this.guna2HtmlLabel8.Size = new System.Drawing.Size(111, 19);
-            this.guna2HtmlLabel8.TabIndex = 285;
-            this.guna2HtmlLabel8.TabStop = false;
-            this.guna2HtmlLabel8.Text = "Thời gian còn lại:";
-            // 
-            // guna2HtmlLabel10
-            // 
-            this.guna2HtmlLabel10.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel10.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(146)))), ((int)(((byte)(228)))));
-            this.guna2HtmlLabel10.Location = new System.Drawing.Point(22, 324);
-            this.guna2HtmlLabel10.Name = "guna2HtmlLabel10";
-            this.guna2HtmlLabel10.Size = new System.Drawing.Size(108, 19);
-            this.guna2HtmlLabel10.TabIndex = 286;
-            this.guna2HtmlLabel10.TabStop = false;
-            this.guna2HtmlLabel10.Text = "Số lượng còn lại:";
-            // 
-            // guna2HtmlLabel12
-            // 
-            this.guna2HtmlLabel12.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel12.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(146)))), ((int)(((byte)(228)))));
-            this.guna2HtmlLabel12.Location = new System.Drawing.Point(19, 363);
-            this.guna2HtmlLabel12.Name = "guna2HtmlLabel12";
-            this.guna2HtmlLabel12.Size = new System.Drawing.Size(156, 19);
-            this.guna2HtmlLabel12.TabIndex = 287;
-            this.guna2HtmlLabel12.TabStop = false;
-            this.guna2HtmlLabel12.Text = "Tổng giá trị khuyến mãi:";
-            // 
             // frmDetailDiscount
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
             this.ClientSize = new System.Drawing.Size(1111, 634);
             this.Controls.Add(this.guna2ControlBox2);
             this.Controls.Add(this.CTKM_LB_KichHoat);

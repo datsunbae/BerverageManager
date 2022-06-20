@@ -118,20 +118,21 @@
             // 
             // btnThemNCC
             // 
-            this.btnThemNCC.BorderRadius = 5;
+            this.btnThemNCC.AutoRoundedCorners = true;
+            this.btnThemNCC.BorderRadius = 21;
             this.btnThemNCC.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnThemNCC.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnThemNCC.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnThemNCC.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnThemNCC.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(146)))), ((int)(((byte)(228)))));
-            this.btnThemNCC.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnThemNCC.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnThemNCC.ForeColor = System.Drawing.Color.White;
             this.btnThemNCC.Location = new System.Drawing.Point(224, 335);
             this.btnThemNCC.Name = "btnThemNCC";
             this.btnThemNCC.Size = new System.Drawing.Size(113, 45);
             this.btnThemNCC.TabIndex = 131;
             this.btnThemNCC.TabStop = false;
-            this.btnThemNCC.Text = "Thêm";
+            this.btnThemNCC.Text = "THÊM";
             this.btnThemNCC.Click += new System.EventHandler(this.btnThemNCC_Click);
             // 
             // txtEmailNCC

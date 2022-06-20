@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.DragControl = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.guna2HtmlLabel6 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel5 = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -140,38 +140,40 @@
             // 
             // NK_BTN_XACNHAN
             // 
-            this.NK_BTN_XACNHAN.BorderRadius = 5;
+            this.NK_BTN_XACNHAN.AutoRoundedCorners = true;
+            this.NK_BTN_XACNHAN.BorderRadius = 21;
             this.NK_BTN_XACNHAN.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.NK_BTN_XACNHAN.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.NK_BTN_XACNHAN.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.NK_BTN_XACNHAN.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.NK_BTN_XACNHAN.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(146)))), ((int)(((byte)(228)))));
-            this.NK_BTN_XACNHAN.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NK_BTN_XACNHAN.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
             this.NK_BTN_XACNHAN.ForeColor = System.Drawing.Color.White;
-            this.NK_BTN_XACNHAN.Location = new System.Drawing.Point(205, 357);
+            this.NK_BTN_XACNHAN.Location = new System.Drawing.Point(199, 364);
             this.NK_BTN_XACNHAN.Name = "NK_BTN_XACNHAN";
-            this.NK_BTN_XACNHAN.Size = new System.Drawing.Size(113, 45);
+            this.NK_BTN_XACNHAN.Size = new System.Drawing.Size(146, 45);
             this.NK_BTN_XACNHAN.TabIndex = 156;
             this.NK_BTN_XACNHAN.TabStop = false;
-            this.NK_BTN_XACNHAN.Text = "Xác nhận";
+            this.NK_BTN_XACNHAN.Text = "XÁC NHẬN";
             this.NK_BTN_XACNHAN.Click += new System.EventHandler(this.NK_BTN_XACNHAN_Click);
             // 
             // NK_BTN_THEM_CTNK
             // 
-            this.NK_BTN_THEM_CTNK.BorderRadius = 5;
+            this.NK_BTN_THEM_CTNK.AutoRoundedCorners = true;
+            this.NK_BTN_THEM_CTNK.BorderRadius = 21;
             this.NK_BTN_THEM_CTNK.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.NK_BTN_THEM_CTNK.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.NK_BTN_THEM_CTNK.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.NK_BTN_THEM_CTNK.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.NK_BTN_THEM_CTNK.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(146)))), ((int)(((byte)(228)))));
-            this.NK_BTN_THEM_CTNK.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NK_BTN_THEM_CTNK.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
             this.NK_BTN_THEM_CTNK.ForeColor = System.Drawing.Color.White;
-            this.NK_BTN_THEM_CTNK.Location = new System.Drawing.Point(86, 357);
+            this.NK_BTN_THEM_CTNK.Location = new System.Drawing.Point(48, 364);
             this.NK_BTN_THEM_CTNK.Name = "NK_BTN_THEM_CTNK";
-            this.NK_BTN_THEM_CTNK.Size = new System.Drawing.Size(113, 45);
+            this.NK_BTN_THEM_CTNK.Size = new System.Drawing.Size(140, 45);
             this.NK_BTN_THEM_CTNK.TabIndex = 155;
             this.NK_BTN_THEM_CTNK.TabStop = false;
-            this.NK_BTN_THEM_CTNK.Text = "Thêm";
+            this.NK_BTN_THEM_CTNK.Text = "THÊM";
             this.NK_BTN_THEM_CTNK.Click += new System.EventHandler(this.NK_BTN_THEM_CTNK_Click);
             // 
             // NK_DATENK
@@ -249,21 +251,21 @@
             // 
             this.NK_DGV_CTNK.AllowUserToAddRows = false;
             this.NK_DGV_CTNK.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
-            this.NK_DGV_CTNK.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.NK_DGV_CTNK.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.NK_DGV_CTNK.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.NK_DGV_CTNK.BackgroundColor = System.Drawing.Color.White;
             this.NK_DGV_CTNK.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.NK_DGV_CTNK.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.NK_DGV_CTNK.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(185)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.NK_DGV_CTNK.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(185)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.NK_DGV_CTNK.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.NK_DGV_CTNK.ColumnHeadersHeight = 40;
             this.NK_DGV_CTNK.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.colMSP,
@@ -271,14 +273,14 @@
             this.clSoLuong,
             this.clDVT,
             this.clGia});
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.NK_DGV_CTNK.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.NK_DGV_CTNK.DefaultCellStyle = dataGridViewCellStyle3;
             this.NK_DGV_CTNK.EnableHeadersVisualStyles = false;
             this.NK_DGV_CTNK.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.NK_DGV_CTNK.Location = new System.Drawing.Point(410, 43);

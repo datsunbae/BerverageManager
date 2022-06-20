@@ -20,6 +20,7 @@ namespace Berverage_Manager.GUI
         NhanVien_BUS nhanVien_BUS;
         DonHang_BUS donHang_BUS;
         NhapKho_BUS nhapKho_BUS;
+        TaiKhoan_BUS taiKhoan_BUS;
         int vaiTro;
         public frmChangeInfo()
         {
@@ -27,6 +28,7 @@ namespace Berverage_Manager.GUI
             nhanVien_BUS = new NhanVien_BUS();
             donHang_BUS = new DonHang_BUS();
             nhapKho_BUS = new NhapKho_BUS();
+            taiKhoan_BUS = new TaiKhoan_BUS();
             vaiTro = frmLogin.frm_Login.vaiTro;
             getNhanVienTheoVaiTro();
         }
@@ -51,7 +53,7 @@ namespace Berverage_Manager.GUI
         {
             TXT_Ten.Text = nhanVien.TENNV;
             TXT_SoDienThoai.Text = nhanVien.SDTNV;
-            TXT_Email.Text = nhanVien.EMAILNV;
+            TXT_Email.Text = taiKhoan_BUS.LayTaiKhoanBangMTK(nhanVien.MATK).EMAIL;
             TXT_DiaChi.Text = nhanVien.DIACHINV;
             if(nhanVien.HINHANHNV != null)
             {
@@ -83,10 +85,12 @@ namespace Berverage_Manager.GUI
                 nhanVien.TENNV = TXT_Ten.Text;
                 nhanVien.SDTNV = TXT_SoDienThoai.Text;
                 nhanVien.DIACHINV = TXT_DiaChi.Text;
-                nhanVien.EMAILNV = TXT_Email.Text;
+                TAIKHOAN tk = taiKhoan_BUS.LayTaiKhoanBangMTK(nhanVien.MATK);
+                tk.EMAIL = TXT_Email.Text;
                 MemoryStream memoryStream = new MemoryStream();
                 IMG_NhanVien.Image.Save(memoryStream, ImageFormat.Jpeg);
                 nhanVien.HINHANHNV = memoryStream.ToArray();
+                taiKhoan_BUS.SuaTaiKhoan(tk);
                 nhanVien_BUS.SuaNhanVien(nhanVien);
 
                 switch (vaiTro)

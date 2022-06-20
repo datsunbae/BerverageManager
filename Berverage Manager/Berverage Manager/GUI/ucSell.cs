@@ -723,23 +723,16 @@ namespace Berverage_Manager.GUI
         private void txtTimSP_BH_TextChanged(object sender, EventArgs e)
         {
             String tenSP = txtTimSP_BH.Text;
-            List<TonKho_DTO> listTimSPTK = tonKho_BUS.TimKiemSanPhamTonKho(tenSP);
-
-            if (listTimSPTK.Count > 0)
+            if(tenSP.Length > 0)
             {
+                List<TonKho_DTO> listTimSPTK = tonKho_BUS.TimKiemSanPhamTonKho(tenSP);
                 FillDataDGV(listTimSPTK);
             }
             else
             {
-                if (tenSP == "")
-                {
-                    FillDataDGV(tonKho_BUS.LayTatCaSanPhamConTonKho());
-                }
-                else
-                {
-                    MessageBox.Show("Không Tìm Thấy Sản Phẩm Nào!", "THÔNG BÁO", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                }
+                FillDataDGV(tonKho_BUS.LayTatCaSanPhamConTonKho());
             }
+            
         }
 
     }

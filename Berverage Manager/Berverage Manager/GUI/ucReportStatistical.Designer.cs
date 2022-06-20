@@ -75,7 +75,7 @@
             // 
             this.ChartDoanhThuBanHang.Location = new System.Drawing.Point(50, 230);
             this.ChartDoanhThuBanHang.Name = "ChartDoanhThuBanHang";
-            this.ChartDoanhThuBanHang.Size = new System.Drawing.Size(1020, 371);
+            this.ChartDoanhThuBanHang.Size = new System.Drawing.Size(1284, 572);
             this.ChartDoanhThuBanHang.TabIndex = 0;
             this.ChartDoanhThuBanHang.Text = "cartesianChart1";
             // 
@@ -89,7 +89,7 @@
             this.guna2Panel1.Controls.Add(this.guna2HtmlLabel1);
             this.guna2Panel1.Controls.Add(this.guna2CirclePictureBox1);
             this.guna2Panel1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.guna2Panel1.Location = new System.Drawing.Point(26, 97);
+            this.guna2Panel1.Location = new System.Drawing.Point(50, 97);
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.Size = new System.Drawing.Size(247, 104);
             this.guna2Panel1.TabIndex = 1;
@@ -163,7 +163,7 @@
             this.guna2Panel2.Controls.Add(this.guna2HtmlLabel4);
             this.guna2Panel2.Controls.Add(this.guna2CirclePictureBox2);
             this.guna2Panel2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.guna2Panel2.Location = new System.Drawing.Point(297, 97);
+            this.guna2Panel2.Location = new System.Drawing.Point(393, 97);
             this.guna2Panel2.Name = "guna2Panel2";
             this.guna2Panel2.Size = new System.Drawing.Size(247, 104);
             this.guna2Panel2.TabIndex = 2;
@@ -233,7 +233,7 @@
             this.guna2Panel3.Controls.Add(this.guna2HtmlLabel6);
             this.guna2Panel3.Controls.Add(this.guna2CirclePictureBox3);
             this.guna2Panel3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.guna2Panel3.Location = new System.Drawing.Point(569, 97);
+            this.guna2Panel3.Location = new System.Drawing.Point(743, 97);
             this.guna2Panel3.Name = "guna2Panel3";
             this.guna2Panel3.Size = new System.Drawing.Size(247, 104);
             this.guna2Panel3.TabIndex = 3;
@@ -302,7 +302,7 @@
             this.RS_Date.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.RS_Date.ForeColor = System.Drawing.Color.White;
             this.RS_Date.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.RS_Date.Location = new System.Drawing.Point(29, 28);
+            this.RS_Date.Location = new System.Drawing.Point(50, 28);
             this.RS_Date.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.RS_Date.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.RS_Date.Name = "RS_Date";
@@ -321,7 +321,7 @@
             this.guna2Panel4.Controls.Add(this.guna2HtmlLabel8);
             this.guna2Panel4.Controls.Add(this.guna2CirclePictureBox4);
             this.guna2Panel4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.guna2Panel4.Location = new System.Drawing.Point(838, 97);
+            this.guna2Panel4.Location = new System.Drawing.Point(1087, 97);
             this.guna2Panel4.Name = "guna2Panel4";
             this.guna2Panel4.Size = new System.Drawing.Size(247, 104);
             this.guna2Panel4.TabIndex = 170;
@@ -391,7 +391,7 @@
             this.RS_BTN_XuatBaoCao.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(146)))), ((int)(((byte)(228)))));
             this.RS_BTN_XuatBaoCao.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.RS_BTN_XuatBaoCao.ForeColor = System.Drawing.Color.White;
-            this.RS_BTN_XuatBaoCao.Location = new System.Drawing.Point(915, 25);
+            this.RS_BTN_XuatBaoCao.Location = new System.Drawing.Point(1167, 28);
             this.RS_BTN_XuatBaoCao.Name = "RS_BTN_XuatBaoCao";
             this.RS_BTN_XuatBaoCao.Size = new System.Drawing.Size(167, 45);
             this.RS_BTN_XuatBaoCao.TabIndex = 277;
@@ -423,7 +423,7 @@
             this.Controls.Add(this.guna2Panel1);
             this.Controls.Add(this.ChartDoanhThuBanHang);
             this.Name = "ucReportStatistical";
-            this.Size = new System.Drawing.Size(1110, 762);
+            this.Size = new System.Drawing.Size(1378, 855);
             this.Load += new System.EventHandler(this.ucReportStatistical_Load);
             this.guna2Panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();

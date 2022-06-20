@@ -84,7 +84,7 @@
             this.guna2HtmlLabel5.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(146)))), ((int)(((byte)(228)))));
-            this.guna2HtmlLabel5.Location = new System.Drawing.Point(58, 248);
+            this.guna2HtmlLabel5.Location = new System.Drawing.Point(83, 258);
             this.guna2HtmlLabel5.Name = "guna2HtmlLabel5";
             this.guna2HtmlLabel5.Size = new System.Drawing.Size(32, 17);
             this.guna2HtmlLabel5.TabIndex = 133;
@@ -129,20 +129,21 @@
             // 
             // btnSuaNV
             // 
-            this.btnSuaNV.BorderRadius = 5;
+            this.btnSuaNV.AutoRoundedCorners = true;
+            this.btnSuaNV.BorderRadius = 20;
             this.btnSuaNV.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnSuaNV.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnSuaNV.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnSuaNV.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnSuaNV.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(146)))), ((int)(((byte)(228)))));
-            this.btnSuaNV.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSuaNV.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
             this.btnSuaNV.ForeColor = System.Drawing.Color.White;
-            this.btnSuaNV.Location = new System.Drawing.Point(228, 512);
+            this.btnSuaNV.Location = new System.Drawing.Point(247, 467);
             this.btnSuaNV.Name = "btnSuaNV";
-            this.btnSuaNV.Size = new System.Drawing.Size(113, 45);
+            this.btnSuaNV.Size = new System.Drawing.Size(117, 43);
             this.btnSuaNV.TabIndex = 131;
             this.btnSuaNV.TabStop = false;
-            this.btnSuaNV.Text = "Sửa";
+            this.btnSuaNV.Text = "SỬA";
             this.btnSuaNV.Click += new System.EventHandler(this.btnSuaNV_Click);
             // 
             // txtEmailNV
@@ -202,7 +203,7 @@
             this.txtDienThoaiNV.PasswordChar = '\0';
             this.txtDienThoaiNV.PlaceholderText = "";
             this.txtDienThoaiNV.SelectedText = "";
-            this.txtDienThoaiNV.Size = new System.Drawing.Size(200, 36);
+            this.txtDienThoaiNV.Size = new System.Drawing.Size(220, 36);
             this.txtDienThoaiNV.TabIndex = 128;
             // 
             // txtTenNV
@@ -222,7 +223,7 @@
             this.txtTenNV.PasswordChar = '\0';
             this.txtTenNV.PlaceholderText = "";
             this.txtTenNV.SelectedText = "";
-            this.txtTenNV.Size = new System.Drawing.Size(200, 36);
+            this.txtTenNV.Size = new System.Drawing.Size(220, 36);
             this.txtTenNV.TabIndex = 127;
             // 
             // Elipse
@@ -240,12 +241,12 @@
             this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(146)))), ((int)(((byte)(228)))));
-            this.guna2HtmlLabel2.Location = new System.Drawing.Point(45, 416);
+            this.guna2HtmlLabel2.Location = new System.Drawing.Point(78, 401);
             this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
-            this.guna2HtmlLabel2.Size = new System.Drawing.Size(40, 17);
+            this.guna2HtmlLabel2.Size = new System.Drawing.Size(37, 17);
             this.guna2HtmlLabel2.TabIndex = 164;
             this.guna2HtmlLabel2.TabStop = false;
-            this.guna2HtmlLabel2.Text = "Vai trò:";
+            this.guna2HtmlLabel2.Text = "Vai trò";
             // 
             // SNV_CB_VaiTro
             // 
@@ -258,9 +259,9 @@
             this.SNV_CB_VaiTro.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.SNV_CB_VaiTro.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.SNV_CB_VaiTro.ItemHeight = 30;
-            this.SNV_CB_VaiTro.Location = new System.Drawing.Point(104, 406);
+            this.SNV_CB_VaiTro.Location = new System.Drawing.Point(121, 392);
             this.SNV_CB_VaiTro.Name = "SNV_CB_VaiTro";
-            this.SNV_CB_VaiTro.Size = new System.Drawing.Size(237, 36);
+            this.SNV_CB_VaiTro.Size = new System.Drawing.Size(220, 36);
             this.SNV_CB_VaiTro.TabIndex = 163;
             // 
             // guna2HtmlLabel7
@@ -268,7 +269,7 @@
             this.guna2HtmlLabel7.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel7.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(146)))), ((int)(((byte)(228)))));
-            this.guna2HtmlLabel7.Location = new System.Drawing.Point(45, 365);
+            this.guna2HtmlLabel7.Location = new System.Drawing.Point(62, 353);
             this.guna2HtmlLabel7.Name = "guna2HtmlLabel7";
             this.guna2HtmlLabel7.Size = new System.Drawing.Size(53, 17);
             this.guna2HtmlLabel7.TabIndex = 161;
@@ -287,12 +288,12 @@
             this.txtMatKhauNV.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtMatKhauNV.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtMatKhauNV.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtMatKhauNV.Location = new System.Drawing.Point(104, 355);
+            this.txtMatKhauNV.Location = new System.Drawing.Point(121, 343);
             this.txtMatKhauNV.Name = "txtMatKhauNV";
             this.txtMatKhauNV.PasswordChar = '*';
             this.txtMatKhauNV.PlaceholderText = "";
             this.txtMatKhauNV.SelectedText = "";
-            this.txtMatKhauNV.Size = new System.Drawing.Size(237, 36);
+            this.txtMatKhauNV.Size = new System.Drawing.Size(220, 36);
             this.txtMatKhauNV.TabIndex = 160;
             // 
             // guna2HtmlLabel8
@@ -300,7 +301,7 @@
             this.guna2HtmlLabel8.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel8.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(146)))), ((int)(((byte)(228)))));
-            this.guna2HtmlLabel8.Location = new System.Drawing.Point(16, 318);
+            this.guna2HtmlLabel8.Location = new System.Drawing.Point(33, 306);
             this.guna2HtmlLabel8.Name = "guna2HtmlLabel8";
             this.guna2HtmlLabel8.Size = new System.Drawing.Size(82, 17);
             this.guna2HtmlLabel8.TabIndex = 162;
@@ -319,18 +320,18 @@
             this.txtMaTaiKhoanNV.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtMaTaiKhoanNV.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtMaTaiKhoanNV.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtMaTaiKhoanNV.Location = new System.Drawing.Point(104, 308);
+            this.txtMaTaiKhoanNV.Location = new System.Drawing.Point(121, 296);
             this.txtMaTaiKhoanNV.Name = "txtMaTaiKhoanNV";
             this.txtMaTaiKhoanNV.PasswordChar = '\0';
             this.txtMaTaiKhoanNV.PlaceholderText = "";
             this.txtMaTaiKhoanNV.SelectedText = "";
-            this.txtMaTaiKhoanNV.Size = new System.Drawing.Size(237, 36);
+            this.txtMaTaiKhoanNV.Size = new System.Drawing.Size(220, 36);
             this.txtMaTaiKhoanNV.TabIndex = 159;
             // 
             // PB_ImgStaff
             // 
             this.PB_ImgStaff.ImageRotate = 0F;
-            this.PB_ImgStaff.Location = new System.Drawing.Point(426, 71);
+            this.PB_ImgStaff.Location = new System.Drawing.Point(406, 106);
             this.PB_ImgStaff.Name = "PB_ImgStaff";
             this.PB_ImgStaff.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.PB_ImgStaff.Size = new System.Drawing.Size(159, 157);
@@ -340,7 +341,8 @@
             // 
             // BTN_ChonHinhAnh
             // 
-            this.BTN_ChonHinhAnh.BorderRadius = 5;
+            this.BTN_ChonHinhAnh.AutoRoundedCorners = true;
+            this.BTN_ChonHinhAnh.BorderRadius = 20;
             this.BTN_ChonHinhAnh.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.BTN_ChonHinhAnh.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.BTN_ChonHinhAnh.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -348,12 +350,12 @@
             this.BTN_ChonHinhAnh.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(146)))), ((int)(((byte)(228)))));
             this.BTN_ChonHinhAnh.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BTN_ChonHinhAnh.ForeColor = System.Drawing.Color.White;
-            this.BTN_ChonHinhAnh.Location = new System.Drawing.Point(426, 269);
+            this.BTN_ChonHinhAnh.Location = new System.Drawing.Point(427, 280);
             this.BTN_ChonHinhAnh.Name = "BTN_ChonHinhAnh";
             this.BTN_ChonHinhAnh.Size = new System.Drawing.Size(117, 43);
             this.BTN_ChonHinhAnh.TabIndex = 166;
             this.BTN_ChonHinhAnh.TabStop = false;
-            this.BTN_ChonHinhAnh.Text = "Sửa";
+            this.BTN_ChonHinhAnh.Text = "SỬA";
             this.BTN_ChonHinhAnh.Click += new System.EventHandler(this.BTN_ChonHinhAnh_Click);
             // 
             // OpenFileDialog
@@ -365,7 +367,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
-            this.ClientSize = new System.Drawing.Size(625, 633);
+            this.ClientSize = new System.Drawing.Size(625, 522);
             this.Controls.Add(this.BTN_ChonHinhAnh);
             this.Controls.Add(this.PB_ImgStaff);
             this.Controls.Add(this.guna2HtmlLabel2);

@@ -128,20 +128,21 @@
             // 
             // btnThemSP
             // 
-            this.btnThemSP.BorderRadius = 5;
+            this.btnThemSP.AutoRoundedCorners = true;
+            this.btnThemSP.BorderRadius = 21;
             this.btnThemSP.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnThemSP.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnThemSP.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnThemSP.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnThemSP.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(146)))), ((int)(((byte)(228)))));
-            this.btnThemSP.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnThemSP.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnThemSP.ForeColor = System.Drawing.Color.White;
             this.btnThemSP.Location = new System.Drawing.Point(273, 564);
             this.btnThemSP.Name = "btnThemSP";
             this.btnThemSP.Size = new System.Drawing.Size(113, 45);
             this.btnThemSP.TabIndex = 145;
             this.btnThemSP.TabStop = false;
-            this.btnThemSP.Text = "Thêm";
+            this.btnThemSP.Text = "THÊM";
             this.btnThemSP.Click += new System.EventHandler(this.btnThemSP_Click);
             // 
             // txtGiaBanSi_DVTC
@@ -223,7 +224,6 @@
             this.cbDVTChinh.Name = "cbDVTChinh";
             this.cbDVTChinh.Size = new System.Drawing.Size(200, 36);
             this.cbDVTChinh.TabIndex = 142;
-            
             // 
             // DragControl
             // 

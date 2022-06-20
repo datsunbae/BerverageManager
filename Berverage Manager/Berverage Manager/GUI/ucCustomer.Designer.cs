@@ -77,7 +77,7 @@
             this.guna2Panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.guna2Panel2.Location = new System.Drawing.Point(0, 0);
             this.guna2Panel2.Name = "guna2Panel2";
-            this.guna2Panel2.Size = new System.Drawing.Size(1115, 45);
+            this.guna2Panel2.Size = new System.Drawing.Size(1378, 45);
             this.guna2Panel2.TabIndex = 89;
             // 
             // btnAddCustomer
@@ -90,7 +90,7 @@
             this.btnAddCustomer.FillColor = System.Drawing.Color.White;
             this.btnAddCustomer.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.btnAddCustomer.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(146)))), ((int)(((byte)(228)))));
-            this.btnAddCustomer.Location = new System.Drawing.Point(765, 4);
+            this.btnAddCustomer.Location = new System.Drawing.Point(1028, 4);
             this.btnAddCustomer.Name = "btnAddCustomer";
             this.btnAddCustomer.Size = new System.Drawing.Size(111, 36);
             this.btnAddCustomer.TabIndex = 33;
@@ -107,7 +107,7 @@
             this.btnXoaKH.FillColor = System.Drawing.Color.White;
             this.btnXoaKH.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.btnXoaKH.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(146)))), ((int)(((byte)(228)))));
-            this.btnXoaKH.Location = new System.Drawing.Point(882, 4);
+            this.btnXoaKH.Location = new System.Drawing.Point(1145, 4);
             this.btnXoaKH.Name = "btnXoaKH";
             this.btnXoaKH.Size = new System.Drawing.Size(111, 36);
             this.btnXoaKH.TabIndex = 33;
@@ -124,7 +124,7 @@
             this.btnEditCustomer.FillColor = System.Drawing.Color.White;
             this.btnEditCustomer.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.btnEditCustomer.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(146)))), ((int)(((byte)(228)))));
-            this.btnEditCustomer.Location = new System.Drawing.Point(999, 4);
+            this.btnEditCustomer.Location = new System.Drawing.Point(1262, 4);
             this.btnEditCustomer.Name = "btnEditCustomer";
             this.btnEditCustomer.Size = new System.Drawing.Size(111, 36);
             this.btnEditCustomer.TabIndex = 32;
@@ -138,7 +138,7 @@
             this.guna2Panel4.Controls.Add(this.guna2PictureBox2);
             this.guna2Panel4.Location = new System.Drawing.Point(0, 100);
             this.guna2Panel4.Name = "guna2Panel4";
-            this.guna2Panel4.Size = new System.Drawing.Size(1115, 42);
+            this.guna2Panel4.Size = new System.Drawing.Size(1378, 42);
             this.guna2Panel4.TabIndex = 91;
             // 
             // label2
@@ -234,7 +234,7 @@
             this.dgvKhachHang.Name = "dgvKhachHang";
             this.dgvKhachHang.RowHeadersVisible = false;
             this.dgvKhachHang.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvKhachHang.Size = new System.Drawing.Size(1115, 620);
+            this.dgvKhachHang.Size = new System.Drawing.Size(1378, 713);
             this.dgvKhachHang.TabIndex = 93;
             this.dgvKhachHang.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.dgvKhachHang.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -310,7 +310,7 @@
             this.Controls.Add(this.dgvKhachHang);
             this.Controls.Add(this.guna2Panel3);
             this.Name = "ucCustomer";
-            this.Size = new System.Drawing.Size(1115, 762);
+            this.Size = new System.Drawing.Size(1378, 855);
             this.Load += new System.EventHandler(this.ucCustomer_Load);
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).EndInit();
             this.guna2Panel2.ResumeLayout(false);

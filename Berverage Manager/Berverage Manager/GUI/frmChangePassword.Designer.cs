@@ -164,20 +164,21 @@
             // 
             // BTN_Luu
             // 
-            this.BTN_Luu.BorderRadius = 5;
+            this.BTN_Luu.AutoRoundedCorners = true;
+            this.BTN_Luu.BorderRadius = 20;
             this.BTN_Luu.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.BTN_Luu.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.BTN_Luu.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.BTN_Luu.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.BTN_Luu.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(146)))), ((int)(((byte)(228)))));
-            this.BTN_Luu.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BTN_Luu.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BTN_Luu.ForeColor = System.Drawing.Color.White;
             this.BTN_Luu.Location = new System.Drawing.Point(331, 333);
             this.BTN_Luu.Name = "BTN_Luu";
             this.BTN_Luu.Size = new System.Drawing.Size(117, 43);
             this.BTN_Luu.TabIndex = 167;
             this.BTN_Luu.TabStop = false;
-            this.BTN_Luu.Text = "Lưu";
+            this.BTN_Luu.Text = "LƯU";
             this.BTN_Luu.Click += new System.EventHandler(this.BTN_Luu_Click);
             // 
             // guna2DragControl1
@@ -194,6 +195,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
             this.ClientSize = new System.Drawing.Size(476, 399);
             this.Controls.Add(this.BTN_Luu);
             this.Controls.Add(this.guna2HtmlLabel3);

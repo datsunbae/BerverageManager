@@ -58,6 +58,8 @@
             this.ElipseSidePanel = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.ElipseSidePanel1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.ElipseSidePanel2 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.lb_Timer = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.SidePanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pcbClose)).BeginInit();
             this.SidePanel1.SuspendLayout();
@@ -73,7 +75,7 @@
             this.Panel.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.Panel.Location = new System.Drawing.Point(290, 38);
             this.Panel.Name = "Panel";
-            this.Panel.Size = new System.Drawing.Size(1110, 762);
+            this.Panel.Size = new System.Drawing.Size(1378, 855);
             this.Panel.TabIndex = 21;
             // 
             // DragControl
@@ -96,7 +98,7 @@
             this.btnSell.Image = ((System.Drawing.Image)(resources.GetObject("btnSell.Image")));
             this.btnSell.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnSell.ImageSize = new System.Drawing.Size(50, 50);
-            this.btnSell.Location = new System.Drawing.Point(21, 313);
+            this.btnSell.Location = new System.Drawing.Point(21, 353);
             this.btnSell.Name = "btnSell";
             this.btnSell.Size = new System.Drawing.Size(248, 63);
             this.btnSell.TabIndex = 11;
@@ -108,7 +110,7 @@
             this.SidePanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(181)))), ((int)(((byte)(254)))));
             this.SidePanel.Controls.Add(this.guna2HtmlLabel4);
             this.SidePanel.ForeColor = System.Drawing.Color.White;
-            this.SidePanel.Location = new System.Drawing.Point(21, 397);
+            this.SidePanel.Location = new System.Drawing.Point(21, 437);
             this.SidePanel.Name = "SidePanel";
             this.SidePanel.Size = new System.Drawing.Size(248, 26);
             this.SidePanel.TabIndex = 9;
@@ -137,7 +139,7 @@
             this.btnBill.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(97)))), ((int)(((byte)(174)))), ((int)(((byte)(235)))));
             this.btnBill.Image = ((System.Drawing.Image)(resources.GetObject("btnBill.Image")));
             this.btnBill.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnBill.Location = new System.Drawing.Point(21, 429);
+            this.btnBill.Location = new System.Drawing.Point(21, 469);
             this.btnBill.Name = "btnBill";
             this.btnBill.Size = new System.Drawing.Size(121, 42);
             this.btnBill.TabIndex = 6;
@@ -158,7 +160,7 @@
             this.btnCustomer.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(97)))), ((int)(((byte)(174)))), ((int)(((byte)(235)))));
             this.btnCustomer.Image = ((System.Drawing.Image)(resources.GetObject("btnCustomer.Image")));
             this.btnCustomer.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnCustomer.Location = new System.Drawing.Point(21, 521);
+            this.btnCustomer.Location = new System.Drawing.Point(21, 561);
             this.btnCustomer.Name = "btnCustomer";
             this.btnCustomer.Size = new System.Drawing.Size(248, 42);
             this.btnCustomer.TabIndex = 6;
@@ -181,7 +183,7 @@
             // 
             this.pcbClose.Image = ((System.Drawing.Image)(resources.GetObject("pcbClose.Image")));
             this.pcbClose.ImageRotate = 0F;
-            this.pcbClose.Location = new System.Drawing.Point(1364, 6);
+            this.pcbClose.Location = new System.Drawing.Point(1633, 6);
             this.pcbClose.Name = "pcbClose";
             this.pcbClose.Size = new System.Drawing.Size(25, 26);
             this.pcbClose.TabIndex = 20;
@@ -204,7 +206,7 @@
             this.SidePanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(181)))), ((int)(((byte)(254)))));
             this.SidePanel1.Controls.Add(this.guna2HtmlLabel5);
             this.SidePanel1.ForeColor = System.Drawing.Color.White;
-            this.SidePanel1.Location = new System.Drawing.Point(21, 489);
+            this.SidePanel1.Location = new System.Drawing.Point(21, 529);
             this.SidePanel1.Name = "SidePanel1";
             this.SidePanel1.Size = new System.Drawing.Size(248, 26);
             this.SidePanel1.TabIndex = 10;
@@ -225,7 +227,7 @@
             this.lbLogout.BackColor = System.Drawing.Color.Transparent;
             this.lbLogout.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbLogout.ForeColor = System.Drawing.Color.White;
-            this.lbLogout.Location = new System.Drawing.Point(143, 761);
+            this.lbLogout.Location = new System.Drawing.Point(132, 856);
             this.lbLogout.Name = "lbLogout";
             this.lbLogout.Size = new System.Drawing.Size(67, 19);
             this.lbLogout.TabIndex = 1;
@@ -236,7 +238,7 @@
             // 
             this.pcbLogout.Image = ((System.Drawing.Image)(resources.GetObject("pcbLogout.Image")));
             this.pcbLogout.ImageRotate = 0F;
-            this.pcbLogout.Location = new System.Drawing.Point(113, 758);
+            this.pcbLogout.Location = new System.Drawing.Point(102, 854);
             this.pcbLogout.Name = "pcbLogout";
             this.pcbLogout.Size = new System.Drawing.Size(24, 28);
             this.pcbLogout.TabIndex = 0;
@@ -246,6 +248,7 @@
             // guna2Panel1
             // 
             this.guna2Panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(146)))), ((int)(((byte)(228)))));
+            this.guna2Panel1.Controls.Add(this.lb_Timer);
             this.guna2Panel1.Controls.Add(this.LB_CaiDat);
             this.guna2Panel1.Controls.Add(this.BTN_CaiDat);
             this.guna2Panel1.Controls.Add(this.guna2Panel2);
@@ -266,7 +269,7 @@
             this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
             this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(290, 800);
+            this.guna2Panel1.Size = new System.Drawing.Size(290, 893);
             this.guna2Panel1.TabIndex = 19;
             // 
             // LB_CaiDat
@@ -274,7 +277,7 @@
             this.LB_CaiDat.BackColor = System.Drawing.Color.Transparent;
             this.LB_CaiDat.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LB_CaiDat.ForeColor = System.Drawing.Color.White;
-            this.LB_CaiDat.Location = new System.Drawing.Point(52, 762);
+            this.LB_CaiDat.Location = new System.Drawing.Point(43, 856);
             this.LB_CaiDat.Name = "LB_CaiDat";
             this.LB_CaiDat.Size = new System.Drawing.Size(46, 19);
             this.LB_CaiDat.TabIndex = 24;
@@ -285,7 +288,7 @@
             // 
             this.BTN_CaiDat.Image = ((System.Drawing.Image)(resources.GetObject("BTN_CaiDat.Image")));
             this.BTN_CaiDat.ImageRotate = 0F;
-            this.BTN_CaiDat.Location = new System.Drawing.Point(22, 758);
+            this.BTN_CaiDat.Location = new System.Drawing.Point(13, 852);
             this.BTN_CaiDat.Name = "BTN_CaiDat";
             this.BTN_CaiDat.Size = new System.Drawing.Size(24, 28);
             this.BTN_CaiDat.TabIndex = 23;
@@ -297,7 +300,7 @@
             this.guna2Panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(181)))), ((int)(((byte)(254)))));
             this.guna2Panel2.Controls.Add(this.guna2HtmlLabel1);
             this.guna2Panel2.ForeColor = System.Drawing.Color.White;
-            this.guna2Panel2.Location = new System.Drawing.Point(21, 579);
+            this.guna2Panel2.Location = new System.Drawing.Point(21, 619);
             this.guna2Panel2.Name = "guna2Panel2";
             this.guna2Panel2.Size = new System.Drawing.Size(248, 26);
             this.guna2Panel2.TabIndex = 21;
@@ -326,7 +329,7 @@
             this.btnStatistical.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(97)))), ((int)(((byte)(174)))), ((int)(((byte)(235)))));
             this.btnStatistical.Image = ((System.Drawing.Image)(resources.GetObject("btnStatistical.Image")));
             this.btnStatistical.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnStatistical.Location = new System.Drawing.Point(21, 611);
+            this.btnStatistical.Location = new System.Drawing.Point(21, 651);
             this.btnStatistical.Name = "btnStatistical";
             this.btnStatistical.Size = new System.Drawing.Size(248, 42);
             this.btnStatistical.TabIndex = 20;
@@ -384,7 +387,7 @@
             this.btnProduct.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(97)))), ((int)(((byte)(174)))), ((int)(((byte)(235)))));
             this.btnProduct.Image = ((System.Drawing.Image)(resources.GetObject("btnProduct.Image")));
             this.btnProduct.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnProduct.Location = new System.Drawing.Point(148, 429);
+            this.btnProduct.Location = new System.Drawing.Point(148, 469);
             this.btnProduct.Name = "btnProduct";
             this.btnProduct.Size = new System.Drawing.Size(121, 42);
             this.btnProduct.TabIndex = 12;
@@ -405,16 +408,32 @@
             // 
             this.ElipseSidePanel1.TargetControl = this.SidePanel1;
             // 
+            // lb_Timer
+            // 
+            this.lb_Timer.BackColor = System.Drawing.Color.Transparent;
+            this.lb_Timer.Font = new System.Drawing.Font("Segoe UI", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_Timer.ForeColor = System.Drawing.Color.White;
+            this.lb_Timer.Location = new System.Drawing.Point(62, 280);
+            this.lb_Timer.Name = "lb_Timer";
+            this.lb_Timer.Size = new System.Drawing.Size(46, 25);
+            this.lb_Timer.TabIndex = 25;
+            this.lb_Timer.Text = "Timer";
+            // 
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
             // frmHomeSellStaff
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1400, 800);
+            this.ClientSize = new System.Drawing.Size(1668, 893);
             this.Controls.Add(this.Panel);
             this.Controls.Add(this.pcbClose);
             this.Controls.Add(this.guna2Panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Location = new System.Drawing.Point(13, 852);
             this.Name = "frmHomeSellStaff";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmHomeStaffSell";
@@ -465,5 +484,7 @@
         private Guna.UI2.WinForms.Guna2Button btnStatistical;
         private Guna.UI2.WinForms.Guna2HtmlLabel LB_CaiDat;
         private Guna.UI2.WinForms.Guna2PictureBox BTN_CaiDat;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lb_Timer;
+        private System.Windows.Forms.Timer timer1;
     }
 }

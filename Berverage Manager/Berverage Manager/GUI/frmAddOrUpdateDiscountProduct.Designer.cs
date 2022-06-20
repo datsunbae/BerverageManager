@@ -76,7 +76,8 @@
             // 
             // btn_Go
             // 
-            this.btn_Go.BorderRadius = 5;
+            this.btn_Go.AutoRoundedCorners = true;
+            this.btn_Go.BorderRadius = 17;
             this.btn_Go.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btn_Go.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btn_Go.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -89,7 +90,7 @@
             this.btn_Go.Size = new System.Drawing.Size(86, 36);
             this.btn_Go.TabIndex = 223;
             this.btn_Go.TabStop = false;
-            this.btn_Go.Text = "Gỡ";
+            this.btn_Go.Text = "GỠ";
             this.btn_Go.Click += new System.EventHandler(this.btn_Go_Click);
             // 
             // guna2Elipse1
@@ -98,7 +99,8 @@
             // 
             // btn_Them
             // 
-            this.btn_Them.BorderRadius = 5;
+            this.btn_Them.AutoRoundedCorners = true;
+            this.btn_Them.BorderRadius = 17;
             this.btn_Them.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btn_Them.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btn_Them.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -111,7 +113,7 @@
             this.btn_Them.Size = new System.Drawing.Size(86, 36);
             this.btn_Them.TabIndex = 222;
             this.btn_Them.TabStop = false;
-            this.btn_Them.Text = "Thêm";
+            this.btn_Them.Text = "THÊM";
             this.btn_Them.Click += new System.EventHandler(this.btn_Them_Click);
             // 
             // guna2ControlBox1
@@ -131,7 +133,7 @@
             this.guna2HtmlLabel9.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel9.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(146)))), ((int)(((byte)(228)))));
-            this.guna2HtmlLabel9.Location = new System.Drawing.Point(479, 56);
+            this.guna2HtmlLabel9.Location = new System.Drawing.Point(456, 23);
             this.guna2HtmlLabel9.Name = "guna2HtmlLabel9";
             this.guna2HtmlLabel9.Size = new System.Drawing.Size(322, 32);
             this.guna2HtmlLabel9.TabIndex = 220;
@@ -140,20 +142,21 @@
             // 
             // btn_Luu
             // 
-            this.btn_Luu.BorderRadius = 5;
+            this.btn_Luu.AutoRoundedCorners = true;
+            this.btn_Luu.BorderRadius = 21;
             this.btn_Luu.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btn_Luu.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btn_Luu.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btn_Luu.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btn_Luu.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(146)))), ((int)(((byte)(228)))));
-            this.btn_Luu.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Luu.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Luu.ForeColor = System.Drawing.Color.White;
-            this.btn_Luu.Location = new System.Drawing.Point(1064, 548);
+            this.btn_Luu.Location = new System.Drawing.Point(1022, 537);
             this.btn_Luu.Name = "btn_Luu";
-            this.btn_Luu.Size = new System.Drawing.Size(167, 45);
+            this.btn_Luu.Size = new System.Drawing.Size(215, 45);
             this.btn_Luu.TabIndex = 219;
             this.btn_Luu.TabStop = false;
-            this.btn_Luu.Text = "Lưu và kích hoạt";
+            this.btn_Luu.Text = "LƯU VÀ KÍCH HOẠT";
             this.btn_Luu.Click += new System.EventHandler(this.btn_Luu_Click);
             // 
             // guna2HtmlLabel8
@@ -277,7 +280,7 @@
             this.KMTSP_DGV_CTKMTSP.ReadOnly = true;
             this.KMTSP_DGV_CTKMTSP.RowHeadersVisible = false;
             this.KMTSP_DGV_CTKMTSP.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.KMTSP_DGV_CTKMTSP.Size = new System.Drawing.Size(818, 214);
+            this.KMTSP_DGV_CTKMTSP.Size = new System.Drawing.Size(818, 311);
             this.KMTSP_DGV_CTKMTSP.TabIndex = 212;
             this.KMTSP_DGV_CTKMTSP.TabStop = false;
             this.KMTSP_DGV_CTKMTSP.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
@@ -348,7 +351,7 @@
             this.checkbox_SL_ApDung.CheckedState.BorderThickness = 0;
             this.checkbox_SL_ApDung.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.checkbox_SL_ApDung.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(146)))), ((int)(((byte)(228)))));
-            this.checkbox_SL_ApDung.Location = new System.Drawing.Point(246, 255);
+            this.checkbox_SL_ApDung.Location = new System.Drawing.Point(246, 208);
             this.checkbox_SL_ApDung.Name = "checkbox_SL_ApDung";
             this.checkbox_SL_ApDung.Size = new System.Drawing.Size(97, 17);
             this.checkbox_SL_ApDung.TabIndex = 211;
@@ -364,7 +367,7 @@
             this.guna2HtmlLabel4.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(146)))), ((int)(((byte)(228)))));
-            this.guna2HtmlLabel4.Location = new System.Drawing.Point(13, 471);
+            this.guna2HtmlLabel4.Location = new System.Drawing.Point(13, 424);
             this.guna2HtmlLabel4.Name = "guna2HtmlLabel4";
             this.guna2HtmlLabel4.Size = new System.Drawing.Size(124, 17);
             this.guna2HtmlLabel4.TabIndex = 210;
@@ -382,7 +385,7 @@
             this.cb_DoiTuongKH.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.cb_DoiTuongKH.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.cb_DoiTuongKH.ItemHeight = 30;
-            this.cb_DoiTuongKH.Location = new System.Drawing.Point(142, 463);
+            this.cb_DoiTuongKH.Location = new System.Drawing.Point(142, 416);
             this.cb_DoiTuongKH.Name = "cb_DoiTuongKH";
             this.cb_DoiTuongKH.Size = new System.Drawing.Size(200, 36);
             this.cb_DoiTuongKH.TabIndex = 209;
@@ -392,7 +395,7 @@
             this.guna2HtmlLabel7.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel7.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(146)))), ((int)(((byte)(228)))));
-            this.guna2HtmlLabel7.Location = new System.Drawing.Point(51, 347);
+            this.guna2HtmlLabel7.Location = new System.Drawing.Point(51, 300);
             this.guna2HtmlLabel7.Name = "guna2HtmlLabel7";
             this.guna2HtmlLabel7.Size = new System.Drawing.Size(77, 17);
             this.guna2HtmlLabel7.TabIndex = 206;
@@ -408,7 +411,7 @@
             this.date_NgayBatDau.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.date_NgayBatDau.ForeColor = System.Drawing.Color.White;
             this.date_NgayBatDau.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.date_NgayBatDau.Location = new System.Drawing.Point(142, 337);
+            this.date_NgayBatDau.Location = new System.Drawing.Point(142, 290);
             this.date_NgayBatDau.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.date_NgayBatDau.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.date_NgayBatDau.Name = "date_NgayBatDau";
@@ -421,7 +424,7 @@
             this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(146)))), ((int)(((byte)(228)))));
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(39, 286);
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(39, 239);
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
             this.guna2HtmlLabel1.Size = new System.Drawing.Size(97, 17);
             this.guna2HtmlLabel1.TabIndex = 204;
@@ -440,7 +443,7 @@
             this.txt_Sl_Apdung.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txt_Sl_Apdung.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txt_Sl_Apdung.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_Sl_Apdung.Location = new System.Drawing.Point(142, 276);
+            this.txt_Sl_Apdung.Location = new System.Drawing.Point(142, 229);
             this.txt_Sl_Apdung.Name = "txt_Sl_Apdung";
             this.txt_Sl_Apdung.PasswordChar = '\0';
             this.txt_Sl_Apdung.PlaceholderText = "";
@@ -460,7 +463,7 @@
             this.txtTenKhuyenMai.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtTenKhuyenMai.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtTenKhuyenMai.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtTenKhuyenMai.Location = new System.Drawing.Point(142, 208);
+            this.txtTenKhuyenMai.Location = new System.Drawing.Point(142, 161);
             this.txtTenKhuyenMai.Name = "txtTenKhuyenMai";
             this.txtTenKhuyenMai.PasswordChar = '\0';
             this.txtTenKhuyenMai.PlaceholderText = "";
@@ -473,7 +476,7 @@
             this.guna2HtmlLabel3.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(146)))), ((int)(((byte)(228)))));
-            this.guna2HtmlLabel3.Location = new System.Drawing.Point(39, 218);
+            this.guna2HtmlLabel3.Location = new System.Drawing.Point(39, 171);
             this.guna2HtmlLabel3.Name = "guna2HtmlLabel3";
             this.guna2HtmlLabel3.Size = new System.Drawing.Size(90, 17);
             this.guna2HtmlLabel3.TabIndex = 202;
@@ -540,7 +543,7 @@
             this.checkbox_NgayKetThuc.CheckedState.BorderThickness = 0;
             this.checkbox_NgayKetThuc.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.checkbox_NgayKetThuc.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(146)))), ((int)(((byte)(228)))));
-            this.checkbox_NgayKetThuc.Location = new System.Drawing.Point(219, 386);
+            this.checkbox_NgayKetThuc.Location = new System.Drawing.Point(219, 339);
             this.checkbox_NgayKetThuc.Name = "checkbox_NgayKetThuc";
             this.checkbox_NgayKetThuc.Size = new System.Drawing.Size(125, 17);
             this.checkbox_NgayKetThuc.TabIndex = 259;
@@ -556,7 +559,7 @@
             this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(146)))), ((int)(((byte)(228)))));
-            this.guna2HtmlLabel2.Location = new System.Drawing.Point(50, 416);
+            this.guna2HtmlLabel2.Location = new System.Drawing.Point(50, 369);
             this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
             this.guna2HtmlLabel2.Size = new System.Drawing.Size(80, 17);
             this.guna2HtmlLabel2.TabIndex = 258;
@@ -572,7 +575,7 @@
             this.date_NgayKetThuc.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.date_NgayKetThuc.ForeColor = System.Drawing.Color.White;
             this.date_NgayKetThuc.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.date_NgayKetThuc.Location = new System.Drawing.Point(142, 406);
+            this.date_NgayKetThuc.Location = new System.Drawing.Point(142, 359);
             this.date_NgayKetThuc.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.date_NgayKetThuc.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.date_NgayKetThuc.Name = "date_NgayKetThuc";
@@ -631,15 +634,16 @@
             this.panel1.Controls.Add(this.txt_DenGia);
             this.panel1.Controls.Add(this.btn_Them);
             this.panel1.Controls.Add(this.btn_Go);
-            this.panel1.Location = new System.Drawing.Point(382, 194);
+            this.panel1.Location = new System.Drawing.Point(382, 103);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(855, 330);
+            this.panel1.Size = new System.Drawing.Size(855, 416);
             this.panel1.TabIndex = 262;
             // 
             // frmAddOrUpdateDiscountProduct
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
             this.ClientSize = new System.Drawing.Size(1257, 605);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.checkbox_NgayKetThuc);

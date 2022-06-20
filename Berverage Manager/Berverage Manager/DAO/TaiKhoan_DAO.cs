@@ -46,6 +46,14 @@ namespace Berverage_Manager.DAO
             }
         }
 
+        public TAIKHOAN LayTaiKhoanBangEmail(String email)
+        {
+            using (DBQuanLyBanNuocGiaiKhat dbQuanLyBanNGK = new DBQuanLyBanNuocGiaiKhat())
+            {
+                return dbQuanLyBanNGK.TAIKHOANs.FirstOrDefault(p => p.EMAIL == email);
+            }
+        }
+
         public Boolean KiemTRaMaTaiKhoanTonTai(string maTK)
         {
             using (DBQuanLyBanNuocGiaiKhat dbQuanLyBanNGK = new DBQuanLyBanNuocGiaiKhat())

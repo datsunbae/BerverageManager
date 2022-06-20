@@ -128,20 +128,21 @@
             // 
             // btnThemNV
             // 
-            this.btnThemNV.BorderRadius = 5;
+            this.btnThemNV.AutoRoundedCorners = true;
+            this.btnThemNV.BorderRadius = 21;
             this.btnThemNV.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnThemNV.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnThemNV.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnThemNV.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnThemNV.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(146)))), ((int)(((byte)(228)))));
-            this.btnThemNV.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnThemNV.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnThemNV.ForeColor = System.Drawing.Color.White;
-            this.btnThemNV.Location = new System.Drawing.Point(208, 519);
+            this.btnThemNV.Location = new System.Drawing.Point(254, 545);
             this.btnThemNV.Name = "btnThemNV";
-            this.btnThemNV.Size = new System.Drawing.Size(237, 45);
+            this.btnThemNV.Size = new System.Drawing.Size(163, 45);
             this.btnThemNV.TabIndex = 145;
             this.btnThemNV.TabStop = false;
-            this.btnThemNV.Text = "Thêm";
+            this.btnThemNV.Text = "THÊM";
             this.btnThemNV.Click += new System.EventHandler(this.btnThemNV_Click);
             // 
             // txtEmailNV
@@ -332,27 +333,28 @@
             this.PB_ImgStaff.Location = new System.Drawing.Point(443, 92);
             this.PB_ImgStaff.Name = "PB_ImgStaff";
             this.PB_ImgStaff.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.PB_ImgStaff.Size = new System.Drawing.Size(165, 149);
+            this.PB_ImgStaff.Size = new System.Drawing.Size(165, 165);
             this.PB_ImgStaff.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.PB_ImgStaff.TabIndex = 159;
             this.PB_ImgStaff.TabStop = false;
             // 
             // BTN_ChonHinhAnh
             // 
-            this.BTN_ChonHinhAnh.BorderRadius = 5;
+            this.BTN_ChonHinhAnh.AutoRoundedCorners = true;
+            this.BTN_ChonHinhAnh.BorderRadius = 21;
             this.BTN_ChonHinhAnh.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.BTN_ChonHinhAnh.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.BTN_ChonHinhAnh.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.BTN_ChonHinhAnh.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.BTN_ChonHinhAnh.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(146)))), ((int)(((byte)(228)))));
-            this.BTN_ChonHinhAnh.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BTN_ChonHinhAnh.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BTN_ChonHinhAnh.ForeColor = System.Drawing.Color.White;
-            this.BTN_ChonHinhAnh.Location = new System.Drawing.Point(458, 262);
+            this.BTN_ChonHinhAnh.Location = new System.Drawing.Point(467, 280);
             this.BTN_ChonHinhAnh.Name = "BTN_ChonHinhAnh";
             this.BTN_ChonHinhAnh.Size = new System.Drawing.Size(124, 45);
             this.BTN_ChonHinhAnh.TabIndex = 160;
             this.BTN_ChonHinhAnh.TabStop = false;
-            this.BTN_ChonHinhAnh.Text = "Chọn hình ảnh";
+            this.BTN_ChonHinhAnh.Text = "CHỌN ẢNH";
             this.BTN_ChonHinhAnh.Click += new System.EventHandler(this.BTN_ChonHinhAnh_Click);
             // 
             // OpenFileDialog
