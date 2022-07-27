@@ -90,13 +90,14 @@ namespace Berverage_Manager.GUI
 
         public void LoadThongTinNhanVien()
         {
-            if(nhanVien.HINHANHNV != null)
+            NHANVIEN nv = nhanVien_BUS.LayNhanVienBangMaTaiKhoan(taiKhoan.MADANGNHAP);
+            if (nv.HINHANHNV != null)
             {
-                MemoryStream memoryStream = new MemoryStream(nhanVien.HINHANHNV.ToArray());
+                MemoryStream memoryStream = new MemoryStream(nv.HINHANHNV.ToArray());
                 Image img = Image.FromStream(memoryStream);
                 PB_ImgStaff.Image = img;
             }
-            LB_Ten.Text = "Chào, " + nhanVien.TENNV.ToUpper();
+            LB_Ten.Text = "Chào, " + nv.TENNV.ToUpper();
             LB_VaiTro.Text = vaiTro_BUS.LayTenVaiTroBangMVT(taiKhoan.MVAITRO).TENVAITRO;
         }
 

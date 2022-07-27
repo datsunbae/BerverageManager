@@ -45,6 +45,7 @@
             this.lbLogout = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.pcbLogout = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.lb_Timer = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.LB_CaiDat = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.BTN_CaiDat = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
@@ -58,7 +59,6 @@
             this.ElipseSidePanel = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.ElipseSidePanel1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.ElipseSidePanel2 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
-            this.lb_Timer = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.SidePanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pcbClose)).BeginInit();
@@ -272,6 +272,17 @@
             this.guna2Panel1.Size = new System.Drawing.Size(290, 893);
             this.guna2Panel1.TabIndex = 19;
             // 
+            // lb_Timer
+            // 
+            this.lb_Timer.BackColor = System.Drawing.Color.Transparent;
+            this.lb_Timer.Font = new System.Drawing.Font("Segoe UI", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_Timer.ForeColor = System.Drawing.Color.White;
+            this.lb_Timer.Location = new System.Drawing.Point(62, 300);
+            this.lb_Timer.Name = "lb_Timer";
+            this.lb_Timer.Size = new System.Drawing.Size(46, 25);
+            this.lb_Timer.TabIndex = 25;
+            this.lb_Timer.Text = "Timer";
+            // 
             // LB_CaiDat
             // 
             this.LB_CaiDat.BackColor = System.Drawing.Color.Transparent;
@@ -343,7 +354,7 @@
             this.LB_VaiTro.BackColor = System.Drawing.Color.Transparent;
             this.LB_VaiTro.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LB_VaiTro.ForeColor = System.Drawing.Color.White;
-            this.LB_VaiTro.Location = new System.Drawing.Point(21, 238);
+            this.LB_VaiTro.Location = new System.Drawing.Point(21, 252);
             this.LB_VaiTro.Name = "LB_VaiTro";
             this.LB_VaiTro.Size = new System.Drawing.Size(248, 31);
             this.LB_VaiTro.TabIndex = 18;
@@ -356,7 +367,7 @@
             this.LB_Ten.BackColor = System.Drawing.Color.Transparent;
             this.LB_Ten.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LB_Ten.ForeColor = System.Drawing.Color.White;
-            this.LB_Ten.Location = new System.Drawing.Point(8, 209);
+            this.LB_Ten.Location = new System.Drawing.Point(8, 223);
             this.LB_Ten.Name = "LB_Ten";
             this.LB_Ten.Size = new System.Drawing.Size(272, 31);
             this.LB_Ten.TabIndex = 17;
@@ -369,7 +380,7 @@
             this.PB_ImgStaff.Location = new System.Drawing.Point(92, 121);
             this.PB_ImgStaff.Name = "PB_ImgStaff";
             this.PB_ImgStaff.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.PB_ImgStaff.Size = new System.Drawing.Size(88, 79);
+            this.PB_ImgStaff.Size = new System.Drawing.Size(88, 88);
             this.PB_ImgStaff.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.PB_ImgStaff.TabIndex = 16;
             this.PB_ImgStaff.TabStop = false;
@@ -407,17 +418,6 @@
             // ElipseSidePanel1
             // 
             this.ElipseSidePanel1.TargetControl = this.SidePanel1;
-            // 
-            // lb_Timer
-            // 
-            this.lb_Timer.BackColor = System.Drawing.Color.Transparent;
-            this.lb_Timer.Font = new System.Drawing.Font("Segoe UI", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_Timer.ForeColor = System.Drawing.Color.White;
-            this.lb_Timer.Location = new System.Drawing.Point(62, 280);
-            this.lb_Timer.Name = "lb_Timer";
-            this.lb_Timer.Size = new System.Drawing.Size(46, 25);
-            this.lb_Timer.TabIndex = 25;
-            this.lb_Timer.Text = "Timer";
             // 
             // timer1
             // 

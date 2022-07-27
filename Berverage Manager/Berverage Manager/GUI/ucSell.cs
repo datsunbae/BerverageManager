@@ -23,6 +23,7 @@ namespace Berverage_Manager.GUI
         public Guna2TextBox textBox_CanThanhToan;
         public Guna2ComboBox comboBox_HinhThucBan;
         public Guna2ComboBox comboBox_KhachHang;
+        public Guna2ComboBox comboBox_NhanVien;
 
         private TonKho_BUS tonKho_BUS;
         private SanPham_BUS sanPham_BUS;
@@ -74,8 +75,10 @@ namespace Berverage_Manager.GUI
         public ucSell()
         {
             InitializeComponent();
-            BH_DGV_CTHD.Columns[3].Width = 50;
+            BH_DGV_CTHD.Columns[2].Width = 100;
+            BH_DGV_CTHD.Columns[3].Width = 80;
             BH_DGV_CTHD.Columns[4].Width = 40;
+            BH_DGV_CTHD.Columns[5].Width = 150;
 
             uc_BanHang = this;
             dgv_CTHD = BH_DGV_CTHD;
@@ -83,6 +86,7 @@ namespace Berverage_Manager.GUI
             textBox_CanThanhToan = BH_TXT_TTCanThanhToan;
             comboBox_HinhThucBan = BH_CB_HTBan;
             comboBox_KhachHang = BH_CB_KH;
+            comboBox_NhanVien = BH_CB_NV;
             cb_HinhThucBanValue = BH_CB_HTBan.SelectedIndex;
             tonKho_BUS = new TonKho_BUS();
             sanPham_BUS = new SanPham_BUS();
@@ -182,6 +186,7 @@ namespace Berverage_Manager.GUI
             BH_DATE_TTOAN.Value = DateTime.Now;
             vaiTro = frmLogin.frm_Login.vaiTro;
             getNhanVienTheoVaiTro();
+
             int indexCBNhanVien = BH_CB_NV.FindString(nhanVien.TENNV);
             BH_CB_NV.SelectedIndex = indexCBNhanVien;
         }
@@ -636,14 +641,14 @@ namespace Berverage_Manager.GUI
 
             if (BH_CB_HTBan.SelectedIndex == 0) //khach le
             {
-                doiTuongKhachHang.Add(3);
+                doiTuongKhachHang.Add(4);
             }
             else
             {
+                doiTuongKhachHang.Add(3);
                 bool gioiTinhKH = khachHang_BUS.LayKhachHangBangMKH(int.Parse(BH_CB_KH.SelectedValue.ToString())).GIOITINH.Value;
                 if (gioiTinhKH) //gioi tinh nam
                 {
-                    Console.WriteLine("Nam");
                     doiTuongKhachHang.Add(1);
                 }
                 else //gioi tinh nu

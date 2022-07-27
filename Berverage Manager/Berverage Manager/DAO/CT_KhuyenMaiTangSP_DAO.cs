@@ -4,6 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Berverage_Manager.DataContext;
+using Berverage_Manager.DTO;
+using System.Data.Entity;
 
 namespace Berverage_Manager.DAO
 {
@@ -32,6 +34,7 @@ namespace Berverage_Manager.DAO
             {
                 return dbQuanLyBanNGK.CTKHUYENMAI_TANGSP.Where(p => p.MAKM == maKM && p.GIATU <= tongTien && (p.DENGIA >= tongTien || p.DENGIA == null)).ToList();
             }
+
         }
     }
 }

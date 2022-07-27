@@ -120,7 +120,6 @@
             this.guna2GroupBox3.Size = new System.Drawing.Size(670, 430);
             this.guna2GroupBox3.TabIndex = 19;
             this.guna2GroupBox3.TabStop = false;
-     
             // 
             // BH_DGV_DSSP
             // 

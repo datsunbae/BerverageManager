@@ -178,7 +178,11 @@ namespace Berverage_Manager.GUI
                         {
                             ct_KMTCK.DENGIA = double.Parse(KMTCK_DGV_CTKMTCK.Rows[i].Cells[1].Value.ToString());
                         }
-                        ct_KMTCK.CK = double.Parse(KMTCK_TXT_ChietKhau.Text); ;
+                        else
+                        {
+                            ct_KMTCK.DENGIA = null;
+                        }
+                        ct_KMTCK.CK = double.Parse(KMTCK_DGV_CTKMTCK.Rows[i].Cells[2].Value.ToString()); ;
                         ct_KMTCK.LOAICK = chietKhau_BUS.LayMaChietKhauBangTenCK(KMTCK_DGV_CTKMTCK.Rows[i].Cells[3].Value.ToString());
                         CT_KhuyenMaiChietKhau_BUS.ThemCT_KhuyenMaiChietKhau(ct_KMTCK);
                     }

@@ -29,7 +29,6 @@ namespace Berverage_Manager.GUI
             if (tongDongDGVHD > 0)
             {
                 maDonHang = int.Parse(ucBill.uc_DonHang.dgv_DonHang.Rows[tongDongDGVHD - 1].Cells[0].Value.ToString());
-                Console.WriteLine(tongDongDGVHD);
                 maDonHang++;
             }
             parms[0] = new ReportParameter("TenNhanVien", ucSell.uc_BanHang.cb_NhanVien.Text);

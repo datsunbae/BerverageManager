@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Berverage_Manager.BUS;
+using Berverage_Manager.DTO;
 
 namespace Berverage_Manager.GUI
 {
@@ -19,6 +20,7 @@ namespace Berverage_Manager.GUI
         CT_KhuyenMaiTangSP_BUS cT_KhuyenMaiTangSP_BUS;
         SanPham_BUS sanPham_BUS;
         DonVi_BUS donVi_BUS;
+        TonKho_BUS tonKho_BUS;
         int indexRowSelected;
         public double gia;
         public string donViTinh;
@@ -31,6 +33,7 @@ namespace Berverage_Manager.GUI
             cT_KhuyenMaiTangSP_BUS = new CT_KhuyenMaiTangSP_BUS();
             sanPham_BUS = new SanPham_BUS();
             donVi_BUS = new DonVi_BUS();
+            tonKho_BUS = new TonKho_BUS();
         }
 
         private void CSPT_BTN_QuayLai_Click(object sender, EventArgs e)
@@ -44,11 +47,15 @@ namespace Berverage_Manager.GUI
             CSPT_DGV_DSSPT.Rows.Clear();
             foreach (var item in listCTKMTSP)
             {
-                int RowNew = CSPT_DGV_DSSPT.Rows.Add();
-                CSPT_DGV_DSSPT.Rows[RowNew].Cells[0].Value = item.MASP;
-                CSPT_DGV_DSSPT.Rows[RowNew].Cells[1].Value = sanPham_BUS.LaySanPhamBangMSP(item.MASP.Value).TENSP;
-                CSPT_DGV_DSSPT.Rows[RowNew].Cells[2].Value = item.SLTANG;
-                CSPT_DGV_DSSPT.Rows[RowNew].Cells[3].Value = donVi_BUS.LayTenDVTBangMaDVT(item.MADV);
+                TONKHO tk = tonKho_BUS.LayTonKhoBangMSP(item.MASP.Value);
+                if(tk.SLTON > 0)
+                {
+                    int RowNew = CSPT_DGV_DSSPT.Rows.Add();
+                    CSPT_DGV_DSSPT.Rows[RowNew].Cells[0].Value = item.MASP;
+                    CSPT_DGV_DSSPT.Rows[RowNew].Cells[1].Value = sanPham_BUS.LaySanPhamBangMSP(item.MASP.Value).TENSP;
+                    CSPT_DGV_DSSPT.Rows[RowNew].Cells[2].Value = item.SLTANG;
+                    CSPT_DGV_DSSPT.Rows[RowNew].Cells[3].Value = donVi_BUS.LayTenDVTBangMaDVT(item.MADV);
+                }
             }
         }
 

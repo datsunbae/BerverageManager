@@ -82,6 +82,7 @@ namespace Berverage_Manager.GUI
         {
             if (nhanVien != null)
             {
+                int indexCBNhanVien;
                 nhanVien.TENNV = TXT_Ten.Text;
                 nhanVien.SDTNV = TXT_SoDienThoai.Text;
                 nhanVien.DIACHINV = TXT_DiaChi.Text;
@@ -98,12 +99,16 @@ namespace Berverage_Manager.GUI
                     case 1:
                         ucStaff.uc_NhanVien.FillDataDGV(nhanVien_BUS.LayTatCaNhanVien());
                         ucSell.uc_BanHang.LoadCBNhanVien();
+                        indexCBNhanVien = ucSell.uc_BanHang.comboBox_NhanVien.FindString(nhanVien.TENNV);
+                        ucSell.uc_BanHang.comboBox_NhanVien.SelectedIndex = indexCBNhanVien;
                         ucOder.uc_PhieuNhapKho.FillDataDGV(nhapKho_BUS.LayTatCaPhieuNhapKho());
                         ucBill.uc_DonHang.FillDataDGV(donHang_BUS.LayTatCaDonHang());
                         frmHomeAdmin.frm_HomeAdmin.LoadThongTinNhanVien();
                         break;
                     case 2:
                         ucSell.uc_BanHang.LoadCBNhanVien();
+                        indexCBNhanVien = ucSell.uc_BanHang.comboBox_NhanVien.FindString(nhanVien.TENNV);
+                        ucSell.uc_BanHang.comboBox_NhanVien.SelectedIndex = indexCBNhanVien;
                         ucBill.uc_DonHang.FillDataDGV(donHang_BUS.LayTatCaDonHang());
                         frmHomeSellStaff.frm_HomeSellStaff.LoadThongTinNhanVien();
                         break;

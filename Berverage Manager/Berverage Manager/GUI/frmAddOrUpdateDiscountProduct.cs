@@ -246,6 +246,10 @@ namespace Berverage_Manager.GUI
                         {
                             ct_KMTSP.DENGIA = double.Parse(KMTSP_DGV_CTKMTSP.Rows[i].Cells[1].Value.ToString());
                         }
+                        else
+                        {
+                            ct_KMTSP.DENGIA = null;
+                        }
                         CT_KhuyenMaiTangSP_BUS.ThemCT_KhuyenMaiTangSP(ct_KMTSP);
                     }
 
